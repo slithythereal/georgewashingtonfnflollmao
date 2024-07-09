@@ -1,0 +1,14 @@
+{
+    "params": [
+        {
+            "name": "Time value",
+            "type": "String",
+            "defaultValue": "1"
+        },
+        {
+            "name": "Zoom Value",
+            "type": "String",
+            "defaultValue": "1"
+        }
+    ]
+}

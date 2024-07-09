@@ -1,0 +1,9 @@
+<!DOCTYPE codename-engine-character>
+<character sprite="GeorgeW_Assets" camx="-175" camy="0" icon="george" holdTime="6.1">
+	<anim name="idle" anim="GeorgeW Idle Dance" x="0" y="0" fps="24" loop="false"/>
+	<anim name="idle-fake" anim="GeorgeW fake" x="-1" y="-19" fps="24" loop="false"/>
+	<anim name="singLEFT" anim="GeorgeW SingNote Left" x="-15" y="-27" fps="24" loop="false"/>
+	<anim name="singDOWN" anim="GeorgeW SingNote Down" x="180" y="-105" fps="24" loop="false"/>
+	<anim name="singUP" anim="GeorgeW SingNote Up" x="20" y="-121" fps="24" loop="false"/>
+	<anim name="singRIGHT" anim="GeorgeW SingNote Right" x="0" y="-242" fps="24" loop="false"/>
+</character>

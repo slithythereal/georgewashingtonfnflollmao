@@ -1,0 +1,4 @@
+<!DOCTYPE codename-mod-options>
+<menu name="Vs GW Options" desc="Modify vs GW options here!">
+    <checkbox id="subtitles" name="Subtitles" desc="Enable/Disable Subtitles for the mod!" />
+</menu>

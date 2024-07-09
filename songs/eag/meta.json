@@ -1,0 +1,16 @@
+{
+	"opponentModeAllowed": false,
+	"difficulties": [
+		"NORMAL"
+	],
+	"icon": "eagle",
+	"parsedColor": -11263985,
+	"coopAllowed": false,
+	"color": "#54200f",
+	"name": "eag.",
+	"stepsPerBeat": 4,
+	"displayName": "eag.",
+	"needsVoices": true,
+	"beatsPerMeasure": 4,
+	"bpm": 160
+}

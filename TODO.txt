@@ -1,0 +1,20 @@
+DONE
+- Eag
+- Main Menu
+- credits menu
+- eagle transition
+
+WORKING ON
+- options
+- God and Country
+- Patriot
+
+TODO
+- fix george & pissed george camera offsets
+- Kilometer
+- george week transition
+- freeplaylandia (freeplay menu)
+- add development time in UI (7/4/2024-?/?/2024)
+- subtitle code
+- trailer
+- background events for main week

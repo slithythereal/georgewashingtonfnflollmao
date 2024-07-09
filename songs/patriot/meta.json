@@ -1,0 +1,16 @@
+{
+	"opponentModeAllowed": false,
+	"difficulties": [
+		"NORMAL"
+	],
+	"icon": "george",
+	"parsedColor": -10602455,
+	"name": "patriot",
+	"coopAllowed": false,
+	"color": "#5e3829",
+	"stepsPerBeat": 4,
+	"displayName": "Patriot",
+	"needsVoices": true,
+	"beatsPerMeasure": 4,
+	"bpm": 124
+}

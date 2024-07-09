@@ -1,0 +1,10 @@
+<!DOCTYPE codename-engine-character>
+<character y="350" sprite="eagle_Assets" camx="-50" camy="-175" icon="eagle">
+	<anim name="idle" anim="Eagle Idle" x="0" y="0" fps="24" loop="false"/>
+	<anim name="singUP" anim="Eagle SingNote Up" x="-145" y="291" fps="24" loop="false"/>
+	<anim name="singLEFT" anim="Eagle SingNote Left" x="585" y="-291" fps="24" loop="false"/>
+	<anim name="singRIGHT" anim="Eagle SingNote Right" x="-88" y="18" fps="24" loop="false"/>
+	<anim name="singDOWN" anim="Eagle SingNote Down" x="86" y="242" fps="24" loop="false"/>
+	<anim name="scream" anim="EAGLE SCREAAAAAAAAAAAAM" x="175" y="155" fps="24" loop="false"/>
+	<anim name="eagle" anim="MIOGHTY EAGLE" x="23" y="-55" fps="10" loop="true"/>
+</character>
