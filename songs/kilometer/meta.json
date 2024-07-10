@@ -1,0 +1,17 @@
+{
+	"beatsPerMeasure": 4,
+	"opponentModeAllowed": true,
+	"coopAllowed": true,
+	"stepsPerBeat": 4,
+	"bpm": 195,
+	"difficulties": [
+		"Normal"
+	],
+	"needsVoices": true,
+	"parsedColor": -1,
+	"displayName": "Kilometer",
+	"icon": "George",
+	"name": "Kilometer",
+	"color": "#FFFFFF",
+	"customValues": {}
+}

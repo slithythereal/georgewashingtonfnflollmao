@@ -1,9 +1,9 @@
 import funkin.game.PlayState;
 
 function onSongEnd(){
-    if(PlayState.isStoryMode && !FlxG.save.data.eagleUnlocked){
+    if(PlayState.isStoryMode && !FlxG.save.data.songsUnlocked.contains('Eag')){
         trace("UNLOCKED EAGLE IN FREEPLAY!!!");
-        FlxG.save.data.eagleUnlocked = true;
+        FlxG.save.data.songsUnlocked.push('Eag');
         FlxG.save.flush();
     }
 }

@@ -9,12 +9,3 @@ function onEvent(_){
         }});
     }
 }
-
-function onSubStateOpen(event){
-    for(tween in modchartTweens)
-        tween.active = false;
-}
-function onSubStateClosed() {
-    for(tween in modchartTweens)
-        tween.active = true;
-}

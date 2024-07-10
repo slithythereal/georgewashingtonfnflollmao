@@ -1,5 +1,7 @@
 
 function postCreate() {
+    DiscordUtil.changePresence("most american options i've ever seen", "Options Menu");
+
     var mekanik:FlxSprite = new FlxSprite(1020, 475);
     mekanik.loadGraphic(Paths.image('menus/george mecahnic'));
     mekanik.scale.set(0.25, 0.15);

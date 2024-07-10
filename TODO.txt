@@ -3,6 +3,8 @@ DONE
 - Main Menu
 - credits menu
 - eagle transition
+- fix george & pissed george camera offsets
+- subtitle code
 
 WORKING ON
 - options
@@ -10,11 +12,10 @@ WORKING ON
 - Patriot
 
 TODO
-- fix george & pissed george camera offsets
 - Kilometer
 - george week transition
 - freeplaylandia (freeplay menu)
 - add development time in UI (7/4/2024-?/?/2024)
-- subtitle code
 - trailer
+- game over stuff
 - background events for main week

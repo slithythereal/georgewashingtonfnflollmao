@@ -21,6 +21,7 @@ var credDescTxt:FlxText;
 
 function create(){
     FlxG.mouse.visible = false;
+    DiscordUtil.changePresence("most american credits i've ever seen", "Credits");
 
 	var bg:FlxSprite = new FlxSprite();
 	bg.loadGraphic(Paths.image('menus/menuDesat'));

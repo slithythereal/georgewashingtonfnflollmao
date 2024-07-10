@@ -34,7 +34,7 @@ var playIcon:FlxSprite;
 function create(){
     FlxG.mouse.visible = true;
     PlayState.deathCounter = 0;
-    DiscordUtil.changePresence('Main menu of OUTBREAK', "Main Menu");
+    DiscordUtil.changePresence("most american menu i've ever seen", "Main Menu");
     CoolUtil.playMenuSong();
     
     bg = new FlxSprite();
@@ -109,6 +109,21 @@ function update(elapsed:Float){
 
         if(eagleActive && FlxG.mouse.overlaps(eagle) && FlxG.mouse.justPressed)
             eaglePressed();
+
+        #if debug
+        if(FlxG.keys.justPressed.Q) //command unlocks freeplaylandia (debug only)
+        {
+            FlxG.save.data.freeplayUnlocked = true;
+
+            var songsToUnlock:Array<String> = ['patriot', 'god-and-country', 'kilometer'];
+            for(song in songsToUnlock)
+                if(!FlxG.save.data.songsUnlocked.contains(song))
+                    FlxG.save.data.songsUnlocked.push(song);
+            trace("unlocked freeplaylandia (cheater...)");
+            trace(FlxG.save.data.songsUnlocked);
+        }
+        if(FlxG.keys.justPressed.E) FlxG.switchState(new ModState("murica/Freeplaylandia"));
+        #end
 
     }
 }

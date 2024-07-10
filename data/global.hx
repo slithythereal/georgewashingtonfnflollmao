@@ -43,11 +43,11 @@ function new() //for save data
 	if(FlxG.save.data.subtitles == null) FlxG.save.data.subtitles = true;
 
 	//saves
-	if(FlxG.save.data.eagleUnlocked == null) FlxG.save.data.eagleUnlocked = false;
 	if(FlxG.save.data.freeplayUnlocked == null) FlxG.save.data.freeplayUnlocked = false;
+	if(FlxG.save.data.songsUnlocked == null) FlxG.save.data.songsUnlocked = [];
 
 	Lib.application.onExit.add(function(i:Int) {
         FlxG.save.flush();
-        trace("Saving Data...");
+        trace("Shaving Amerikuhn Dater...");
     });
 }
