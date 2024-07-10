@@ -9,7 +9,7 @@ import flixel.effects.FlxFlicker;
 
 var options:Array<String> = [
     'play',
-    'freeplay',
+    'freeplaylandia',
     'options',
     'credits'
 ];
@@ -173,7 +173,7 @@ function transitionState(state:String){
 
 function loadState(state:String){
     switch(state){
-        case 'freeplay': FlxG.switchState(new FreeplayState());
+        case 'freeplaylandia': FlxG.switchState(new FreeplayState());
         case 'options': FlxG.switchState(new OptionsMenu());
 		case "credits": FlxG.switchState(new ModState("murica/Credits"));
         default:

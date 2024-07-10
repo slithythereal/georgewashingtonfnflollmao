@@ -40,7 +40,7 @@ function preStateSwitch() //thank you vs gorefield for custom UI stuffs -slithy
 function new() //for save data
 {
 	//settings
-	if(FlxG.save.data.subtitles == null) FlxG.save.data.subtitles = false;
+	if(FlxG.save.data.subtitles == null) FlxG.save.data.subtitles = true;
 
 	//saves
 	if(FlxG.save.data.eagleUnlocked == null) FlxG.save.data.eagleUnlocked = false;

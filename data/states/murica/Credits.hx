@@ -5,7 +5,8 @@ var credits:Array = [
 	{name: 'mrmorian', link: 'https://mrmorian.newgrounds.com/', desc: 'codirector\nanimation\nart\ncoding assistance\ncodirector stuff'},
 	{name: 'cakieyea', link: 'https://www.youtube.com/@cakieyea', desc: 'music guy\nPatriot\nKilometer'},
 	{name: 'punmaster', link: 'https://x.com/PunMasterOff', desc: 'music guy\nGod and Country\nEag.'},
-	{name: 'capitnparrot', link: 'https://www.youtube.com/channel/UC08fJSpXa97QeISAYoYftgg', desc: 'moral support'}
+	{name: 'capitnparrot', link: 'https://www.youtube.com/channel/UC08fJSpXa97QeISAYoYftgg', desc: 'moral support'},
+	{name: 'rodney528', link: "https://gamebanana.com/members/1729833", desc: 'Change Character Script\nin CNE discord'}
 ];
 
 var curSelected:Int = 0;
@@ -42,18 +43,21 @@ function create(){
 
 	credName = new FlxText(394, 495);
 	credName.text = credits[curSelected].name.toUpperCase();
-	credName.setFormat("fonts/THE PRESIDENT.ttf", 25, FlxColor.WHITE, "left");
-	credName.setBorderStyle(FlxTextBorderStyle.OUTLINE, FlxColor.BLACK, 5, 25);
+	credName.setFormat("fonts/THE PRESIDENT.ttf", 25, FlxColor.BLACK, "left");
 	credName.borderSize = 2;
 	add(credName);
 
 	credDescTxt = new FlxText(470, 360);
 	credDescTxt.fieldWidth = 500;
 	credDescTxt.text = 'Roles in thy mod\n' + credits[curSelected].desc;
-	credDescTxt.setFormat("fonts/THE PRESIDENT.ttf", 25, FlxColor.WHITE, "center");
-	credDescTxt.setBorderStyle(FlxTextBorderStyle.OUTLINE, FlxColor.BLACK, 5, 25);
+	credDescTxt.setFormat("fonts/THE PRESIDENT.ttf", 25, FlxColor.BLACK, "center");
 	credDescTxt.borderSize = 2;
 	add(credDescTxt);
+
+	var devTime:FlxText = new FlxText(696, 564, 0,"Development Time\n7/4/2024-?/?/2024");
+	devTime.setFormat("fonts/THE PRESIDENT.ttf", 25, FlxColor.BLACK, "center");
+	add(devTime);
+	watch(devTime);
 
 	arrowDOWN = new FlxSprite(570, 605);
 	arrowDOWN.loadGraphic(Paths.image('menus/credits/arrow'));
@@ -101,4 +105,9 @@ function changeCred(cool:Int){
 	credIcon.loadGraphic(Paths.image('menus/credits/credIcons/' + credits[curSelected].name));
 	credName.text = credits[curSelected].name.toUpperCase();
 	credDescTxt.text = 'Roles in thy mod\n' + credits[curSelected].desc;
+}
+
+function watch(obj:FlxObject){
+	FlxG.watch.add(obj, "x");
+	FlxG.watch.add(obj, "y");
 }
