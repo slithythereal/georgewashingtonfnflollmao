@@ -1,21 +1,44 @@
 DONE
+- Patriot
+    - song
+    - chart
+- God and Country
+    - song
+    - chart
+- Kilometer
+    - song
+    - chart
 - Eag
+    - everything
 - Main Menu
 - credits menu
 - eagle transition
 - fix george & pissed george camera offsets
 - subtitle code
+- options
 
 WORKING ON
-- options
+- Kilometer
+    - george dying animation
+    - background transitions
+    - background animations (dodge challengers, bridge, moving road)
 - God and Country
+    - stage
+    - mid-song cutscenes (trump interruption, trump death)
+    - background events
 - Patriot
+    - stage
+    - background events
 
 TODO
-- Kilometer
 - george week transition
 - freeplaylandia (freeplay menu)
 - add development time in UI (7/4/2024-?/?/2024)
 - trailer
 - game over stuff
 - background events for main week
+
+- add these links to gamebanana description
+    - CNE WINDOWS DOWNLOAD (latest github build) https://www.tinyurl.com/cne-download-windows
+    - CNE MAC DOWNLOAD (latest github build) https://www.tinyurl.com/cne-download-macos
+    - CNE LINUX DOWNLOAD (latest github build) https://www.tinyurl.com/cne-download-linux

@@ -1,5 +1,5 @@
 <!DOCTYPE codename-engine-character>
-<character y="200" sprite="Trump_Assets" camx="0" icon="trump" holdTime="6.1" scale="1.5" color="#ffffff">
+<character y="200" sprite="Trump_Assets" scale="1.5" icon="trump" color="#FF6A24" holdTime="6.1">
 	<anim name="idle" anim="idle" x="0" y="0" fps="24" loop="false"/>
 	<anim name="singLEFT" anim="left" x="215" y="-37" fps="24" loop="false"/>
 	<anim name="singDOWN" anim="down" x="55" y="-35" fps="24" loop="false"/>

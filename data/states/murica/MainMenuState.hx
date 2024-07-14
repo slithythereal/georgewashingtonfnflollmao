@@ -87,6 +87,7 @@ function create(){
 
 function update(elapsed:Float){
     if(!selectedSomethin){
+		#if !USA
         if (FlxG.keys.justPressed.SEVEN) {
             persistentUpdate = !(persistentDraw = true);
             openSubState(new EditorPicker());
@@ -95,6 +96,7 @@ function update(elapsed:Float){
             openSubState(new ModSwitchMenu());
             persistentUpdate = !(persistentDraw = true);
         }
+		#end
 
         if(controls.UP_P) changeOption(-1);
         if(controls.DOWN_P) changeOption(1);
@@ -188,6 +190,7 @@ function transitionState(state:String){
 
 function loadState(state:String){
     switch(state){
+        case 'play': loadWeek(['patriot', 'god-and-country', 'kilometer'], 'George Week', 'georgeW1');
         case 'freeplaylandia': FlxG.switchState(new FreeplayState());
         case 'options': FlxG.switchState(new OptionsMenu());
 		case "credits": FlxG.switchState(new ModState("murica/Credits"));

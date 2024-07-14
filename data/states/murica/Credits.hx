@@ -5,7 +5,8 @@ var credits:Array = [
 	{name: 'mrmorian', link: 'https://mrmorian.newgrounds.com/', desc: 'codirector\nanimation\nart\ncoding assistance\ncodirector stuff'},
 	{name: 'cakieyea', link: 'https://www.youtube.com/@cakieyea', desc: 'music guy\nPatriot\nKilometer'},
 	{name: 'punmaster', link: 'https://x.com/PunMasterOff', desc: 'music guy\nGod and Country\nEag.'},
-	{name: 'capitnparrot', link: 'https://www.youtube.com/channel/UC08fJSpXa97QeISAYoYftgg', desc: 'moral support'},
+	{name: 'capitnparrot', link: 'https://www.youtube.com/channel/UC08fJSpXa97QeISAYoYftgg', desc: 'moral support\njust the GOAT all around'},
+	{name: 'marquis artuis', link: 'https://x.com/MarquisArtuis', desc: 'trump icons'},
 	{name: 'rodney528', link: "https://gamebanana.com/members/1729833", desc: 'Change Character Script\nin CNE discord'}
 ];
 
@@ -21,8 +22,6 @@ var credDescTxt:FlxText;
 
 function create(){
     FlxG.mouse.visible = false;
-    DiscordUtil.changePresence("most american credits i've ever seen", "Credits");
-
 	var bg:FlxSprite = new FlxSprite();
 	bg.loadGraphic(Paths.image('menus/menuDesat'));
 	bg.color = 0xFF00802B;
