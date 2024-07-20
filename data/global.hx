@@ -41,10 +41,13 @@ function new() //for save data
 {
 	//settings
 	if(FlxG.save.data.subtitles == null) FlxG.save.data.subtitles = true;
+	if(FlxG.save.data.bgEvents == null) FlxG.save.data.bgEvents = true;
 
 	//saves
 	if(FlxG.save.data.freeplayUnlocked == null) FlxG.save.data.freeplayUnlocked = false;
 	if(FlxG.save.data.songsUnlocked == null) FlxG.save.data.songsUnlocked = [];
+	if(FlxG.save.data.songsFCd == null) FlxG.save.data.songsFCd = [];
+	if(FlxG.save.data.songsSFCd == null) FlxG.save.data.songsSFCd = [];
 
 	Lib.application.onExit.add(function(i:Int) {
         FlxG.save.flush();

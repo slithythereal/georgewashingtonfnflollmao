@@ -1,5 +1,5 @@
 <!DOCTYPE codename-engine-stage>
-<stage zoom="0.85" name="stage" folder="stages/eag/" startCamPosY="600" startCamPosX="1000">
+<stage zoom="0.85" name="eagle" folder="stages/eag/" startCamPosY="600" startCamPosX="1000">
 	<sprite name="bg"           scale="1.75"     x="50" y="200"   sprite="eagleisland"/>
 	<boyfriend x="900"/>
 	<dad x="-100" y="-100"/>

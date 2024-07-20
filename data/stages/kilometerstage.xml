@@ -1,0 +1,14 @@
+<!DOCTYPE codename-engine-stage>
+
+<stage zoom="0.4" name="kilometerstage" folder="stages/kilometer" startCamPosY="600" startCamPosX="1000">
+    <!--BG STUFFS-->
+    <sprite name="road" x="0" y="900" sprite="road" scale="1.5" scrollx="1.75" scrolly="0.75"/>
+    <!--CARS-->
+    <sprite name="hellcat1" x="-600" y="300" sprite="dodge challenger"/>
+    <sprite name="hellcat2" x="1275" y="300" sprite="dodge challenger"/>
+    <!--CHARACTERS-->
+    <dad x="-250" y="-125"/>
+    <boyfriend x="1750" y="-50"/>
+    <!--FRONT-->
+    <sprite name="mountain" x="5000" y="-1000" scale="8.5" sprite="mountain" scrollx="0" scolly="0"/>
+</stage>

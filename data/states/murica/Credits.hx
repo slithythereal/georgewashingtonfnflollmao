@@ -1,13 +1,15 @@
 import flixel.text.FlxTextBorderStyle;
 
 var credits:Array = [
-	{name: 'slithy', link: 'https://slithy.carrd.co', desc: 'director\ncoding\ncharting\ndirector stuff'},
+	{name: 'slithy', link: 'https://slithy.carrd.co', desc: 'director\ncoding\ncharting\ngeorge and trump voice\ndirector stuff'},
 	{name: 'mrmorian', link: 'https://mrmorian.newgrounds.com/', desc: 'codirector\nanimation\nart\ncoding assistance\ncodirector stuff'},
-	{name: 'cakieyea', link: 'https://www.youtube.com/@cakieyea', desc: 'music guy\nPatriot\nKilometer'},
+	{name: 'cakieyea', link: 'https://www.youtube.com/@cakieyea', desc: 'music guy\nPatriot\nKilometer\nbf (talking) voice'},
 	{name: 'punmaster', link: 'https://x.com/PunMasterOff', desc: 'music guy\nGod and Country\nEag.'},
 	{name: 'capitnparrot', link: 'https://www.youtube.com/channel/UC08fJSpXa97QeISAYoYftgg', desc: 'moral support\njust the GOAT all around'},
 	{name: 'marquis artuis', link: 'https://x.com/MarquisArtuis', desc: 'trump icons'},
-	{name: 'rodney528', link: "https://gamebanana.com/members/1729833", desc: 'Change Character Script\nin CNE discord'}
+	{name: 'g-nux', link: "https://g-nux.newgrounds.com", desc: "mod thumbnail"},
+	{name: 'rodney528', link: "https://gamebanana.com/members/1729833", desc: 'Change Character Script\nin CNE discord'},
+	{name: 'dovlin', link: "https://scarletviolet.pokemon.com/en-us/", desc: "he's finally a reference..."}
 ];
 
 var curSelected:Int = 0;

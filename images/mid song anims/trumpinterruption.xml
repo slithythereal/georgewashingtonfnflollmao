@@ -2,13 +2,13 @@
 <TextureAtlas imagePath="trumpinterruption.png">
 	<!-- Created with Adobe Animate version 22.0.0.93 -->
 	<!-- http://www.adobe.com/products/animate.html -->
-	<SubTexture name="trump cuts anim0000" x="0" y="0" width="0" height="0" frameX="0" frameY="0" frameWidth="1886" frameHeight="668"/>
-	<SubTexture name="trump cuts anim0001" x="0" y="0" width="0" height="0" frameX="0" frameY="0" frameWidth="1886" frameHeight="668"/>
-	<SubTexture name="trump cuts anim0002" x="0" y="0" width="0" height="0" frameX="0" frameY="0" frameWidth="1886" frameHeight="668"/>
-	<SubTexture name="trump cuts anim0003" x="0" y="0" width="0" height="0" frameX="0" frameY="0" frameWidth="1886" frameHeight="668"/>
-	<SubTexture name="trump cuts anim0004" x="0" y="0" width="0" height="0" frameX="0" frameY="0" frameWidth="1886" frameHeight="668"/>
-	<SubTexture name="trump cuts anim0005" x="0" y="0" width="0" height="0" frameX="0" frameY="0" frameWidth="1886" frameHeight="668"/>
-	<SubTexture name="trump cuts anim0006" x="0" y="0" width="0" height="0" frameX="0" frameY="0" frameWidth="1886" frameHeight="668"/>
+	<SubTexture name="trump cuts anim0000" x="3746" y="0" width="3" height="2" frameX="-1145" frameY="-547" frameWidth="1886" frameHeight="668"/>
+	<SubTexture name="trump cuts anim0001" x="3746" y="0" width="3" height="2" frameX="-1145" frameY="-547" frameWidth="1886" frameHeight="668"/>
+	<SubTexture name="trump cuts anim0002" x="3746" y="0" width="3" height="2" frameX="-1145" frameY="-547" frameWidth="1886" frameHeight="668"/>
+	<SubTexture name="trump cuts anim0003" x="3746" y="0" width="3" height="2" frameX="-1145" frameY="-547" frameWidth="1886" frameHeight="668"/>
+	<SubTexture name="trump cuts anim0004" x="3746" y="0" width="3" height="2" frameX="-1145" frameY="-547" frameWidth="1886" frameHeight="668"/>
+	<SubTexture name="trump cuts anim0005" x="3746" y="0" width="3" height="2" frameX="-1145" frameY="-547" frameWidth="1886" frameHeight="668"/>
+	<SubTexture name="trump cuts anim0006" x="3746" y="0" width="3" height="2" frameX="-1145" frameY="-547" frameWidth="1886" frameHeight="668"/>
 	<SubTexture name="trump cuts anim0007" x="2746" y="0" width="1000" height="667" frameX="-745" frameY="0" frameWidth="1886" frameHeight="668"/>
 	<SubTexture name="trump cuts anim0008" x="0" y="0" width="1584" height="542" frameX="-302" frameY="-122" frameWidth="1886" frameHeight="668"/>
 	<SubTexture name="trump cuts anim0009" x="1887" y="602" width="716" height="667" frameX="-139" frameY="0" frameWidth="1886" frameHeight="668"/>
@@ -145,14 +145,14 @@
 	<SubTexture name="trump cuts anim0140" x="2603" y="1159" width="614" height="443" frameX="-76" frameY="-224" frameWidth="1886" frameHeight="668"/>
 	<SubTexture name="trump cuts anim0141" x="2603" y="1159" width="614" height="443" frameX="-76" frameY="-224" frameWidth="1886" frameHeight="668"/>
 	<SubTexture name="trump cuts anim0142" x="2603" y="1159" width="614" height="443" frameX="-76" frameY="-224" frameWidth="1886" frameHeight="668"/>
-	<SubTexture name="trump cuts anim0143" x="2012" y="1269" width="410" height="410" frameX="-129" frameY="-254" frameWidth="1886" frameHeight="668"/>
-	<SubTexture name="trump cuts anim0144" x="2012" y="1269" width="410" height="410" frameX="-129" frameY="-254" frameWidth="1886" frameHeight="668"/>
-	<SubTexture name="trump cuts anim0145" x="2012" y="1269" width="410" height="410" frameX="-129" frameY="-254" frameWidth="1886" frameHeight="668"/>
-	<SubTexture name="trump cuts anim0146" x="2012" y="1269" width="410" height="410" frameX="-129" frameY="-254" frameWidth="1886" frameHeight="668"/>
-	<SubTexture name="trump cuts anim0147" x="2012" y="1269" width="410" height="410" frameX="-129" frameY="-254" frameWidth="1886" frameHeight="668"/>
-	<SubTexture name="trump cuts anim0148" x="2012" y="1269" width="410" height="410" frameX="-129" frameY="-254" frameWidth="1886" frameHeight="668"/>
-	<SubTexture name="trump cuts anim0149" x="2012" y="1269" width="410" height="410" frameX="-129" frameY="-254" frameWidth="1886" frameHeight="668"/>
-	<SubTexture name="trump cuts anim0150" x="2012" y="1269" width="410" height="410" frameX="-129" frameY="-254" frameWidth="1886" frameHeight="668"/>
+	<SubTexture name="trump cuts anim0143" x="1602" y="1269" width="410" height="410" frameX="-129" frameY="-254" frameWidth="1886" frameHeight="668"/>
+	<SubTexture name="trump cuts anim0144" x="1602" y="1269" width="410" height="410" frameX="-129" frameY="-254" frameWidth="1886" frameHeight="668"/>
+	<SubTexture name="trump cuts anim0145" x="1602" y="1269" width="410" height="410" frameX="-129" frameY="-254" frameWidth="1886" frameHeight="668"/>
+	<SubTexture name="trump cuts anim0146" x="1602" y="1269" width="410" height="410" frameX="-129" frameY="-254" frameWidth="1886" frameHeight="668"/>
+	<SubTexture name="trump cuts anim0147" x="1602" y="1269" width="410" height="410" frameX="-129" frameY="-254" frameWidth="1886" frameHeight="668"/>
+	<SubTexture name="trump cuts anim0148" x="1602" y="1269" width="410" height="410" frameX="-129" frameY="-254" frameWidth="1886" frameHeight="668"/>
+	<SubTexture name="trump cuts anim0149" x="1602" y="1269" width="410" height="410" frameX="-129" frameY="-254" frameWidth="1886" frameHeight="668"/>
+	<SubTexture name="trump cuts anim0150" x="1602" y="1269" width="410" height="410" frameX="-129" frameY="-254" frameWidth="1886" frameHeight="668"/>
 	<SubTexture name="trump cuts anim0151" x="655" y="1184" width="483" height="447" frameX="-91" frameY="-220" frameWidth="1886" frameHeight="668"/>
 	<SubTexture name="trump cuts anim0152" x="655" y="1184" width="483" height="447" frameX="-91" frameY="-220" frameWidth="1886" frameHeight="668"/>
 	<SubTexture name="trump cuts anim0153" x="655" y="1184" width="483" height="447" frameX="-91" frameY="-220" frameWidth="1886" frameHeight="668"/>

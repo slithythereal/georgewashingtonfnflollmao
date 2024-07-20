@@ -1,5 +1,5 @@
 <!DOCTYPE codename-engine-character>
-<character sprite="GeorgeW_Assets" camx="-175" camy="0" icon="george" holdTime="6.1" color="#fac234">
+<character sprite="GeorgeW_Assets" camx="-175" camy="60" icon="george" holdTime="6.1" color="#fac234">
 	<anim name="idle" anim="GeorgeW Idle Dance" x="0" y="0" fps="24" loop="false"/>
 	<anim name="idle-fake" anim="GeorgeW fake" x="-1" y="-19" fps="24" loop="false"/>
 	<anim name="singLEFT" anim="GeorgeW SingNote Left" x="-15" y="-27" fps="24" loop="false"/>
