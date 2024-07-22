@@ -20,8 +20,8 @@ public static var weekProgress:Map<String,
 static var redirectStates:Map<FlxState, String> = [
 	TitleState => "murica/MainMenuState", 
 	MainMenuState => "murica/MainMenuState",
-	StoryMenuState => "murica/MainMenuState"/*,
-	FreeplayState => "murica/Freeplaylandia"*/
+	StoryMenuState => "murica/MainMenuState",
+	FreeplayState => "murica/Freeplaylandia"
 ];
 
 function preStateSwitch() //thank you vs gorefield for custom UI stuffs -slithy

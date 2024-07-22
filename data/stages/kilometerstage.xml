@@ -1,14 +1,54 @@
 <!DOCTYPE codename-engine-stage>
 
 <stage zoom="0.4" name="kilometerstage" folder="stages/kilometer" startCamPosY="600" startCamPosX="1000">
+    <!--PLACES-->
+    <sprite name="area 51" x="0" y="-300" sprite="places/area 51" scale="4.6" scrollx="1.5" scrolly="1.5">
+        <property name="visible" type="bool" value="false" />
+    </sprite>
+    <sprite name="liberty statue" x="-250" y="550" sprite="places/liberty statue" scale="3.1" scrollx="1.25" scrolly="1.25">
+        <property name="visible" type="bool" value="false" />
+    </sprite>
+    <sprite name="golden gate" x="0" y="-1000" sprite="places/golden gate bridge" scale="2" scrollx="1.25" scrolly="1.25">
+        <property name="visible" type="bool" value="false" />
+    </sprite>
+    <sprite name="white house" x="0" y="-1280" sprite="places/white house" scale="4" scrollx="1.25" scrolly="1.25">
+        <property name="visible" type="bool" value="true" />
+    </sprite>
+    <sprite name="superbowl arena" x="-1750" y="-2000" sprite="places/superbowl arena" scale="1.5" scrollx="1.25" scrolly="1.25">
+        <property name="visible" type="bool" value="false" />
+    </sprite>
+    <sprite name="grand canyon" x="0" y="400" sprite="places/grand canyon" scale="3" scrollx="1.25" scrolly="1.25">
+        <property name="visible" type="bool" value="false" />
+    </sprite>
+    <sprite name="yellowstone" x="0" y="-600" sprite="places/yellerstone" scale="5" scrollx="1.25" scrolly="1.25">
+        <property name="visible" type="bool" value="false" />
+    </sprite>
+    <sprite name="murica" x="0" y="-600" sprite="american flag" scale="4" scrollx="1.25" scrolly="1.25">
+        <property name="visible" type="bool" value="false" />
+    </sprite>
+    <sprite name="lincoln statue" x="0" y="950" sprite="places/lincoln statue" scale="7" scrollx="1.25" scrolly="1.25">
+        <property name="visible" type="bool" value="false" />
+    </sprite>
+    <sprite name="rushmore" x="0" y="-50" sprite="places/mt rushmore" scale="2" scrollx="1.25" scrolly="1.25">
+        <property name="visible" type="bool" value="false" />
+    </sprite>
+    <sprite name="white house end" x="0" y="-900" sprite="places/white house end" scale="4" scrollx="1.25" scrolly="1.25">
+        <property name="visible" type="bool" value="false" />
+    </sprite>
+    <sprite name="washington monument" x="-2000" y="-2500" sprite="places/washington monument" scale="1" scrollx="1.25" scrolly="1.25">
+        <property name="visible" type="bool" value="false" />
+    </sprite>
     <!--BG STUFFS-->
-    <sprite name="road" x="0" y="900" sprite="road" scale="1.5" scrollx="1.75" scrolly="0.75"/>
-    <!--CARS-->
-    <sprite name="hellcat1" x="-600" y="300" sprite="dodge challenger"/>
-    <sprite name="hellcat2" x="1275" y="300" sprite="dodge challenger"/>
-    <!--CHARACTERS-->
-    <dad x="-250" y="-125"/>
-    <boyfriend x="1750" y="-50"/>
+    <sprite name="road" x="0" y="900" sprite="road" scale="1.65" scrollx="1.75" scrolly="0.75"/>
+    <!--CARS AND CHARACTERS-->
+    <sprite name="hellcat3" x="-1500" y="300" sprite="dodge challenger" scale="0.75"/>
+    <sprite name="hellcat4" x="-1675" y="400" sprite="dodge challenger" scale="0.75"/>
+    <sprite name="hellcat1" x="-600" y="450" sprite="dodge challenger" scale="0.75"/>
+    <dad x="-150" y="150" scale="0.75"/>
+    <sprite name="hellcat2" x="1275" y="450" sprite="dodge challenger" scale="0.75"/>
+    <boyfriend x="1800" y="175" scale="0.75"/>
+    <sprite name="hellcat5" x="-1275" y="600" sprite="dodge challenger" scale="0.75"/>
+    <sprite name="hellcat6" x="-1775" y="675" sprite="dodge challenger" scale="0.75"/>
     <!--FRONT-->
-    <sprite name="mountain" x="5000" y="-1000" scale="8.5" sprite="mountain" scrollx="0" scolly="0"/>
+    <sprite name="mountain" x="5000" y="0" scale="9" sprite="mountain" scrollx="0" scolly="0"/>
 </stage>

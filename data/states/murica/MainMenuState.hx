@@ -124,7 +124,6 @@ function update(elapsed:Float){
             trace("unlocked freeplaylandia (cheater...)");
             trace(FlxG.save.data.songsUnlocked);
         }
-        if(FlxG.keys.justPressed.E) FlxG.switchState(new ModState("murica/Freeplaylandia"));
         #end
 
     }

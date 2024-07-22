@@ -1,7 +1,7 @@
 import flixel.text.FlxTextBorderStyle;
 
 var credits:Array = [
-	{name: 'slithy', link: 'https://slithy.carrd.co', desc: 'director\ncoding\ncharting\ngeorge and trump voice\ndirector stuff'},
+	{name: 'slithy', link: 'https://slithy.carrd.co', desc: 'director\ncoding\ncharting\nsome assets\ngeorge and trump voice\ndirector stuff'},
 	{name: 'mrmorian', link: 'https://mrmorian.newgrounds.com/', desc: 'codirector\nanimation\nart\ncoding assistance\ncodirector stuff'},
 	{name: 'cakieyea', link: 'https://www.youtube.com/@cakieyea', desc: 'music guy\nPatriot\nKilometer\nbf (talking) voice'},
 	{name: 'punmaster', link: 'https://x.com/PunMasterOff', desc: 'music guy\nGod and Country\nEag.'},
