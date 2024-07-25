@@ -4,8 +4,7 @@ DONE
 - God and Country
     - everything
 - Kilometer
-    - song
-    - chart
+    - everything
 - Eag
     - everything
 - Main Menu
@@ -20,12 +19,14 @@ DONE
 WORKING ON
 - Kilometer
     - george dying animation
-    - background transitions
-    - background animations (dodge challengers, bridge, moving road)
+    - kilomter intro song cutscene
+- find and fix character change script bug
 - freeplaylandia (freeplay menu)
 - add development time in UI (7/4/2024-?/?/2024)
 - trailer
 - george week transition
+- you unlocked freeplaylandia message
+- you unlocked eagle song message
 
 TODO
 - post trailer

@@ -9,6 +9,7 @@ var credits:Array = [
 	{name: 'marquis artuis', link: 'https://x.com/MarquisArtuis', desc: 'trump icons'},
 	{name: 'g-nux', link: "https://g-nux.newgrounds.com", desc: "mod thumbnail"},
 	{name: 'rodney528', link: "https://gamebanana.com/members/1729833", desc: 'Change Character Script\nin CNE discord'},
+	{name: 'vsgorefield', link: "https://gamebanana.com/mods/501201", desc: "i stole your videohandler script"},
 	{name: 'dovlin', link: "https://scarletviolet.pokemon.com/en-us/", desc: "he's finally a reference..."}
 ];
 

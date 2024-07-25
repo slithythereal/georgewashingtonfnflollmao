@@ -36,11 +36,13 @@ function stepHit(curStep:Int){
 
     switch(curStep){
         case 642:
+            dad.alpha = 0.001;
             trumpComedy.animation.play('interrupted');
             georgeComedy.animation.play('interrupted');
             georgeComedy.alpha = 1;
             trumpComedy.alpha = 1;
         case 753: 
+            dad.alpha = 1;
             remove(trumpComedy);
         case 763:
             stage.stageSprites["georgebg"].visible = true;
@@ -57,6 +59,7 @@ function stepHit(curStep:Int){
                 dad.setPosition(dadYValues[0], dadYValues[1]);
             }});
         case 1344:
+            dad.alpha = 1;
             remove(georgekill);
             remove(trumpExplosion);       
     }

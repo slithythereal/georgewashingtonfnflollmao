@@ -38,15 +38,15 @@ public function precacheCharacter(strumIndex:Int, charName:String = 'bf', member
 	
 	// precache process
 	if (!charMap[strumIndex][memberIndex].exists(charName)) {
-		var newChar:Character = new Character(firstChar.x, firstChar.y, charName, firstChar.isPlayer);
-		charMap[strumIndex][memberIndex].set(newChar.curCharacter, newChar);
-		newChar.active = newChar.visible = false;
-		trace('Precached index "' + memberIndex + '" character "' + newChar.curCharacter + '" on strumLine "' + strumIndex + '".');
+		var newCharacter:Character = new Character(firstChar.x, firstChar.y, charName, firstChar.isPlayer);
+		charMap[strumIndex][memberIndex].set(newCharacter.curCharacter, newCharacter);
+		newCharacter.active = newCharacter.visible = false;
+		trace('Precached index "' + memberIndex + '" character "' + newCharacter.curCharacter + '" on strumLine "' + strumIndex + '".');
 
 		// sometimes this works and other times it doesn't
 		try {
-			for (c in newChar.cameras) {
-				newChar.drawComplex(c);
+			for (c in newCharacter.cameras) {
+				newCharacter.drawComplex(c);
 			}
 		}
 		catch(e:Dynamic) {
@@ -56,14 +56,14 @@ public function precacheCharacter(strumIndex:Int, charName:String = 'bf', member
 		// cam stage offsets
 		switch (strumIndex) {
 			case 0:
-				newChar.cameraOffset.x += stage?.characterPoses['dad']?.camxoffset;
-				newChar.cameraOffset.y += stage?.characterPoses['dad']?.camyoffset;
+				newCharacter.cameraOffset.x += stage?.characterPoses['dad']?.camxoffset;
+				newCharacter.cameraOffset.y += stage?.characterPoses['dad']?.camyoffset;
 			case 1:
-				newChar.cameraOffset.x += stage?.characterPoses['boyfriend']?.camxoffset;
-				newChar.cameraOffset.y += stage?.characterPoses['boyfriend']?.camyoffset;
+				newCharacter.cameraOffset.x += stage?.characterPoses['boyfriend']?.camxoffset;
+				newCharacter.cameraOffset.y += stage?.characterPoses['boyfriend']?.camyoffset;
 			case 2:
-				newChar.cameraOffset.x += stage?.characterPoses['girlfriend']?.camxoffset;
-				newChar.cameraOffset.y += stage?.characterPoses['girlfriend']?.camyoffset;
+				newCharacter.cameraOffset.x += stage?.characterPoses['girlfriend']?.camxoffset;
+				newCharacter.cameraOffset.y += stage?.characterPoses['girlfriend']?.camyoffset;
 		}
 	}
 }
@@ -71,36 +71,36 @@ public function precacheCharacter(strumIndex:Int, charName:String = 'bf', member
 public function changeCharacter(strumIndex:Int, charName:String = 'bf', memberIndex:Int = 0, ?updateBar:Bool = true) {
 	// vars
 	var oldChar:Character = strumLines.members[strumIndex].characters[memberIndex];
-	var newChar:Character = charMap[strumIndex][memberIndex].get(charName);
+	var newCharacter:Character = charMap[strumIndex][memberIndex].get(charName);
 
 	// null check
-	if (oldChar.curCharacter == newChar.curCharacter) return trace('It\'s the same character bro.');
-	if (oldChar == null || newChar == null) return;
+	if (oldChar.curCharacter == newCharacter.curCharacter) return trace('It\'s the same character bro.');
+	if (oldChar == null || newCharacter == null) return;
 
 	// icon change + healthBar color update
 	if (memberIndex == 0 && updateBar) {
 		if (strumIndex == 0) { // opponent side
-			iconP2.setIcon(newChar != null ? newChar.getIcon() : 'face');
-			if (Options.colorHealthBar) healthBar.createColoredEmptyBar(newChar != null && newChar.iconColor != null ? newChar.iconColor : (PlayState.opponentMode ? 0xFF66FF33 : 0xFFFF0000));
+			iconP2.setIcon(newCharacter != null ? newCharacter.getIcon() : 'face');
+			if (Options.colorHealthBar) healthBar.createColoredEmptyBar(newCharacter != null && newCharacter.iconColor != null ? newCharacter.iconColor : (PlayState.opponentMode ? 0xFF66FF33 : 0xFFFF0000));
 		} else if (strumIndex == 1) { // player side
-			iconP1.setIcon(newChar != null ? newChar.getIcon() : 'face');
-			if (Options.colorHealthBar) healthBar.createColoredFilledBar(newChar != null && newChar.iconColor != null ? newChar.iconColor : (PlayState.opponentMode ? 0xFFFF0000 : 0xFF66FF33));
+			iconP1.setIcon(newCharacter != null ? newCharacter.getIcon() : 'face');
+			if (Options.colorHealthBar) healthBar.createColoredFilledBar(newCharacter != null && newCharacter.iconColor != null ? newCharacter.iconColor : (PlayState.opponentMode ? 0xFFFF0000 : 0xFF66FF33));
 		}
 	}
 
 	// swaps old and new char
 	var group = FlxTypedGroup.resolveGroup(oldChar);
 	if (group == null) group = this;
-	group.insert(group.members.indexOf(oldChar), newChar);
-	newChar.active = newChar.visible = true;
+	group.insert(group.members.indexOf(oldChar), newCharacter);
+	newCharacter.active = newCharacter.visible = true;
 	group.remove(oldChar);
 	
 	// fully apply change
-	newChar.setPosition(oldChar.x, oldChar.y);
-	newChar.playAnim(oldChar.animation?.name);
-	newChar.animation?.curAnim?.curFrame = oldChar.animation?.curAnim?.curFrame;
-	strumLines.members[strumIndex].characters[memberIndex] = newChar;
-	trace('Character index "' + memberIndex + '" changed to "' + newChar.curCharacter + '" on strumLine "' + strumIndex + '"!');
+	newCharacter.setPosition(oldChar.x, oldChar.y);
+	newCharacter.playAnim(oldChar.animation?.name);
+	newCharacter.animation?.curAnim?.curFrame = oldChar.animation?.curAnim?.curFrame;
+	strumLines.members[strumIndex].characters[memberIndex] = newCharacter;
+	trace('Character index "' + memberIndex + '" changed to "' + newCharacter.curCharacter + '" on strumLine "' + strumIndex + '"!');
 }
 
 function onEvent(event) {

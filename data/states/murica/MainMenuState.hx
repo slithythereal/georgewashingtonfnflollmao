@@ -7,12 +7,7 @@ import funkin.backend.utils.DiscordUtil;
 import funkin.backend.MusicBeatState;
 import flixel.effects.FlxFlicker;
 
-var options:Array<String> = [
-    'play',
-    'freeplaylandia',
-    'options',
-    'credits'
-];
+var options:Array<String> = [];
 
 var menuItems:FlxTypedGroup<FlxSprite>;
 var textGrp:FlxTypedGroup<FlxText>;
@@ -37,6 +32,11 @@ function create(){
     DiscordUtil.changePresence("most american menu i've ever seen", "Main Menu");
     CoolUtil.playMenuSong();
     
+    options.push('play');
+    if(FlxG.save.data.freeplayUnlocked) options.push('freeplaylandia');
+    options.push('options');
+    options.push('credits');
+
     bg = new FlxSprite();
     bg.loadGraphic(Paths.image('menus/mainmenu/murica flag'));
     bg.updateHitbox();

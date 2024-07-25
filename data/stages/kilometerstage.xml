@@ -2,43 +2,55 @@
 
 <stage zoom="0.4" name="kilometerstage" folder="stages/kilometer" startCamPosY="600" startCamPosX="1000">
     <!--PLACES-->
-    <sprite name="area 51" x="0" y="-300" sprite="places/area 51" scale="4.6" scrollx="1.5" scrolly="1.5">
-        <property name="visible" type="bool" value="false" />
-    </sprite>
-    <sprite name="liberty statue" x="-250" y="550" sprite="places/liberty statue" scale="3.1" scrollx="1.25" scrolly="1.25">
-        <property name="visible" type="bool" value="false" />
-    </sprite>
-    <sprite name="golden gate" x="0" y="-1000" sprite="places/golden gate bridge" scale="2" scrollx="1.25" scrolly="1.25">
-        <property name="visible" type="bool" value="false" />
-    </sprite>
-    <sprite name="white house" x="0" y="-1280" sprite="places/white house" scale="4" scrollx="1.25" scrolly="1.25">
+    <sprite name="white house" x="2200" y="-900" sprite="places/white house" scale="4" scrollx="0.35" scrolly="0.25">
         <property name="visible" type="bool" value="true" />
+        <property name="velocity.x" type="float" value=" -60.0" />
     </sprite>
-    <sprite name="superbowl arena" x="-1750" y="-2000" sprite="places/superbowl arena" scale="1.5" scrollx="1.25" scrolly="1.25">
+    <sprite name="grand canyon" x="600" y="200" sprite="places/grand canyon" scale="3" scrollx="0.35" scrolly="0.25">
+        <property name="visible" type="bool" value="false" />
+        <property name="velocity.x" type="float" value=" 0.0" />
+    </sprite>
+    <sprite name="golden gate" x="-350" y="-1000" sprite="places/golden gate bridge" scale="1.6" scrollx="0.35" scrolly="0.25">
+        <property name="visible" type="bool" value="false" />
+        <property name="velocity.x" type="float" value=" 0.0" />
+    </sprite>
+    <sprite name="yellowstone" x="300" y="-600" sprite="places/yellerstone" scale="5" scrollx="0.35" scrolly="0.25">
+        <property name="visible" type="bool" value="false" />
+        <property name="velocity.x" type="float" value=" 0.0" />
+    </sprite>
+    <sprite name="superbowl arena" x="-1000" y="-2000" sprite="places/superbowl arena" scale="1.5" scrollx="0.35" scrolly="0.25">
+        <property name="visible" type="bool" value="false" />
+        <property name="velocity.x" type="float" value=" 0.0" />
+    </sprite>
+     <sprite name="murica" x="-600" y="-1000" sprite="american flag" scale="2" scrollx="0.1" scrolly="0.1">
         <property name="visible" type="bool" value="false" />
     </sprite>
-    <sprite name="grand canyon" x="0" y="400" sprite="places/grand canyon" scale="3" scrollx="1.25" scrolly="1.25">
+    <sprite name="area 51" x="100" y="-300" sprite="places/area 51" scale="4.6" scrollx="0.35" scrolly="1.5">
         <property name="visible" type="bool" value="false" />
+        <property name="velocity.x" type="float" value=" 0.0" />
     </sprite>
-    <sprite name="yellowstone" x="0" y="-600" sprite="places/yellerstone" scale="5" scrollx="1.25" scrolly="1.25">
+    <sprite name="liberty statue" x="150" y="550" sprite="places/liberty statue" scale="3.1" scrollx="0.35" scrolly="0.25">
         <property name="visible" type="bool" value="false" />
+        <property name="velocity.x" type="float" value=" 0.0" />
     </sprite>
-    <sprite name="murica" x="0" y="-600" sprite="american flag" scale="4" scrollx="1.25" scrolly="1.25">
+    <sprite name="rushmore" x="-700" y="-500" sprite="places/mt rushmore" scale="1.3" scrollx="0.35" scrolly="0.25">
         <property name="visible" type="bool" value="false" />
+        <property name="velocity.x" type="float" value=" 0.0" />
     </sprite>
-    <sprite name="lincoln statue" x="0" y="950" sprite="places/lincoln statue" scale="7" scrollx="1.25" scrolly="1.25">
+    <sprite name="lincoln statue" x="1000" y="950" sprite="places/lincoln statue" scale="7" scrollx="0.35" scrolly="0.25">
         <property name="visible" type="bool" value="false" />
+        <property name="velocity.x" type="float" value=" 0.0" />
     </sprite>
-    <sprite name="rushmore" x="0" y="-50" sprite="places/mt rushmore" scale="2" scrollx="1.25" scrolly="1.25">
+    <sprite name="washington monument" x="-2200" y="-2500" sprite="places/washington monument" scale="1" scrollx="0.35" scrolly="0.25">
         <property name="visible" type="bool" value="false" />
+        <property name="velocity.x" type="float" value=" 0.0" />
     </sprite>
-    <sprite name="white house end" x="0" y="-900" sprite="places/white house end" scale="4" scrollx="1.25" scrolly="1.25">
+    <sprite name="white house end" x="600" y="-900" sprite="places/white house end" scale="4" scrollx="0.35" scrolly="0.25">
         <property name="visible" type="bool" value="false" />
-    </sprite>
-    <sprite name="washington monument" x="-2000" y="-2500" sprite="places/washington monument" scale="1" scrollx="1.25" scrolly="1.25">
-        <property name="visible" type="bool" value="false" />
+        <property name="velocity.x" type="float" value=" 0.0" />
     </sprite>
     <!--BG STUFFS-->
+    <sprite name="firework" x="0" y="0" sprite="firework" scale="0" scrollx="0.25" scrolly="0.25"/>
     <sprite name="road" x="0" y="900" sprite="road" scale="1.65" scrollx="1.75" scrolly="0.75"/>
     <!--CARS AND CHARACTERS-->
     <sprite name="hellcat3" x="-1500" y="300" sprite="dodge challenger" scale="0.75"/>

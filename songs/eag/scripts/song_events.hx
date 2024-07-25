@@ -1,6 +1,9 @@
 import funkin.game.PlayState;
 import funkin.backend.MusicBeatState;
 
+importScript("data/scripts/VideoHandler");
+
+
 function onSongEnd(){
     if(PlayState.isStoryMode && !FlxG.save.data.songsUnlocked.contains('Eag')){
         trace("UNLOCKED EAGLE IN FREEPLAY!!!");
