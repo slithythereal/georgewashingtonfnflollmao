@@ -57,7 +57,7 @@ function create(){
 	credDescTxt.borderSize = 2;
 	add(credDescTxt);
 
-	var devTime:FlxText = new FlxText(696, 564, 0,"Development Time\n7/4/2024-?/?/2024");
+	var devTime:FlxText = new FlxText(696, 564, 0,"Development Time\n7/4/2024-7/25/2024");
 	devTime.setFormat("fonts/THE PRESIDENT.ttf", 25, FlxColor.BLACK, "center");
 	add(devTime);
 	watch(devTime);
