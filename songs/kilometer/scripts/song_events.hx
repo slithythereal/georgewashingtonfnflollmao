@@ -7,7 +7,7 @@ function create(){
         FlxG.camera.flash(FlxColor.WHITE);
     });
     VideoHandler.playNext();
-    VideoHandler.curVideo.visible = false;
+    VideoHandler.curVideo.alpha = 0.001;
     VideoHandler.curVideo.pause();
     camHUD.visible = false;
     camGame.visible = false;
@@ -15,7 +15,7 @@ function create(){
 
 
 function onSongStart(){
-    VideoHandler.curVideo.visible = true;
+    VideoHandler.curVideo.alpha = 1;
     VideoHandler.curVideo.resume();
 }
 
@@ -44,6 +44,7 @@ function beatHit(curBeat:Int){
         case 628: transitionTOBG('lincoln statue', 'washington monument');
         case 664: transitionTOBG('washington monument', 'white house end');
         case 740: VideoHandler.playNext();
+        //case 744: if(!VideoHandler.curVideo.isPlaying) VideoHandler.playNext();
     }
 }
 

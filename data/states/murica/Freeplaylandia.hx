@@ -3,13 +3,12 @@ import funkin.backend.utils.CoolUtil;
 
 var existingSongsArray:Array<String> = ['patriot', 'god-and-country', 'kilometer', 'eag'];
 var songArray:Array<String> = [];
-var curSelected:Int = 0;
+var curSelected:Int = curFreeplaySelected;
 var portrait:FlxSprite;
 var arrowLEFT:FlxSprite;
 var arrowRIGHT:FlxSprite;
 function create(){
     CoolUtil.playMenuSong();
-
 
     loadData();
     
@@ -28,6 +27,20 @@ function create(){
     portrait.updateHitbox();
     portrait.screenCenter();
     add(portrait);
+
+    arrowLEFT = new FlxSprite(95, 325);
+    arrowLEFT.loadGraphic(Paths.image('menus/arrow'));
+    arrowLEFT.scale.set(0.25, 0.15);
+    arrowLEFT.updateHitbox();
+    arrowLEFT.angle = -90;
+    add(arrowLEFT);
+
+    arrowRIGHT = new FlxSprite(1045, 325);
+    arrowRIGHT.loadGraphic(Paths.image('menus/arrow'));
+    arrowRIGHT.scale.set(0.25, 0.15);
+    arrowRIGHT.updateHitbox();
+    arrowRIGHT.angle = 90;
+    add(arrowRIGHT);
 }
 
 function update(elapsed:Float){
@@ -36,8 +49,18 @@ function update(elapsed:Float){
         FlxG.switchState(new MainMenuState());
     }
     if(controls.ACCEPT) loadSong(songArray[curSelected].toLowerCase());
-    if(controls.LEFT_P) changeOption(-1);
-    if(controls.RIGHT_P) changeOption(1);
+    if(controls.LEFT_P) {
+        changeOption(-1);
+        FlxTween.tween(arrowLEFT, {"scale.x": 0.3, "scale.y": 0.3}, 0.05, {ease:FlxEase.quintInOut, onComplete: function(twn:FlxTween){
+			FlxTween.tween(arrowLEFT, {"scale.x": 0.25, "scale.y": 0.15}, 0.05, {ease:FlxEase.quintInOut});
+		}});
+    }
+    if(controls.RIGHT_P){
+        changeOption(1); 
+        FlxTween.tween(arrowRIGHT, {"scale.x": 0.3, "scale.y": 0.3}, 0.05, {ease:FlxEase.quintInOut, onComplete: function(twn:FlxTween){
+			FlxTween.tween(arrowRIGHT, {"scale.x": 0.25, "scale.y": 0.15}, 0.05, {ease:FlxEase.quintInOut});
+		}});
+    } 
 }
 
 function loadSong(song:String){
@@ -51,6 +74,8 @@ function changeOption(cool:Int){
         curSelected = 0;
     if(curSelected < 0)
         curSelected = songArray.length -1;
+
+    curFreeplaySelected = curSelected;
 
     portrait.loadGraphic(Paths.image('menus/freeplaylandia/songs/picture_' + songArray[curSelected].toLowerCase()));
 

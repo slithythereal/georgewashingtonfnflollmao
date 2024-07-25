@@ -63,14 +63,14 @@ function create(){
 	watch(devTime);
 
 	arrowDOWN = new FlxSprite(570, 605);
-	arrowDOWN.loadGraphic(Paths.image('menus/credits/arrow'));
+	arrowDOWN.loadGraphic(Paths.image('menus/arrow'));
 	arrowDOWN.flipY = true;
 	arrowDOWN.scale.set(0.25, 0.15);
 	arrowDOWN.updateHitbox();
 	add(arrowDOWN);
 
 	arrowUP = new FlxSprite(570, 240);
-	arrowUP.loadGraphic(Paths.image('menus/credits/arrow'));
+	arrowUP.loadGraphic(Paths.image('menus/arrow'));
 	arrowUP.scale.set(0.25, 0.15);
 	arrowUP.updateHitbox();
 	add(arrowUP);

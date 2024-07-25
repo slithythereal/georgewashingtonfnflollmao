@@ -6,7 +6,7 @@ import lime.graphics.Image;
 import openfl.Lib;
 
 static var curMainMenuSelected:Int = 0;
-static var curStoryMenuSelected:Int = 0;
+static var curFreeplaySelected:Int = 0;
 static var windowTitleCustom:String = "WHAT'S A KILOMETER";
 
 public static var weekProgress:Map<String,
