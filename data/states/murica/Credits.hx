@@ -109,8 +109,3 @@ function changeCred(cool:Int){
 	credName.text = credits[curSelected].name.toUpperCase();
 	credDescTxt.text = 'Roles in thy mod\n' + credits[curSelected].desc;
 }
-
-function watch(obj:FlxObject){
-	FlxG.watch.add(obj, "x");
-	FlxG.watch.add(obj, "y");
-}

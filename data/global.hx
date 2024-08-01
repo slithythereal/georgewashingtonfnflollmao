@@ -9,15 +9,7 @@ static var curMainMenuSelected:Int = 0;
 static var curFreeplaySelected:Int = 0;
 static var windowTitleCustom:String = "WHAT'S A KILOMETER";
 
-public static var weekProgress:Map<String,
-{
-	song:String,
-	weekMisees:Int,
-	weekScore:Int,
-	deaths:Int
-}> = [];
-
-static var redirectStates:Map<FlxState, String> = [
+static var redirectStatesGW:Map<FlxState, String> = [
 	TitleState => "murica/MainMenuState", 
 	MainMenuState => "murica/MainMenuState",
 	StoryMenuState => "murica/MainMenuState",
@@ -32,9 +24,9 @@ function preStateSwitch() //thank you vs gorefield for custom UI stuffs -slithy
     window.setIcon(Image.fromBytes(Assets.getBytes(Paths.image('GAMEICON'))));
     FlxG.camera.bgColor = 0xFF000000;
 
-	for (redirectState in redirectStates.keys())
+	for (redirectState in redirectStatesGW.keys())
 		if (Std.isOfType(FlxG.game._requestedState, redirectState))
-			FlxG.game._requestedState = new ModState(redirectStates.get(redirectState));
+			FlxG.game._requestedState = new ModState(redirectStatesGW.get(redirectState));
 }
 
 function new() //for save data
