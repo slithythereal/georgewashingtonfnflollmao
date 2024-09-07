@@ -1,0 +1,9 @@
+<!DOCTYPE codename-engine-character>
+<character sprite="can" camx="0" camy="60" icon="can" holdTime="6.1">
+	<anim name="idle" anim="toucan idle" x="0" y="0" fps="24" loop="false"/>
+	<anim name="singLEFT" anim="toucan left" x="420" y="258" fps="24" loop="false"/>
+	<anim name="singDOWN" anim="toucan down" x="355" y="140" fps="24" loop="false"/>
+	<anim name="singUP" anim="toucan up" x="337" y="512" fps="24" loop="false"/>
+	<anim name="singRIGHT" anim="toucan right" x="225" y="193" fps="24" loop="false"/>
+	<anim name="dancing" anim="dancing" x="-35" y="45" fps="48" loop="true"/>
+</character>

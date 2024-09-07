@@ -1,19 +1,19 @@
 import funkin.game.PlayState;
 import funkin.backend.MusicBeatState;
+import Sys;
+importScript("data/scripts/HandyDandyFunctions");
 
-importScript("data/scripts/VideoHandler");
-
-
-function onSongEnd(){
-    if(PlayState.isStoryMode && !FlxG.save.data.songsUnlocked.contains('Eag')){
-        trace("UNLOCKED EAGLE IN FREEPLAY!!!");
-        FlxG.save.data.songsUnlocked.push('Eag');
-        FlxG.save.flush();
-    }
+function onGameOver(event)
+{
+	event.cancel(true);
+	MusicBeatState.skipTransIn = MusicBeatState.skipTransOut = true;
+	curVidData = {vid: "eagle jumpsacre", daFunc: function(){
+		Sys.exit(1);
+	}};
+	trace(curVidData);
+	FlxG.switchState(new ModState("murica/VidState"));
 }
 
-function onGameOver(event){
-    event.cancel(true);
-    MusicBeatState.skipTransIn = MusicBeatState.skipTransOut = true;
-    FlxG.switchState(new ModState("murica/EagleGameOver"));
+function onSongEnd(){
+	HandyDandy.saveMailData("brazil", 'brazil', false, 'Letter from Brazilian government');
 }

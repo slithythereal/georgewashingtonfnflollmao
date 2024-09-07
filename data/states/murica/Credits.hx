@@ -1,20 +1,21 @@
 import flixel.text.FlxTextBorderStyle;
 
-var credits:Array = [
+// easier to have it in one variable than mutliple
+var credits:Array<{name:String, link:String, desc:String}> = [
 	{name: 'slithy', link: 'https://slithy.carrd.co', desc: 'director\ncoding\ncharting\nsome assets\ngeorge and trump voice\ndirector stuff'},
 	{name: 'mrmorian', link: 'https://mrmorian.newgrounds.com/', desc: 'codirector\nanimation\nart\ncoding assistance\ncodirector stuff'},
-	{name: 'cakieyea', link: 'https://www.youtube.com/@cakieyea', desc: 'music guy\nPatriot\nKilometer\nbf (talking) voice'},
-	{name: 'punmaster', link: 'https://x.com/PunMasterOff', desc: 'music guy\nGod and Country\nEag.'},
+	{name: 'cakieyea', link: 'https://www.youtube.com/@cakieyea', desc: 'music guy\nPatriot\nGod and Country\nKilometer\nbf (talking) voice'},
+	{name: 'punmaster', link: 'https://twitter.com/PunMasterOff', desc: 'music guy\nGod and Country\nEag.\nEag 2.'},
 	{name: 'capitnparrot', link: 'https://www.youtube.com/channel/UC08fJSpXa97QeISAYoYftgg', desc: 'moral support\njust the GOAT all around'},
-	{name: 'marquis artuis', link: 'https://x.com/MarquisArtuis', desc: 'trump icons'},
+	{name: 'marquis artuis', link: 'https://twitter.com/MarquisArtuis', desc: 'trump icons'},
 	{name: 'g-nux', link: "https://g-nux.newgrounds.com", desc: "mod thumbnail"},
 	{name: 'rodney528', link: "https://gamebanana.com/members/1729833", desc: 'Change Character Script\nin CNE discord'},
+	{name: "hifish", link: "https://twitter.com/hifish__", desc: "Installer batchfile (.bat) script"},
 	{name: 'vsgorefield', link: "https://gamebanana.com/mods/501201", desc: "i stole your videohandler script"},
 	{name: 'dovlin', link: "https://scarletviolet.pokemon.com/en-us/", desc: "he's finally a reference..."}
 ];
 
 var curSelected:Int = 0;
-
 var creditImageGrp:FlxTypedGroup<FlxSprite>;
 var georgeScroll:FlxSprite;
 var arrowDOWN:FlxSprite;
@@ -23,8 +24,9 @@ var credIcon:FlxSprite;
 var credName:FlxText;
 var credDescTxt:FlxText;
 
-function create(){
-    FlxG.mouse.visible = false;
+function create()
+{
+	FlxG.mouse.visible = true;
 	var bg:FlxSprite = new FlxSprite();
 	bg.loadGraphic(Paths.image('menus/menuDesat'));
 	bg.color = 0xFF00802B;
@@ -57,11 +59,6 @@ function create(){
 	credDescTxt.borderSize = 2;
 	add(credDescTxt);
 
-	var devTime:FlxText = new FlxText(696, 564, 0,"Development Time\n7/4/2024-7/25/2024");
-	devTime.setFormat("fonts/THE PRESIDENT.ttf", 25, FlxColor.BLACK, "center");
-	add(devTime);
-	watch(devTime);
-
 	arrowDOWN = new FlxSprite(570, 605);
 	arrowDOWN.loadGraphic(Paths.image('menus/arrow'));
 	arrowDOWN.flipY = true;
@@ -76,34 +73,46 @@ function create(){
 	add(arrowUP);
 }
 
-function update(elapsed:Float){
-	if(controls.UP_P)
+function update(elapsed:Float)
+{
+	if (controls.UP_P || FlxG.mouse.overlaps(arrowUP) && FlxG.mouse.justPressed)
 	{
 		changeCred(-1);
-		FlxTween.tween(arrowUP, {"scale.x": 0.35, "scale.y": 0.25}, 0.05, {ease:FlxEase.quintInOut, onComplete: function(twn:FlxTween){
-			FlxTween.tween(arrowUP, {"scale.x": 0.25, "scale.y": 0.15}, 0.05, {ease:FlxEase.quintInOut});
-		}});
+		FlxTween.tween(arrowUP, {"scale.x": 0.35, "scale.y": 0.25}, 0.05, {
+			ease: FlxEase.quintInOut,
+			onComplete: function(twn:FlxTween)
+			{
+				FlxTween.tween(arrowUP, {"scale.x": 0.25, "scale.y": 0.15}, 0.05, {ease: FlxEase.quintInOut});
+			}
+		});
 	}
-	else if (controls.DOWN_P){
+	else if (controls.DOWN_P || FlxG.mouse.overlaps(arrowDOWN) && FlxG.mouse.justPressed)
+	{
 		changeCred(1);
-		FlxTween.tween(arrowDOWN, {"scale.x": 0.35, "scale.y": 0.25}, 0.05, {ease:FlxEase.quintInOut, onComplete: function(twn:FlxTween){
-			FlxTween.tween(arrowDOWN, {"scale.x": 0.25, "scale.y": 0.15}, 0.05, {ease:FlxEase.quintInOut});
-		}});
+		FlxTween.tween(arrowDOWN, {"scale.x": 0.35, "scale.y": 0.25}, 0.05, {
+			ease: FlxEase.quintInOut,
+			onComplete: function(twn:FlxTween)
+			{
+				FlxTween.tween(arrowDOWN, {"scale.x": 0.25, "scale.y": 0.15}, 0.05, {ease: FlxEase.quintInOut});
+			}
+		});
 	}
-	if(controls.ACCEPT)
-		CoolUtil.openURL(credits[curSelected].link);
-	if(controls.BACK){
+	if (controls.ACCEPT || FlxG.mouse.overlaps(credIcon) && FlxG.mouse.justPressed)
+		CoolUtil.openURL(credits[curSelected].link); // opens credit link
+	if (controls.BACK)
+	{
 		FlxG.sound.play(Paths.sound('menu/cancel'));
 		FlxG.switchState(new MainMenuState());
 	}
 }
 
-function changeCred(cool:Int){
+function changeCred(cool:Int)
+{
 	curSelected += cool;
-    if(curSelected >= credits.length)
-        curSelected = 0;
-    if(curSelected < 0)
-        curSelected = credits.length - 1;
+	if (curSelected >= credits.length)
+		curSelected = 0;
+	if (curSelected < 0)
+		curSelected = credits.length - 1;
 
 	credIcon.loadGraphic(Paths.image('menus/credits/credIcons/' + credits[curSelected].name));
 	credName.text = credits[curSelected].name.toUpperCase();

@@ -5,13 +5,13 @@
 	"stepsPerBeat": 4,
 	"bpm": 170,
 	"difficulties": [
-		"NORMAL"
+		"normal"
 	],
 	"needsVoices": true,
-	"parsedColor": -927989,
+	"parsedColor": -926453,
 	"displayName": "God and Country",
 	"icon": "trump",
 	"name": "god-and-country",
-	"color": "#F1D70B",
+	"color": "#F1DD0B",
 	"customValues": {}
 }

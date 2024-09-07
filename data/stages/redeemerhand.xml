@@ -1,0 +1,7 @@
+<!DOCTYPE codename-engine-stage>
+<stage zoom="0.85" name="redeemerhand" folder="stages/can/" startCamPosY="600" startCamPosX="1000">
+	<sprite name="bgbg"           scale="4"     x="50" y="100"   sprite="redeemerhand"/>
+	<sprite name="bg"           scale="4"     x="50" y="200"   sprite="redeemerhand"/>
+	<boyfriend x="500" y="-555"/>
+	<dad x="-335" y="0"/>
+</stage>

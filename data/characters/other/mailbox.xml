@@ -1,0 +1,6 @@
+<!DOCTYPE codename-engine-character>
+<character sprite="other/mailbox" camx="-175" camy="60" icon="george" holdTime="6.1">
+	<anim name="open" anim="open" x="28" y="46" fps="24" loop="false"/>
+	<anim name="close" anim="close" x="0" y="0" fps="24" loop="false"/>
+	<anim name="closedFR" anim="closedFR" x="0" y="0" fps="24" loop="false"/>
+</character>

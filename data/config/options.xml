@@ -1,4 +1,6 @@
 <!DOCTYPE codename-mod-options>
 <menu name="Vs GW Options" desc="Modify vs GW options here!">
     <checkbox id="subtitlesGW" name="Subtitles" desc="Enable/Disable Subtitles for the mod!" />
+    <checkbox id="showGWWarning" name="Show Warning Screen" desc="Enable/Disable the warning screen that pops up before you play the mod!" />
+    <checkbox id="brazilMode" name="brazil" desc="brazil. Works when you read a certain letter..." />
 </menu>

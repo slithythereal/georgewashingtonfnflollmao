@@ -1,0 +1,34 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TextureAtlas imagePath="mailbox.png">
+	<!-- Created with Adobe Animate version 22.0.0.93 -->
+	<!-- http://www.adobe.com/products/animate.html -->
+	<SubTexture name="close0000" x="0" y="0" width="434" height="373" frameX="-149" frameY="0" frameWidth="583" frameHeight="373"/>
+	<SubTexture name="close0001" x="457" y="0" width="226" height="370" frameX="-49" frameY="0" frameWidth="583" frameHeight="373"/>
+	<SubTexture name="close0002" x="706" y="0" width="227" height="370" frameX="0" frameY="0" frameWidth="583" frameHeight="373"/>
+	<SubTexture name="close0003" x="457" y="0" width="226" height="370" frameX="-49" frameY="0" frameWidth="583" frameHeight="373"/>
+	<SubTexture name="close0004" x="956" y="0" width="248" height="370" frameX="-84" frameY="0" frameWidth="583" frameHeight="373"/>
+	<SubTexture name="close0005" x="457" y="0" width="226" height="370" frameX="-49" frameY="0" frameWidth="583" frameHeight="373"/>
+	<SubTexture name="close0006" x="457" y="0" width="226" height="370" frameX="-49" frameY="0" frameWidth="583" frameHeight="373"/>
+	<SubTexture name="close0007" x="457" y="0" width="226" height="370" frameX="-49" frameY="0" frameWidth="583" frameHeight="373"/>
+	<SubTexture name="close0008" x="457" y="0" width="226" height="370" frameX="-49" frameY="0" frameWidth="583" frameHeight="373"/>
+	<SubTexture name="close0009" x="457" y="0" width="226" height="370" frameX="-49" frameY="0" frameWidth="583" frameHeight="373"/>
+	<SubTexture name="close0010" x="457" y="0" width="226" height="370" frameX="-49" frameY="0" frameWidth="583" frameHeight="373"/>
+	<SubTexture name="close0011" x="457" y="0" width="226" height="370" frameX="-49" frameY="0" frameWidth="583" frameHeight="373"/>
+	<SubTexture name="close0012" x="457" y="0" width="226" height="370" frameX="-49" frameY="0" frameWidth="583" frameHeight="373"/>
+	<SubTexture name="close0013" x="457" y="0" width="226" height="370" frameX="-49" frameY="0" frameWidth="583" frameHeight="373"/>
+	<SubTexture name="open0000" x="1227" y="0" width="327" height="333" frameX="-21" frameY="-84" frameWidth="386" frameHeight="418"/>
+	<SubTexture name="open0001" x="1577" y="0" width="341" height="369" frameX="-45" frameY="-48" frameWidth="386" frameHeight="418"/>
+	<SubTexture name="open0002" x="0" y="396" width="217" height="417" frameX="-52" frameY="0" frameWidth="386" frameHeight="418"/>
+	<SubTexture name="open0003" x="240" y="396" width="322" height="334" frameX="0" frameY="-84" frameWidth="386" frameHeight="418"/>
+	<SubTexture name="open0004" x="585" y="396" width="287" height="369" frameX="-17" frameY="-48" frameWidth="386" frameHeight="418"/>
+	<SubTexture name="open0005" x="585" y="396" width="287" height="369" frameX="-17" frameY="-48" frameWidth="386" frameHeight="418"/>
+	<SubTexture name="open0006" x="585" y="396" width="287" height="369" frameX="-17" frameY="-48" frameWidth="386" frameHeight="418"/>
+	<SubTexture name="open0007" x="585" y="396" width="287" height="369" frameX="-17" frameY="-48" frameWidth="386" frameHeight="418"/>
+	<SubTexture name="open0008" x="585" y="396" width="287" height="369" frameX="-17" frameY="-48" frameWidth="386" frameHeight="418"/>
+	<SubTexture name="open0009" x="585" y="396" width="287" height="369" frameX="-17" frameY="-48" frameWidth="386" frameHeight="418"/>
+	<SubTexture name="open0010" x="585" y="396" width="287" height="369" frameX="-17" frameY="-48" frameWidth="386" frameHeight="418"/>
+	<SubTexture name="open0011" x="585" y="396" width="287" height="369" frameX="-17" frameY="-48" frameWidth="386" frameHeight="418"/>
+	<SubTexture name="open0012" x="585" y="396" width="287" height="369" frameX="-17" frameY="-48" frameWidth="386" frameHeight="418"/>
+	<SubTexture name="open0013" x="585" y="396" width="287" height="369" frameX="-17" frameY="-48" frameWidth="386" frameHeight="418"/>
+	<SubTexture name="closedFR0013" x="457" y="0" width="226" height="370" frameX="-49" frameY="0" frameWidth="583" frameHeight="373"/>
+</TextureAtlas>

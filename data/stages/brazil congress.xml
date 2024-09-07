@@ -1,0 +1,6 @@
+<!DOCTYPE codename-engine-stage>
+<stage zoom="0.6" name="brazil congress" folder="stages/dom/" startCamPosY="600" startCamPosX="1000">
+	<sprite name="bg"           scale="1"     x="-1000" y="-600"   sprite="building"	scroll="0.9"/>
+	<dad x="-275" scale="0.85" />
+	<boyfriend scale="0.85" y="125"/>
+</stage>

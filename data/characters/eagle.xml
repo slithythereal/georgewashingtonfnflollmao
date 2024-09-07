@@ -1,5 +1,5 @@
 <!DOCTYPE codename-engine-character>
-<character y="350" sprite="eagle_Assets" camx="-50" camy="-175" icon="eagle">
+<character y="350" sprite="eagle_Assets" camx="-50" camy="-175" icon="eagle" color="#663333">
 	<anim name="idle" anim="Eagle Idle" x="0" y="0" fps="24" loop="false"/>
 	<anim name="singUP" anim="Eagle SingNote Up" x="-145" y="291" fps="24" loop="false"/>
 	<anim name="singLEFT" anim="Eagle SingNote Left" x="585" y="-291" fps="24" loop="false"/>
