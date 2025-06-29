@@ -182,7 +182,8 @@ function update(elapsed:Float) {
 				FlxG.switchState(new ModState('murica/WhiteHouseState'));
 
 			if (controls.BACK) // pause screen
-				FlxG.switchState(new MainMenuState());
+				pauseMenu();
+				//FlxG.switchState(new MainMenuState());
 		}
 	}
 }
@@ -525,3 +526,19 @@ public function updateInventory(elapsed:Float) {
 			box.alpha = 0.5;
 	}
 }
+
+function pauseMenu()
+{
+	var substate:ModSubState = new ModSubState('murica/minigame/WhiteHousePauseSubstate', {
+		onOpen: function() {
+			isPaused = true;
+		},
+		onClose: function() {
+			isPaused = false;
+		}
+	});
+	substate.cameras = [camHUD];
+	openSubState(substate);
+}
+
+//onSubstateClose(event:StateEvent)
