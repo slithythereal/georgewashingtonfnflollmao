@@ -1,0 +1,8 @@
+<!DOCTYPE codename-engine-character>
+<character sprite="hawktuah" camx="705" color="#ae1438" camy="-325" icon="hawk" holdTime="6.1">
+	<anim name="idle" anim="redtailidle" x="0" y="0" fps="24" loop="false"/>
+	<anim name="singLEFT" anim="redtailleft" x="0" y="0" fps="24" loop="false"/>
+	<anim name="singDOWN" anim="redtaildown" x="0" y="0" fps="24" loop="false"/>
+	<anim name="singUP" anim="redtailup" x="0" y="0" fps="24" loop="false"/>
+	<anim name="singRIGHT" anim="redtailright" x="0" y="0" fps="24" loop="false"/>
+</character>

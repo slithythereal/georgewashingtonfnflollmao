@@ -1,0 +1,8 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TextureAtlas imagePath="georgepainting.png">
+	<!-- Created with Adobe Animate version 22.0.0.93 -->
+	<!-- http://www.adobe.com/products/animate.html -->
+	<SubTexture name="daAnim0000" x="0" y="0" width="206" height="288" frameX="0" frameY="-3" frameWidth="207" frameHeight="291"/>
+	<SubTexture name="daAnim0001" x="206" y="0" width="198" height="285" frameX="-9" frameY="-3" frameWidth="207" frameHeight="291"/>
+	<SubTexture name="daAnim0002" x="404" y="0" width="201" height="289" frameX="-5" frameY="0" frameWidth="207" frameHeight="291"/>
+</TextureAtlas>

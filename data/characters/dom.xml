@@ -1,0 +1,8 @@
+<!DOCTYPE codename-engine-character>
+<character sprite="DomPedro_Assets" camx="0" camy="-50" icon="dom" color="#33CC00" holdTime="6.1">
+	<anim name="idle" anim="DomPedro Idle Dance" x="0" y="0" fps="24" loop="false"/>
+	<anim name="singLEFT" anim="DomPedro SingNote Left" x="160" y="-162" fps="24" loop="false"/>
+	<anim name="singDOWN" anim="DomPedro SingNote Down" x="220" y="-205" fps="24" loop="false"/>
+	<anim name="singUP" anim="DomPedro SingNote Up" x="185" y="-96" fps="24" loop="false"/>
+	<anim name="singRIGHT" anim="DomPedro SingNote Right" x="-120" y="-127" fps="24" loop="false"/>
+</character>

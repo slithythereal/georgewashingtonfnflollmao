@@ -1,0 +1,59 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TextureAtlas imagePath="Grimace Assets.png">
+	<!-- Created with Adobe Animate version 23.0.2.103 -->
+	<!-- http://www.adobe.com/products/animate.html -->
+	<SubTexture name="Grimace Idle Dance0000" x="15" y="15" width="330" height="451" frameX="-3" frameY="-13" frameWidth="333" frameHeight="464"/>
+	<SubTexture name="Grimace Idle Dance0001" x="15" y="15" width="330" height="451" frameX="-3" frameY="-13" frameWidth="333" frameHeight="464"/>
+	<SubTexture name="Grimace Idle Dance0002" x="375" y="15" width="325" height="461" frameX="-4" frameY="-3" frameWidth="333" frameHeight="464"/>
+	<SubTexture name="Grimace Idle Dance0003" x="375" y="15" width="325" height="461" frameX="-4" frameY="-3" frameWidth="333" frameHeight="464"/>
+	<SubTexture name="Grimace Idle Dance0004" x="730" y="15" width="316" height="464" frameX="-1" frameY="0" frameWidth="333" frameHeight="464"/>
+	<SubTexture name="Grimace Idle Dance0005" x="730" y="15" width="316" height="464" frameX="-1" frameY="0" frameWidth="333" frameHeight="464"/>
+	<SubTexture name="Grimace Idle Dance0006" x="1076" y="15" width="314" height="464" frameX="0" frameY="0" frameWidth="333" frameHeight="464"/>
+	<SubTexture name="Grimace Idle Dance0007" x="1076" y="15" width="314" height="464" frameX="0" frameY="0" frameWidth="333" frameHeight="464"/>
+	<SubTexture name="Grimace Idle Dance0008" x="1076" y="15" width="314" height="464" frameX="0" frameY="0" frameWidth="333" frameHeight="464"/>
+	<SubTexture name="Grimace Idle Dance0009" x="1076" y="15" width="314" height="464" frameX="0" frameY="0" frameWidth="333" frameHeight="464"/>
+	<SubTexture name="Grimace Idle Dance0010" x="1076" y="15" width="314" height="464" frameX="0" frameY="0" frameWidth="333" frameHeight="464"/>
+	<SubTexture name="Grimace Idle Dance0011" x="1076" y="15" width="314" height="464" frameX="0" frameY="0" frameWidth="333" frameHeight="464"/>
+	<SubTexture name="Grimace Idle Dance0012" x="1076" y="15" width="314" height="464" frameX="0" frameY="0" frameWidth="333" frameHeight="464"/>
+	<SubTexture name="Grimace Idle Dance0013" x="1076" y="15" width="314" height="464" frameX="0" frameY="0" frameWidth="333" frameHeight="464"/>
+	<SubTexture name="Grimace SingNote Down0000" x="1420" y="15" width="297" height="300" frameX="-4" frameY="-8" frameWidth="307" frameHeight="308"/>
+	<SubTexture name="Grimace SingNote Down0001" x="1420" y="15" width="297" height="300" frameX="-4" frameY="-8" frameWidth="307" frameHeight="308"/>
+	<SubTexture name="Grimace SingNote Down0002" x="1747" y="15" width="306" height="308" frameX="-1" frameY="0" frameWidth="307" frameHeight="308"/>
+	<SubTexture name="Grimace SingNote Down0003" x="1747" y="15" width="306" height="308" frameX="-1" frameY="0" frameWidth="307" frameHeight="308"/>
+	<SubTexture name="Grimace SingNote Down0004" x="2083" y="15" width="307" height="308"/>
+	<SubTexture name="Grimace SingNote Down0005" x="2083" y="15" width="307" height="308"/>
+	<SubTexture name="Grimace SingNote Left0000" x="2420" y="15" width="357" height="476" frameX="0" frameY="0" frameWidth="357" frameHeight="477"/>
+	<SubTexture name="Grimace SingNote Left0001" x="2420" y="15" width="357" height="476" frameX="0" frameY="0" frameWidth="357" frameHeight="477"/>
+	<SubTexture name="Grimace SingNote Left0002" x="2807" y="15" width="290" height="465" frameX="-63" frameY="-12" frameWidth="357" frameHeight="477"/>
+	<SubTexture name="Grimace SingNote Left0003" x="2807" y="15" width="290" height="465" frameX="-63" frameY="-12" frameWidth="357" frameHeight="477"/>
+	<SubTexture name="Grimace SingNote Right0000" x="3127" y="15" width="806" height="489"/>
+	<SubTexture name="Grimace SingNote Right0001" x="3127" y="15" width="806" height="489"/>
+	<SubTexture name="Grimace SingNote Right0002" x="15" y="534" width="779" height="489" frameX="0" frameY="0" frameWidth="806" frameHeight="489"/>
+	<SubTexture name="Grimace SingNote Right0003" x="15" y="534" width="779" height="489" frameX="0" frameY="0" frameWidth="806" frameHeight="489"/>
+	<SubTexture name="Grimace SingNote Right0004" x="824" y="534" width="770" height="489" frameX="0" frameY="0" frameWidth="806" frameHeight="489"/>
+	<SubTexture name="Grimace SingNote Right0005" x="824" y="534" width="770" height="489" frameX="0" frameY="0" frameWidth="806" frameHeight="489"/>
+	<SubTexture name="Grimace SingNote Up0000" x="1624" y="534" width="342" height="537" frameX="-4" frameY="0" frameWidth="346" frameHeight="537"/>
+	<SubTexture name="Grimace SingNote Up0001" x="1624" y="534" width="342" height="537" frameX="-4" frameY="0" frameWidth="346" frameHeight="537"/>
+	<SubTexture name="Grimace SingNote Up0002" x="1996" y="534" width="343" height="528" frameX="0" frameY="-9" frameWidth="346" frameHeight="537"/>
+	<SubTexture name="Grimace SingNote Up0003" x="1996" y="534" width="343" height="528" frameX="0" frameY="-9" frameWidth="346" frameHeight="537"/>
+	<SubTexture name="Grimace SingNote Up0004" x="2369" y="534" width="341" height="528" frameX="0" frameY="-9" frameWidth="346" frameHeight="537"/>
+	<SubTexture name="Grimace SingNote Up0005" x="2369" y="534" width="341" height="528" frameX="0" frameY="-9" frameWidth="346" frameHeight="537"/>
+	<SubTexture name="Grimace Taunt 10000" x="2740" y="534" width="507" height="519" frameX="-94" frameY="-108" frameWidth="695" frameHeight="674"/>
+	<SubTexture name="Grimace Taunt 10001" x="2740" y="534" width="507" height="519" frameX="-94" frameY="-108" frameWidth="695" frameHeight="674"/>
+	<SubTexture name="Grimace Taunt 10002" x="3277" y="534" width="695" height="674"/>
+	<SubTexture name="Grimace Taunt 10003" x="3277" y="534" width="695" height="674"/>
+	<SubTexture name="Grimace Taunt 10004" x="15" y="1238" width="516" height="501" frameX="-79" frameY="-91" frameWidth="695" frameHeight="674"/>
+	<SubTexture name="Grimace Taunt 10005" x="15" y="1238" width="516" height="501" frameX="-79" frameY="-91" frameWidth="695" frameHeight="674"/>
+	<SubTexture name="Grimace Taunt 20000" x="561" y="1238" width="421" height="547" frameX="-126" frameY="-97" frameWidth="695" frameHeight="674"/>
+	<SubTexture name="Grimace Taunt 20001" x="561" y="1238" width="421" height="547" frameX="-126" frameY="-97" frameWidth="695" frameHeight="674"/>
+	<SubTexture name="Grimace Taunt 20002" x="1012" y="1238" width="695" height="674"/>
+	<SubTexture name="Grimace Taunt 20003" x="1012" y="1238" width="695" height="674"/>
+	<SubTexture name="Grimace Taunt 20004" x="1737" y="1238" width="515" height="521" frameX="-80" frameY="-93" frameWidth="695" frameHeight="674"/>
+	<SubTexture name="Grimace Taunt 20005" x="1737" y="1238" width="515" height="521" frameX="-80" frameY="-93" frameWidth="695" frameHeight="674"/>
+	<SubTexture name="Grimace Taunt 30000" x="2282" y="1238" width="533" height="396" frameX="-74" frameY="-145" frameWidth="695" frameHeight="674"/>
+	<SubTexture name="Grimace Taunt 30001" x="2282" y="1238" width="533" height="396" frameX="-74" frameY="-145" frameWidth="695" frameHeight="674"/>
+	<SubTexture name="Grimace Taunt 30002" x="2845" y="1238" width="695" height="674"/>
+	<SubTexture name="Grimace Taunt 30003" x="2845" y="1238" width="695" height="674"/>
+	<SubTexture name="Grimace Taunt 30004" x="15" y="1942" width="516" height="500" frameX="-79" frameY="-93" frameWidth="695" frameHeight="674"/>
+	<SubTexture name="Grimace Taunt 30005" x="15" y="1942" width="516" height="500" frameX="-79" frameY="-93" frameWidth="695" frameHeight="674"/>
+</TextureAtlas>

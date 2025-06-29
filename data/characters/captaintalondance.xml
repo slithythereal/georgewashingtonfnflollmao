@@ -1,0 +1,5 @@
+<!DOCTYPE codename-engine-character>
+<character y="350" sprite="eagnitedancing" camx="-100" icon="eagnite">
+	<anim name="Idle" anim="DANCING" x="0" y="0" fps="48" loop="true"/>
+	<anim name="default" anim="default dance" x="-30" y="60" fps="18" loop="false"/>
+</character>

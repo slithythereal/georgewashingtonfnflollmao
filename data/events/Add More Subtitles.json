@@ -1,0 +1,15 @@
+{
+    "params": [
+        {
+            "name": "Text",
+            "type": "String",
+            "defaultValue": ""
+
+        },
+        {
+            "name": "Text Color (try to make it the same as the icon color)",
+            "type": "String",
+            "defaultValue": "#ffffff"
+        }
+    ]
+}

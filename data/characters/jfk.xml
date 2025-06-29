@@ -1,0 +1,8 @@
+<!DOCTYPE codename-engine-character>
+<character sprite="Jfk_Assets" camx="-250" camy="-50" icon="jfk" color="#d35c23" holdTime="6.1">
+	<anim name="idle" anim="Jfk Idle Dance" x="0" y="0" fps="24" loop="false"/>
+	<anim name="singLEFT" anim="Jfk SingNote Left" x="235" y="78" fps="24" loop="false"/>
+	<anim name="singDOWN" anim="Jfk SingNote Down" x="170" y="-60" fps="24" loop="false"/>
+	<anim name="singUP" anim="Jfk SingNote Up" x="20" y="13" fps="24" loop="false"/>
+	<anim name="singRIGHT" anim="Jfk SingNote Right" x="-86" y="243" fps="24" loop="false"/>
+</character>

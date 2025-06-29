@@ -1,0 +1,8 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TextureAtlas imagePath="taftpainting.png">
+	<!-- Created with Adobe Animate version 22.0.0.93 -->
+	<!-- http://www.adobe.com/products/animate.html -->
+	<SubTexture name="daAnim0000" x="0" y="0" width="182" height="156" frameX="-1" frameY="0" frameWidth="183" frameHeight="156"/>
+	<SubTexture name="daAnim0001" x="182" y="0" width="183" height="154" frameX="0" frameY="-2" frameWidth="183" frameHeight="156"/>
+	<SubTexture name="daAnim0002" x="0" y="156" width="180" height="151" frameX="0" frameY="-2" frameWidth="183" frameHeight="156"/>
+</TextureAtlas>

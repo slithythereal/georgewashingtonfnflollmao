@@ -1,0 +1,7 @@
+<!DOCTYPE codename-engine-character>
+<character sprite="other/campers/camper2" icon="bushcamper1" holdTime="6.1">
+	<anim name="move" anim="bush move" x="28" y="49" fps="24" loop="false"/>
+	<anim name="aim" anim="aim" x="80" y="373" fps="24" loop="false"/>
+	<anim name="shoot" anim="shoot" x="4" y="193" fps="24" loop="false"/>
+	<anim name="die" anim="die" x="84" y="193" fps="24" loop="false"/>
+</character>

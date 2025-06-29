@@ -1,0 +1,6 @@
+<!DOCTYPE codename-engine-character>
+<character x="200" y="300" sprite="santadies" scale="1.5" icon="santa" isPlayer="true" flipX="true" gameOverChar="santa-dead" holdTime="6.1">
+	<anim name="firstDeath" anim="santadie" x="-38" y="55" fps="24" loop="false"/> 
+	<anim name="deathLoop" anim="santaloop" x="-67" y="-97" fps="24" loop="true"/>
+	<anim name="deathConfirm" anim="santaconfirm" x="-67" y="-6" fps="24" loop="false"/>
+</character>

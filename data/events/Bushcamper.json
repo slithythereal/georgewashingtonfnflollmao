@@ -1,0 +1,9 @@
+{
+    "params": [
+        {
+            "name": "Bushcamper Targets BF (about 9 beats until event starts)",
+            "type": "Bool",
+            "defaultValue": false
+        }
+    ]
+}

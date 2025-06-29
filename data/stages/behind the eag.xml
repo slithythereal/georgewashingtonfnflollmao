@@ -1,0 +1,8 @@
+<!DOCTYPE codename-engine-stage>
+<stage zoom="0.5" name="behing the eag" folder="stages/eag-2/" startCamPosY="600" startCamPosX="1000">
+	<sprite name="movie" scale="1.75" x="-1000" y="-200" sprite="stage"/>
+	<sprite name="eagisland" scale="1.75" x="-75" y="50" sprite="set"/>
+	<girlfriend x="0" y="-225"/>
+	<boyfriend x="900"/>
+	<dad x="-800" y="425" />
+</stage>

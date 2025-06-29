@@ -1,0 +1,37 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TextureAtlas imagePath="DomPedro Assets.png">
+	<!-- Created with Adobe Animate version 23.0.2.103 -->
+	<!-- http://www.adobe.com/products/animate.html -->
+	<SubTexture name="DomPedro Idle Dance0000" x="15" y="15" width="295" height="900" frameX="0" frameY="-9" frameWidth="295" frameHeight="909"/>
+	<SubTexture name="DomPedro Idle Dance0001" x="15" y="15" width="295" height="900" frameX="0" frameY="-9" frameWidth="295" frameHeight="909"/>
+	<SubTexture name="DomPedro Idle Dance0002" x="325" y="15" width="290" height="907" frameX="-3" frameY="-2" frameWidth="295" frameHeight="909"/>
+	<SubTexture name="DomPedro Idle Dance0003" x="325" y="15" width="290" height="907" frameX="-3" frameY="-2" frameWidth="295" frameHeight="909"/>
+	<SubTexture name="DomPedro Idle Dance0004" x="630" y="15" width="283" height="909" frameX="-6" frameY="0" frameWidth="295" frameHeight="909"/>
+	<SubTexture name="DomPedro Idle Dance0005" x="630" y="15" width="283" height="909" frameX="-6" frameY="0" frameWidth="295" frameHeight="909"/>
+	<SubTexture name="DomPedro Idle Dance0006" x="928" y="15" width="284" height="909" frameX="-6" frameY="0" frameWidth="295" frameHeight="909"/>
+	<SubTexture name="DomPedro Idle Dance0007" x="928" y="15" width="284" height="909" frameX="-6" frameY="0" frameWidth="295" frameHeight="909"/>
+	<SubTexture name="DomPedro SingNote Down0000" x="1227" y="15" width="834" height="678" frameX="0" frameY="-27" frameWidth="834" frameHeight="705"/>
+	<SubTexture name="DomPedro SingNote Down0001" x="1227" y="15" width="834" height="678" frameX="0" frameY="-27" frameWidth="834" frameHeight="705"/>
+	<SubTexture name="DomPedro SingNote Down0002" x="2076" y="15" width="808" height="697" frameX="-13" frameY="-8" frameWidth="834" frameHeight="705"/>
+	<SubTexture name="DomPedro SingNote Down0003" x="2076" y="15" width="808" height="697" frameX="-13" frameY="-8" frameWidth="834" frameHeight="705"/>
+	<SubTexture name="DomPedro SingNote Down0004" x="2899" y="15" width="798" height="705" frameX="-18" frameY="0" frameWidth="834" frameHeight="705"/>
+	<SubTexture name="DomPedro SingNote Down0005" x="2899" y="15" width="798" height="705" frameX="-18" frameY="0" frameWidth="834" frameHeight="705"/>
+	<SubTexture name="DomPedro SingNote Left0000" x="15" y="939" width="553" height="747" frameX="0" frameY="-2" frameWidth="554" frameHeight="749"/>
+	<SubTexture name="DomPedro SingNote Left0001" x="15" y="939" width="553" height="747" frameX="0" frameY="-2" frameWidth="554" frameHeight="749"/>
+	<SubTexture name="DomPedro SingNote Left0002" x="583" y="939" width="553" height="748" frameX="-1" frameY="-1" frameWidth="554" frameHeight="749"/>
+	<SubTexture name="DomPedro SingNote Left0003" x="583" y="939" width="553" height="748" frameX="-1" frameY="-1" frameWidth="554" frameHeight="749"/>
+	<SubTexture name="DomPedro SingNote Left0004" x="1151" y="939" width="549" height="749" frameX="-5" frameY="0" frameWidth="554" frameHeight="749"/>
+	<SubTexture name="DomPedro SingNote Left0005" x="1151" y="939" width="549" height="749" frameX="-5" frameY="0" frameWidth="554" frameHeight="749"/>
+	<SubTexture name="DomPedro SingNote Right0000" x="1715" y="939" width="499" height="781" frameX="-6" frameY="0" frameWidth="505" frameHeight="781"/>
+	<SubTexture name="DomPedro SingNote Right0001" x="1715" y="939" width="499" height="781" frameX="-6" frameY="0" frameWidth="505" frameHeight="781"/>
+	<SubTexture name="DomPedro SingNote Right0002" x="2229" y="939" width="499" height="780" frameX="-5" frameY="-1" frameWidth="505" frameHeight="781"/>
+	<SubTexture name="DomPedro SingNote Right0003" x="2229" y="939" width="499" height="780" frameX="-5" frameY="-1" frameWidth="505" frameHeight="781"/>
+	<SubTexture name="DomPedro SingNote Right0004" x="2743" y="939" width="498" height="779" frameX="0" frameY="-2" frameWidth="505" frameHeight="781"/>
+	<SubTexture name="DomPedro SingNote Right0005" x="2743" y="939" width="498" height="779" frameX="0" frameY="-2" frameWidth="505" frameHeight="781"/>
+	<SubTexture name="DomPedro SingNote Up0000" x="3256" y="939" width="694" height="813" frameX="-11" frameY="0" frameWidth="716" frameHeight="813"/>
+	<SubTexture name="DomPedro SingNote Up0001" x="3256" y="939" width="694" height="813" frameX="-11" frameY="0" frameWidth="716" frameHeight="813"/>
+	<SubTexture name="DomPedro SingNote Up0002" x="15" y="1767" width="706" height="784" frameX="-5" frameY="-29" frameWidth="716" frameHeight="813"/>
+	<SubTexture name="DomPedro SingNote Up0003" x="15" y="1767" width="706" height="784" frameX="-5" frameY="-29" frameWidth="716" frameHeight="813"/>
+	<SubTexture name="DomPedro SingNote Up0004" x="736" y="1767" width="716" height="773" frameX="0" frameY="-40" frameWidth="716" frameHeight="813"/>
+	<SubTexture name="DomPedro SingNote Up0005" x="736" y="1767" width="716" height="773" frameX="0" frameY="-40" frameWidth="716" frameHeight="813"/>
+</TextureAtlas>

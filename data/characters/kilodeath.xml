@@ -1,0 +1,6 @@
+<!DOCTYPE codename-engine-character>
+<character x="200" y="300" sprite="kilometerdeath" scale="1.5" camy="-300" icon="bf" isPlayer="true" flipX="true" gameOverChar="kilodeath" holdTime="6.1">
+	<anim name="firstDeath" anim="kilodeath" x="939" y="782" fps="24" loop="false"/>
+	<anim name="deathLoop" anim="kiloloop" x="-68" y="-96" fps="24" loop="true"/>
+	<anim name="deathConfirm" anim="kiloconfirm" x="4" y="0" fps="24" loop="false"/>
+</character>

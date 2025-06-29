@@ -1,0 +1,8 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TextureAtlas imagePath="mckinleypainting.png">
+	<!-- Created with Adobe Animate version 22.0.0.93 -->
+	<!-- http://www.adobe.com/products/animate.html -->
+	<SubTexture name="daAnim0000" x="0" y="0" width="100" height="154" frameX="-2" frameY="0" frameWidth="102" frameHeight="154"/>
+	<SubTexture name="daAnim0001" x="100" y="0" width="102" height="152" frameX="0" frameY="-2" frameWidth="102" frameHeight="154"/>
+	<SubTexture name="daAnim0002" x="202" y="0" width="99" height="154" frameX="-2" frameY="0" frameWidth="102" frameHeight="154"/>
+</TextureAtlas>

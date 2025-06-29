@@ -1,0 +1,57 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TextureAtlas imagePath="joebiden.png">
+	<!-- Created with Adobe Animate version 22.0.0.93 -->
+	<!-- http://www.adobe.com/products/animate.html -->
+	<SubTexture name="joe down0000" x="0" y="3070" width="639" height="490" frameX="0" frameY="-89" frameWidth="639" frameHeight="579"/>
+	<SubTexture name="joe down0001" x="0" y="3070" width="639" height="490" frameX="0" frameY="-89" frameWidth="639" frameHeight="579"/>
+	<SubTexture name="joe down0002" x="1354" y="3047" width="617" height="520" frameX="-9" frameY="-59" frameWidth="639" frameHeight="579"/>
+	<SubTexture name="joe down0003" x="1354" y="3047" width="617" height="520" frameX="-9" frameY="-59" frameWidth="639" frameHeight="579"/>
+	<SubTexture name="joe down0004" x="717" y="3047" width="614" height="579" frameX="-9" frameY="0" frameWidth="639" frameHeight="579"/>
+	<SubTexture name="joe down0005" x="717" y="3047" width="614" height="579" frameX="-9" frameY="0" frameWidth="639" frameHeight="579"/>
+	<SubTexture name="joe idle-normal0000" x="1326" y="2381" width="675" height="643" frameX="0" frameY="-73" frameWidth="675" frameHeight="716"/>
+	<SubTexture name="joe idle-normal0001" x="1326" y="2381" width="675" height="643" frameX="0" frameY="-73" frameWidth="675" frameHeight="716"/>
+	<SubTexture name="joe idle-normal0002" x="3055" y="2251" width="675" height="674" frameX="0" frameY="-42" frameWidth="675" frameHeight="716"/>
+	<SubTexture name="joe idle-normal0003" x="3055" y="2251" width="675" height="674" frameX="0" frameY="-42" frameWidth="675" frameHeight="716"/>
+	<SubTexture name="joe idle-normal0004" x="2373" y="2192" width="659" height="694" frameX="-8" frameY="-22" frameWidth="675" frameHeight="716"/>
+	<SubTexture name="joe idle-normal0005" x="2373" y="2192" width="659" height="694" frameX="-8" frameY="-22" frameWidth="675" frameHeight="716"/>
+	<SubTexture name="joe idle-normal0006" x="0" y="1716" width="640" height="716" frameX="-17" frameY="0" frameWidth="675" frameHeight="716"/>
+	<SubTexture name="joe idle-normal0007" x="0" y="1716" width="640" height="716" frameX="-17" frameY="0" frameWidth="675" frameHeight="716"/>
+	<SubTexture name="joe idle-normal0008" x="663" y="1729" width="640" height="715" frameX="-17" frameY="-1" frameWidth="675" frameHeight="716"/>
+	<SubTexture name="joe idle-normal0009" x="663" y="1729" width="640" height="715" frameX="-17" frameY="-1" frameWidth="675" frameHeight="716"/>
+	<SubTexture name="joe idle-normal0010" x="663" y="1729" width="640" height="715" frameX="-17" frameY="-1" frameWidth="675" frameHeight="716"/>
+	<SubTexture name="joe idle-normal0011" x="663" y="1729" width="640" height="715" frameX="-17" frameY="-1" frameWidth="675" frameHeight="716"/>
+	<SubTexture name="joe idle-normal0012" x="663" y="1729" width="640" height="715" frameX="-17" frameY="-1" frameWidth="675" frameHeight="716"/>
+	<SubTexture name="joe idle-normal0013" x="663" y="1729" width="640" height="715" frameX="-17" frameY="-1" frameWidth="675" frameHeight="716"/>
+	<SubTexture name="joe idle-icecream0000" x="2424" y="1512" width="810" height="657" frameX="0" frameY="-59" frameWidth="810" frameHeight="716"/>
+	<SubTexture name="joe idle-icecream0001" x="2424" y="1512" width="810" height="657" frameX="0" frameY="-59" frameWidth="810" frameHeight="716"/>
+	<SubTexture name="joe idle-icecream0002" x="3029" y="815" width="807" height="674" frameX="-3" frameY="-42" frameWidth="810" frameHeight="716"/>
+	<SubTexture name="joe idle-icecream0003" x="3029" y="815" width="807" height="674" frameX="-3" frameY="-42" frameWidth="810" frameHeight="716"/>
+	<SubTexture name="joe idle-icecream0004" x="1630" y="926" width="771" height="694" frameX="-31" frameY="-22" frameWidth="810" frameHeight="716"/>
+	<SubTexture name="joe idle-icecream0005" x="1630" y="926" width="771" height="694" frameX="-31" frameY="-22" frameWidth="810" frameHeight="716"/>
+	<SubTexture name="joe idle-icecream0006" x="3257" y="1512" width="733" height="716" frameX="-59" frameY="0" frameWidth="810" frameHeight="716"/>
+	<SubTexture name="joe idle-icecream0007" x="3257" y="1512" width="733" height="716" frameX="-59" frameY="0" frameWidth="810" frameHeight="716"/>
+	<SubTexture name="joe idle-icecream0008" x="1630" y="1643" width="720" height="715" frameX="-72" frameY="-1" frameWidth="810" frameHeight="716"/>
+	<SubTexture name="joe idle-icecream0009" x="1630" y="1643" width="720" height="715" frameX="-72" frameY="-1" frameWidth="810" frameHeight="716"/>
+	<SubTexture name="joe idle-icecream0010" x="1630" y="1643" width="720" height="715" frameX="-72" frameY="-1" frameWidth="810" frameHeight="716"/>
+	<SubTexture name="joe idle-icecream0011" x="1630" y="1643" width="720" height="715" frameX="-72" frameY="-1" frameWidth="810" frameHeight="716"/>
+	<SubTexture name="joe idle-icecream0012" x="1630" y="1643" width="720" height="715" frameX="-72" frameY="-1" frameWidth="810" frameHeight="716"/>
+	<SubTexture name="joe idle-icecream0013" x="1630" y="1643" width="720" height="715" frameX="-72" frameY="-1" frameWidth="810" frameHeight="716"/>
+	<SubTexture name="joe right0000" x="830" y="815" width="777" height="891" frameX="-62" frameY="-12" frameWidth="843" frameHeight="903"/>
+	<SubTexture name="joe right0001" x="830" y="815" width="777" height="891" frameX="-62" frameY="-12" frameWidth="843" frameHeight="903"/>
+	<SubTexture name="joe right0002" x="0" y="815" width="807" height="878" frameX="-36" frameY="-25" frameWidth="843" frameHeight="903"/>
+	<SubTexture name="joe right0003" x="0" y="815" width="807" height="878" frameX="-36" frameY="-25" frameWidth="843" frameHeight="903"/>
+	<SubTexture name="joe right0004" x="2175" y="0" width="831" height="903" frameX="0" frameY="0" frameWidth="843" frameHeight="903"/>
+	<SubTexture name="joe right0005" x="2175" y="0" width="831" height="903" frameX="0" frameY="0" frameWidth="843" frameHeight="903"/>
+	<SubTexture name="joe up0000" x="2777" y="2948" width="666" height="598" frameX="-32" frameY="0" frameWidth="730" frameHeight="598"/>
+	<SubTexture name="joe up0001" x="2777" y="2948" width="666" height="598" frameX="-32" frameY="0" frameWidth="730" frameHeight="598"/>
+	<SubTexture name="joe up0002" x="0" y="2467" width="694" height="580" frameX="-18" frameY="-18" frameWidth="730" frameHeight="598"/>
+	<SubTexture name="joe up0003" x="0" y="2467" width="694" height="580" frameX="-18" frameY="-18" frameWidth="730" frameHeight="598"/>
+	<SubTexture name="joe up0004" x="2024" y="2909" width="730" height="547" frameX="0" frameY="-51" frameWidth="730" frameHeight="598"/>
+	<SubTexture name="joe up0005" x="2024" y="2909" width="730" height="547" frameX="0" frameY="-51" frameWidth="730" frameHeight="598"/>
+	<SubTexture name="joenorm0000" x="0" y="0" width="1114" height="792"/>
+	<SubTexture name="joenorm0001" x="0" y="0" width="1114" height="792"/>
+	<SubTexture name="joenorm0002" x="1137" y="0" width="1015" height="792" frameX="-99" frameY="0" frameWidth="1114" frameHeight="792"/>
+	<SubTexture name="joenorm0003" x="1137" y="0" width="1015" height="792" frameX="-99" frameY="0" frameWidth="1114" frameHeight="792"/>
+	<SubTexture name="joenorm0004" x="3029" y="0" width="944" height="792" frameX="-170" frameY="0" frameWidth="1114" frameHeight="792"/>
+	<SubTexture name="joenorm0005" x="3029" y="0" width="944" height="792" frameX="-170" frameY="0" frameWidth="1114" frameHeight="792"/>
+</TextureAtlas>

@@ -1,0 +1,184 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TextureAtlas imagePath="eagnitedancing.png">
+	<!-- Created with Adobe Animate version 22.0.0.93 -->
+	<!-- http://www.adobe.com/products/animate.html -->
+	<SubTexture name="DANCING0000" x="0" y="0" width="521" height="625"/>
+	<SubTexture name="DANCING0001" x="0" y="0" width="521" height="625"/>
+	<SubTexture name="DANCING0002" x="521" y="0" width="521" height="625"/>
+	<SubTexture name="DANCING0003" x="521" y="0" width="521" height="625"/>
+	<SubTexture name="DANCING0004" x="1042" y="0" width="521" height="625"/>
+	<SubTexture name="DANCING0005" x="1042" y="0" width="521" height="625"/>
+	<SubTexture name="DANCING0006" x="1563" y="0" width="521" height="625"/>
+	<SubTexture name="DANCING0007" x="1563" y="0" width="521" height="625"/>
+	<SubTexture name="DANCING0008" x="2084" y="0" width="521" height="625"/>
+	<SubTexture name="DANCING0009" x="2084" y="0" width="521" height="625"/>
+	<SubTexture name="DANCING0010" x="2605" y="0" width="521" height="625"/>
+	<SubTexture name="DANCING0011" x="2605" y="0" width="521" height="625"/>
+	<SubTexture name="DANCING0012" x="3126" y="0" width="521" height="625"/>
+	<SubTexture name="DANCING0013" x="3126" y="0" width="521" height="625"/>
+	<SubTexture name="DANCING0014" x="3647" y="0" width="521" height="625"/>
+	<SubTexture name="DANCING0015" x="3647" y="0" width="521" height="625"/>
+	<SubTexture name="DANCING0016" x="4168" y="0" width="521" height="625"/>
+	<SubTexture name="DANCING0017" x="4168" y="0" width="521" height="625"/>
+	<SubTexture name="DANCING0018" x="4689" y="0" width="521" height="625"/>
+	<SubTexture name="DANCING0019" x="4689" y="0" width="521" height="625"/>
+	<SubTexture name="DANCING0020" x="5210" y="0" width="521" height="625"/>
+	<SubTexture name="DANCING0021" x="5210" y="0" width="521" height="625"/>
+	<SubTexture name="DANCING0022" x="5731" y="0" width="521" height="625"/>
+	<SubTexture name="DANCING0023" x="5731" y="0" width="521" height="625"/>
+	<SubTexture name="DANCING0024" x="6252" y="0" width="521" height="625"/>
+	<SubTexture name="DANCING0025" x="6252" y="0" width="521" height="625"/>
+	<SubTexture name="DANCING0026" x="6773" y="0" width="521" height="625"/>
+	<SubTexture name="DANCING0027" x="6773" y="0" width="521" height="625"/>
+	<SubTexture name="DANCING0028" x="7294" y="0" width="521" height="625"/>
+	<SubTexture name="DANCING0029" x="7294" y="0" width="521" height="625"/>
+	<SubTexture name="DANCING0030" x="0" y="625" width="521" height="625"/>
+	<SubTexture name="DANCING0031" x="0" y="625" width="521" height="625"/>
+	<SubTexture name="DANCING0032" x="521" y="625" width="521" height="625"/>
+	<SubTexture name="DANCING0033" x="521" y="625" width="521" height="625"/>
+	<SubTexture name="DANCING0034" x="1042" y="625" width="521" height="625"/>
+	<SubTexture name="DANCING0035" x="1042" y="625" width="521" height="625"/>
+	<SubTexture name="DANCING0036" x="1563" y="625" width="521" height="625"/>
+	<SubTexture name="DANCING0037" x="1563" y="625" width="521" height="625"/>
+	<SubTexture name="DANCING0038" x="2084" y="625" width="521" height="625"/>
+	<SubTexture name="DANCING0039" x="2084" y="625" width="521" height="625"/>
+	<SubTexture name="DANCING0040" x="2605" y="625" width="521" height="625"/>
+	<SubTexture name="DANCING0041" x="2605" y="625" width="521" height="625"/>
+	<SubTexture name="DANCING0042" x="3126" y="625" width="521" height="625"/>
+	<SubTexture name="DANCING0043" x="3126" y="625" width="521" height="625"/>
+	<SubTexture name="DANCING0044" x="3647" y="625" width="521" height="625"/>
+	<SubTexture name="DANCING0045" x="3647" y="625" width="521" height="625"/>
+	<SubTexture name="DANCING0046" x="4168" y="625" width="521" height="625"/>
+	<SubTexture name="DANCING0047" x="4168" y="625" width="521" height="625"/>
+	<SubTexture name="default dance0000" x="4689" y="625" width="467" height="683"/>
+	<SubTexture name="default dance0001" x="4689" y="625" width="467" height="683"/>
+	<SubTexture name="default dance0002" x="5156" y="625" width="467" height="683"/>
+	<SubTexture name="default dance0003" x="5156" y="625" width="467" height="683"/>
+	<SubTexture name="default dance0004" x="5623" y="625" width="467" height="683"/>
+	<SubTexture name="default dance0005" x="6090" y="625" width="467" height="683"/>
+	<SubTexture name="default dance0006" x="6557" y="625" width="467" height="683"/>
+	<SubTexture name="default dance0007" x="7024" y="625" width="467" height="683"/>
+	<SubTexture name="default dance0008" x="7491" y="625" width="467" height="683"/>
+	<SubTexture name="default dance0009" x="0" y="1308" width="467" height="683"/>
+	<SubTexture name="default dance0010" x="467" y="1308" width="467" height="683"/>
+	<SubTexture name="default dance0011" x="934" y="1308" width="467" height="683"/>
+	<SubTexture name="default dance0012" x="1401" y="1308" width="467" height="683"/>
+	<SubTexture name="default dance0013" x="1401" y="1308" width="467" height="683"/>
+	<SubTexture name="default dance0014" x="1868" y="1308" width="467" height="683"/>
+	<SubTexture name="default dance0015" x="2335" y="1308" width="467" height="683"/>
+	<SubTexture name="default dance0016" x="2802" y="1308" width="467" height="683"/>
+	<SubTexture name="default dance0017" x="3269" y="1308" width="467" height="683"/>
+	<SubTexture name="default dance0018" x="3736" y="1308" width="467" height="683"/>
+	<SubTexture name="default dance0019" x="4203" y="1308" width="467" height="683"/>
+	<SubTexture name="default dance0020" x="4670" y="1308" width="467" height="683"/>
+	<SubTexture name="default dance0021" x="5137" y="1308" width="467" height="683"/>
+	<SubTexture name="default dance0022" x="5604" y="1308" width="467" height="683"/>
+	<SubTexture name="default dance0023" x="6071" y="1308" width="467" height="683"/>
+	<SubTexture name="default dance0024" x="6538" y="1308" width="467" height="683"/>
+	<SubTexture name="default dance0025" x="7005" y="1308" width="467" height="683"/>
+	<SubTexture name="default dance0026" x="7472" y="1308" width="467" height="683"/>
+	<SubTexture name="default dance0027" x="0" y="1991" width="467" height="683"/>
+	<SubTexture name="default dance0028" x="467" y="1991" width="467" height="683"/>
+	<SubTexture name="default dance0029" x="934" y="1991" width="467" height="683"/>
+	<SubTexture name="default dance0030" x="1401" y="1991" width="467" height="683"/>
+	<SubTexture name="default dance0031" x="1868" y="1991" width="467" height="683"/>
+	<SubTexture name="default dance0032" x="2335" y="1991" width="467" height="683"/>
+	<SubTexture name="default dance0033" x="2802" y="1991" width="467" height="683"/>
+	<SubTexture name="default dance0034" x="3269" y="1991" width="467" height="683"/>
+	<SubTexture name="default dance0035" x="3736" y="1991" width="467" height="683"/>
+	<SubTexture name="default dance0036" x="4203" y="1991" width="467" height="683"/>
+	<SubTexture name="default dance0037" x="4670" y="1991" width="467" height="683"/>
+	<SubTexture name="default dance0038" x="5137" y="1991" width="467" height="683"/>
+	<SubTexture name="default dance0039" x="5604" y="1991" width="467" height="683"/>
+	<SubTexture name="default dance0040" x="6071" y="1991" width="467" height="683"/>
+	<SubTexture name="default dance0041" x="6538" y="1991" width="467" height="683"/>
+	<SubTexture name="default dance0042" x="7005" y="1991" width="467" height="683"/>
+	<SubTexture name="default dance0043" x="7472" y="1991" width="467" height="683"/>
+	<SubTexture name="default dance0044" x="0" y="2674" width="467" height="683"/>
+	<SubTexture name="default dance0045" x="467" y="2674" width="467" height="683"/>
+	<SubTexture name="default dance0046" x="934" y="2674" width="467" height="683"/>
+	<SubTexture name="default dance0047" x="1401" y="2674" width="467" height="683"/>
+	<SubTexture name="default dance0048" x="1868" y="2674" width="467" height="683"/>
+	<SubTexture name="default dance0049" x="2335" y="2674" width="467" height="683"/>
+	<SubTexture name="default dance0050" x="2802" y="2674" width="467" height="683"/>
+	<SubTexture name="default dance0051" x="3269" y="2674" width="467" height="683"/>
+	<SubTexture name="default dance0052" x="3736" y="2674" width="467" height="683"/>
+	<SubTexture name="default dance0053" x="4203" y="2674" width="467" height="683"/>
+	<SubTexture name="default dance0054" x="4670" y="2674" width="467" height="683"/>
+	<SubTexture name="default dance0055" x="5137" y="2674" width="467" height="683"/>
+	<SubTexture name="default dance0056" x="5137" y="2674" width="467" height="683"/>
+	<SubTexture name="default dance0057" x="5604" y="2674" width="467" height="683"/>
+	<SubTexture name="default dance0058" x="6071" y="2674" width="467" height="683"/>
+	<SubTexture name="default dance0059" x="6538" y="2674" width="467" height="683"/>
+	<SubTexture name="default dance0060" x="7005" y="2674" width="467" height="683"/>
+	<SubTexture name="default dance0061" x="7472" y="2674" width="467" height="683"/>
+	<SubTexture name="default dance0062" x="0" y="3357" width="467" height="683"/>
+	<SubTexture name="default dance0063" x="467" y="3357" width="467" height="683"/>
+	<SubTexture name="default dance0064" x="934" y="3357" width="467" height="683"/>
+	<SubTexture name="default dance0065" x="1401" y="3357" width="467" height="683"/>
+	<SubTexture name="default dance0066" x="1868" y="3357" width="467" height="683"/>
+	<SubTexture name="default dance0067" x="2335" y="3357" width="467" height="683"/>
+	<SubTexture name="default dance0068" x="2802" y="3357" width="467" height="683"/>
+	<SubTexture name="default dance0069" x="3269" y="3357" width="467" height="683"/>
+	<SubTexture name="default dance0070" x="3736" y="3357" width="467" height="683"/>
+	<SubTexture name="default dance0071" x="4203" y="3357" width="467" height="683"/>
+	<SubTexture name="default dance0072" x="4670" y="3357" width="467" height="683"/>
+	<SubTexture name="default dance0073" x="5137" y="3357" width="467" height="683"/>
+	<SubTexture name="default dance0074" x="5137" y="3357" width="467" height="683"/>
+	<SubTexture name="default dance0075" x="5604" y="3357" width="467" height="683"/>
+	<SubTexture name="default dance0076" x="6071" y="3357" width="467" height="683"/>
+	<SubTexture name="default dance0077" x="6538" y="3357" width="467" height="683"/>
+	<SubTexture name="default dance0078" x="7005" y="3357" width="467" height="683"/>
+	<SubTexture name="default dance0079" x="7472" y="3357" width="467" height="683"/>
+	<SubTexture name="default dance0080" x="0" y="4040" width="467" height="683"/>
+	<SubTexture name="default dance0081" x="467" y="4040" width="467" height="683"/>
+	<SubTexture name="default dance0082" x="934" y="4040" width="467" height="683"/>
+	<SubTexture name="default dance0083" x="1401" y="4040" width="467" height="683"/>
+	<SubTexture name="default dance0084" x="1868" y="4040" width="467" height="683"/>
+	<SubTexture name="default dance0085" x="2335" y="4040" width="467" height="683"/>
+	<SubTexture name="default dance0086" x="2802" y="4040" width="467" height="683"/>
+	<SubTexture name="default dance0087" x="3269" y="4040" width="467" height="683"/>
+	<SubTexture name="default dance0088" x="3736" y="4040" width="467" height="683"/>
+	<SubTexture name="default dance0089" x="4203" y="4040" width="467" height="683"/>
+	<SubTexture name="default dance0090" x="4670" y="4040" width="467" height="683"/>
+	<SubTexture name="default dance0091" x="5137" y="4040" width="467" height="683"/>
+	<SubTexture name="default dance0092" x="5604" y="4040" width="467" height="683"/>
+	<SubTexture name="default dance0093" x="6071" y="4040" width="467" height="683"/>
+	<SubTexture name="default dance0094" x="6538" y="4040" width="467" height="683"/>
+	<SubTexture name="default dance0095" x="7005" y="4040" width="467" height="683"/>
+	<SubTexture name="default dance0096" x="7472" y="4040" width="467" height="683"/>
+	<SubTexture name="default dance0097" x="0" y="4723" width="467" height="683"/>
+	<SubTexture name="default dance0098" x="467" y="4723" width="467" height="683"/>
+	<SubTexture name="default dance0099" x="934" y="4723" width="467" height="683"/>
+	<SubTexture name="default dance0100" x="1401" y="4723" width="467" height="683"/>
+	<SubTexture name="default dance0101" x="1868" y="4723" width="467" height="683"/>
+	<SubTexture name="default dance0102" x="2335" y="4723" width="467" height="683"/>
+	<SubTexture name="default dance0103" x="2802" y="4723" width="467" height="683"/>
+	<SubTexture name="default dance0104" x="3269" y="4723" width="467" height="683"/>
+	<SubTexture name="default dance0105" x="3736" y="4723" width="467" height="683"/>
+	<SubTexture name="default dance0106" x="4203" y="4723" width="467" height="683"/>
+	<SubTexture name="default dance0107" x="4670" y="4723" width="467" height="683"/>
+	<SubTexture name="default dance0108" x="5137" y="4723" width="467" height="683"/>
+	<SubTexture name="default dance0109" x="5604" y="4723" width="467" height="683"/>
+	<SubTexture name="default dance0110" x="5604" y="4723" width="467" height="683"/>
+	<SubTexture name="default dance0111" x="6071" y="4723" width="467" height="683"/>
+	<SubTexture name="default dance0112" x="6538" y="4723" width="467" height="683"/>
+	<SubTexture name="default dance0113" x="7005" y="4723" width="467" height="683"/>
+	<SubTexture name="default dance0114" x="7472" y="4723" width="467" height="683"/>
+	<SubTexture name="default dance0115" x="0" y="5406" width="467" height="683"/>
+	<SubTexture name="default dance0116" x="467" y="5406" width="467" height="683"/>
+	<SubTexture name="default dance0117" x="934" y="5406" width="467" height="683"/>
+	<SubTexture name="default dance0118" x="1401" y="5406" width="467" height="683"/>
+	<SubTexture name="default dance0119" x="1868" y="5406" width="467" height="683"/>
+	<SubTexture name="default dance0120" x="2335" y="5406" width="467" height="683"/>
+	<SubTexture name="default dance0121" x="2802" y="5406" width="467" height="683"/>
+	<SubTexture name="default dance0122" x="3269" y="5406" width="467" height="683"/>
+	<SubTexture name="default dance0123" x="3736" y="5406" width="467" height="683"/>
+	<SubTexture name="default dance0124" x="4203" y="5406" width="467" height="683"/>
+	<SubTexture name="default dance0125" x="4203" y="5406" width="467" height="683"/>
+	<SubTexture name="default dance0126" x="4670" y="5406" width="467" height="683"/>
+	<SubTexture name="default dance0127" x="5137" y="5406" width="467" height="683"/>
+	<SubTexture name="default dance0128" x="5604" y="5406" width="467" height="683"/>
+	<SubTexture name="default dance0129" x="6071" y="5406" width="467" height="683"/>
+	<SubTexture name="default dance0130" x="6538" y="5406" width="467" height="683"/>
+</TextureAtlas>

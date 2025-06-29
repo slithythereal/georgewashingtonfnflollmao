@@ -1,0 +1,9 @@
+<!DOCTYPE codename-engine-stage>
+<stage zoom="0.65" name="berlin" folder="stages/berlin/" startCamPosX="1000" startCamPosY="600">
+    <sprite name="sky" sprite="sky" scrollx="0.5" scrolly="0.45"/>
+    <sprite name="wall" sprite="wallpart" x="-400" y="-400" scale="1" scrollx="0.35" scrolly="0.25"/>
+    <sprite name="motorcade" sprite="motorcade" x="225" y="300" scale="0.75"/>
+    <sprite name="skateboard" sprite="skateboard" x="-275" y="775" scale="1.25"/>
+	<dad x="500" y="150" scale="0.6"/>
+    <boyfriend x="-300" y="175" scale="0.6"/>
+</stage>

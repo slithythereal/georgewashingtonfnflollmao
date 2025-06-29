@@ -1,0 +1,13 @@
+<!DOCTYPE codename-engine-character>
+<character sprite="santaclaus" flipX="true" camx="-200" camy="-500" gameOverChar="santa-dead" isPlayer="true" icon="santa" lossSfx="gameover/santaheartattack" color="#ffffff" holdTime="6.1">
+	<anim name="idle" anim="santaidle" x="0" y="0" fps="24" loop="false"/>
+	<anim name="singLEFT" anim="santaleft" x="82" y="30" fps="24" loop="false"/>
+	<anim name="singDOWN" anim="santadown" x="-98" y="78" fps="24" loop="false"/>
+	<anim name="singUP" anim="santaup" x="-15" y="35" fps="24" loop="false"/>
+	<anim name="singRIGHT" anim="santaright" x="-2" y="90" fps="24" loop="false"/>
+	<anim name="singLEFTmiss" anim="misssantaleft" x="82" y="30" fps="24" loop="false"/>
+	<anim name="singDOWNmiss" anim="misssantadown" x="-23" y="32" fps="24" loop="false"/>
+	<anim name="singUPmiss" anim="misssantaup" x="-25" y="36" fps="24" loop="false"/>
+	<anim name="singRIGHTmiss" anim="misssantaright" x="-3" y="90" fps="24" loop="false"/>
+	<anim name="fall" anim="fall" x="210" y="1110" fps="24" loop="false"/>
+</character>

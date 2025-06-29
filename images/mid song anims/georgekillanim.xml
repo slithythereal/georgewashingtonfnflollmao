@@ -1,0 +1,39 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TextureAtlas imagePath="georgekillanim.png">
+	<!-- Created with Adobe Animate version 22.0.0.93 -->
+	<!-- http://www.adobe.com/products/animate.html -->
+	<SubTexture name="george kills trump0000" x="1552" y="0" width="443" height="681" frameX="-4" frameY="-68" frameWidth="546" frameHeight="749"/>
+	<SubTexture name="george kills trump0001" x="1552" y="0" width="443" height="681" frameX="-4" frameY="-68" frameWidth="546" frameHeight="749"/>
+	<SubTexture name="george kills trump0002" x="1451" y="681" width="443" height="677" frameX="0" frameY="-72" frameWidth="546" frameHeight="749"/>
+	<SubTexture name="george kills trump0003" x="1451" y="681" width="443" height="677" frameX="0" frameY="-72" frameWidth="546" frameHeight="749"/>
+	<SubTexture name="george kills trump0004" x="1008" y="681" width="443" height="681" frameX="-8" frameY="-68" frameWidth="546" frameHeight="749"/>
+	<SubTexture name="george kills trump0005" x="1008" y="681" width="443" height="681" frameX="-8" frameY="-68" frameWidth="546" frameHeight="749"/>
+	<SubTexture name="george kills trump0006" x="1552" y="0" width="443" height="681" frameX="-4" frameY="-68" frameWidth="546" frameHeight="749"/>
+	<SubTexture name="george kills trump0007" x="1552" y="0" width="443" height="681" frameX="-4" frameY="-68" frameWidth="546" frameHeight="749"/>
+	<SubTexture name="george kills trump0008" x="1451" y="681" width="443" height="677" frameX="0" frameY="-72" frameWidth="546" frameHeight="749"/>
+	<SubTexture name="george kills trump0009" x="1451" y="681" width="443" height="677" frameX="0" frameY="-72" frameWidth="546" frameHeight="749"/>
+	<SubTexture name="george kills trump0010" x="1008" y="681" width="443" height="681" frameX="-8" frameY="-68" frameWidth="546" frameHeight="749"/>
+	<SubTexture name="george kills trump0011" x="1008" y="681" width="443" height="681" frameX="-8" frameY="-68" frameWidth="546" frameHeight="749"/>
+	<SubTexture name="george kills trump0012" x="1552" y="0" width="443" height="681" frameX="-4" frameY="-68" frameWidth="546" frameHeight="749"/>
+	<SubTexture name="george kills trump0013" x="1552" y="0" width="443" height="681" frameX="-4" frameY="-68" frameWidth="546" frameHeight="749"/>
+	<SubTexture name="george kills trump0014" x="1451" y="681" width="443" height="677" frameX="0" frameY="-72" frameWidth="546" frameHeight="749"/>
+	<SubTexture name="george kills trump0015" x="1451" y="681" width="443" height="677" frameX="0" frameY="-72" frameWidth="546" frameHeight="749"/>
+	<SubTexture name="george kills trump0016" x="1008" y="681" width="443" height="681" frameX="-8" frameY="-68" frameWidth="546" frameHeight="749"/>
+	<SubTexture name="george kills trump0017" x="1008" y="681" width="443" height="681" frameX="-8" frameY="-68" frameWidth="546" frameHeight="749"/>
+	<SubTexture name="george kills trump0018" x="0" y="0" width="494" height="749" frameX="-8" frameY="0" frameWidth="546" frameHeight="749"/>
+	<SubTexture name="george kills trump0019" x="494" y="0" width="536" height="681" frameX="-10" frameY="-68" frameWidth="546" frameHeight="749"/>
+	<SubTexture name="george kills trump0020" x="494" y="0" width="536" height="681" frameX="-10" frameY="-68" frameWidth="546" frameHeight="749"/>
+	<SubTexture name="george kills trump0021" x="1030" y="0" width="522" height="681" frameX="-10" frameY="-68" frameWidth="546" frameHeight="749"/>
+	<SubTexture name="george kills trump0022" x="1030" y="0" width="522" height="681" frameX="-10" frameY="-68" frameWidth="546" frameHeight="749"/>
+	<SubTexture name="george kills trump0023" x="494" y="681" width="514" height="681" frameX="-10" frameY="-68" frameWidth="546" frameHeight="749"/>
+	<SubTexture name="george kills trump0024" x="494" y="681" width="514" height="681" frameX="-10" frameY="-68" frameWidth="546" frameHeight="749"/>
+	<SubTexture name="george kills trump0025" x="494" y="681" width="514" height="681" frameX="-10" frameY="-68" frameWidth="546" frameHeight="749"/>
+	<SubTexture name="george kills trump0026" x="494" y="681" width="514" height="681" frameX="-10" frameY="-68" frameWidth="546" frameHeight="749"/>
+	<SubTexture name="george kills trump0027" x="494" y="681" width="514" height="681" frameX="-10" frameY="-68" frameWidth="546" frameHeight="749"/>
+	<SubTexture name="george kills trump0028" x="494" y="681" width="514" height="681" frameX="-10" frameY="-68" frameWidth="546" frameHeight="749"/>
+	<SubTexture name="george kills trump0029" x="494" y="681" width="514" height="681" frameX="-10" frameY="-68" frameWidth="546" frameHeight="749"/>
+	<SubTexture name="george kills trump0030" x="494" y="681" width="514" height="681" frameX="-10" frameY="-68" frameWidth="546" frameHeight="749"/>
+	<SubTexture name="george kills trump0031" x="494" y="681" width="514" height="681" frameX="-10" frameY="-68" frameWidth="546" frameHeight="749"/>
+	<SubTexture name="george kills trump0032" x="494" y="681" width="514" height="681" frameX="-10" frameY="-68" frameWidth="546" frameHeight="749"/>
+	<SubTexture name="george kills trump0033" x="494" y="681" width="514" height="681" frameX="-10" frameY="-68" frameWidth="546" frameHeight="749"/>
+</TextureAtlas>

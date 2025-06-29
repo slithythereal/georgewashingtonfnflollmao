@@ -1,0 +1,8 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TextureAtlas imagePath="leaveovaloffice.png">
+	<!-- Created with Adobe Animate version 22.0.0.93 -->
+	<!-- http://www.adobe.com/products/animate.html -->
+	<SubTexture name="leavedoor0000" x="0" y="0" width="121" height="294" frameX="-3" frameY="0" frameWidth="124" frameHeight="295"/>
+	<SubTexture name="leavedoor0001" x="121" y="0" width="120" height="295" frameX="0" frameY="0" frameWidth="124" frameHeight="295"/>
+	<SubTexture name="leavedoor0002" x="241" y="0" width="123" height="292" frameX="0" frameY="0" frameWidth="124" frameHeight="295"/>
+</TextureAtlas>

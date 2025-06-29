@@ -1,0 +1,8 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TextureAtlas imagePath="resolutedesk.png">
+	<!-- Created with Adobe Animate version 22.0.0.93 -->
+	<!-- http://www.adobe.com/products/animate.html -->
+	<SubTexture name="resolutedesk0000" x="0" y="0" width="99" height="59" frameX="-1" frameY="0" frameWidth="100" frameHeight="59"/>
+	<SubTexture name="resolutedesk0001" x="99" y="0" width="99" height="59" frameX="-1" frameY="0" frameWidth="100" frameHeight="59"/>
+	<SubTexture name="resolutedesk0002" x="0" y="59" width="100" height="58" frameX="0" frameY="0" frameWidth="100" frameHeight="59"/>
+</TextureAtlas>

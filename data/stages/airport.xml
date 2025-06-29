@@ -1,0 +1,21 @@
+<!DOCTYPE codename-engine-stage>
+<stage zoom="0.6" name="airport" folder="stages/airport/" startCamPosX="1000" startCamPosY="600">
+    <sprite name="plane" sprite="airforce1" x="-400" y="-400" scale="1.75"/>
+
+    <sprite name="sunset" sprite="sunset" x="-800" y="-400" scale="1.4" scroll="0.9">
+        <property name="visible" type="bool" value="false"/>
+    </sprite>
+    <sprite name="jojo" sprite="jojoreference" type="loop" scale="5">
+        <anim name="jojo" anim="TAHDAH" loop="true"/>
+		<property name="visible" type="bool" value="false"/>
+    </sprite>
+    <sprite name="ssg1" sprite="airforce1"/>
+    <sprite name="ssg2" sprite="airforce1"/>
+    <sprite name="ssg3" sprite="airforce1"/>
+	<dad x="500" y="225" scale="0.7"/>
+    <boyfriend x="-300" y="125" scale="0.75"/>
+
+    <sprite name="stairs" sprite="bidenstairs" x="-1550" y="-100" scale="1.5" scroll="0">
+        <property name="visible" type="bool" value="false"/>
+    </sprite>
+</stage>

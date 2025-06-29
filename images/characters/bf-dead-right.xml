@@ -1,0 +1,131 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TextureAtlas imagePath="bf-dead-right.png">
+	<!-- Created with Adobe Animate version 22.0.0.93 -->
+	<!-- http://www.adobe.com/products/animate.html -->
+	<SubTexture name="rightconfirm0000" x="0" y="0" width="439" height="435" frameX="0" frameY="-64" frameWidth="442" frameHeight="499"/>
+	<SubTexture name="rightconfirm0001" x="439" y="0" width="439" height="469" frameX="0" frameY="-30" frameWidth="442" frameHeight="499"/>
+	<SubTexture name="rightconfirm0002" x="878" y="0" width="439" height="499" frameX="0" frameY="0" frameWidth="442" frameHeight="499"/>
+	<SubTexture name="rightconfirm0003" x="1317" y="0" width="439" height="469" frameX="0" frameY="-30" frameWidth="442" frameHeight="499"/>
+	<SubTexture name="rightconfirm0004" x="1756" y="0" width="439" height="469" frameX="0" frameY="-30" frameWidth="442" frameHeight="499"/>
+	<SubTexture name="rightconfirm0005" x="2195" y="0" width="439" height="469" frameX="0" frameY="-30" frameWidth="442" frameHeight="499"/>
+	<SubTexture name="rightconfirm0006" x="2634" y="0" width="439" height="469" frameX="0" frameY="-30" frameWidth="442" frameHeight="499"/>
+	<SubTexture name="rightconfirm0007" x="3073" y="0" width="439" height="469" frameX="0" frameY="-30" frameWidth="442" frameHeight="499"/>
+	<SubTexture name="rightconfirm0008" x="3512" y="0" width="439" height="469" frameX="0" frameY="-30" frameWidth="442" frameHeight="499"/>
+	<SubTexture name="rightconfirm0009" x="0" y="499" width="439" height="469" frameX="0" frameY="-30" frameWidth="442" frameHeight="499"/>
+	<SubTexture name="rightconfirm0010" x="439" y="499" width="439" height="469" frameX="0" frameY="-30" frameWidth="442" frameHeight="499"/>
+	<SubTexture name="rightconfirm0011" x="878" y="499" width="439" height="469" frameX="0" frameY="-30" frameWidth="442" frameHeight="499"/>
+	<SubTexture name="rightconfirm0012" x="1317" y="499" width="439" height="469" frameX="0" frameY="-30" frameWidth="442" frameHeight="499"/>
+	<SubTexture name="rightconfirm0013" x="1756" y="499" width="439" height="469" frameX="0" frameY="-30" frameWidth="442" frameHeight="499"/>
+	<SubTexture name="rightconfirm0014" x="2195" y="499" width="439" height="469" frameX="0" frameY="-30" frameWidth="442" frameHeight="499"/>
+	<SubTexture name="rightconfirm0015" x="2634" y="499" width="439" height="469" frameX="0" frameY="-30" frameWidth="442" frameHeight="499"/>
+	<SubTexture name="rightconfirm0016" x="3073" y="499" width="439" height="469" frameX="0" frameY="-30" frameWidth="442" frameHeight="499"/>
+	<SubTexture name="rightconfirm0017" x="3512" y="499" width="439" height="469" frameX="0" frameY="-30" frameWidth="442" frameHeight="499"/>
+	<SubTexture name="rightconfirm0018" x="0" y="968" width="439" height="469" frameX="0" frameY="-30" frameWidth="442" frameHeight="499"/>
+	<SubTexture name="rightconfirm0019" x="439" y="968" width="439" height="469" frameX="0" frameY="-30" frameWidth="442" frameHeight="499"/>
+	<SubTexture name="rightconfirm0020" x="878" y="968" width="439" height="469" frameX="0" frameY="-30" frameWidth="442" frameHeight="499"/>
+	<SubTexture name="rightconfirm0021" x="1317" y="968" width="440" height="469" frameX="0" frameY="-30" frameWidth="442" frameHeight="499"/>
+	<SubTexture name="rightconfirm0022" x="1757" y="968" width="441" height="469" frameX="0" frameY="-30" frameWidth="442" frameHeight="499"/>
+	<SubTexture name="rightconfirm0023" x="2198" y="968" width="441" height="469" frameX="0" frameY="-30" frameWidth="442" frameHeight="499"/>
+	<SubTexture name="rightconfirm0024" x="2198" y="968" width="441" height="469" frameX="0" frameY="-30" frameWidth="442" frameHeight="499"/>
+	<SubTexture name="rightconfirm0025" x="2198" y="968" width="441" height="469" frameX="0" frameY="-30" frameWidth="442" frameHeight="499"/>
+	<SubTexture name="rightconfirm0026" x="2198" y="968" width="441" height="469" frameX="0" frameY="-30" frameWidth="442" frameHeight="499"/>
+	<SubTexture name="rightconfirm0027" x="2198" y="968" width="441" height="469" frameX="0" frameY="-30" frameWidth="442" frameHeight="499"/>
+	<SubTexture name="rightconfirm0028" x="2198" y="968" width="441" height="469" frameX="0" frameY="-30" frameWidth="442" frameHeight="499"/>
+	<SubTexture name="rightconfirm0029" x="2198" y="968" width="441" height="469" frameX="0" frameY="-30" frameWidth="442" frameHeight="499"/>
+	<SubTexture name="rightconfirm0030" x="2198" y="968" width="441" height="469" frameX="0" frameY="-30" frameWidth="442" frameHeight="499"/>
+	<SubTexture name="rightconfirm0031" x="2198" y="968" width="441" height="469" frameX="0" frameY="-30" frameWidth="442" frameHeight="499"/>
+	<SubTexture name="rightconfirm0032" x="2198" y="968" width="441" height="469" frameX="0" frameY="-30" frameWidth="442" frameHeight="499"/>
+	<SubTexture name="rightconfirm0033" x="2198" y="968" width="441" height="469" frameX="0" frameY="-30" frameWidth="442" frameHeight="499"/>
+	<SubTexture name="rightdie0000" x="2639" y="968" width="433" height="415" frameX="-1" frameY="0" frameWidth="439" frameHeight="445"/>
+	<SubTexture name="rightdie0001" x="3072" y="968" width="433" height="415" frameX="-1" frameY="0" frameWidth="439" frameHeight="445"/>
+	<SubTexture name="rightdie0002" x="3505" y="968" width="439" height="412" frameX="0" frameY="-6" frameWidth="439" frameHeight="445"/>
+	<SubTexture name="rightdie0003" x="0" y="1437" width="439" height="412" frameX="0" frameY="-6" frameWidth="439" frameHeight="445"/>
+	<SubTexture name="rightdie0004" x="439" y="1437" width="439" height="412" frameX="0" frameY="-6" frameWidth="439" frameHeight="445"/>
+	<SubTexture name="rightdie0005" x="878" y="1437" width="439" height="412" frameX="0" frameY="-6" frameWidth="439" frameHeight="445"/>
+	<SubTexture name="rightdie0006" x="1317" y="1437" width="439" height="412" frameX="0" frameY="-6" frameWidth="439" frameHeight="445"/>
+	<SubTexture name="rightdie0007" x="1317" y="1437" width="439" height="412" frameX="0" frameY="-6" frameWidth="439" frameHeight="445"/>
+	<SubTexture name="rightdie0008" x="1317" y="1437" width="439" height="412" frameX="0" frameY="-6" frameWidth="439" frameHeight="445"/>
+	<SubTexture name="rightdie0009" x="1317" y="1437" width="439" height="412" frameX="0" frameY="-6" frameWidth="439" frameHeight="445"/>
+	<SubTexture name="rightdie0010" x="1317" y="1437" width="439" height="412" frameX="0" frameY="-6" frameWidth="439" frameHeight="445"/>
+	<SubTexture name="rightdie0011" x="1317" y="1437" width="439" height="412" frameX="0" frameY="-6" frameWidth="439" frameHeight="445"/>
+	<SubTexture name="rightdie0012" x="1317" y="1437" width="439" height="412" frameX="0" frameY="-6" frameWidth="439" frameHeight="445"/>
+	<SubTexture name="rightdie0013" x="1317" y="1437" width="439" height="412" frameX="0" frameY="-6" frameWidth="439" frameHeight="445"/>
+	<SubTexture name="rightdie0014" x="1317" y="1437" width="439" height="412" frameX="0" frameY="-6" frameWidth="439" frameHeight="445"/>
+	<SubTexture name="rightdie0015" x="1756" y="1437" width="439" height="412" frameX="0" frameY="-6" frameWidth="439" frameHeight="445"/>
+	<SubTexture name="rightdie0016" x="1756" y="1437" width="439" height="412" frameX="0" frameY="-6" frameWidth="439" frameHeight="445"/>
+	<SubTexture name="rightdie0017" x="1756" y="1437" width="439" height="412" frameX="0" frameY="-6" frameWidth="439" frameHeight="445"/>
+	<SubTexture name="rightdie0018" x="2195" y="1437" width="439" height="412" frameX="0" frameY="-6" frameWidth="439" frameHeight="445"/>
+	<SubTexture name="rightdie0019" x="2195" y="1437" width="439" height="412" frameX="0" frameY="-6" frameWidth="439" frameHeight="445"/>
+	<SubTexture name="rightdie0020" x="2634" y="1437" width="439" height="412" frameX="0" frameY="-6" frameWidth="439" frameHeight="445"/>
+	<SubTexture name="rightdie0021" x="2634" y="1437" width="439" height="412" frameX="0" frameY="-6" frameWidth="439" frameHeight="445"/>
+	<SubTexture name="rightdie0022" x="3073" y="1437" width="439" height="412" frameX="0" frameY="-6" frameWidth="439" frameHeight="445"/>
+	<SubTexture name="rightdie0023" x="3073" y="1437" width="439" height="412" frameX="0" frameY="-6" frameWidth="439" frameHeight="445"/>
+	<SubTexture name="rightdie0024" x="3512" y="1437" width="439" height="412" frameX="0" frameY="-6" frameWidth="439" frameHeight="445"/>
+	<SubTexture name="rightdie0025" x="0" y="1849" width="439" height="439" frameX="0" frameY="-6" frameWidth="439" frameHeight="445"/>
+	<SubTexture name="rightdie0026" x="0" y="1849" width="439" height="439" frameX="0" frameY="-6" frameWidth="439" frameHeight="445"/>
+	<SubTexture name="rightdie0027" x="439" y="1849" width="439" height="434" frameX="0" frameY="-6" frameWidth="439" frameHeight="445"/>
+	<SubTexture name="rightdie0028" x="439" y="1849" width="439" height="434" frameX="0" frameY="-6" frameWidth="439" frameHeight="445"/>
+	<SubTexture name="rightdie0029" x="878" y="1849" width="439" height="435" frameX="0" frameY="-6" frameWidth="439" frameHeight="445"/>
+	<SubTexture name="rightdie0030" x="878" y="1849" width="439" height="435" frameX="0" frameY="-6" frameWidth="439" frameHeight="445"/>
+	<SubTexture name="rightdie0031" x="1317" y="1849" width="439" height="435" frameX="0" frameY="-6" frameWidth="439" frameHeight="445"/>
+	<SubTexture name="rightdie0032" x="1317" y="1849" width="439" height="435" frameX="0" frameY="-6" frameWidth="439" frameHeight="445"/>
+	<SubTexture name="rightdie0033" x="1317" y="1849" width="439" height="435" frameX="0" frameY="-6" frameWidth="439" frameHeight="445"/>
+	<SubTexture name="rightdie0034" x="1317" y="1849" width="439" height="435" frameX="0" frameY="-6" frameWidth="439" frameHeight="445"/>
+	<SubTexture name="rightdie0035" x="1756" y="1849" width="439" height="435" frameX="0" frameY="-6" frameWidth="439" frameHeight="445"/>
+	<SubTexture name="rightdie0036" x="2195" y="1849" width="439" height="435" frameX="0" frameY="-6" frameWidth="439" frameHeight="445"/>
+	<SubTexture name="rightdie0037" x="2634" y="1849" width="439" height="435" frameX="0" frameY="-6" frameWidth="439" frameHeight="445"/>
+	<SubTexture name="rightdie0038" x="3073" y="1849" width="439" height="435" frameX="0" frameY="-6" frameWidth="439" frameHeight="445"/>
+	<SubTexture name="rightdie0039" x="3512" y="1849" width="439" height="435" frameX="0" frameY="-6" frameWidth="439" frameHeight="445"/>
+	<SubTexture name="rightdie0040" x="0" y="2288" width="439" height="435" frameX="0" frameY="-6" frameWidth="439" frameHeight="445"/>
+	<SubTexture name="rightdie0041" x="439" y="2288" width="439" height="435" frameX="0" frameY="-6" frameWidth="439" frameHeight="445"/>
+	<SubTexture name="rightdie0042" x="878" y="2288" width="439" height="435" frameX="0" frameY="-6" frameWidth="439" frameHeight="445"/>
+	<SubTexture name="rightdie0043" x="1317" y="2288" width="439" height="435" frameX="0" frameY="-6" frameWidth="439" frameHeight="445"/>
+	<SubTexture name="rightdie0044" x="1756" y="2288" width="439" height="435" frameX="0" frameY="-6" frameWidth="439" frameHeight="445"/>
+	<SubTexture name="rightdie0045" x="2195" y="2288" width="439" height="435" frameX="0" frameY="-6" frameWidth="439" frameHeight="445"/>
+	<SubTexture name="rightdie0046" x="2634" y="2288" width="439" height="435" frameX="0" frameY="-6" frameWidth="439" frameHeight="445"/>
+	<SubTexture name="rightdie0047" x="3073" y="2288" width="439" height="435" frameX="0" frameY="-6" frameWidth="439" frameHeight="445"/>
+	<SubTexture name="rightdie0048" x="3512" y="2288" width="439" height="435" frameX="0" frameY="-6" frameWidth="439" frameHeight="445"/>
+	<SubTexture name="rightdie0049" x="0" y="2723" width="439" height="435" frameX="0" frameY="-6" frameWidth="439" frameHeight="445"/>
+	<SubTexture name="rightdie0050" x="439" y="2723" width="439" height="435" frameX="0" frameY="-6" frameWidth="439" frameHeight="445"/>
+	<SubTexture name="rightdie0051" x="878" y="2723" width="439" height="435" frameX="0" frameY="-6" frameWidth="439" frameHeight="445"/>
+	<SubTexture name="rightdie0052" x="1317" y="2723" width="439" height="435" frameX="0" frameY="-6" frameWidth="439" frameHeight="445"/>
+	<SubTexture name="rightdie0053" x="1756" y="2723" width="439" height="435" frameX="0" frameY="-6" frameWidth="439" frameHeight="445"/>
+	<SubTexture name="rightdie0054" x="1756" y="2723" width="439" height="435" frameX="0" frameY="-6" frameWidth="439" frameHeight="445"/>
+	<SubTexture name="rightdie0055" x="1756" y="2723" width="439" height="435" frameX="0" frameY="-6" frameWidth="439" frameHeight="445"/>
+	<SubTexture name="rightdie0056" x="1756" y="2723" width="439" height="435" frameX="0" frameY="-6" frameWidth="439" frameHeight="445"/>
+	<SubTexture name="rightdie0057" x="1756" y="2723" width="439" height="435" frameX="0" frameY="-6" frameWidth="439" frameHeight="445"/>
+	<SubTexture name="rightloop0000" x="2195" y="2723" width="439" height="435"/>
+	<SubTexture name="rightloop0001" x="2634" y="2723" width="439" height="435"/>
+	<SubTexture name="rightloop0002" x="2634" y="2723" width="439" height="435"/>
+	<SubTexture name="rightloop0003" x="3073" y="2723" width="439" height="435"/>
+	<SubTexture name="rightloop0004" x="3073" y="2723" width="439" height="435"/>
+	<SubTexture name="rightloop0005" x="3512" y="2723" width="439" height="435"/>
+	<SubTexture name="rightloop0006" x="3512" y="2723" width="439" height="435"/>
+	<SubTexture name="rightloop0007" x="0" y="3158" width="439" height="435"/>
+	<SubTexture name="rightloop0008" x="439" y="3158" width="439" height="435"/>
+	<SubTexture name="rightloop0009" x="439" y="3158" width="439" height="435"/>
+	<SubTexture name="rightloop0010" x="439" y="3158" width="439" height="435"/>
+	<SubTexture name="rightloop0011" x="439" y="3158" width="439" height="435"/>
+	<SubTexture name="rightloop0012" x="439" y="3158" width="439" height="435"/>
+	<SubTexture name="rightloop0013" x="439" y="3158" width="439" height="435"/>
+	<SubTexture name="rightloop0014" x="439" y="3158" width="439" height="435"/>
+	<SubTexture name="rightloop0015" x="439" y="3158" width="439" height="435"/>
+	<SubTexture name="rightloop0016" x="439" y="3158" width="439" height="435"/>
+	<SubTexture name="rightloop0017" x="2195" y="2723" width="439" height="435"/>
+	<SubTexture name="rightloop0018" x="2634" y="2723" width="439" height="435"/>
+	<SubTexture name="rightloop0019" x="2634" y="2723" width="439" height="435"/>
+	<SubTexture name="rightloop0020" x="3073" y="2723" width="439" height="435"/>
+	<SubTexture name="rightloop0021" x="3073" y="2723" width="439" height="435"/>
+	<SubTexture name="rightloop0022" x="3512" y="2723" width="439" height="435"/>
+	<SubTexture name="rightloop0023" x="3512" y="2723" width="439" height="435"/>
+	<SubTexture name="rightloop0024" x="439" y="3158" width="439" height="435"/>
+	<SubTexture name="rightloop0025" x="439" y="3158" width="439" height="435"/>
+	<SubTexture name="rightloop0026" x="439" y="3158" width="439" height="435"/>
+	<SubTexture name="rightloop0027" x="439" y="3158" width="439" height="435"/>
+	<SubTexture name="rightloop0028" x="439" y="3158" width="439" height="435"/>
+	<SubTexture name="rightloop0029" x="439" y="3158" width="439" height="435"/>
+	<SubTexture name="rightloop0030" x="0" y="3158" width="439" height="435"/>
+	<SubTexture name="rightloop0031" x="439" y="3158" width="439" height="435"/>
+	<SubTexture name="rightloop0032" x="439" y="3158" width="439" height="435"/>
+	<SubTexture name="rightloop0033" x="439" y="3158" width="439" height="435"/>
+</TextureAtlas>

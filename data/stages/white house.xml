@@ -1,0 +1,10 @@
+<!DOCTYPE codename-engine-stage>
+<stage zoom="0.85" name="white house" folder="stages/whitehouse/" startCamPosY="600" startCamPosX="1000">
+	<sprite name="bg"           scale="1.75"     x="0" y="-200"   sprite="white house"	scroll="0.9"/>
+	<sprite name="georgebg" x="-424" y="150" sprite="georgebg"  scale="0.85" type="onbeat" beatInterval="4">
+		<property name="visible" type="bool" value="false"/>
+	</sprite>
+	<girlfriend scale="0.5" y="240"/>
+	<dad x="-100" scale="0.85" />
+	<boyfriend scale="0.85" y="125"/>
+</stage>

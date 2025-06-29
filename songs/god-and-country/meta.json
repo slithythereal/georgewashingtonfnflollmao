@@ -1,0 +1,17 @@
+{
+	"beatsPerMeasure": 4,
+	"opponentModeAllowed": false,
+	"coopAllowed": false,
+	"stepsPerBeat": 4,
+	"bpm": 170,
+	"difficulties": [
+		"normal"
+	],
+	"needsVoices": true,
+	"parsedColor": -926453,
+	"displayName": "God and Country",
+	"icon": "trump",
+	"name": "god-and-country",
+	"color": "#F1DD0B",
+	"customValues": {}
+}

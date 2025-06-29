@@ -1,0 +1,9 @@
+<!DOCTYPE codename-engine-character>
+<character sprite="joebiden" camx="-300" camy="60" icon="joe" color="#67656F" holdTime="6.1">
+	<anim name="idle-alt" anim="joe idle-normal" x="0" y="0" fps="24" loop="false"/>
+	<anim name="idle" anim="joe idle-icecream" x="134" y="1" fps="24" loop="false"/>
+	<anim name="singLEFT" anim="joenorm" x="393" y="18" fps="24" loop="false"/>
+	<anim name="singDOWN" anim="joe down" x="-74" y="-255" fps="24" loop="false"/>
+	<anim name="singUP" anim="joe up" x="20" y="-118" fps="24" loop="false"/>
+	<anim name="singRIGHT" anim="joe right" x="-84" y="188" fps="24" loop="false"/>
+</character>

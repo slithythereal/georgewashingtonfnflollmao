@@ -1,0 +1,282 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TextureAtlas imagePath="eagle_Assets.png">
+	<!-- Created with Adobe Animate version 22.0.0.93 -->
+	<!-- http://www.adobe.com/products/animate.html -->
+	<SubTexture name="EAGLE SCREAAAAAAAAAAAAM0000" x="5386" y="2576" width="555" height="776" frameX="-183" frameY="-155" frameWidth="974" frameHeight="1074"/>
+	<SubTexture name="EAGLE SCREAAAAAAAAAAAAM0001" x="5386" y="2576" width="555" height="776" frameX="-183" frameY="-155" frameWidth="974" frameHeight="1074"/>
+	<SubTexture name="EAGLE SCREAAAAAAAAAAAAM0002" x="4448" y="1741" width="709" height="744" frameX="-78" frameY="-330" frameWidth="974" frameHeight="1074"/>
+	<SubTexture name="EAGLE SCREAAAAAAAAAAAAM0003" x="4448" y="1741" width="709" height="744" frameX="-78" frameY="-330" frameWidth="974" frameHeight="1074"/>
+	<SubTexture name="EAGLE SCREAAAAAAAAAAAAM0004" x="4672" y="3252" width="540" height="755" frameX="-217" frameY="-127" frameWidth="974" frameHeight="1074"/>
+	<SubTexture name="EAGLE SCREAAAAAAAAAAAAM0005" x="4672" y="3252" width="540" height="755" frameX="-217" frameY="-127" frameWidth="974" frameHeight="1074"/>
+	<SubTexture name="EAGLE SCREAAAAAAAAAAAAM0006" x="1625" y="1976" width="795" height="594" frameX="-58" frameY="-107" frameWidth="974" frameHeight="1074"/>
+	<SubTexture name="EAGLE SCREAAAAAAAAAAAAM0007" x="1625" y="1976" width="795" height="594" frameX="-58" frameY="-107" frameWidth="974" frameHeight="1074"/>
+	<SubTexture name="EAGLE SCREAAAAAAAAAAAAM0008" x="6019" y="1287" width="844" height="643" frameX="-16" frameY="-69" frameWidth="974" frameHeight="1074"/>
+	<SubTexture name="EAGLE SCREAAAAAAAAAAAAM0009" x="6019" y="1287" width="844" height="643" frameX="-16" frameY="-69" frameWidth="974" frameHeight="1074"/>
+	<SubTexture name="EAGLE SCREAAAAAAAAAAAAM0010" x="2473" y="1215" width="779" height="705" frameX="-49" frameY="-98" frameWidth="974" frameHeight="1074"/>
+	<SubTexture name="EAGLE SCREAAAAAAAAAAAAM0011" x="2473" y="1215" width="779" height="705" frameX="-49" frameY="-98" frameWidth="974" frameHeight="1074"/>
+	<SubTexture name="EAGLE SCREAAAAAAAAAAAAM0012" x="0" y="2086" width="691" height="672" frameX="-114" frameY="-200" frameWidth="974" frameHeight="1074"/>
+	<SubTexture name="EAGLE SCREAAAAAAAAAAAAM0013" x="0" y="2086" width="691" height="672" frameX="-114" frameY="-200" frameWidth="974" frameHeight="1074"/>
+	<SubTexture name="EAGLE SCREAAAAAAAAAAAAM0014" x="5964" y="2686" width="781" height="538" frameX="-93" frameY="-238" frameWidth="974" frameHeight="1074"/>
+	<SubTexture name="EAGLE SCREAAAAAAAAAAAAM0015" x="5964" y="2686" width="781" height="538" frameX="-93" frameY="-238" frameWidth="974" frameHeight="1074"/>
+	<SubTexture name="EAGLE SCREAAAAAAAAAAAAM0016" x="1277" y="3175" width="780" height="536" frameX="-93" frameY="-239" frameWidth="974" frameHeight="1074"/>
+	<SubTexture name="EAGLE SCREAAAAAAAAAAAAM0017" x="6599" y="3318" width="775" height="528" frameX="-96" frameY="-243" frameWidth="974" frameHeight="1074"/>
+	<SubTexture name="EAGLE SCREAAAAAAAAAAAAM0018" x="5304" y="5931" width="764" height="512" frameX="-101" frameY="-251" frameWidth="974" frameHeight="1074"/>
+	<SubTexture name="EAGLE SCREAAAAAAAAAAAAM0019" x="1277" y="2593" width="795" height="559" frameX="-86" frameY="-228" frameWidth="974" frameHeight="1074"/>
+	<SubTexture name="EAGLE SCREAAAAAAAAAAAAM0020" x="759" y="1719" width="843" height="638" frameX="-62" frameY="-189" frameWidth="974" frameHeight="1074"/>
+	<SubTexture name="EAGLE SCREAAAAAAAAAAAAM0021" x="4448" y="967" width="902" height="751" frameX="-33" frameY="-134" frameWidth="974" frameHeight="1074"/>
+	<SubTexture name="EAGLE SCREAAAAAAAAAAAAM0022" x="3601" y="0" width="933" height="878" frameX="-18" frameY="-72" frameWidth="974" frameHeight="1074"/>
+	<SubTexture name="EAGLE SCREAAAAAAAAAAAAM0023" x="4557" y="0" width="850" height="944" frameX="-60" frameY="-41" frameWidth="974" frameHeight="1074"/>
+	<SubTexture name="EAGLE SCREAAAAAAAAAAAAM0024" x="3189" y="2493" width="562" height="818" frameX="-204" frameY="-107" frameWidth="974" frameHeight="1074"/>
+	<SubTexture name="EAGLE SCREAAAAAAAAAAAAM0025" x="1840" y="0" width="965" height="960" frameX="-4" frameY="-39" frameWidth="974" frameHeight="1074"/>
+	<SubTexture name="EAGLE SCREAAAAAAAAAAAAM0026" x="6999" y="421" width="946" height="738" frameX="-15" frameY="-155" frameWidth="974" frameHeight="1074"/>
+	<SubTexture name="EAGLE SCREAAAAAAAAAAAAM0027" x="5373" y="1104" width="623" height="897" frameX="-179" frameY="-82" frameWidth="974" frameHeight="1074"/>
+	<SubTexture name="EAGLE SCREAAAAAAAAAAAAM0028" x="2277" y="5974" width="762" height="509" frameX="-112" frameY="-284" frameWidth="974" frameHeight="1074"/>
+	<SubTexture name="EAGLE SCREAAAAAAAAAAAAM0029" x="2473" y="1943" width="693" height="693" frameX="-140" frameY="-140" frameWidth="974" frameHeight="1074"/>
+	<SubTexture name="EAGLE SCREAAAAAAAAAAAAM0030" x="6133" y="421" width="843" height="843" frameX="-65" frameY="-65" frameWidth="974" frameHeight="1074"/>
+	<SubTexture name="EAGLE SCREAAAAAAAAAAAAM0031" x="0" y="1327" width="736" height="736" frameX="-119" frameY="-119" frameWidth="974" frameHeight="1074"/>
+	<SubTexture name="EAGLE SCREAAAAAAAAAAAAM0032" x="843" y="0" width="974" height="974" frameX="0" frameY="0" frameWidth="974" frameHeight="1074"/>
+	<SubTexture name="EAGLE SCREAAAAAAAAAAAAM0033" x="3601" y="901" width="824" height="824" frameX="-75" frameY="-75" frameWidth="974" frameHeight="1074"/>
+	<SubTexture name="EAGLE SCREAAAAAAAAAAAAM0034" x="3275" y="1748" width="722" height="722" frameX="-126" frameY="-126" frameWidth="974" frameHeight="1074"/>
+	<SubTexture name="EAGLE SCREAAAAAAAAAAAAM0035" x="6886" y="1904" width="694" height="694" frameX="-140" frameY="-140" frameWidth="974" frameHeight="1074"/>
+	<SubTexture name="EAGLE SCREAAAAAAAAAAAAM0036" x="2473" y="1943" width="693" height="693" frameX="-140" frameY="-140" frameWidth="974" frameHeight="1074"/>
+	<SubTexture name="EAGLE SCREAAAAAAAAAAAAM0037" x="2473" y="1943" width="693" height="693" frameX="-140" frameY="-140" frameWidth="974" frameHeight="1074"/>
+	<SubTexture name="EAGLE SCREAAAAAAAAAAAAM0038" x="2473" y="1943" width="693" height="693" frameX="-140" frameY="-140" frameWidth="974" frameHeight="1074"/>
+	<SubTexture name="EAGLE SCREAAAAAAAAAAAAM0039" x="2473" y="1943" width="693" height="693" frameX="-140" frameY="-140" frameWidth="974" frameHeight="1074"/>
+	<SubTexture name="EAGLE SCREAAAAAAAAAAAAM0040" x="2473" y="1943" width="693" height="693" frameX="-140" frameY="-140" frameWidth="974" frameHeight="1074"/>
+	<SubTexture name="EAGLE SCREAAAAAAAAAAAAM0041" x="2473" y="1943" width="693" height="693" frameX="-140" frameY="-140" frameWidth="974" frameHeight="1074"/>
+	<SubTexture name="EAGLE SCREAAAAAAAAAAAAM0042" x="2473" y="1943" width="693" height="693" frameX="-140" frameY="-140" frameWidth="974" frameHeight="1074"/>
+	<SubTexture name="EAGLE SCREAAAAAAAAAAAAM0043" x="2473" y="1943" width="693" height="693" frameX="-140" frameY="-140" frameWidth="974" frameHeight="1074"/>
+	<SubTexture name="EAGLE SCREAAAAAAAAAAAAM0044" x="2473" y="1943" width="693" height="693" frameX="-140" frameY="-140" frameWidth="974" frameHeight="1074"/>
+	<SubTexture name="EAGLE SCREAAAAAAAAAAAAM0045" x="2473" y="1943" width="693" height="693" frameX="-140" frameY="-140" frameWidth="974" frameHeight="1074"/>
+	<SubTexture name="EAGLE SCREAAAAAAAAAAAAM0046" x="2473" y="1943" width="693" height="693" frameX="-140" frameY="-140" frameWidth="974" frameHeight="1074"/>
+	<SubTexture name="EAGLE SCREAAAAAAAAAAAAM0047" x="2473" y="1943" width="693" height="693" frameX="-140" frameY="-140" frameWidth="974" frameHeight="1074"/>
+	<SubTexture name="EAGLE SCREAAAAAAAAAAAAM0048" x="2473" y="1943" width="693" height="693" frameX="-140" frameY="-140" frameWidth="974" frameHeight="1074"/>
+	<SubTexture name="EAGLE SCREAAAAAAAAAAAAM0049" x="2473" y="1943" width="693" height="693" frameX="-140" frameY="-140" frameWidth="974" frameHeight="1074"/>
+	<SubTexture name="EAGLE SCREAAAAAAAAAAAAM0050" x="2473" y="1943" width="693" height="693" frameX="-140" frameY="-140" frameWidth="974" frameHeight="1074"/>
+	<SubTexture name="EAGLE SCREAAAAAAAAAAAAM0051" x="2473" y="1943" width="693" height="693" frameX="-140" frameY="-140" frameWidth="974" frameHeight="1074"/>
+	<SubTexture name="EAGLE SCREAAAAAAAAAAAAM0052" x="2473" y="1943" width="693" height="693" frameX="-140" frameY="-140" frameWidth="974" frameHeight="1074"/>
+	<SubTexture name="EAGLE SCREAAAAAAAAAAAAM0053" x="2473" y="1943" width="693" height="693" frameX="-140" frameY="-140" frameWidth="974" frameHeight="1074"/>
+	<SubTexture name="EAGLE SCREAAAAAAAAAAAAM0054" x="2473" y="1943" width="693" height="693" frameX="-140" frameY="-140" frameWidth="974" frameHeight="1074"/>
+	<SubTexture name="EAGLE SCREAAAAAAAAAAAAM0055" x="2473" y="1943" width="693" height="693" frameX="-140" frameY="-140" frameWidth="974" frameHeight="1074"/>
+	<SubTexture name="EAGLE SCREAAAAAAAAAAAAM0056" x="2473" y="1943" width="693" height="693" frameX="-140" frameY="-140" frameWidth="974" frameHeight="1074"/>
+	<SubTexture name="EAGLE SCREAAAAAAAAAAAAM0057" x="2473" y="1943" width="693" height="693" frameX="-140" frameY="-140" frameWidth="974" frameHeight="1074"/>
+	<SubTexture name="EAGLE SCREAAAAAAAAAAAAM0058" x="2473" y="1943" width="693" height="693" frameX="-140" frameY="-140" frameWidth="974" frameHeight="1074"/>
+	<SubTexture name="EAGLE SCREAAAAAAAAAAAAM0059" x="2473" y="1943" width="693" height="693" frameX="-140" frameY="-140" frameWidth="974" frameHeight="1074"/>
+	<SubTexture name="EAGLE SCREAAAAAAAAAAAAM0060" x="2473" y="1943" width="693" height="693" frameX="-140" frameY="-140" frameWidth="974" frameHeight="1074"/>
+	<SubTexture name="EAGLE SCREAAAAAAAAAAAAM0061" x="2473" y="1943" width="693" height="693" frameX="-140" frameY="-140" frameWidth="974" frameHeight="1074"/>
+	<SubTexture name="EAGLE SCREAAAAAAAAAAAAM0062" x="2473" y="1943" width="693" height="693" frameX="-140" frameY="-140" frameWidth="974" frameHeight="1074"/>
+	<SubTexture name="EAGLE SCREAAAAAAAAAAAAM0063" x="2473" y="1943" width="693" height="693" frameX="-140" frameY="-140" frameWidth="974" frameHeight="1074"/>
+	<SubTexture name="EAGLE SCREAAAAAAAAAAAAM0064" x="2473" y="1943" width="693" height="693" frameX="-140" frameY="-140" frameWidth="974" frameHeight="1074"/>
+	<SubTexture name="EAGLE SCREAAAAAAAAAAAAM0065" x="2473" y="1943" width="693" height="693" frameX="-140" frameY="-140" frameWidth="974" frameHeight="1074"/>
+	<SubTexture name="EAGLE SCREAAAAAAAAAAAAM0066" x="2473" y="1943" width="693" height="693" frameX="-140" frameY="-140" frameWidth="974" frameHeight="1074"/>
+	<SubTexture name="EAGLE SCREAAAAAAAAAAAAM0067" x="2473" y="1943" width="693" height="693" frameX="-140" frameY="-140" frameWidth="974" frameHeight="1074"/>
+	<SubTexture name="EAGLE SCREAAAAAAAAAAAAM0068" x="2473" y="1943" width="693" height="693" frameX="-140" frameY="-140" frameWidth="974" frameHeight="1074"/>
+	<SubTexture name="EAGLE SCREAAAAAAAAAAAAM0069" x="2473" y="1943" width="693" height="693" frameX="-140" frameY="-140" frameWidth="974" frameHeight="1074"/>
+	<SubTexture name="EAGLE SCREAAAAAAAAAAAAM0070" x="4670" y="2576" width="693" height="653" frameX="-140" frameY="-180" frameWidth="974" frameHeight="1074"/>
+	<SubTexture name="EAGLE SCREAAAAAAAAAAAAM0071" x="4670" y="2576" width="693" height="653" frameX="-140" frameY="-180" frameWidth="974" frameHeight="1074"/>
+	<SubTexture name="EAGLE SCREAAAAAAAAAAAAM0072" x="1561" y="5714" width="693" height="568" frameX="-140" frameY="-265" frameWidth="974" frameHeight="1074"/>
+	<SubTexture name="EAGLE SCREAAAAAAAAAAAAM0073" x="1561" y="5714" width="693" height="568" frameX="-140" frameY="-265" frameWidth="974" frameHeight="1074"/>
+	<SubTexture name="EAGLE SCREAAAAAAAAAAAAM0074" x="840" y="6190" width="693" height="438" frameX="-140" frameY="-395" frameWidth="974" frameHeight="1074"/>
+	<SubTexture name="EAGLE SCREAAAAAAAAAAAAM0075" x="840" y="6190" width="693" height="438" frameX="-140" frameY="-395" frameWidth="974" frameHeight="1074"/>
+	<SubTexture name="EAGLE SCREAAAAAAAAAAAAM0076" x="635" y="6651" width="693" height="218" frameX="-140" frameY="-615" frameWidth="974" frameHeight="1074"/>
+	<SubTexture name="EAGLE SCREAAAAAAAAAAAAM0077" x="635" y="6651" width="693" height="218" frameX="-140" frameY="-615" frameWidth="974" frameHeight="1074"/>
+	<SubTexture name="EAGLE SCREAAAAAAAAAAAAM0078" x="0" y="0" width="0" height="0" frameX="-185" frameY="-155" frameWidth="974" frameHeight="1074"/>
+	<SubTexture name="EAGLE SCREAAAAAAAAAAAAM0079" x="0" y="0" width="0" height="0" frameX="-185" frameY="-155" frameWidth="974" frameHeight="1074"/>
+	<SubTexture name="EAGLE SCREAAAAAAAAAAAAM0080" x="2730" y="3334" width="640" height="637" frameX="-185" frameY="-214" frameWidth="974" frameHeight="1074"/>
+	<SubTexture name="EAGLE SCREAAAAAAAAAAAAM0081" x="5235" y="3375" width="640" height="637" frameX="-185" frameY="-214" frameWidth="974" frameHeight="1074"/>
+	<SubTexture name="EAGLE SCREAAAAAAAAAAAAM0082" x="0" y="3478" width="640" height="637" frameX="-185" frameY="-214" frameWidth="974" frameHeight="1074"/>
+	<SubTexture name="EAGLE SCREAAAAAAAAAAAAM0083" x="7397" y="3582" width="640" height="637" frameX="-185" frameY="-214" frameWidth="974" frameHeight="1074"/>
+	<SubTexture name="EAGLE SCREAAAAAAAAAAAAM0084" x="663" y="3734" width="640" height="637" frameX="-185" frameY="-214" frameWidth="974" frameHeight="1074"/>
+	<SubTexture name="EAGLE SCREAAAAAAAAAAAAM0085" x="1326" y="3734" width="640" height="637" frameX="-185" frameY="-214" frameWidth="974" frameHeight="1074"/>
+	<SubTexture name="EAGLE SCREAAAAAAAAAAAAM0086" x="1989" y="3734" width="640" height="637" frameX="-185" frameY="-214" frameWidth="974" frameHeight="1074"/>
+	<SubTexture name="EAGLE SCREAAAAAAAAAAAAM0087" x="3393" y="3756" width="640" height="637" frameX="-185" frameY="-214" frameWidth="974" frameHeight="1074"/>
+	<SubTexture name="EAGLE SCREAAAAAAAAAAAAM0088" x="6599" y="3869" width="640" height="637" frameX="-185" frameY="-214" frameWidth="974" frameHeight="1074"/>
+	<SubTexture name="EAGLE SCREAAAAAAAAAAAAM0089" x="5898" y="3951" width="640" height="637" frameX="-185" frameY="-214" frameWidth="974" frameHeight="1074"/>
+	<SubTexture name="EAGLE SCREAAAAAAAAAAAAM0090" x="2652" y="3994" width="640" height="637" frameX="-185" frameY="-214" frameWidth="974" frameHeight="1074"/>
+	<SubTexture name="EAGLE SCREAAAAAAAAAAAAM0091" x="4056" y="4030" width="640" height="637" frameX="-185" frameY="-214" frameWidth="974" frameHeight="1074"/>
+	<SubTexture name="EAGLE SCREAAAAAAAAAAAAM0092" x="4719" y="4035" width="640" height="637" frameX="-185" frameY="-214" frameWidth="974" frameHeight="1074"/>
+	<SubTexture name="EAGLE SCREAAAAAAAAAAAAM0093" x="0" y="4138" width="640" height="637" frameX="-185" frameY="-214" frameWidth="974" frameHeight="1074"/>
+	<SubTexture name="EAGLE SCREAAAAAAAAAAAAM0094" x="7262" y="4242" width="640" height="637" frameX="-185" frameY="-214" frameWidth="974" frameHeight="1074"/>
+	<SubTexture name="EAGLE SCREAAAAAAAAAAAAM0095" x="663" y="4394" width="640" height="637" frameX="-185" frameY="-214" frameWidth="974" frameHeight="1074"/>
+	<SubTexture name="EAGLE SCREAAAAAAAAAAAAM0096" x="1326" y="4394" width="640" height="637" frameX="-185" frameY="-214" frameWidth="974" frameHeight="1074"/>
+	<SubTexture name="EAGLE SCREAAAAAAAAAAAAM0097" x="1989" y="4394" width="640" height="637" frameX="-185" frameY="-214" frameWidth="974" frameHeight="1074"/>
+	<SubTexture name="EAGLE SCREAAAAAAAAAAAAM0098" x="3315" y="4416" width="640" height="637" frameX="-185" frameY="-214" frameWidth="974" frameHeight="1074"/>
+	<SubTexture name="EAGLE SCREAAAAAAAAAAAAM0099" x="6561" y="4529" width="640" height="637" frameX="-185" frameY="-214" frameWidth="974" frameHeight="1074"/>
+	<SubTexture name="EAGLE SCREAAAAAAAAAAAAM0100" x="5382" y="4611" width="640" height="637" frameX="-185" frameY="-214" frameWidth="974" frameHeight="1074"/>
+	<SubTexture name="EAGLE SCREAAAAAAAAAAAAM0101" x="2652" y="4654" width="640" height="637" frameX="-185" frameY="-214" frameWidth="974" frameHeight="1074"/>
+	<SubTexture name="EAGLE SCREAAAAAAAAAAAAM0102" x="3978" y="4690" width="640" height="637" frameX="-185" frameY="-214" frameWidth="974" frameHeight="1074"/>
+	<SubTexture name="EAGLE SCREAAAAAAAAAAAAM0103" x="4641" y="4695" width="640" height="637" frameX="-185" frameY="-214" frameWidth="974" frameHeight="1074"/>
+	<SubTexture name="EAGLE SCREAAAAAAAAAAAAM0104" x="0" y="4798" width="640" height="637" frameX="-185" frameY="-214" frameWidth="974" frameHeight="1074"/>
+	<SubTexture name="EAGLE SCREAAAAAAAAAAAAM0105" x="7224" y="4902" width="640" height="637" frameX="-185" frameY="-214" frameWidth="974" frameHeight="1074"/>
+	<SubTexture name="EAGLE SCREAAAAAAAAAAAAM0106" x="663" y="5054" width="640" height="637" frameX="-185" frameY="-214" frameWidth="974" frameHeight="1074"/>
+	<SubTexture name="EAGLE SCREAAAAAAAAAAAAM0107" x="1326" y="5054" width="640" height="637" frameX="-185" frameY="-214" frameWidth="974" frameHeight="1074"/>
+	<SubTexture name="EAGLE SCREAAAAAAAAAAAAM0108" x="1989" y="5054" width="640" height="637" frameX="-185" frameY="-214" frameWidth="974" frameHeight="1074"/>
+	<SubTexture name="EAGLE SCREAAAAAAAAAAAAM0109" x="3315" y="5076" width="640" height="637" frameX="-185" frameY="-214" frameWidth="974" frameHeight="1074"/>
+	<SubTexture name="EAGLE SCREAAAAAAAAAAAAM0110" x="6045" y="5189" width="640" height="637" frameX="-185" frameY="-214" frameWidth="974" frameHeight="1074"/>
+	<SubTexture name="EAGLE SCREAAAAAAAAAAAAM0111" x="5304" y="5271" width="640" height="637" frameX="-185" frameY="-214" frameWidth="974" frameHeight="1074"/>
+	<SubTexture name="EAGLE SCREAAAAAAAAAAAAM0112" x="2652" y="5314" width="640" height="637" frameX="-185" frameY="-214" frameWidth="974" frameHeight="1074"/>
+	<SubTexture name="EAGLE SCREAAAAAAAAAAAAM0113" x="3978" y="5350" width="640" height="637" frameX="-185" frameY="-214" frameWidth="974" frameHeight="1074"/>
+	<SubTexture name="EAGLE SCREAAAAAAAAAAAAM0114" x="4641" y="5355" width="640" height="637" frameX="-185" frameY="-214" frameWidth="974" frameHeight="1074"/>
+	<SubTexture name="EAGLE SCREAAAAAAAAAAAAM0115" x="0" y="5458" width="640" height="637" frameX="-185" frameY="-214" frameWidth="974" frameHeight="1074"/>
+	<SubTexture name="EAGLE SCREAAAAAAAAAAAAM0116" x="6708" y="5562" width="640" height="637" frameX="-185" frameY="-214" frameWidth="974" frameHeight="1074"/>
+	<SubTexture name="EAGLE SCREAAAAAAAAAAAAM0117" x="7371" y="5562" width="640" height="637" frameX="-185" frameY="-214" frameWidth="974" frameHeight="1074"/>
+	<SubTexture name="EAGLE SCREAAAAAAAAAAAAM0118" x="2730" y="3334" width="640" height="637" frameX="-185" frameY="-214" frameWidth="974" frameHeight="1074"/>
+	<SubTexture name="EAGLE SCREAAAAAAAAAAAAM0119" x="5235" y="3375" width="640" height="637" frameX="-185" frameY="-214" frameWidth="974" frameHeight="1074"/>
+	<SubTexture name="EAGLE SCREAAAAAAAAAAAAM0120" x="0" y="3478" width="640" height="637" frameX="-185" frameY="-214" frameWidth="974" frameHeight="1074"/>
+	<SubTexture name="EAGLE SCREAAAAAAAAAAAAM0121" x="7397" y="3582" width="640" height="637" frameX="-185" frameY="-214" frameWidth="974" frameHeight="1074"/>
+	<SubTexture name="EAGLE SCREAAAAAAAAAAAAM0122" x="663" y="3734" width="640" height="637" frameX="-185" frameY="-214" frameWidth="974" frameHeight="1074"/>
+	<SubTexture name="EAGLE SCREAAAAAAAAAAAAM0123" x="1326" y="3734" width="640" height="637" frameX="-185" frameY="-214" frameWidth="974" frameHeight="1074"/>
+	<SubTexture name="EAGLE SCREAAAAAAAAAAAAM0124" x="1989" y="3734" width="640" height="637" frameX="-185" frameY="-214" frameWidth="974" frameHeight="1074"/>
+	<SubTexture name="EAGLE SCREAAAAAAAAAAAAM0125" x="3393" y="3756" width="640" height="637" frameX="-185" frameY="-214" frameWidth="974" frameHeight="1074"/>
+	<SubTexture name="EAGLE SCREAAAAAAAAAAAAM0126" x="6599" y="3869" width="640" height="637" frameX="-185" frameY="-214" frameWidth="974" frameHeight="1074"/>
+	<SubTexture name="EAGLE SCREAAAAAAAAAAAAM0127" x="5898" y="3951" width="640" height="637" frameX="-185" frameY="-214" frameWidth="974" frameHeight="1074"/>
+	<SubTexture name="EAGLE SCREAAAAAAAAAAAAM0128" x="2652" y="3994" width="640" height="637" frameX="-185" frameY="-214" frameWidth="974" frameHeight="1074"/>
+	<SubTexture name="EAGLE SCREAAAAAAAAAAAAM0129" x="4056" y="4030" width="640" height="637" frameX="-185" frameY="-214" frameWidth="974" frameHeight="1074"/>
+	<SubTexture name="EAGLE SCREAAAAAAAAAAAAM0130" x="4719" y="4035" width="640" height="637" frameX="-185" frameY="-214" frameWidth="974" frameHeight="1074"/>
+	<SubTexture name="EAGLE SCREAAAAAAAAAAAAM0131" x="0" y="4138" width="640" height="637" frameX="-185" frameY="-214" frameWidth="974" frameHeight="1074"/>
+	<SubTexture name="EAGLE SCREAAAAAAAAAAAAM0132" x="7262" y="4242" width="640" height="637" frameX="-185" frameY="-214" frameWidth="974" frameHeight="1074"/>
+	<SubTexture name="EAGLE SCREAAAAAAAAAAAAM0133" x="663" y="4394" width="640" height="637" frameX="-185" frameY="-214" frameWidth="974" frameHeight="1074"/>
+	<SubTexture name="EAGLE SCREAAAAAAAAAAAAM0134" x="1326" y="4394" width="640" height="637" frameX="-185" frameY="-214" frameWidth="974" frameHeight="1074"/>
+	<SubTexture name="EAGLE SCREAAAAAAAAAAAAM0135" x="1989" y="4394" width="640" height="637" frameX="-185" frameY="-214" frameWidth="974" frameHeight="1074"/>
+	<SubTexture name="EAGLE SCREAAAAAAAAAAAAM0136" x="3315" y="4416" width="640" height="637" frameX="-185" frameY="-214" frameWidth="974" frameHeight="1074"/>
+	<SubTexture name="EAGLE SCREAAAAAAAAAAAAM0137" x="6561" y="4529" width="640" height="637" frameX="-185" frameY="-214" frameWidth="974" frameHeight="1074"/>
+	<SubTexture name="EAGLE SCREAAAAAAAAAAAAM0138" x="5382" y="4611" width="640" height="637" frameX="-185" frameY="-214" frameWidth="974" frameHeight="1074"/>
+	<SubTexture name="EAGLE SCREAAAAAAAAAAAAM0139" x="2652" y="4654" width="640" height="637" frameX="-185" frameY="-214" frameWidth="974" frameHeight="1074"/>
+	<SubTexture name="EAGLE SCREAAAAAAAAAAAAM0140" x="3978" y="4690" width="640" height="637" frameX="-185" frameY="-214" frameWidth="974" frameHeight="1074"/>
+	<SubTexture name="EAGLE SCREAAAAAAAAAAAAM0141" x="4641" y="4695" width="640" height="637" frameX="-185" frameY="-214" frameWidth="974" frameHeight="1074"/>
+	<SubTexture name="EAGLE SCREAAAAAAAAAAAAM0142" x="0" y="4798" width="640" height="637" frameX="-185" frameY="-214" frameWidth="974" frameHeight="1074"/>
+	<SubTexture name="EAGLE SCREAAAAAAAAAAAAM0143" x="7224" y="4902" width="640" height="637" frameX="-185" frameY="-214" frameWidth="974" frameHeight="1074"/>
+	<SubTexture name="EAGLE SCREAAAAAAAAAAAAM0144" x="663" y="5054" width="640" height="637" frameX="-185" frameY="-214" frameWidth="974" frameHeight="1074"/>
+	<SubTexture name="EAGLE SCREAAAAAAAAAAAAM0145" x="1326" y="5054" width="640" height="637" frameX="-185" frameY="-214" frameWidth="974" frameHeight="1074"/>
+	<SubTexture name="EAGLE SCREAAAAAAAAAAAAM0146" x="1989" y="5054" width="640" height="637" frameX="-185" frameY="-214" frameWidth="974" frameHeight="1074"/>
+	<SubTexture name="EAGLE SCREAAAAAAAAAAAAM0147" x="3315" y="5076" width="640" height="637" frameX="-185" frameY="-214" frameWidth="974" frameHeight="1074"/>
+	<SubTexture name="EAGLE SCREAAAAAAAAAAAAM0148" x="6045" y="5189" width="640" height="637" frameX="-185" frameY="-214" frameWidth="974" frameHeight="1074"/>
+	<SubTexture name="EAGLE SCREAAAAAAAAAAAAM0149" x="5304" y="5271" width="640" height="637" frameX="-185" frameY="-214" frameWidth="974" frameHeight="1074"/>
+	<SubTexture name="EAGLE SCREAAAAAAAAAAAAM0150" x="2652" y="5314" width="640" height="637" frameX="-185" frameY="-214" frameWidth="974" frameHeight="1074"/>
+	<SubTexture name="EAGLE SCREAAAAAAAAAAAAM0151" x="3978" y="5350" width="640" height="637" frameX="-185" frameY="-214" frameWidth="974" frameHeight="1074"/>
+	<SubTexture name="EAGLE SCREAAAAAAAAAAAAM0152" x="4641" y="5355" width="640" height="637" frameX="-185" frameY="-214" frameWidth="974" frameHeight="1074"/>
+	<SubTexture name="EAGLE SCREAAAAAAAAAAAAM0153" x="0" y="5458" width="640" height="637" frameX="-185" frameY="-214" frameWidth="974" frameHeight="1074"/>
+	<SubTexture name="Eagle Idle0000" x="6797" y="2621" width="634" height="674" frameX="0" frameY="-15" frameWidth="634" frameHeight="689"/>
+	<SubTexture name="Eagle Idle0001" x="6797" y="2621" width="634" height="674" frameX="0" frameY="-15" frameWidth="634" frameHeight="689"/>
+	<SubTexture name="Eagle Idle0002" x="0" y="2781" width="622" height="674" frameX="-7" frameY="-15" frameWidth="634" frameHeight="689"/>
+	<SubTexture name="Eagle Idle0003" x="0" y="2781" width="622" height="674" frameX="-7" frameY="-15" frameWidth="634" frameHeight="689"/>
+	<SubTexture name="Eagle Idle0004" x="5964" y="3247" width="612" height="681" frameX="-12" frameY="-8" frameWidth="634" frameHeight="689"/>
+	<SubTexture name="Eagle Idle0005" x="5964" y="3247" width="612" height="681" frameX="-12" frameY="-8" frameWidth="634" frameHeight="689"/>
+	<SubTexture name="Eagle Idle0006" x="7454" y="2874" width="612" height="685" frameX="-12" frameY="-4" frameWidth="634" frameHeight="689"/>
+	<SubTexture name="Eagle Idle0007" x="7454" y="2874" width="612" height="685" frameX="-12" frameY="-4" frameWidth="634" frameHeight="689"/>
+	<SubTexture name="Eagle Idle0008" x="2095" y="2659" width="612" height="689" frameX="-12" frameY="0" frameWidth="634" frameHeight="689"/>
+	<SubTexture name="Eagle Idle0009" x="2095" y="2659" width="612" height="689" frameX="-12" frameY="0" frameWidth="634" frameHeight="689"/>
+	<SubTexture name="Eagle Idle0010" x="2095" y="2659" width="612" height="689" frameX="-12" frameY="0" frameWidth="634" frameHeight="689"/>
+	<SubTexture name="Eagle Idle0011" x="2095" y="2659" width="612" height="689" frameX="-12" frameY="0" frameWidth="634" frameHeight="689"/>
+	<SubTexture name="Eagle Idle0012" x="2095" y="2659" width="612" height="689" frameX="-12" frameY="0" frameWidth="634" frameHeight="689"/>
+	<SubTexture name="Eagle Idle0013" x="2095" y="2659" width="612" height="689" frameX="-12" frameY="0" frameWidth="634" frameHeight="689"/>
+	<SubTexture name="Eagle SingNote Down0000" x="4020" y="1748" width="400" height="636" frameX="-210" frameY="-334" frameWidth="820" frameHeight="1304"/>
+	<SubTexture name="Eagle SingNote Down0001" x="6091" y="5849" width="470" height="746" frameX="-175" frameY="-279" frameWidth="820" frameHeight="1304"/>
+	<SubTexture name="Eagle SingNote Down0002" x="714" y="2380" width="540" height="858" frameX="-140" frameY="-223" frameWidth="820" frameHeight="1304"/>
+	<SubTexture name="Eagle SingNote Down0003" x="1840" y="983" width="610" height="970" frameX="-105" frameY="-167" frameWidth="820" frameHeight="1304"/>
+	<SubTexture name="Eagle SingNote Down0004" x="5430" y="0" width="680" height="1081" frameX="-70" frameY="-112" frameWidth="820" frameHeight="1304"/>
+	<SubTexture name="Eagle SingNote Down0005" x="2828" y="0" width="750" height="1192" frameX="-35" frameY="-56" frameWidth="820" frameHeight="1304"/>
+	<SubTexture name="Eagle SingNote Down0006" x="0" y="0" width="820" height="1304"/>
+	<SubTexture name="Eagle SingNote Left0000" x="6133" y="0" width="1809" height="398" frameX="-1121" frameY="0" frameWidth="2930" frameHeight="398"/>
+	<SubTexture name="Eagle SingNote Left0001" x="6133" y="0" width="1809" height="398" frameX="-1121" frameY="0" frameWidth="2930" frameHeight="398"/>
+	<SubTexture name="Eagle SingNote Left0002" x="6133" y="0" width="1809" height="398" frameX="-423" frameY="0" frameWidth="2930" frameHeight="398"/>
+	<SubTexture name="Eagle SingNote Left0003" x="6133" y="0" width="1809" height="398" frameX="-423" frameY="0" frameWidth="2930" frameHeight="398"/>
+	<SubTexture name="Eagle SingNote Left0004" x="0" y="6190" width="817" height="398" frameX="0" frameY="0" frameWidth="2930" frameHeight="398"/>
+	<SubTexture name="Eagle SingNote Left0005" x="0" y="6190" width="817" height="398" frameX="0" frameY="0" frameWidth="2930" frameHeight="398"/>
+	<SubTexture name="Eagle SingNote Left0006" x="6584" y="6222" width="788" height="398" frameX="-222" frameY="0" frameWidth="2930" frameHeight="398"/>
+	<SubTexture name="Eagle SingNote Left0007" x="6584" y="6222" width="788" height="398" frameX="-222" frameY="0" frameWidth="2930" frameHeight="398"/>
+	<SubTexture name="Eagle SingNote Left0008" x="3062" y="6447" width="689" height="398" frameX="-128" frameY="0" frameWidth="2930" frameHeight="398"/>
+	<SubTexture name="Eagle SingNote Left0009" x="3062" y="6447" width="689" height="398" frameX="-128" frameY="0" frameWidth="2930" frameHeight="398"/>
+	<SubTexture name="Eagle SingNote Left0010" x="4331" y="6578" width="637" height="398" frameX="-222" frameY="0" frameWidth="2930" frameHeight="398"/>
+	<SubTexture name="Eagle SingNote Left0011" x="4331" y="6578" width="637" height="398" frameX="-222" frameY="0" frameWidth="2930" frameHeight="398"/>
+	<SubTexture name="Eagle SingNote Left0012" x="0" y="6611" width="612" height="398" frameX="-205" frameY="0" frameWidth="2930" frameHeight="398"/>
+	<SubTexture name="Eagle SingNote Left0013" x="0" y="6611" width="612" height="398" frameX="-205" frameY="0" frameWidth="2930" frameHeight="398"/>
+	<SubTexture name="Eagle SingNote Left0014" x="5898" y="6618" width="599" height="398" frameX="-222" frameY="0" frameWidth="2930" frameHeight="398"/>
+	<SubTexture name="Eagle SingNote Left0015" x="5898" y="6618" width="599" height="398" frameX="-222" frameY="0" frameWidth="2930" frameHeight="398"/>
+	<SubTexture name="Eagle SingNote Left0016" x="6520" y="6643" width="595" height="398" frameX="-222" frameY="0" frameWidth="2930" frameHeight="398"/>
+	<SubTexture name="Eagle SingNote Left0017" x="6520" y="6643" width="595" height="398" frameX="-222" frameY="0" frameWidth="2930" frameHeight="398"/>
+	<SubTexture name="Eagle SingNote Right0000" x="4991" y="6466" width="884" height="332" frameX="0" frameY="-378" frameWidth="1392" frameHeight="710"/>
+	<SubTexture name="Eagle SingNote Right0001" x="4991" y="6466" width="884" height="332" frameX="0" frameY="-378" frameWidth="1392" frameHeight="710"/>
+	<SubTexture name="Eagle SingNote Right0002" x="6109" y="1953" width="665" height="710" frameX="-727" frameY="0" frameWidth="1392" frameHeight="710"/>
+	<SubTexture name="Eagle SingNote Right0003" x="6109" y="1953" width="665" height="710" frameX="-727" frameY="0" frameWidth="1392" frameHeight="710"/>
+	<SubTexture name="Eagle SingNote Right0004" x="4331" y="6015" width="637" height="540" frameX="-678" frameY="-129" frameWidth="1392" frameHeight="710"/>
+	<SubTexture name="Eagle SingNote Right0005" x="4331" y="6015" width="637" height="540" frameX="-678" frameY="-129" frameWidth="1392" frameHeight="710"/>
+	<SubTexture name="Eagle SingNote Right0006" x="7395" y="6222" width="666" height="441" frameX="-613" frameY="-237" frameWidth="1392" frameHeight="710"/>
+	<SubTexture name="Eagle SingNote Right0007" x="7395" y="6222" width="666" height="441" frameX="-613" frameY="-237" frameWidth="1392" frameHeight="710"/>
+	<SubTexture name="Eagle SingNote Right0008" x="2198" y="6506" width="606" height="426" frameX="-585" frameY="-254" frameWidth="1392" frameHeight="710"/>
+	<SubTexture name="Eagle SingNote Right0009" x="2198" y="6506" width="606" height="426" frameX="-585" frameY="-254" frameWidth="1392" frameHeight="710"/>
+	<SubTexture name="Eagle SingNote Right0010" x="1556" y="6305" width="619" height="456" frameX="-541" frameY="-226" frameWidth="1392" frameHeight="710"/>
+	<SubTexture name="Eagle SingNote Right0011" x="1556" y="6305" width="619" height="456" frameX="-541" frameY="-226" frameWidth="1392" frameHeight="710"/>
+	<SubTexture name="Eagle SingNote Up0000" x="7603" y="1904" width="495" height="947" frameX="0" frameY="-269" frameWidth="925" frameHeight="1216"/>
+	<SubTexture name="Eagle SingNote Up0001" x="7603" y="1904" width="495" height="947" frameX="0" frameY="-269" frameWidth="925" frameHeight="1216"/>
+	<SubTexture name="Eagle SingNote Up0002" x="5180" y="2024" width="906" height="529" frameX="-17" frameY="0" frameWidth="925" frameHeight="1216"/>
+	<SubTexture name="Eagle SingNote Up0003" x="5180" y="2024" width="906" height="529" frameX="-17" frameY="0" frameWidth="925" frameHeight="1216"/>
+	<SubTexture name="Eagle SingNote Up0004" x="3774" y="2508" width="873" height="526" frameX="-48" frameY="-83" frameWidth="925" frameHeight="1216"/>
+	<SubTexture name="Eagle SingNote Up0005" x="3774" y="2508" width="873" height="526" frameX="-48" frameY="-83" frameWidth="925" frameHeight="1216"/>
+	<SubTexture name="Eagle SingNote Up0006" x="3774" y="3252" width="875" height="481" frameX="-50" frameY="-158" frameWidth="925" frameHeight="1216"/>
+	<SubTexture name="Eagle SingNote Up0007" x="3774" y="3252" width="875" height="481" frameX="-50" frameY="-158" frameWidth="925" frameHeight="1216"/>
+	<SubTexture name="Eagle SingNote Up0008" x="663" y="5714" width="875" height="453" frameX="-44" frameY="-208" frameWidth="925" frameHeight="1216"/>
+	<SubTexture name="Eagle SingNote Up0009" x="663" y="5714" width="875" height="453" frameX="-44" frameY="-208" frameWidth="925" frameHeight="1216"/>
+	<SubTexture name="MIOGHTY EAGLE0000" x="2730" y="3334" width="640" height="637" frameX="0" frameY="0" frameWidth="974" frameHeight="1074"/>
+	<SubTexture name="MIOGHTY EAGLE0001" x="5235" y="3375" width="640" height="637" frameX="0" frameY="0" frameWidth="974" frameHeight="1074"/>
+	<SubTexture name="MIOGHTY EAGLE0002" x="0" y="3478" width="640" height="637" frameX="0" frameY="0" frameWidth="974" frameHeight="1074"/>
+	<SubTexture name="MIOGHTY EAGLE0003" x="7397" y="3582" width="640" height="637" frameX="0" frameY="0" frameWidth="974" frameHeight="1074"/>
+	<SubTexture name="MIOGHTY EAGLE0004" x="663" y="3734" width="640" height="637" frameX="0" frameY="0" frameWidth="974" frameHeight="1074"/>
+	<SubTexture name="MIOGHTY EAGLE0005" x="1326" y="3734" width="640" height="637" frameX="0" frameY="0" frameWidth="974" frameHeight="1074"/>
+	<SubTexture name="MIOGHTY EAGLE0006" x="1989" y="3734" width="640" height="637" frameX="0" frameY="0" frameWidth="974" frameHeight="1074"/>
+	<SubTexture name="MIOGHTY EAGLE0007" x="3393" y="3756" width="640" height="637" frameX="0" frameY="0" frameWidth="974" frameHeight="1074"/>
+	<SubTexture name="MIOGHTY EAGLE0008" x="6599" y="3869" width="640" height="637" frameX="0" frameY="0" frameWidth="974" frameHeight="1074"/>
+	<SubTexture name="MIOGHTY EAGLE0009" x="5898" y="3951" width="640" height="637" frameX="0" frameY="0" frameWidth="974" frameHeight="1074"/>
+	<SubTexture name="MIOGHTY EAGLE0010" x="2652" y="3994" width="640" height="637" frameX="0" frameY="0" frameWidth="974" frameHeight="1074"/>
+	<SubTexture name="MIOGHTY EAGLE0011" x="4056" y="4030" width="640" height="637" frameX="0" frameY="0" frameWidth="974" frameHeight="1074"/>
+	<SubTexture name="MIOGHTY EAGLE0012" x="4719" y="4035" width="640" height="637" frameX="0" frameY="0" frameWidth="974" frameHeight="1074"/>
+	<SubTexture name="MIOGHTY EAGLE0013" x="0" y="4138" width="640" height="637" frameX="0" frameY="0" frameWidth="974" frameHeight="1074"/>
+	<SubTexture name="MIOGHTY EAGLE0014" x="7262" y="4242" width="640" height="637" frameX="0" frameY="0" frameWidth="974" frameHeight="1074"/>
+	<SubTexture name="MIOGHTY EAGLE0015" x="663" y="4394" width="640" height="637" frameX="0" frameY="0" frameWidth="974" frameHeight="1074"/>
+	<SubTexture name="MIOGHTY EAGLE0016" x="1326" y="4394" width="640" height="637" frameX="0" frameY="0" frameWidth="974" frameHeight="1074"/>
+	<SubTexture name="MIOGHTY EAGLE0017" x="1989" y="4394" width="640" height="637" frameX="0" frameY="0" frameWidth="974" frameHeight="1074"/>
+	<SubTexture name="MIOGHTY EAGLE0018" x="3315" y="4416" width="640" height="637" frameX="0" frameY="0" frameWidth="974" frameHeight="1074"/>
+	<SubTexture name="MIOGHTY EAGLE0019" x="6561" y="4529" width="640" height="637" frameX="0" frameY="0" frameWidth="974" frameHeight="1074"/>
+	<SubTexture name="MIOGHTY EAGLE0020" x="5382" y="4611" width="640" height="637" frameX="0" frameY="0" frameWidth="974" frameHeight="1074"/>
+	<SubTexture name="MIOGHTY EAGLE0021" x="2652" y="4654" width="640" height="637" frameX="0" frameY="0" frameWidth="974" frameHeight="1074"/>
+	<SubTexture name="MIOGHTY EAGLE0022" x="3978" y="4690" width="640" height="637" frameX="0" frameY="0" frameWidth="974" frameHeight="1074"/>
+	<SubTexture name="MIOGHTY EAGLE0023" x="4641" y="4695" width="640" height="637" frameX="0" frameY="0" frameWidth="974" frameHeight="1074"/>
+	<SubTexture name="MIOGHTY EAGLE0024" x="0" y="4798" width="640" height="637" frameX="0" frameY="0" frameWidth="974" frameHeight="1074"/>
+	<SubTexture name="MIOGHTY EAGLE0025" x="7224" y="4902" width="640" height="637" frameX="0" frameY="0" frameWidth="974" frameHeight="1074"/>
+	<SubTexture name="MIOGHTY EAGLE0026" x="663" y="5054" width="640" height="637" frameX="0" frameY="0" frameWidth="974" frameHeight="1074"/>
+	<SubTexture name="MIOGHTY EAGLE0027" x="1326" y="5054" width="640" height="637" frameX="0" frameY="0" frameWidth="974" frameHeight="1074"/>
+	<SubTexture name="MIOGHTY EAGLE0028" x="1989" y="5054" width="640" height="637" frameX="0" frameY="0" frameWidth="974" frameHeight="1074"/>
+	<SubTexture name="MIOGHTY EAGLE0029" x="3315" y="5076" width="640" height="637" frameX="0" frameY="0" frameWidth="974" frameHeight="1074"/>
+	<SubTexture name="MIOGHTY EAGLE0030" x="6045" y="5189" width="640" height="637" frameX="0" frameY="0" frameWidth="974" frameHeight="1074"/>
+	<SubTexture name="MIOGHTY EAGLE0031" x="5304" y="5271" width="640" height="637" frameX="0" frameY="0" frameWidth="974" frameHeight="1074"/>
+	<SubTexture name="MIOGHTY EAGLE0032" x="2652" y="5314" width="640" height="637" frameX="0" frameY="0" frameWidth="974" frameHeight="1074"/>
+	<SubTexture name="MIOGHTY EAGLE0033" x="3978" y="5350" width="640" height="637" frameX="0" frameY="0" frameWidth="974" frameHeight="1074"/>
+	<SubTexture name="MIOGHTY EAGLE0034" x="4641" y="5355" width="640" height="637" frameX="0" frameY="0" frameWidth="974" frameHeight="1074"/>
+	<SubTexture name="MIOGHTY EAGLE0035" x="0" y="5458" width="640" height="637" frameX="0" frameY="0" frameWidth="974" frameHeight="1074"/>
+	<SubTexture name="MIOGHTY EAGLE0036" x="6708" y="5562" width="640" height="637" frameX="0" frameY="0" frameWidth="974" frameHeight="1074"/>
+	<SubTexture name="MIOGHTY EAGLE0037" x="7371" y="5562" width="640" height="637" frameX="0" frameY="0" frameWidth="974" frameHeight="1074"/>
+	<SubTexture name="eaglemiss0000" x="3062" y="5974" width="803" height="450" frameX="-41" frameY="-346" frameWidth="844" frameHeight="830"/>
+	<SubTexture name="eaglemiss0001" x="3062" y="5974" width="803" height="450" frameX="-41" frameY="-346" frameWidth="844" frameHeight="830"/>
+	<SubTexture name="eaglemiss0002" x="3888" y="6010" width="420" height="830" frameX="-199" frameY="0" frameWidth="844" frameHeight="830"/>
+	<SubTexture name="eaglemiss0003" x="3888" y="6010" width="420" height="830" frameX="-199" frameY="0" frameWidth="844" frameHeight="830"/>
+	<SubTexture name="eaglemiss0004" x="843" y="997" width="819" height="699" frameX="0" frameY="-127" frameWidth="844" frameHeight="830"/>
+	<SubTexture name="eaglemiss0005" x="843" y="997" width="819" height="699" frameX="0" frameY="-127" frameWidth="844" frameHeight="830"/>
+	<SubTexture name="eaglemiss0006" x="6999" y="1182" width="819" height="699" frameX="0" frameY="-127" frameWidth="844" frameHeight="830"/>
+	<SubTexture name="eaglemiss0007" x="6999" y="1182" width="819" height="699" frameX="0" frameY="-127" frameWidth="844" frameHeight="830"/>
+	<SubTexture name="eaglemiss0008" x="843" y="997" width="819" height="699" frameX="0" frameY="-127" frameWidth="844" frameHeight="830"/>
+	<SubTexture name="eaglemiss0009" x="843" y="997" width="819" height="699" frameX="0" frameY="-127" frameWidth="844" frameHeight="830"/>
+	<SubTexture name="eaglemiss0010" x="6999" y="1182" width="819" height="699" frameX="0" frameY="-127" frameWidth="844" frameHeight="830"/>
+	<SubTexture name="eaglemiss0011" x="6999" y="1182" width="819" height="699" frameX="0" frameY="-127" frameWidth="844" frameHeight="830"/>
+	<SubTexture name="eaglemiss0012" x="843" y="997" width="819" height="699" frameX="0" frameY="-127" frameWidth="844" frameHeight="830"/>
+	<SubTexture name="eaglemiss0013" x="843" y="997" width="819" height="699" frameX="0" frameY="-127" frameWidth="844" frameHeight="830"/>
+	<SubTexture name="eaglemiss0014" x="6999" y="1182" width="819" height="699" frameX="0" frameY="-127" frameWidth="844" frameHeight="830"/>
+	<SubTexture name="eaglemiss0015" x="6999" y="1182" width="819" height="699" frameX="0" frameY="-127" frameWidth="844" frameHeight="830"/>
+	<SubTexture name="eaglemiss0016" x="843" y="997" width="819" height="699" frameX="0" frameY="-127" frameWidth="844" frameHeight="830"/>
+	<SubTexture name="eaglemiss0017" x="843" y="997" width="819" height="699" frameX="0" frameY="-127" frameWidth="844" frameHeight="830"/>
+	<SubTexture name="eaglemiss0018" x="6999" y="1182" width="819" height="699" frameX="0" frameY="-127" frameWidth="844" frameHeight="830"/>
+	<SubTexture name="eaglemiss0019" x="6999" y="1182" width="819" height="699" frameX="0" frameY="-127" frameWidth="844" frameHeight="830"/>
+	<SubTexture name="eaglemiss0020" x="843" y="997" width="819" height="699" frameX="0" frameY="-127" frameWidth="844" frameHeight="830"/>
+	<SubTexture name="eaglemiss0021" x="843" y="997" width="819" height="699" frameX="0" frameY="-127" frameWidth="844" frameHeight="830"/>
+	<SubTexture name="eaglemiss0022" x="6999" y="1182" width="819" height="699" frameX="0" frameY="-127" frameWidth="844" frameHeight="830"/>
+	<SubTexture name="eaglemiss0023" x="6999" y="1182" width="819" height="699" frameX="0" frameY="-127" frameWidth="844" frameHeight="830"/>
+</TextureAtlas>

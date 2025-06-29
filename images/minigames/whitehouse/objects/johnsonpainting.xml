@@ -1,0 +1,8 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TextureAtlas imagePath="johnsonpainting.png">
+	<!-- Created with Adobe Animate version 22.0.0.93 -->
+	<!-- http://www.adobe.com/products/animate.html -->
+	<SubTexture name="daAnim0000" x="0" y="0" width="181" height="181" frameX="0" frameY="-1" frameWidth="181" frameHeight="184"/>
+	<SubTexture name="daAnim0001" x="181" y="0" width="172" height="182" frameX="-2" frameY="-2" frameWidth="181" frameHeight="184"/>
+	<SubTexture name="daAnim0002" x="0" y="182" width="168" height="180" frameX="-6" frameY="0" frameWidth="181" frameHeight="184"/>
+</TextureAtlas>

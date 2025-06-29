@@ -1,0 +1,31 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TextureAtlas imagePath="explosivo.png">
+	<!-- Created with Adobe Animate version 22.0.0.93 -->
+	<!-- http://www.adobe.com/products/animate.html -->
+	<SubTexture name="explosivo0000" x="0" y="0" width="200" height="200"/>
+	<SubTexture name="explosivo0001" x="0" y="200" width="200" height="200"/>
+	<SubTexture name="explosivo0002" x="0" y="400" width="200" height="200"/>
+	<SubTexture name="explosivo0003" x="0" y="600" width="200" height="200"/>
+	<SubTexture name="explosivo0004" x="0" y="800" width="200" height="200"/>
+	<SubTexture name="explosivo0005" x="0" y="1000" width="200" height="200"/>
+	<SubTexture name="explosivo0006" x="0" y="1200" width="200" height="200"/>
+	<SubTexture name="explosivo0007" x="0" y="1400" width="200" height="200"/>
+	<SubTexture name="explosivo0008" x="0" y="1600" width="200" height="200"/>
+	<SubTexture name="explosivo0009" x="0" y="1800" width="200" height="200"/>
+	<SubTexture name="explosivo0010" x="200" y="0" width="200" height="200"/>
+	<SubTexture name="explosivo0011" x="200" y="200" width="200" height="200"/>
+	<SubTexture name="explosivo0012" x="200" y="400" width="200" height="200"/>
+	<SubTexture name="explosivo0013" x="200" y="600" width="200" height="200"/>
+	<SubTexture name="explosivo0014" x="200" y="800" width="200" height="200"/>
+	<SubTexture name="explosivo0015" x="200" y="1000" width="200" height="200"/>
+	<SubTexture name="explosivo0016" x="200" y="1200" width="200" height="200"/>
+	<SubTexture name="explosivo0017" x="200" y="1400" width="200" height="200"/>
+	<SubTexture name="explosivo0018" x="200" y="1600" width="200" height="200"/>
+	<SubTexture name="explosivo0019" x="200" y="1800" width="200" height="200"/>
+	<SubTexture name="explosivo0020" x="400" y="0" width="200" height="200"/>
+	<SubTexture name="explosivo0021" x="400" y="200" width="200" height="200"/>
+	<SubTexture name="explosivo0022" x="400" y="400" width="200" height="200"/>
+	<SubTexture name="explosivo0023" x="400" y="600" width="200" height="200"/>
+	<SubTexture name="explosivo0024" x="400" y="800" width="200" height="200"/>
+	<SubTexture name="explosivo0025" x="400" y="1000" width="200" height="200"/>
+</TextureAtlas>

@@ -1,0 +1,9 @@
+<!DOCTYPE codename-engine-character>
+<character x="75" y="245" sprite="other/whitehouseicon" scale="1.5" icon="whitehouseicon" holdTime="6.1">
+	<anim name="idle-day" anim="idle-day" x="0" y="0" fps="24" loop="false"/>
+	<anim name="idle-night" anim="idle-night" x="0" y="0" fps="24" loop="false"/>
+	<anim name="hover-day" anim="whitehousehover-day" x="203" y="296" fps="24" loop="true"/>
+	<anim name="hover-night" anim="whitehousehover-night" x="106" y="234" fps="24" loop="true"/>
+	<anim name="transition-day" anim="housetransition-day" x="203" y="296" fps="24" loop="false"/>
+	<anim name="transition-night" anim="housetransition-night" x="106" y="234" fps="24" loop="false"/>
+</character>

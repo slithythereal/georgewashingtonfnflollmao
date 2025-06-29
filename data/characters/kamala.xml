@@ -1,0 +1,8 @@
+<!DOCTYPE codename-engine-character>
+<character sprite="kamala" camx="-175" camy="60" color="#23ac56" icon="kamala" holdTime="6.1">
+	<anim name="idle" anim="kamala idle" x="0" y="0" fps="24" loop="false"/>
+	<anim name="singLEFT" anim="kamala left" x="80" y="-75" fps="24" loop="false"/>
+	<anim name="singDOWN" anim="kamala down" x="105" y="-85" fps="24" loop="false"/>
+	<anim name="singUP" anim="kamala up" x="-20" y="214" fps="24" loop="false"/>
+	<anim name="singRIGHT" anim="kamala right" x="-14" y="-7" fps="24" loop="false"/>
+</character>

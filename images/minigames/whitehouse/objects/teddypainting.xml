@@ -1,0 +1,8 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TextureAtlas imagePath="teddypainting.png">
+	<!-- Created with Adobe Animate version 22.0.0.93 -->
+	<!-- http://www.adobe.com/products/animate.html -->
+	<SubTexture name="daAnim0000" x="0" y="0" width="120" height="190"/>
+	<SubTexture name="daAnim0001" x="120" y="0" width="117" height="187" frameX="-2" frameY="0" frameWidth="120" frameHeight="190"/>
+	<SubTexture name="daAnim0002" x="237" y="0" width="118" height="189" frameX="0" frameY="0" frameWidth="120" frameHeight="190"/>
+</TextureAtlas>

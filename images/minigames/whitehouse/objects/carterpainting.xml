@@ -1,0 +1,8 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TextureAtlas imagePath="carterpainting.png">
+	<!-- Created with Adobe Animate version 22.0.0.93 -->
+	<!-- http://www.adobe.com/products/animate.html -->
+	<SubTexture name="daAnim0000" x="0" y="0" width="111" height="151" frameX="-2" frameY="0" frameWidth="114" frameHeight="152"/>
+	<SubTexture name="daAnim0001" x="111" y="0" width="112" height="152" frameX="-2" frameY="0" frameWidth="114" frameHeight="152"/>
+	<SubTexture name="daAnim0002" x="223" y="0" width="112" height="147" frameX="0" frameY="-1" frameWidth="114" frameHeight="152"/>
+</TextureAtlas>

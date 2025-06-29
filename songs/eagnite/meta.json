@@ -1,0 +1,16 @@
+{
+	"beatsPerMeasure": 4,
+	"opponentModeAllowed": true,
+	"coopAllowed": true,
+	"stepsPerBeat": 4,
+	"bpm": 165,
+	"difficulties": [
+		"normal"
+	],
+	"needsVoices": false,
+	"parsedColor": -1,
+	"displayName": "Eagnite Birdle Royale",
+	"icon": "eagle",
+	"name": "EagNite",
+	"color": "#FFFFFF"
+}

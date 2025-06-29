@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TextureAtlas imagePath="bidenstairs.png">
+	<!-- Created with Adobe Animate version 22.0.0.93 -->
+	<!-- http://www.adobe.com/products/animate.html -->
+	<SubTexture name="bidenstairs0000" x="0" y="0" width="2132" height="1294" frameX="0" frameY="0" frameWidth="2431" frameHeight="1577"/>
+	<SubTexture name="bidenstairs0001" x="2132" y="0" width="2165" height="1323" frameX="0" frameY="0" frameWidth="2431" frameHeight="1577"/>
+	<SubTexture name="bidenstairs0002" x="4297" y="0" width="2198" height="1355" frameX="0" frameY="0" frameWidth="2431" frameHeight="1577"/>
+	<SubTexture name="bidenstairs0003" x="0" y="1355" width="2232" height="1386" frameX="0" frameY="0" frameWidth="2431" frameHeight="1577"/>
+	<SubTexture name="bidenstairs0004" x="2232" y="1355" width="2265" height="1418" frameX="0" frameY="0" frameWidth="2431" frameHeight="1577"/>
+	<SubTexture name="bidenstairs0005" x="4497" y="1355" width="2298" height="1450" frameX="0" frameY="0" frameWidth="2431" frameHeight="1577"/>
+	<SubTexture name="bidenstairs0006" x="0" y="2805" width="2331" height="1482" frameX="0" frameY="0" frameWidth="2431" frameHeight="1577"/>
+	<SubTexture name="bidenstairs0007" x="2331" y="2805" width="2364" height="1513" frameX="0" frameY="0" frameWidth="2431" frameHeight="1577"/>
+	<SubTexture name="bidenstairs0008" x="4695" y="2805" width="2397" height="1545" frameX="0" frameY="0" frameWidth="2431" frameHeight="1577"/>
+	<SubTexture name="bidenstairs0009" x="0" y="4350" width="2431" height="1577"/>
+</TextureAtlas>

@@ -1,0 +1,8 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TextureAtlas imagePath="inventorybox.png">
+	<!-- Created with Adobe Animate version 22.0.0.93 -->
+	<!-- http://www.adobe.com/products/animate.html -->
+	<SubTexture name="inventorybox0000" x="0" y="0" width="113" height="92" frameX="-1" frameY="-1" frameWidth="115" frameHeight="96"/>
+	<SubTexture name="inventorybox0001" x="113" y="0" width="113" height="94" frameX="0" frameY="0" frameWidth="115" frameHeight="96"/>
+	<SubTexture name="inventorybox0002" x="0" y="94" width="115" height="96"/>
+</TextureAtlas>

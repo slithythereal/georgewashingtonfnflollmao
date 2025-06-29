@@ -1,0 +1,8 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TextureAtlas imagePath="ovalofficepaintings.png">
+	<!-- Created with Adobe Animate version 22.0.0.93 -->
+	<!-- http://www.adobe.com/products/animate.html -->
+	<SubTexture name="ovalpaintings0000" x="0" y="0" width="176" height="105" frameX="-1" frameY="0" frameWidth="177" frameHeight="109"/>
+	<SubTexture name="ovalpaintings0001" x="176" y="0" width="174" height="107" frameX="-2" frameY="-2" frameWidth="177" frameHeight="109"/>
+	<SubTexture name="ovalpaintings0002" x="0" y="107" width="176" height="107" frameX="0" frameY="0" frameWidth="177" frameHeight="109"/>
+</TextureAtlas>

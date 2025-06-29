@@ -1,0 +1,8 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TextureAtlas imagePath="reaganpainting.png">
+	<!-- Created with Adobe Animate version 22.0.0.93 -->
+	<!-- http://www.adobe.com/products/animate.html -->
+	<SubTexture name="daAnim0000" x="0" y="0" width="116" height="138" frameX="0" frameY="-2" frameWidth="116" frameHeight="140"/>
+	<SubTexture name="daAnim0001" x="116" y="0" width="116" height="140"/>
+	<SubTexture name="daAnim0002" x="232" y="0" width="114" height="139" frameX="-1" frameY="-1" frameWidth="116" frameHeight="140"/>
+</TextureAtlas>

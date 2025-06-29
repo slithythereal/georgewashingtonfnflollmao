@@ -1,0 +1,8 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TextureAtlas imagePath="marthapainting.png">
+	<!-- Created with Adobe Animate version 22.0.0.93 -->
+	<!-- http://www.adobe.com/products/animate.html -->
+	<SubTexture name="daAnim0000" x="0" y="0" width="193" height="276" frameX="-1" frameY="0" frameWidth="194" frameHeight="276"/>
+	<SubTexture name="daAnim0001" x="193" y="0" width="193" height="276" frameX="0" frameY="0" frameWidth="194" frameHeight="276"/>
+	<SubTexture name="daAnim0002" x="386" y="0" width="192" height="275" frameX="0" frameY="0" frameWidth="194" frameHeight="276"/>
+</TextureAtlas>

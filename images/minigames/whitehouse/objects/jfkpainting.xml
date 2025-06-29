@@ -1,0 +1,8 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TextureAtlas imagePath="jfkpainting.png">
+	<!-- Created with Adobe Animate version 22.0.0.93 -->
+	<!-- http://www.adobe.com/products/animate.html -->
+	<SubTexture name="daAnim0000" x="0" y="0" width="127" height="169"/>
+	<SubTexture name="daAnim0001" x="127" y="0" width="119" height="164" frameX="-3" frameY="-3" frameWidth="127" frameHeight="169"/>
+	<SubTexture name="daAnim0002" x="246" y="0" width="121" height="163" frameX="-2" frameY="-3" frameWidth="127" frameHeight="169"/>
+</TextureAtlas>

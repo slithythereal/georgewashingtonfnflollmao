@@ -1,0 +1,15 @@
+<!DOCTYPE codename-engine-character>
+<character x="200" y="300" sprite="Young_Trump_Assets" scale="1.3" flipX="true" camx="-100" isPlayer="true" icon="trump" gameOverChar="trump-dead" holdTime="6.1" color="#FF6A24" lossSfx="gameover/dontdocrime" retrySfx="gameover/oktimesup">
+	<anim name="idle" anim="Young_Trump Idle Dance" x="0" y="0" fps="24" loop="false"/>
+	<anim name="singLEFT" anim="Young_Trump SingNote Left" x="-7" y="16" fps="24" loop="false"/>
+	<anim name="singDOWN" anim="Young_Trump SingNote Down" x="65" y="16" fps="24" loop="false"/>
+	<anim name="singUP" anim="Young_Trump SingNote Up" x="310" y="83" fps="24" loop="false"/>
+	<anim name="singRIGHT" anim="Young_Trump SingNote Right" x="12" y="85" fps="24" loop="false"/>
+	<anim name="singLEFTmiss" anim="Young_Trump MissNote BASE" x="0" y="0" fps="24" loop="false"/>
+	<anim name="singRIGHTmiss" anim="Young_Trump MissNote BASE" x="0" y="0" fps="24" loop="false"/>
+	<anim name="singUPmiss" anim="Young_Trump MissNote BASE" x="0" y="0" fps="24" loop="false"/>
+	<anim name="singDOWNmiss" anim="Young_Trump MissNote BASE" x="0" y="0" fps="24" loop="false"/>
+	<anim name="taunt_1" anim="Young_Trump Taunt 1" x="185" y="110" fps="24" loop="false"/>
+	<anim name="taunt_2" anim="Young_Trump Taunt 2" x="180" y="110" fps="24" loop="false"/>
+	<anim name="taunt_3" anim="Young_Trump Taunt 3" x="200" y="90" fps="24" loop="false"/>
+</character>

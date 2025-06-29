@@ -1,0 +1,87 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TextureAtlas imagePath="whitehouseicon.png">
+	<!-- Created with Adobe Animate version 22.0.0.93 -->
+	<!-- http://www.adobe.com/products/animate.html -->
+	<SubTexture name="housetransition-day0000" x="3220" y="0" width="782" height="760"/>
+	<SubTexture name="housetransition-day0001" x="6410" y="783" width="777" height="752" frameX="-5" frameY="0" frameWidth="782" frameHeight="760"/>
+	<SubTexture name="housetransition-day0002" x="4830" y="0" width="782" height="760"/>
+	<SubTexture name="housetransition-day0003" x="7210" y="783" width="777" height="752" frameX="-5" frameY="0" frameWidth="782" frameHeight="760"/>
+	<SubTexture name="housetransition-day0004" x="5635" y="0" width="782" height="760"/>
+	<SubTexture name="housetransition-day0005" x="1610" y="1558" width="777" height="752" frameX="-5" frameY="0" frameWidth="782" frameHeight="760"/>
+	<SubTexture name="housetransition-day0006" x="6440" y="0" width="782" height="760"/>
+	<SubTexture name="housetransition-day0007" x="2410" y="1558" width="777" height="752" frameX="-5" frameY="0" frameWidth="782" frameHeight="760"/>
+	<SubTexture name="housetransition-day0008" x="7245" y="0" width="782" height="760"/>
+	<SubTexture name="housetransition-day0009" x="3210" y="1558" width="777" height="752" frameX="-5" frameY="0" frameWidth="782" frameHeight="760"/>
+	<SubTexture name="housetransition-day0010" x="0" y="783" width="782" height="760"/>
+	<SubTexture name="housetransition-day0011" x="4010" y="1558" width="777" height="752" frameX="-5" frameY="0" frameWidth="782" frameHeight="760"/>
+	<SubTexture name="housetransition-day0012" x="805" y="783" width="782" height="760"/>
+	<SubTexture name="housetransition-night0000" x="0" y="1566" width="606" height="610"/>
+	<SubTexture name="housetransition-night0001" x="5020" y="2824" width="604" height="610" frameX="-2" frameY="0" frameWidth="606" frameHeight="610"/>
+	<SubTexture name="housetransition-night0002" x="5610" y="2191" width="606" height="610"/>
+	<SubTexture name="housetransition-night0003" x="5647" y="2824" width="604" height="610" frameX="-2" frameY="0" frameWidth="606" frameHeight="610"/>
+	<SubTexture name="housetransition-night0004" x="6239" y="2191" width="606" height="610"/>
+	<SubTexture name="housetransition-night0005" x="6274" y="2824" width="604" height="610" frameX="-2" frameY="0" frameWidth="606" frameHeight="610"/>
+	<SubTexture name="housetransition-night0006" x="6868" y="2191" width="606" height="610"/>
+	<SubTexture name="housetransition-night0007" x="6901" y="2824" width="604" height="610" frameX="-2" frameY="0" frameWidth="606" frameHeight="610"/>
+	<SubTexture name="housetransition-night0008" x="7497" y="2191" width="606" height="610"/>
+	<SubTexture name="housetransition-night0009" x="7528" y="2824" width="604" height="610" frameX="-2" frameY="0" frameWidth="606" frameHeight="610"/>
+	<SubTexture name="housetransition-night0010" x="0" y="2199" width="606" height="610"/>
+	<SubTexture name="housetransition-night0011" x="0" y="2832" width="604" height="610" frameX="-2" frameY="0" frameWidth="606" frameHeight="610"/>
+	<SubTexture name="housetransition-night0012" x="629" y="2199" width="606" height="610"/>
+	<SubTexture name="idle-day0000" x="627" y="2832" width="374" height="288"/>
+	<SubTexture name="idle-day0001" x="627" y="2832" width="374" height="288"/>
+	<SubTexture name="idle-day0002" x="627" y="2832" width="374" height="288"/>
+	<SubTexture name="idle-day0003" x="627" y="2832" width="374" height="288"/>
+	<SubTexture name="idle-day0004" x="627" y="2832" width="374" height="288"/>
+	<SubTexture name="idle-day0005" x="627" y="2832" width="374" height="288"/>
+	<SubTexture name="idle-day0006" x="627" y="2832" width="374" height="288"/>
+	<SubTexture name="idle-day0007" x="627" y="2832" width="374" height="288"/>
+	<SubTexture name="idle-day0008" x="627" y="2832" width="374" height="288"/>
+	<SubTexture name="idle-day0009" x="627" y="2832" width="374" height="288"/>
+	<SubTexture name="idle-day0010" x="627" y="2832" width="374" height="288"/>
+	<SubTexture name="idle-day0011" x="627" y="2832" width="374" height="288"/>
+	<SubTexture name="idle-day0012" x="627" y="2832" width="374" height="288"/>
+	<SubTexture name="idle-day0013" x="627" y="2832" width="374" height="288"/>
+	<SubTexture name="idle-night0000" x="5020" y="2333" width="377" height="291"/>
+	<SubTexture name="idle-night0001" x="5020" y="2333" width="377" height="291"/>
+	<SubTexture name="idle-night0002" x="5020" y="2333" width="377" height="291"/>
+	<SubTexture name="idle-night0003" x="5020" y="2333" width="377" height="291"/>
+	<SubTexture name="idle-night0004" x="5020" y="2333" width="377" height="291"/>
+	<SubTexture name="idle-night0005" x="5020" y="2333" width="377" height="291"/>
+	<SubTexture name="idle-night0006" x="5020" y="2333" width="377" height="291"/>
+	<SubTexture name="idle-night0007" x="5020" y="2333" width="377" height="291"/>
+	<SubTexture name="idle-night0008" x="5020" y="2333" width="377" height="291"/>
+	<SubTexture name="idle-night0009" x="5020" y="2333" width="377" height="291"/>
+	<SubTexture name="idle-night0010" x="5020" y="2333" width="377" height="291"/>
+	<SubTexture name="idle-night0011" x="5020" y="2333" width="377" height="291"/>
+	<SubTexture name="idle-night0012" x="5020" y="2333" width="377" height="291"/>
+	<SubTexture name="idle-night0013" x="5020" y="2333" width="377" height="291"/>
+	<SubTexture name="whitehousehover-day0000" x="0" y="0" width="782" height="760"/>
+	<SubTexture name="whitehousehover-day0001" x="1610" y="783" width="777" height="752" frameX="-5" frameY="0" frameWidth="782" frameHeight="760"/>
+	<SubTexture name="whitehousehover-day0002" x="805" y="0" width="782" height="760"/>
+	<SubTexture name="whitehousehover-day0003" x="2410" y="783" width="777" height="752" frameX="-5" frameY="0" frameWidth="782" frameHeight="760"/>
+	<SubTexture name="whitehousehover-day0004" x="1610" y="0" width="782" height="760"/>
+	<SubTexture name="whitehousehover-day0005" x="3210" y="783" width="777" height="752" frameX="-5" frameY="0" frameWidth="782" frameHeight="760"/>
+	<SubTexture name="whitehousehover-day0006" x="2415" y="0" width="782" height="760"/>
+	<SubTexture name="whitehousehover-day0007" x="4010" y="783" width="777" height="752" frameX="-5" frameY="0" frameWidth="782" frameHeight="760"/>
+	<SubTexture name="whitehousehover-day0008" x="3220" y="0" width="782" height="760"/>
+	<SubTexture name="whitehousehover-day0009" x="4810" y="783" width="777" height="752" frameX="-5" frameY="0" frameWidth="782" frameHeight="760"/>
+	<SubTexture name="whitehousehover-day0010" x="4025" y="0" width="782" height="760"/>
+	<SubTexture name="whitehousehover-day0011" x="5610" y="783" width="777" height="752" frameX="-5" frameY="0" frameWidth="782" frameHeight="760"/>
+	<SubTexture name="whitehousehover-day0012" x="3220" y="0" width="782" height="760"/>
+	<SubTexture name="whitehousehover-day0013" x="4810" y="783" width="777" height="752" frameX="-5" frameY="0" frameWidth="782" frameHeight="760"/>
+	<SubTexture name="whitehousehover-night0000" x="5610" y="1558" width="606" height="610"/>
+	<SubTexture name="whitehousehover-night0001" x="1258" y="2333" width="604" height="610" frameX="-2" frameY="0" frameWidth="606" frameHeight="610"/>
+	<SubTexture name="whitehousehover-night0002" x="6239" y="1558" width="606" height="610"/>
+	<SubTexture name="whitehousehover-night0003" x="1885" y="2333" width="604" height="610" frameX="-2" frameY="0" frameWidth="606" frameHeight="610"/>
+	<SubTexture name="whitehousehover-night0004" x="6868" y="1558" width="606" height="610"/>
+	<SubTexture name="whitehousehover-night0005" x="2512" y="2333" width="604" height="610" frameX="-2" frameY="0" frameWidth="606" frameHeight="610"/>
+	<SubTexture name="whitehousehover-night0006" x="7497" y="1558" width="606" height="610"/>
+	<SubTexture name="whitehousehover-night0007" x="3139" y="2333" width="604" height="610" frameX="-2" frameY="0" frameWidth="606" frameHeight="610"/>
+	<SubTexture name="whitehousehover-night0008" x="0" y="1566" width="606" height="610"/>
+	<SubTexture name="whitehousehover-night0009" x="3766" y="2333" width="604" height="610" frameX="-2" frameY="0" frameWidth="606" frameHeight="610"/>
+	<SubTexture name="whitehousehover-night0010" x="629" y="1566" width="606" height="610"/>
+	<SubTexture name="whitehousehover-night0011" x="4393" y="2333" width="604" height="610" frameX="-2" frameY="0" frameWidth="606" frameHeight="610"/>
+	<SubTexture name="whitehousehover-night0012" x="0" y="1566" width="606" height="610"/>
+	<SubTexture name="whitehousehover-night0013" x="3766" y="2333" width="604" height="610" frameX="-2" frameY="0" frameWidth="606" frameHeight="610"/>
+</TextureAtlas>

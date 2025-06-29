@@ -1,0 +1,14 @@
+{
+    "params": [
+        {
+            "name": "Alpha",
+            "type": "String", 
+            "defaultValue": "1"
+        },
+        {
+            "name": "Time",
+            "type": "String",
+            "defaultValue": "1"
+        }
+    ]
+}

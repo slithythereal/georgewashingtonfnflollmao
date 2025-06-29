@@ -1,0 +1,60 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TextureAtlas imagePath="bottomgatedoor.png">
+	<!-- Created with Adobe Animate version 22.0.0.93 -->
+	<!-- http://www.adobe.com/products/animate.html -->
+	<SubTexture name="doordown0000" x="0" y="0" width="512" height="234"/>
+	<SubTexture name="doorlift0000" x="0" y="0" width="512" height="234"/>
+	<SubTexture name="doorlift0001" x="512" y="0" width="512" height="234"/>
+	<SubTexture name="doorlift0002" x="512" y="0" width="512" height="234"/>
+	<SubTexture name="doorlift0003" x="0" y="0" width="512" height="234"/>
+	<SubTexture name="doorlift0004" x="0" y="234" width="512" height="234"/>
+	<SubTexture name="doorlift0005" x="512" y="234" width="512" height="234"/>
+	<SubTexture name="doorlift0006" x="0" y="468" width="512" height="234"/>
+	<SubTexture name="doorlift0007" x="512" y="468" width="494" height="234" frameX="-18" frameY="0" frameWidth="512" frameHeight="234"/>
+	<SubTexture name="doorlift0008" x="512" y="468" width="494" height="234" frameX="-18" frameY="0" frameWidth="512" frameHeight="234"/>
+	<SubTexture name="doorlift0009" x="512" y="468" width="494" height="234" frameX="-18" frameY="0" frameWidth="512" frameHeight="234"/>
+	<SubTexture name="doorlift0010" x="512" y="468" width="494" height="234" frameX="-18" frameY="0" frameWidth="512" frameHeight="234"/>
+	<SubTexture name="doorlift0011" x="512" y="468" width="494" height="234" frameX="-18" frameY="0" frameWidth="512" frameHeight="234"/>
+	<SubTexture name="doorlift0012" x="512" y="468" width="494" height="234" frameX="-18" frameY="0" frameWidth="512" frameHeight="234"/>
+	<SubTexture name="doorlift0013" x="512" y="468" width="494" height="234" frameX="-18" frameY="0" frameWidth="512" frameHeight="234"/>
+	<SubTexture name="doorlift0014" x="512" y="468" width="494" height="234" frameX="-18" frameY="0" frameWidth="512" frameHeight="234"/>
+	<SubTexture name="doorlift0015" x="512" y="468" width="494" height="234" frameX="-18" frameY="0" frameWidth="512" frameHeight="234"/>
+	<SubTexture name="doorlift0016" x="512" y="468" width="494" height="234" frameX="-18" frameY="0" frameWidth="512" frameHeight="234"/>
+	<SubTexture name="doorlift0017" x="512" y="468" width="494" height="234" frameX="-18" frameY="0" frameWidth="512" frameHeight="234"/>
+	<SubTexture name="doorlift0018" x="512" y="468" width="494" height="234" frameX="-18" frameY="0" frameWidth="512" frameHeight="234"/>
+	<SubTexture name="doorlift0019" x="512" y="468" width="494" height="234" frameX="-18" frameY="0" frameWidth="512" frameHeight="234"/>
+	<SubTexture name="doorlift0020" x="512" y="468" width="494" height="234" frameX="-18" frameY="0" frameWidth="512" frameHeight="234"/>
+	<SubTexture name="doorlift0021" x="512" y="468" width="494" height="234" frameX="-18" frameY="0" frameWidth="512" frameHeight="234"/>
+	<SubTexture name="doorlift0022" x="512" y="468" width="494" height="234" frameX="-18" frameY="0" frameWidth="512" frameHeight="234"/>
+	<SubTexture name="doorlift0023" x="512" y="468" width="494" height="234" frameX="-18" frameY="0" frameWidth="512" frameHeight="234"/>
+	<SubTexture name="doorlift0024" x="512" y="468" width="494" height="234" frameX="-18" frameY="0" frameWidth="512" frameHeight="234"/>
+	<SubTexture name="doorlift0025" x="512" y="468" width="494" height="234" frameX="-18" frameY="0" frameWidth="512" frameHeight="234"/>
+	<SubTexture name="doorlift0026" x="512" y="468" width="494" height="234" frameX="-18" frameY="0" frameWidth="512" frameHeight="234"/>
+	<SubTexture name="doorlift0027" x="512" y="468" width="494" height="234" frameX="-18" frameY="0" frameWidth="512" frameHeight="234"/>
+	<SubTexture name="doorlift0028" x="512" y="468" width="494" height="234" frameX="-18" frameY="0" frameWidth="512" frameHeight="234"/>
+	<SubTexture name="doorlift0029" x="512" y="468" width="494" height="234" frameX="-18" frameY="0" frameWidth="512" frameHeight="234"/>
+	<SubTexture name="doorlift0030" x="512" y="468" width="494" height="234" frameX="-18" frameY="0" frameWidth="512" frameHeight="234"/>
+	<SubTexture name="doorlift0031" x="512" y="468" width="494" height="234" frameX="-18" frameY="0" frameWidth="512" frameHeight="234"/>
+	<SubTexture name="doorlift0032" x="512" y="468" width="494" height="234" frameX="-18" frameY="0" frameWidth="512" frameHeight="234"/>
+	<SubTexture name="doorlift0033" x="512" y="468" width="494" height="234" frameX="-18" frameY="0" frameWidth="512" frameHeight="234"/>
+	<SubTexture name="doorlift0034" x="512" y="468" width="494" height="234" frameX="-18" frameY="0" frameWidth="512" frameHeight="234"/>
+	<SubTexture name="doorlift0035" x="512" y="468" width="494" height="234" frameX="-18" frameY="0" frameWidth="512" frameHeight="234"/>
+	<SubTexture name="doorlift0036" x="512" y="468" width="494" height="234" frameX="-18" frameY="0" frameWidth="512" frameHeight="234"/>
+	<SubTexture name="doorlift0037" x="512" y="468" width="494" height="234" frameX="-18" frameY="0" frameWidth="512" frameHeight="234"/>
+	<SubTexture name="doorlift0038" x="512" y="468" width="494" height="234" frameX="-18" frameY="0" frameWidth="512" frameHeight="234"/>
+	<SubTexture name="doorlift0039" x="512" y="468" width="494" height="234" frameX="-18" frameY="0" frameWidth="512" frameHeight="234"/>
+	<SubTexture name="doorlift0040" x="512" y="468" width="494" height="234" frameX="-18" frameY="0" frameWidth="512" frameHeight="234"/>
+	<SubTexture name="doorlift0041" x="512" y="468" width="494" height="234" frameX="-18" frameY="0" frameWidth="512" frameHeight="234"/>
+	<SubTexture name="doorlift0042" x="512" y="468" width="494" height="234" frameX="-18" frameY="0" frameWidth="512" frameHeight="234"/>
+	<SubTexture name="doorlift0043" x="512" y="468" width="494" height="234" frameX="-18" frameY="0" frameWidth="512" frameHeight="234"/>
+	<SubTexture name="doorlift0044" x="512" y="468" width="494" height="234" frameX="-18" frameY="0" frameWidth="512" frameHeight="234"/>
+	<SubTexture name="doorlift0045" x="512" y="468" width="494" height="234" frameX="-18" frameY="0" frameWidth="512" frameHeight="234"/>
+	<SubTexture name="doorlift0046" x="512" y="468" width="494" height="234" frameX="-18" frameY="0" frameWidth="512" frameHeight="234"/>
+	<SubTexture name="doorlift0047" x="512" y="468" width="494" height="234" frameX="-18" frameY="0" frameWidth="512" frameHeight="234"/>
+	<SubTexture name="doorlift0048" x="512" y="468" width="494" height="234" frameX="-18" frameY="0" frameWidth="512" frameHeight="234"/>
+	<SubTexture name="doorlift0049" x="512" y="468" width="494" height="234" frameX="-18" frameY="0" frameWidth="512" frameHeight="234"/>
+	<SubTexture name="doorlift0050" x="512" y="468" width="494" height="234" frameX="-18" frameY="0" frameWidth="512" frameHeight="234"/>
+	<SubTexture name="doorlift0051" x="512" y="468" width="494" height="234" frameX="-18" frameY="0" frameWidth="512" frameHeight="234"/>
+	<SubTexture name="doorlift0052" x="512" y="468" width="494" height="234" frameX="-18" frameY="0" frameWidth="512" frameHeight="234"/>
+	<SubTexture name="doorup0000" x="512" y="468" width="494" height="234" frameX="-18" frameY="0" frameWidth="512" frameHeight="234"/>
+</TextureAtlas>

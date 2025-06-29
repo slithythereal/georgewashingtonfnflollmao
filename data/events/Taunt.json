@@ -1,0 +1,9 @@
+{
+    "params": [
+        {
+            "name": "Boyfriend or Dad (check yes for boyfriend)",
+            "type": "Bool",
+            "defaultValue": false
+        }
+    ]
+}

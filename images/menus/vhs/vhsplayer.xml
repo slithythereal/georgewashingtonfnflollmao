@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TextureAtlas imagePath="vhsplayer.png">
+	<!-- Created with Adobe Animate version 22.0.0.93 -->
+	<!-- http://www.adobe.com/products/animate.html -->
+	<SubTexture name="vhsboom0000" x="0" y="0" width="649" height="957" frameX="-51" frameY="0" frameWidth="751" frameHeight="957"/>
+	<SubTexture name="vhsboom0001" x="649" y="0" width="649" height="769" frameX="-51" frameY="-94" frameWidth="751" frameHeight="957"/>
+	<SubTexture name="vhsboom0002" x="1298" y="0" width="649" height="769" frameX="-51" frameY="-94" frameWidth="751" frameHeight="957"/>
+	<SubTexture name="vhsboom0003" x="1947" y="0" width="709" height="637" frameX="-21" frameY="-160" frameWidth="751" frameHeight="957"/>
+	<SubTexture name="vhsboom0004" x="2656" y="0" width="751" height="637" frameX="0" frameY="-160" frameWidth="751" frameHeight="957"/>
+	<SubTexture name="vhsboom0005" x="0" y="957" width="709" height="637" frameX="-21" frameY="-160" frameWidth="751" frameHeight="957"/>
+	<SubTexture name="vhsboom0006" x="709" y="957" width="709" height="637" frameX="-21" frameY="-160" frameWidth="751" frameHeight="957"/>
+	<SubTexture name="vhsplayer0000" x="1418" y="957" width="709" height="638"/>
+</TextureAtlas>

@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TextureAtlas imagePath="eagdodge.png">
+	<!-- Created with Adobe Animate version 22.0.0.93 -->
+	<!-- http://www.adobe.com/products/animate.html -->
+	<SubTexture name="dodge0000" x="0" y="0" width="412" height="708" frameX="-576" frameY="-531" frameWidth="1562" frameHeight="1694"/>
+	<SubTexture name="dodge0001" x="0" y="0" width="412" height="708" frameX="-576" frameY="-531" frameWidth="1562" frameHeight="1694"/>
+	<SubTexture name="dodge0002" x="412" y="0" width="651" height="760" frameX="-456" frameY="-476" frameWidth="1562" frameHeight="1694"/>
+	<SubTexture name="dodge0003" x="1063" y="0" width="1036" height="1137" frameX="-263" frameY="-279" frameWidth="1562" frameHeight="1694"/>
+	<SubTexture name="dodge0004" x="2099" y="0" width="1562" height="1694"/>
+	<SubTexture name="dodge0005" x="2099" y="0" width="1562" height="1694"/>
+	<SubTexture name="dodge0006" x="3661" y="0" width="311" height="706" frameX="-620" frameY="-530" frameWidth="1562" frameHeight="1694"/>
+	<SubTexture name="dodge0007" x="3661" y="0" width="311" height="706" frameX="-620" frameY="-530" frameWidth="1562" frameHeight="1694"/>
+	<SubTexture name="dodge0008" x="3661" y="0" width="311" height="706" frameX="-620" frameY="-530" frameWidth="1562" frameHeight="1694"/>
+	<SubTexture name="dodge0009" x="3661" y="0" width="311" height="706" frameX="-620" frameY="-530" frameWidth="1562" frameHeight="1694"/>
+	<SubTexture name="dodge0010" x="3972" y="0" width="466" height="744" frameX="-465" frameY="-492" frameWidth="1562" frameHeight="1694"/>
+	<SubTexture name="dodge0011" x="4438" y="0" width="477" height="853" frameX="-454" frameY="-383" frameWidth="1562" frameHeight="1694"/>
+	<SubTexture name="dodge0012" x="4915" y="0" width="491" height="813" frameX="-444" frameY="-426" frameWidth="1562" frameHeight="1694"/>
+	<SubTexture name="dodge0013" x="5406" y="0" width="542" height="840" frameX="-393" frameY="-399" frameWidth="1562" frameHeight="1694"/>
+	<SubTexture name="dodge0014" x="5948" y="0" width="542" height="813" frameX="-393" frameY="-426" frameWidth="1562" frameHeight="1694"/>
+	<SubTexture name="dodge0015" x="5406" y="0" width="542" height="840" frameX="-393" frameY="-399" frameWidth="1562" frameHeight="1694"/>
+	<SubTexture name="dodge0016" x="6490" y="0" width="511" height="813" frameX="-392" frameY="-426" frameWidth="1562" frameHeight="1694"/>
+	<SubTexture name="dodge0017" x="7001" y="0" width="511" height="840" frameX="-392" frameY="-399" frameWidth="1562" frameHeight="1694"/>
+	<SubTexture name="dodge0018" x="7512" y="0" width="661" height="813" frameX="-232" frameY="-426" frameWidth="1562" frameHeight="1694"/>
+	<SubTexture name="dodge0019" x="0" y="1694" width="661" height="840" frameX="-232" frameY="-399" frameWidth="1562" frameHeight="1694"/>
+	<SubTexture name="dodge0020" x="661" y="1694" width="706" height="813" frameX="-194" frameY="-426" frameWidth="1562" frameHeight="1694"/>
+	<SubTexture name="dodge0021" x="1367" y="1694" width="703" height="837" frameX="-194" frameY="-399" frameWidth="1562" frameHeight="1694"/>
+</TextureAtlas>

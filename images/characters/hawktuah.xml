@@ -1,0 +1,66 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TextureAtlas imagePath="hawktuah.png">
+	<!-- Created with Adobe Animate version 22.0.0.93 -->
+	<!-- http://www.adobe.com/products/animate.html -->
+	<SubTexture name="redtaildown0000" x="0" y="0" width="894" height="676"/>
+	<SubTexture name="redtaildown0001" x="0" y="699" width="894" height="676"/>
+	<SubTexture name="redtaildown0002" x="0" y="1398" width="894" height="676"/>
+	<SubTexture name="redtaildown0003" x="0" y="2097" width="894" height="676"/>
+	<SubTexture name="redtaildown0004" x="0" y="2796" width="894" height="676"/>
+	<SubTexture name="redtaildown0005" x="0" y="3495" width="894" height="676"/>
+	<SubTexture name="redtaildown0006" x="0" y="4194" width="894" height="676"/>
+	<SubTexture name="redtailidle0000" x="0" y="4893" width="894" height="676"/>
+	<SubTexture name="redtailidle0001" x="0" y="5592" width="894" height="676"/>
+	<SubTexture name="redtailidle0002" x="0" y="6291" width="894" height="676"/>
+	<SubTexture name="redtailidle0003" x="0" y="6990" width="894" height="676"/>
+	<SubTexture name="redtailidle0004" x="917" y="0" width="894" height="676"/>
+	<SubTexture name="redtailidle0005" x="917" y="699" width="894" height="676"/>
+	<SubTexture name="redtailidle0006" x="917" y="699" width="894" height="676"/>
+	<SubTexture name="redtailidle0007" x="917" y="699" width="894" height="676"/>
+	<SubTexture name="redtailidle0008" x="917" y="699" width="894" height="676"/>
+	<SubTexture name="redtailidle0009" x="917" y="699" width="894" height="676"/>
+	<SubTexture name="redtailidle0010" x="917" y="699" width="894" height="676"/>
+	<SubTexture name="redtailidle0011" x="917" y="699" width="894" height="676"/>
+	<SubTexture name="redtailidle0012" x="917" y="699" width="894" height="676"/>
+	<SubTexture name="redtailidle0013" x="917" y="699" width="894" height="676"/>
+	<SubTexture name="redtailleft0000" x="917" y="4893" width="894" height="676"/>
+	<SubTexture name="redtailleft0001" x="917" y="4893" width="894" height="676"/>
+	<SubTexture name="redtailleft0002" x="917" y="5592" width="894" height="676"/>
+	<SubTexture name="redtailleft0003" x="917" y="5592" width="894" height="676"/>
+	<SubTexture name="redtailleft0004" x="917" y="6291" width="894" height="676"/>
+	<SubTexture name="redtailleft0005" x="917" y="6291" width="894" height="676"/>
+	<SubTexture name="redtailleft0006" x="917" y="6990" width="894" height="676"/>
+	<SubTexture name="redtailleft0007" x="917" y="6990" width="894" height="676"/>
+	<SubTexture name="redtailleft0008" x="1834" y="0" width="894" height="676"/>
+	<SubTexture name="redtailleft0009" x="1834" y="0" width="894" height="676"/>
+	<SubTexture name="redtailleft0010" x="1834" y="699" width="894" height="676"/>
+	<SubTexture name="redtailleft0011" x="1834" y="699" width="894" height="676"/>
+	<SubTexture name="redtailleft0012" x="1834" y="1398" width="894" height="676"/>
+	<SubTexture name="redtailleft0013" x="1834" y="1398" width="894" height="676"/>
+	<SubTexture name="redtailleft0014" x="1834" y="2097" width="894" height="676"/>
+	<SubTexture name="redtailleft0015" x="1834" y="2097" width="894" height="676"/>
+	<SubTexture name="redtailleft0016" x="1834" y="2796" width="894" height="676"/>
+	<SubTexture name="redtailleft0017" x="1834" y="2796" width="894" height="676"/>
+	<SubTexture name="redtailright0000" x="1834" y="3495" width="894" height="676"/>
+	<SubTexture name="redtailright0001" x="1834" y="3495" width="894" height="676"/>
+	<SubTexture name="redtailright0002" x="1834" y="4194" width="894" height="676"/>
+	<SubTexture name="redtailright0003" x="1834" y="4194" width="894" height="676"/>
+	<SubTexture name="redtailright0004" x="1834" y="4893" width="894" height="676"/>
+	<SubTexture name="redtailright0005" x="1834" y="4893" width="894" height="676"/>
+	<SubTexture name="redtailright0006" x="1834" y="5592" width="894" height="676"/>
+	<SubTexture name="redtailright0007" x="1834" y="5592" width="894" height="676"/>
+	<SubTexture name="redtailright0008" x="1834" y="6291" width="894" height="676"/>
+	<SubTexture name="redtailright0009" x="1834" y="6291" width="894" height="676"/>
+	<SubTexture name="redtailright0010" x="1834" y="6990" width="894" height="676"/>
+	<SubTexture name="redtailright0011" x="1834" y="6990" width="894" height="676"/>
+	<SubTexture name="redtailup0000" x="917" y="1398" width="894" height="676"/>
+	<SubTexture name="redtailup0001" x="917" y="1398" width="894" height="676"/>
+	<SubTexture name="redtailup0002" x="917" y="2097" width="894" height="676"/>
+	<SubTexture name="redtailup0003" x="917" y="2097" width="894" height="676"/>
+	<SubTexture name="redtailup0004" x="917" y="2796" width="894" height="676"/>
+	<SubTexture name="redtailup0005" x="917" y="2796" width="894" height="676"/>
+	<SubTexture name="redtailup0006" x="917" y="3495" width="894" height="676"/>
+	<SubTexture name="redtailup0007" x="917" y="3495" width="894" height="676"/>
+	<SubTexture name="redtailup0008" x="917" y="4194" width="894" height="676"/>
+	<SubTexture name="redtailup0009" x="917" y="4194" width="894" height="676"/>
+</TextureAtlas>

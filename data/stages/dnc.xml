@@ -1,0 +1,16 @@
+<!DOCTYPE codename-engine-stage>
+<stage name="dnc" zoom="0.7" folder="stages/dnc/">
+    <!--dnc-->
+    <sprite name="dnc" sprite="dnc" x="-200" y="-625" scale="3.25" scroll="0.9">
+        <property name="antialiasing" type="bool" value="false"/>
+        <property name="visible" type="bool" value="false"/>
+    </sprite>
+    <!--sleigh-->
+    <sprite name="blacksky" sprite="night sky" x="-1750" y="-500" scale="1" scroll="0.9"/>
+    <dad x="0" y="250" scale="1"/>
+    <boyfriend x="600" y="325" scale="1"/>
+    <sprite name="sleigh" sprite="sleigh" x="-200" y="50" scale="0.5">
+        <property name="flipX" type="bool" value="true"/>
+    </sprite>
+    <combo x="0" y="0"/>
+</stage>

@@ -1,0 +1,10 @@
+<!DOCTYPE codename-engine-stage>
+<stage zoom="0.6" name="fortnite" folder="stages/fortnite/" startCamPosY="600" startCamPosX="1000">
+	<sprite name="bg"           scale="4.75"     x="50" y="200"   sprite="fortnite"/>
+	
+	<sprite name="bushcamper" sprite="fortnite">
+	</sprite>
+
+	<boyfriend x="900"/>
+	<dad x="-300" y="-200" scale="1"/>
+</stage>

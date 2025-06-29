@@ -1,0 +1,77 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TextureAtlas imagePath="camper1.png">
+	<!-- Created with Adobe Animate version 22.0.0.93 -->
+	<!-- http://www.adobe.com/products/animate.html -->
+	<SubTexture name="aim0000" x="2605" y="0" width="644" height="591" frameX="-50" frameY="-264" frameWidth="787" frameHeight="855"/>
+	<SubTexture name="aim0001" x="2605" y="0" width="644" height="591" frameX="-50" frameY="-264" frameWidth="787" frameHeight="855"/>
+	<SubTexture name="aim0002" x="3249" y="0" width="715" height="592" frameX="-36" frameY="-223" frameWidth="787" frameHeight="855"/>
+	<SubTexture name="aim0003" x="3249" y="0" width="715" height="592" frameX="-36" frameY="-223" frameWidth="787" frameHeight="855"/>
+	<SubTexture name="aim0004" x="3964" y="0" width="782" height="829" frameX="0" frameY="0" frameWidth="787" frameHeight="855"/>
+	<SubTexture name="aim0005" x="3964" y="0" width="782" height="829" frameX="0" frameY="0" frameWidth="787" frameHeight="855"/>
+	<SubTexture name="aim0006" x="4746" y="0" width="707" height="755" frameX="-52" frameY="-74" frameWidth="787" frameHeight="855"/>
+	<SubTexture name="aim0007" x="5453" y="0" width="707" height="707" frameX="-52" frameY="-115" frameWidth="787" frameHeight="855"/>
+	<SubTexture name="aim0008" x="6160" y="0" width="701" height="687" frameX="-70" frameY="-135" frameWidth="787" frameHeight="855"/>
+	<SubTexture name="aim0009" x="6861" y="0" width="705" height="687" frameX="-66" frameY="-135" frameWidth="787" frameHeight="855"/>
+	<SubTexture name="aim0010" x="0" y="829" width="721" height="679" frameX="-66" frameY="-143" frameWidth="787" frameHeight="855"/>
+	<SubTexture name="aim0011" x="721" y="829" width="669" height="639" frameX="-70" frameY="-185" frameWidth="787" frameHeight="855"/>
+	<SubTexture name="aim0012" x="721" y="829" width="669" height="639" frameX="-70" frameY="-185" frameWidth="787" frameHeight="855"/>
+	<SubTexture name="aim0013" x="1390" y="829" width="662" height="637" frameX="-70" frameY="-187" frameWidth="787" frameHeight="855"/>
+	<SubTexture name="aim0014" x="1390" y="829" width="662" height="637" frameX="-70" frameY="-187" frameWidth="787" frameHeight="855"/>
+	<SubTexture name="aim0015" x="1390" y="829" width="662" height="637" frameX="-70" frameY="-187" frameWidth="787" frameHeight="855"/>
+	<SubTexture name="aim0016" x="1390" y="829" width="662" height="637" frameX="-70" frameY="-187" frameWidth="787" frameHeight="855"/>
+	<SubTexture name="aim0017" x="1390" y="829" width="662" height="637" frameX="-70" frameY="-187" frameWidth="787" frameHeight="855"/>
+	<SubTexture name="aim0018" x="1390" y="829" width="662" height="637" frameX="-70" frameY="-187" frameWidth="787" frameHeight="855"/>
+	<SubTexture name="aim0019" x="1390" y="829" width="662" height="637" frameX="-70" frameY="-187" frameWidth="787" frameHeight="855"/>
+	<SubTexture name="aim0020" x="1390" y="829" width="662" height="637" frameX="-70" frameY="-187" frameWidth="787" frameHeight="855"/>
+	<SubTexture name="aim0021" x="1390" y="829" width="662" height="637" frameX="-70" frameY="-187" frameWidth="787" frameHeight="855"/>
+	<SubTexture name="aim0022" x="1390" y="829" width="662" height="637" frameX="-70" frameY="-187" frameWidth="787" frameHeight="855"/>
+	<SubTexture name="aim0023" x="1390" y="829" width="662" height="637" frameX="-70" frameY="-187" frameWidth="787" frameHeight="855"/>
+	<SubTexture name="bush move0000" x="0" y="0" width="513" height="359" frameX="-18" frameY="-120" frameWidth="546" frameHeight="487"/>
+	<SubTexture name="bush move0001" x="0" y="0" width="513" height="359" frameX="-18" frameY="-120" frameWidth="546" frameHeight="487"/>
+	<SubTexture name="bush move0002" x="513" y="0" width="534" height="359" frameX="0" frameY="-120" frameWidth="546" frameHeight="487"/>
+	<SubTexture name="bush move0003" x="1047" y="0" width="530" height="359" frameX="-16" frameY="-120" frameWidth="546" frameHeight="487"/>
+	<SubTexture name="bush move0004" x="513" y="0" width="534" height="359" frameX="0" frameY="-120" frameWidth="546" frameHeight="487"/>
+	<SubTexture name="bush move0005" x="1047" y="0" width="530" height="359" frameX="-16" frameY="-120" frameWidth="546" frameHeight="487"/>
+	<SubTexture name="bush move0006" x="1577" y="0" width="514" height="476" frameX="-18" frameY="0" frameWidth="546" frameHeight="487"/>
+	<SubTexture name="bush move0007" x="1577" y="0" width="514" height="476" frameX="-18" frameY="0" frameWidth="546" frameHeight="487"/>
+	<SubTexture name="bush move0008" x="2091" y="0" width="514" height="431" frameX="-18" frameY="-28" frameWidth="546" frameHeight="487"/>
+	<SubTexture name="bush move0009" x="2091" y="0" width="514" height="431" frameX="-18" frameY="-37" frameWidth="546" frameHeight="487"/>
+	<SubTexture name="bush move0010" x="2091" y="0" width="514" height="431" frameX="-18" frameY="-37" frameWidth="546" frameHeight="487"/>
+	<SubTexture name="bush move0011" x="2091" y="0" width="514" height="431" frameX="-18" frameY="-52" frameWidth="546" frameHeight="487"/>
+	<SubTexture name="bush move0012" x="2091" y="0" width="514" height="431" frameX="-18" frameY="-52" frameWidth="546" frameHeight="487"/>
+	<SubTexture name="bush move0013" x="2091" y="0" width="514" height="431" frameX="-18" frameY="-56" frameWidth="546" frameHeight="487"/>
+	<SubTexture name="bush move0014" x="2091" y="0" width="514" height="431" frameX="-18" frameY="-56" frameWidth="546" frameHeight="487"/>
+	<SubTexture name="die0000" x="2052" y="829" width="642" height="644" frameX="-93" frameY="0" frameWidth="831" frameHeight="792"/>
+	<SubTexture name="die0001" x="2694" y="829" width="704" height="645" frameX="-68" frameY="-27" frameWidth="831" frameHeight="792"/>
+	<SubTexture name="die0002" x="2694" y="829" width="704" height="645" frameX="-68" frameY="-27" frameWidth="831" frameHeight="792"/>
+	<SubTexture name="die0003" x="3398" y="829" width="806" height="709" frameX="-25" frameY="-27" frameWidth="831" frameHeight="792"/>
+	<SubTexture name="die0004" x="3398" y="829" width="806" height="709" frameX="-25" frameY="-27" frameWidth="831" frameHeight="792"/>
+	<SubTexture name="die0005" x="4204" y="829" width="825" height="741" frameX="0" frameY="-51" frameWidth="831" frameHeight="792"/>
+	<SubTexture name="die0006" x="4204" y="829" width="825" height="741" frameX="0" frameY="-51" frameWidth="831" frameHeight="792"/>
+	<SubTexture name="die0009" x="4204" y="829" width="825" height="741" frameX="0" frameY="-51" frameWidth="831" frameHeight="792"/>
+	<SubTexture name="die0010" x="4204" y="829" width="825" height="741" frameX="0" frameY="-51" frameWidth="831" frameHeight="792"/>
+	<SubTexture name="shoot0000" x="5029" y="829" width="744" height="637" frameX="0" frameY="-7" frameWidth="744" frameHeight="644"/>
+	<SubTexture name="shoot0001" x="5773" y="829" width="628" height="644" frameX="0" frameY="0" frameWidth="744" frameHeight="644"/>
+	<SubTexture name="shoot0002" x="5773" y="829" width="628" height="644" frameX="0" frameY="0" frameWidth="744" frameHeight="644"/>
+	<SubTexture name="shoot0003" x="6401" y="829" width="642" height="644" frameX="0" frameY="0" frameWidth="744" frameHeight="644"/>
+	<SubTexture name="shoot0004" x="6401" y="829" width="642" height="644" frameX="0" frameY="0" frameWidth="744" frameHeight="644"/>
+	<SubTexture name="shoot0005" x="6401" y="829" width="642" height="644" frameX="0" frameY="0" frameWidth="744" frameHeight="644"/>
+	<SubTexture name="shoot0006" x="6401" y="829" width="642" height="644" frameX="0" frameY="0" frameWidth="744" frameHeight="644"/>
+	<SubTexture name="shoot0007" x="6401" y="829" width="642" height="644" frameX="0" frameY="0" frameWidth="744" frameHeight="644"/>
+	<SubTexture name="shoot0008" x="6401" y="829" width="642" height="644" frameX="0" frameY="0" frameWidth="744" frameHeight="644"/>
+	<SubTexture name="shoot0009" x="6401" y="829" width="642" height="644" frameX="0" frameY="0" frameWidth="744" frameHeight="644"/>
+	<SubTexture name="shoot0010" x="6401" y="829" width="642" height="644" frameX="0" frameY="0" frameWidth="744" frameHeight="644"/>
+	<SubTexture name="shoot0011" x="6401" y="829" width="642" height="644" frameX="0" frameY="0" frameWidth="744" frameHeight="644"/>
+	<SubTexture name="shoot0012" x="6401" y="829" width="642" height="644" frameX="0" frameY="0" frameWidth="744" frameHeight="644"/>
+	<SubTexture name="shoot0013" x="6401" y="829" width="642" height="644" frameX="0" frameY="0" frameWidth="744" frameHeight="644"/>
+	<SubTexture name="shoot0014" x="6401" y="829" width="642" height="644" frameX="0" frameY="0" frameWidth="744" frameHeight="644"/>
+	<SubTexture name="shoot0015" x="6401" y="829" width="642" height="644" frameX="0" frameY="0" frameWidth="744" frameHeight="644"/>
+	<SubTexture name="shoot0016" x="6401" y="829" width="642" height="644" frameX="0" frameY="0" frameWidth="744" frameHeight="644"/>
+	<SubTexture name="shoot0017" x="6401" y="829" width="642" height="644" frameX="0" frameY="0" frameWidth="744" frameHeight="644"/>
+	<SubTexture name="shoot0018" x="6401" y="829" width="642" height="644" frameX="0" frameY="0" frameWidth="744" frameHeight="644"/>
+	<SubTexture name="shoot0019" x="6401" y="829" width="642" height="644" frameX="0" frameY="0" frameWidth="744" frameHeight="644"/>
+	<SubTexture name="shoot0020" x="6401" y="829" width="642" height="644" frameX="0" frameY="0" frameWidth="744" frameHeight="644"/>
+	<SubTexture name="shoot0021" x="6401" y="829" width="642" height="644" frameX="0" frameY="0" frameWidth="744" frameHeight="644"/>
+	<SubTexture name="shoot0022" x="6401" y="829" width="642" height="644" frameX="0" frameY="0" frameWidth="744" frameHeight="644"/>
+	<SubTexture name="shoot0023" x="6401" y="829" width="642" height="644" frameX="0" frameY="0" frameWidth="744" frameHeight="644"/>
+</TextureAtlas>

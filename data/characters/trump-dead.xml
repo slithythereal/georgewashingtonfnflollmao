@@ -1,0 +1,6 @@
+<!DOCTYPE codename-engine-character>
+<character x="200" y="300" sprite="trumpdead" scale="1.5" camx="0" camy="-300" isPlayer="true" flipX="true" icon="trump" gameOverChar="trump-dead" holdTime="6.1">
+	<anim name="firstDeath" anim="trump jailcell" x="0" y="0" fps="24" loop="false"/>
+	<anim name="deathLoop" anim="trump retryloop" x="0" y="-237" fps="24" loop="true"/>
+	<anim name="deathConfirm" anim="trump endgameover" x="0" y="695" fps="24" loop="false"/>
+</character>

@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TextureAtlas imagePath="jojoreference.png">
+	<!-- Created with Adobe Animate version 22.0.0.93 -->
+	<!-- http://www.adobe.com/products/animate.html -->
+	<SubTexture name="TAHDAH0000" x="0" y="0" width="1889" height="1031" frameX="-23" frameY="-13" frameWidth="1957" frameHeight="1067"/>
+	<SubTexture name="TAHDAH0001" x="1889" y="0" width="1934" height="1021" frameX="-1" frameY="-23" frameWidth="1957" frameHeight="1067"/>
+	<SubTexture name="TAHDAH0002" x="0" y="1031" width="1957" height="1044" frameX="0" frameY="0" frameWidth="1957" frameHeight="1067"/>
+	<SubTexture name="TAHDAH0003" x="1957" y="1031" width="1912" height="1044" frameX="-23" frameY="-23" frameWidth="1957" frameHeight="1067"/>
+</TextureAtlas>
