@@ -1,9 +1,15 @@
 <!DOCTYPE codename-engine-stage>
 <stage zoom="0.65" name="berlin" folder="stages/berlin/" startCamPosX="1000" startCamPosY="600">
-    <sprite name="sky" sprite="sky" scrollx="0.5" scrolly="0.45"/>
+    <sprite name="sky" sprite="sky" scrollx="0.02" scrolly="0.085"/>
+    <sprite name="ohno" sprite="theBuilding" x="1700" y="-50" scale="1.0" scrollx="0.1" scrolly="0.2">
+        <property name="velocity.x" type="float" value=" 0.0"/>
+    </sprite>
     <sprite name="wall" sprite="wallpart" x="-400" y="-400" scale="1" scrollx="0.35" scrolly="0.25"/>
     <sprite name="motorcade" sprite="motorcade" x="225" y="300" scale="0.75"/>
     <sprite name="skateboard" sprite="skateboard" x="-275" y="775" scale="1.25"/>
 	<dad x="500" y="150" scale="0.6"/>
     <boyfriend x="-300" y="175" scale="0.6"/>
+    <sprite name="animeLines" sprite="animeLines" x="450" y="180" scale="7.5" scrollx="0.0" scrolly="0.0">
+        <property name="visible" type="bool" value="false"/>
+    </sprite>
 </stage>

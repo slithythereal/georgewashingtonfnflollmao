@@ -17,7 +17,7 @@ function create()
 	sky = new FlxBackdrop(Paths.image('stages/berlin/sky'), 0x01, 0, 0);
 	sky.scale.set(1.5, 1.5);
 	sky.updateHitbox();
-	sky.velocity.x = -400;
+	sky.velocity.x = -10;
 	sky.y = -200;
 	insert(members.indexOf(oldSky), sky);
 
@@ -27,6 +27,9 @@ function create()
 	wall.velocity.x = -800;
 	wall.updateHitbox();
 	insert(members.indexOf(oldWall), wall);
+
+	animeLines.moves = true;
+	animeLines.angularVelocity = 1000;
 }
 
 function update(elaped:Float)
@@ -42,5 +45,5 @@ function update(elaped:Float)
 
 public function changeSpeed(?mult:Float = 1){
     wall.velocity.x = -800 * mult;
-    sky.velocity.x = -400 * mult;
+    sky.velocity.x = -20 * mult;
 }
