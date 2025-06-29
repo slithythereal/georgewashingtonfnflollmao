@@ -4,10 +4,10 @@ import flixel.text.FlxTextBorderStyle;
 var credits:Array<{name:String, link:String, desc:String}> = [
 	{name: 'slithy', link: 'https://slithy.carrd.co', desc: 'director\ncoding\ncharting\nanimator\nvoice actor\ndirector stuff'},
 	{name: 'mrmorian', link: 'https://mrmorian.newgrounds.com/', desc: 'codirector\nanimation\nart\ncoding assistance\ncodirector stuff'},
-	{name: 'cakieyea', link: 'https://www.youtube.com/@cakieyea', desc: 'music guy\nMost songs\nbf (talking) voice'},
+	{name: 'macyeah', link: 'https://www.youtube.com/@macyeahh', desc: 'music guy\nMost songs\nbf (talking) voice'},
 	{name: 'punmaster', link: 'https://twitter.com/PunMasterOff', desc: 'music guy\nEag man'},
-	// {name: "micahstuff", link: "", desc: "music guy\nGrimace"},
-	// {name: "kaegan1636", link: "", desc: "music guy\nDementia"},
+	{name: "micahstuff", link: "", desc: "music guy\nGrimace"},
+	{name: "kaeganreal", link: "https://www.youtube.com/@kk-gaming-gaming-forever", desc: "music guy\nDementia"},
 	{name: 'capitnparrot', link: 'https://www.youtube.com/channel/UC08fJSpXa97QeISAYoYftgg', desc: 'moral support\njust the GOAT all around'},
 ];
 
