@@ -6,15 +6,13 @@ importScript("data/scripts/WhiteHouseHandler");
 
 var spaceTXT:FlxText;
 var warningDESCRIPTION:FlxTypeText;
+var escapeTXT:FlxText;
 var curText:Int = 1;
 
 var dayProperties:Map<String, {dialogueAmt:Int, endFunc:Void->Void}> = [
 	'day' => {
 		dialogueAmt: 8,
-		endFunc: function()
-		{
-			FlxG.switchState(new ModState("murica/WhiteHouseState"));
-		}
+		endFunc: function() FlxG.switchState(new ModState("murica/WhiteHouseState"))
 	},
 	'night' => {dialogueAmt: 8, endFunc: null}
 ];
@@ -74,8 +72,17 @@ function create()
 	spaceTXT.screenCenter(FlxAxes.X);
 	spaceTXT.visible = false;
 
+	escapeTXT = new FlxTypeText(8, FlxG.height - 38, 0, ".....................");
+	escapeTXT.setFormat("fonts/VCR.ttf", 30, FlxColor.WHITE, "center");
+	add(escapeTXT);
+	escapeTXT.alpha = 0;
+	escapeTXT.prefix = "Skipping";
+
+
 	nextTXT(0);
 }
+
+var skipMessageTime:Float = 0;
 
 function update(elapsed:Float)
 {
@@ -97,6 +104,24 @@ function update(elapsed:Float)
 			}
 		}
 	}
+
+	if (FlxG.keys.justPressed.ESCAPE)
+	{
+		escapeTXT.start(0.25, true, false, null, null);
+	}
+	if (FlxG.keys.pressed.ESCAPE)
+	{
+		skipMessageTime += elapsed;
+		escapeTXT.alpha += 0.5 * elapsed;
+	}
+	if (FlxG.keys.justReleased.ESCAPE)
+	{
+		skipMessageTime = 0;
+		escapeTXT.alpha = 0;
+	}
+	if (skipMessageTime >= 2)
+		if(dayProperties[tOD].endFunc != null)
+			dayProperties[tOD].endFunc();
 }
 
 function nextTXT(cool:Int)
