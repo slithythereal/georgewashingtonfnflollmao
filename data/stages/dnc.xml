@@ -12,5 +12,9 @@
     <sprite name="sleigh" sprite="sleigh" x="-200" y="50" scale="0.5">
         <property name="flipX" type="bool" value="true"/>
     </sprite>
+    <sprite name="explosion" sprite="explosion" x="-650" y="400" scale="5.0">
+        <anim name="explosion" anim="explosion_sfx" loop="false" fps="12"/>
+        <property name="visible" type="bool" value="false"/>
+    </sprite>
     <combo x="0" y="0"/>
 </stage>
