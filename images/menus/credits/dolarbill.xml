@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TextureAtlas imagePath="dolarbill.png">
+	<!-- Created with Adobe Animate version 22.0.0.93 -->
+	<!-- http://www.adobe.com/products/animate.html -->
+	<SubTexture name="unselected0000" x="0" y="0" width="1068" height="402" frameX="-192" frameY="-391" frameWidth="1425" frameHeight="1091"/>
+	<SubTexture name="selected0000" x="1068" y="0" width="1386" height="362" frameX="-19" frameY="-396" frameWidth="1425" frameHeight="1091"/>
+	<SubTexture name="selected0001" x="1068" y="0" width="1386" height="362" frameX="-19" frameY="-396" frameWidth="1425" frameHeight="1091"/>
+	<SubTexture name="selected0002" x="2454" y="0" width="988" height="1091" frameX="-221" frameY="0" frameWidth="1425" frameHeight="1091"/>
+	<SubTexture name="selected0003" x="2454" y="0" width="988" height="1091" frameX="-221" frameY="0" frameWidth="1425" frameHeight="1091"/>
+	<SubTexture name="selected0004" x="0" y="1091" width="1425" height="829" frameX="0" frameY="-143" frameWidth="1425" frameHeight="1091"/>
+	<SubTexture name="selected0005" x="0" y="1091" width="1425" height="829" frameX="0" frameY="-143" frameWidth="1425" frameHeight="1091"/>
+	<SubTexture name="selected0006" x="0" y="1091" width="1425" height="829" frameX="0" frameY="-143" frameWidth="1425" frameHeight="1091"/>
+	<SubTexture name="selected0007" x="0" y="1091" width="1425" height="829" frameX="0" frameY="-143" frameWidth="1425" frameHeight="1091"/>
+	<SubTexture name="selected0008" x="0" y="1091" width="1425" height="829" frameX="0" frameY="-143" frameWidth="1425" frameHeight="1091"/>
+	<SubTexture name="selected0009" x="0" y="1091" width="1425" height="829" frameX="0" frameY="-143" frameWidth="1425" frameHeight="1091"/>
+</TextureAtlas>

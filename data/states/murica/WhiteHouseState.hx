@@ -132,7 +132,7 @@ function create() {
 	subUIGRP.add(downArrow);
 
 	// tape
-	tapeCountSpr = new FlxSprite(930, -700); 
+	tapeCountSpr = new FlxSprite(930, -700);
 	tapeCountSpr.loadGraphic(Paths.image('minigames/VHSTAPE_normal'));
 	tapeCountSpr.scale.set(0.075, 0.075);
 	tapeCountSpr.updateHitbox();
@@ -183,7 +183,6 @@ function update(elapsed:Float) {
 
 			if (controls.BACK) // pause screen
 				pauseMenu();
-				//FlxG.switchState(new MainMenuState());
 		}
 	}
 }
@@ -508,15 +507,12 @@ public function updateInventory(elapsed:Float) {
 				});
 			}
 			if (FlxG.mouse.justPressed) {
-				if (curItemSelected != inventory[item.ID]) {
-					curItemSelected = inventory[item.ID];
-					FlxG.watch.addQuick('CUR ITEM SELECTED', curItemSelected);
-					FlxTween.tween(item, {"scale.x": 1.2, "scale.y": 1.2}, 0.15, {ease: FlxEase.cubeIn});
-				} else {
-					curItemSelected = null;
-					FlxG.watch.addQuick('CUR ITEM SELECTED', curItemSelected);
-					FlxTween.tween(item, {"scale.x": 1, "scale.y": 1}, 0.15, {ease: FlxEase.cubeOut});
-				}
+				var funnyScale:Float = (curItemSelected != inventory[item.ID] ? 1.2 : 1);
+				FlxG.watch.addQuick('CUR ITEM SELECTED', curItemSelected);
+				FlxTween.tween(item, {"scale.x": funnyScale, "scale.y": funnyScale}, 0.15,
+					{ease: (curItemSelected != inventory[item.ID] ? FlxEase.cubeIn : FlxEase.cubeOut)});
+
+				curItemSelected = (curItemSelected != inventory[item.ID] ? inventory[item.ID] : null);
 			}
 		}
 	}
@@ -527,8 +523,7 @@ public function updateInventory(elapsed:Float) {
 	}
 }
 
-function pauseMenu()
-{
+function pauseMenu() {
 	var substate:ModSubState = new ModSubState('murica/minigame/WhiteHousePauseSubstate', {
 		onOpen: function() {
 			isPaused = true;
@@ -540,5 +535,3 @@ function pauseMenu()
 	substate.cameras = [camHUD];
 	openSubState(substate);
 }
-
-//onSubstateClose(event:StateEvent)
