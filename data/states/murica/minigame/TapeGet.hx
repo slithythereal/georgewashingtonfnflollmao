@@ -23,6 +23,10 @@ function postCreate() {
 	tapeSpr.screenCenter(FlxAxes.X);
 	add(tapeSpr);
 
+	if(this.data.isTapeSecret)
+		FlxG.sound.play(Paths.sound('minigame/whytfdomydogwalksidewaysboy'));
+
+
 	unlockTapeTxt = new FlxText(0, 425, 0, "You Got A Tape");
 	unlockTapeTxt.text = (this.data.isTapeSecret ? "You Got A SECRET Tape!" : "You Got A Tape!");
 	unlockTapeTxt.setFormat("fonts/THE PRESIDENT.ttf", 65, FlxColor.WHITE, "center");

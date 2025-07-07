@@ -5,7 +5,7 @@ importScript("data/scripts/HandyDandyFunctions");
 // main data
 public var isNight:Bool = false;
 public var curRoom:String = "startroom";
-public var startRoom:String = 'georgeposter'; // startroom
+public var startRoom:String = 'startroom'; // startroom
 public var pauseFunctions:Array<Void->Bool> = [];
 public var roomTimeVar:Float = 0.25;
 public var shortStep:String = 'fnaf4runsoundshort';
