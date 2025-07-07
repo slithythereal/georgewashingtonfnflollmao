@@ -62,8 +62,8 @@ function create() {
 	for (i => cred in creditTypes) {
 		var dollaBill:FlxSprite = new FlxSprite(50 + (i * 880), 100);
 		dollaBill.frames = Paths.getFrames('menus/credits/dolarbill');
-		dollaBill.animation.addByPrefix("idle", "unselected", 1);
-		dollaBill.animation.addByPrefix("selected", "selected", 24);
+		dollaBill.animation.addByPrefix("idle", "unselected", 1, false);
+		dollaBill.animation.addByPrefix("selected", "selected", 24, false);
 		dollaBill.animation.play("idle");
 		dollaBill.scale.set(0.20, 0.10);
 		dollaBill.updateHitbox();
