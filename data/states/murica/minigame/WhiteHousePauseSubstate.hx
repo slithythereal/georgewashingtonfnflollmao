@@ -1,4 +1,5 @@
 import funkin.backend.utils.FunkinParentDisabler;
+
 importScript('data/scripts/HandyDandyFunctions');
 var parentDisabler:FunkinParentDisabler;
 var menuItems:Array<FlxText> = [];
@@ -62,25 +63,28 @@ function postUpdate(elapsed:Float) {
 	if ((leftP || rightP) && isMessage)
 		changeOptionMessage(0 - Std.int(leftP) + Std.int(rightP));
 
-	if (isMessage) {
-		for (item in confirmItems) {
-			if (FlxG.mouse.overlaps(item)) {
-				curMessageSelected = item.ID;
-				changeOptionMessageStuff();
-				if (FlxG.mouse.justPressed)
-					selectMessage(curMessageSelected);
+	/*
+		//mouse controls (CANT USE THEM BECAUSE fck flixel hitboxes)
+		if (isMessage) {
+			for (item in confirmItems) {
+				if (FlxG.mouse.overlaps(item)) {
+					curMessageSelected = item.ID;
+					changeOptionMessageStuff();
+					if (FlxG.mouse.justPressed)
+						selectMessage(curMessageSelected);
+				}
+			}
+		} else {
+			for (item in menuItems) {
+				if (FlxG.mouse.overlaps(item)) {
+					curSelected = item.ID;
+					changeOptionStuff();
+					if (FlxG.mouse.justPressed)
+						selectOption(options[curSelected]);
+				}
 			}
 		}
-	} else {
-		for (item in menuItems) {
-			if (FlxG.mouse.overlaps(item)) {
-				curSelected = item.ID;
-				changeOptionStuff();
-				if (FlxG.mouse.justPressed)
-					selectOption(options[curSelected]);
-			}
-		}
-	}
+	 */
 
 	var accept = controls.ACCEPT;
 	if (accept)

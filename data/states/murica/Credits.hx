@@ -19,7 +19,7 @@ var specialThanks:Array<{name:String, link:String, desc:String}> = [
 	{name: "hifish", link: "https://twitter.com/hifish__", desc: "Installer batchfile (.bat) script"},
 	{name: 'rinsai', link: 'https://twitter.com/Rinsai_1', desc: "Eagle Fortnite default dance\n\nI TRIED FINDING IT EVERYWHERE,\nTHANK GOD SOMEONE HAD IT"},
 	{name: 'vsgorefield', link: "https://gamebanana.com/mods/501201", desc: "i stole your videohandler script"},
-	{name: 'dovlin', link: "https://scarletviolet.pokemon.com/en-us/", desc: "he's finally a reference..."}
+	{name: 'dovlin', link: "https://gamebanana.com/mods/585736", desc: "he's finally a reference..."}
 ];
 
 var voiceActors:Array<{name:String, link:String, desc:String}> = [

@@ -6,6 +6,7 @@ import flixel.FlxCamera;
 
 importScript("data/scripts/HandyDandyFunctions");
 importScript("data/scripts/WhiteHouseHandler");
+importScript('data/scripts/WhiteHouseDialogue');
 public var canPause:Bool = true;
 public var isPaused:Bool = false;
 public var canPressAnything:Bool = true;
@@ -59,6 +60,7 @@ public var pauseFunction:Map<String, Void->Bool> = []; // pauseFunction.set("roo
 // cache
 public var roomVars:Map<String, Dynamic> = []; // room variables
 public var roomSprites:Map<String, FlxObject> = []; // keeps roomsprites in cache for reviving
+public var dialTxt:FlxText;
 
 // main functions
 function create() {
@@ -144,6 +146,15 @@ function create() {
 	tapeCountTxt.setBorderStyle(FlxTextBorderStyle.OUTLINE, FlxColor.BLACK);
 	tapeCountTxt.borderSize = 1.75;
 	subUIGRP.add(tapeCountTxt);
+
+	dialTxt = new FlxText(0, 525, 0, "");
+	dialTxt.text = "";
+	dialTxt.setFormat("fonts/impact.ttf", 25, FlxColor.WHITE, "center");
+	dialTxt.setBorderStyle(FlxTextBorderStyle.OUTLINE, FlxColor.BLACK, 5, 25);
+	dialTxt.borderSize = 1;
+	dialTxt.screenCenter(FlxAxes.X);
+	add(dialTxt);
+	dialTxt.cameras = [camHUD];
 
 	// setting values
 	for (arrow in [leftArrow, rightArrow, upArrow, downArrow])
@@ -322,10 +333,9 @@ public function setArrowPos(defaultPos:Array<Array<Float>>) {
 	var spriteArray = [leftArrow, rightArrow, upArrow, downArrow];
 
 	for (i => posVariable in posVariableArray) {
-		if (posVariable != null)
-			spriteArray[i].setPosition(posVariable[0], posVariable[1]);
-		else
-			spriteArray[i].setPosition(defaultPos[i][0], defaultPos[i][1]);
+		var pos1:Float = (posVariable != null ? posVariable[0] : defaultPos[i][0]);
+		var pos2:Float = (posVariable != null ? posVariable[1] : defaultPos[i][1]);
+		spriteArray[i].setPosition(pos1, pos2);
 	}
 }
 
@@ -534,4 +544,46 @@ function pauseMenu() {
 	});
 	substate.cameras = [camHUD];
 	openSubState(substate);
+}
+
+// dialogue
+var curDial:Int = 0;
+var dialLine:String = "";
+var dialTime:String = "";
+var dialColor:String = "";
+var curDialColor:String = '#ffffff';
+
+public function dialogue(dialogue:String) {
+	var dialReps:Int = dayDial[dialogue].length - 1;
+	dialogueRep(dialogue, dialReps);
+}
+
+function dialogueRep(dialogue:String, totalReps:Int) {
+	setDialStuff(dialogue);
+
+	new FlxTimer().start(dialTime, function(tmr:FlxTimer) {
+		if (curDial == totalReps) {
+			dialTxt.text = '';
+			curDial = 0;
+			dialColor = '#ffffff';
+		} else {
+			curDial += 1;
+			dialogueRep(dialogue, totalReps);
+		}
+	});
+}
+
+function setDialStuff(dialogue:String) {
+	// variables
+	dialLine = dayDial[dialogue][curDial].line;
+	dialTime = dayDial[dialogue][curDial].time;
+	dialColor = dayDial[dialogue][curDial].color;
+	// attributes
+	dialTxt.text = dialLine;
+	dialTxt.screenCenter(FlxAxes.X);
+
+	if (curDialColor != dialColor && dialColor != null) {
+		curDialColor = dialColor;
+		dialTxt.color = FlxColor.fromString(dialColor);
+	}
 }

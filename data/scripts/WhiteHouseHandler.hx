@@ -5,7 +5,7 @@ importScript("data/scripts/HandyDandyFunctions");
 // main data
 public var isNight:Bool = false;
 public var curRoom:String = "startroom";
-public var startRoom:String = 'startroom'; // startroom
+public var startRoom:String = 'georgeposter'; // startroom
 public var pauseFunctions:Array<Void->Bool> = [];
 public var roomTimeVar:Float = 0.25;
 public var shortStep:String = 'fnaf4runsoundshort';
@@ -292,17 +292,21 @@ public var dayRooms = [
 						if (!roomVars.exists('georgepressed')) {
 							curSound.loadEmbedded(Paths.sound(soundPath + "/georgepaintingv1"));
 							curSound.play();
+							dialogue('george_intro');
 						} else if (roomVars['georgeClickCount'] >= 14) {
 							curSound.loadEmbedded(Paths.sound(soundPath + "/george50times"));
 							curSound.play();
+							dialogue('george_secret');
 							roomVars['georgeGone'] = true;
 							poster.visible = false;
 							new FlxTimer().start(11, function(tmr:FlxTimer) {
 								unlockTAPE('eagnite', true, 5);
 							});
 						} else {
-							curSound.loadEmbedded(Paths.sound(soundPath + "/georgepaintingv2_" + FlxG.random.int(1, 4)));
+							var rando = FlxG.random.int(1, 4);
+							curSound.loadEmbedded(Paths.sound(soundPath + "/georgepaintingv2_" + rando));
 							curSound.play();
+							dialogue('georgerando_' + rando);
 						}
 						portraitTime = curSound.length / 1000;
 					}
@@ -325,9 +329,11 @@ public var dayRooms = [
 		openFunc: function() {
 			var poster:FlxSprite;
 			poster = loadPortrait('teddy', 'teddypainting', [360, 45], function() {
-				curSound.loadEmbedded(Paths.sound(soundPath + "/teddy_" + FlxG.random.int(1, 16)));
+				var rando = FlxG.random.int(1, 16);
+				curSound.loadEmbedded(Paths.sound(soundPath + "/teddy_" + rando));
 				curSound.play();
 				portraitTime = curSound.length / 1000;
+				dialogue('teddy_' + rando);
 			}, null);
 
 			closeRoomFunc.set('teddyposter', function() {
@@ -441,7 +447,13 @@ public var dayRooms = [
 		leftRoom: 'ovalviewleft'
 	},
 	// red room c
-	'redroomc' => {downRoom: "redroomcbehind", leftRoom: "beautifulahhpainting", upRoom: 'reddining'},
+	'redroomc' => {
+		downRoom: "redroomcbehind",
+		upRoom: "beautifulahhpainting",
+		rightRoom: 'reddining',
+		rightAngle: -25,
+		rightArrowPOS: [1000, 575]
+	},
 	'redroomcbehind' => {downRoom: "redroomc", upRoom: "ovalviewright"},
 	'beautifulahhpainting' => {downRoom: 'redroomc'},
 	'reddining' => {downRoom: 'redroomcview', upRoom: 'diningviewfront'},
@@ -460,10 +472,12 @@ public var dayRooms = [
 		downRoom: 'hallway',
 		openFunc: function() {
 			var carter, johnson:FlxSprite;
-			carter = loadPortrait('carter', 'carterpainting', [-80, 175], function(){
-			 	curSound.loadEmbedded(Paths.sound(soundPath + "/carterrandom_" + FlxG.random.int(1, 7)));
+			carter = loadPortrait('carter', 'carterpainting', [-80, 175], function() {
+				var rando = FlxG.random.int(1, 7);
+				curSound.loadEmbedded(Paths.sound(soundPath + "/carterrandom_" + rando));
 				curSound.play();
 				portraitTime = curSound.length / 1000;
+				dialogue('carter_' + rando);
 			}, null);
 			johnson = loadPortrait('johnson', 'johnsonpainting', [980, 110]);
 			closeRoomFunc.set('carterjohnson', function() {
@@ -499,6 +513,7 @@ public var dayRooms = [
 					canPressAnything = false;
 					curSound.loadEmbedded(Paths.sound(soundPath + "/jfkpsst"));
 					curSound.play();
+					dialogue('jfk_psst');
 					volumeBGM(0.1, 0.5);
 					new FlxTimer().start(curSound.length / 1000, function(tmr:FlxTimer) {
 						roomVars['jfkPSST'] = true;
@@ -532,6 +547,12 @@ public var dayRooms = [
 			jfkEvent.animation.addByPrefix('fine', 'fine', 24);
 			jfkEvent.animation.play((roomVars.exists('jfkshot') && roomVars['jfkshot'] == true ? 'wound' : 'fine'));
 
+			updateRoomSprite.set('sentientpicofjfk', function(elapsed:Float) {
+				if (roomVars['jfkshot']) {
+					if (FlxG.mouse.overlaps(jfkEvent) && FlxG.mouse.justPressed)
+						funnyTextThing((FlxG.random.float(1, 100) < 99.7 ? 'he is dead...' : "another head for the abomination"), [520, 200], 0.75, 600, 25);
+				}
+			});
 			// the poster
 			var poster:FlxSprite;
 			poster = loadPortrait('jfk', 'jfkpainting', [485, 50], function() {
@@ -541,6 +562,7 @@ public var dayRooms = [
 						volumeBGM(0.25, 0.5);
 						curSound.loadEmbedded(Paths.sound(soundPath + "/jfkgetsshot"));
 						curSound.play();
+						dialogue('jfk_shot');
 						portraitTime = 0.001;
 						canPressAnything = false;
 						itemLose('jellydonut');
@@ -564,12 +586,15 @@ public var dayRooms = [
 						});
 						roomVars.set('jfkshot', true);
 					} else if (!roomVars['firstTimeJFK']) {
-						curSound.loadEmbedded(Paths.sound(soundPath + "/jfkrando_" + FlxG.random.int(1, 3)));
+						var rando = FlxG.random.int(1, 3);
+						curSound.loadEmbedded(Paths.sound(soundPath + "/jfkrando_" + rando));
+						dialogue('jfkrando_' + rando);
 						curSound.play();
 						portraitTime = curSound.length / 1000;
 					} else {
 						curSound.loadEmbedded(Paths.sound(soundPath + "/jfkintrosegment"));
 						curSound.play();
+						dialogue('jfk_intro');
 						portraitTime = curSound.length / 1000;
 						// new flxtimer, uses `portraitTime`, gives you note once completed (TODO)
 						new FlxTimer().start(portraitTime, function(jfk:FlxTimer) {
