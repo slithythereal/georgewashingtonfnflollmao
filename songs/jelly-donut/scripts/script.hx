@@ -13,7 +13,7 @@ function create(){
     add(jfkIntro);
     
     laserPointer = new FunkinSprite(2000, -1000).makeGraphic(10, 10, FlxColor.TRANSPARENT);
-    FlxSpriteUtil.drawCircle(laserPointer, -1, -1, -1, 0xb1ff2727);
+    FlxSpriteUtil.drawCircle(laserPointer, -1, -1, -1, 0x8fff0000);
     add(laserPointer);
 
     boyfriend.gameOverCharacter = 'jellydeath';
@@ -36,7 +36,7 @@ function beatHit(curBeat:Int){
         case 528:
             stage.stageSprites["animeLines"].visible = false;
             changeSpeed(1);
-            stage.stageSprites['ohno'].velocity.x = -40;
+            stage.stageSprites['ohno'].velocity.x = -20;
         case 606:
             FlxTween.tween(laserPointer, {x:880, y:400}, 1, {ease: FlxEase.quartIn});
     }

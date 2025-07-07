@@ -29,7 +29,7 @@ public function backgroundCreate(bg:String){
             iconP2.visible = dad.visible = true;
             blacksky.velocity.set(0, 0);
             dnc.visible = true;
-            blacksky.visible = sleigh.visible = false;
+            blacksky.visible/* = sleigh.visible*/ = false;
 
         case 'sleigh':
             dad.visible = false;
@@ -46,7 +46,7 @@ public function backgroundCreate(bg:String){
 }
 
 function beatHit(curBeat:Int){
-    if(curBG == 'sleigh' && curBeat >= 0 && !sleighFalling){
+    if(curBG == 'sleigh' && curBeat >= 0 && !sleighFalling && !dnc.visible){
         for(i in [boyfriend, sleigh]){
             FlxTween.tween(i,{y: i.y-sleighbounce}, bounceDuration, {ease:FlxEase.sineOut, onComplete: function(twn:FlxTween) {
                 FlxTween.tween(i, {y: i.y + sleighbounce}, bounceDuration, {ease:FlxEase.sineIn});

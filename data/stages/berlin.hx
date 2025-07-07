@@ -17,8 +17,9 @@ function create()
 	sky = new FlxBackdrop(Paths.image('stages/berlin/sky'), 0x01, 0, 0);
 	sky.scale.set(1.5, 1.5);
 	sky.updateHitbox();
-	sky.velocity.x = -10;
+	sky.velocity.x = -5;
 	sky.y = -200;
+	sky.scrollFactor.set();
 	insert(members.indexOf(oldSky), sky);
 
 	wall = new FlxBackdrop(Paths.image('stages/berlin/wallpart'), 0x01, 0, 0);
@@ -45,5 +46,5 @@ function update(elaped:Float)
 
 public function changeSpeed(?mult:Float = 1){
     wall.velocity.x = -800 * mult;
-    sky.velocity.x = -20 * mult;
+    sky.velocity.x = -5 * mult;
 }

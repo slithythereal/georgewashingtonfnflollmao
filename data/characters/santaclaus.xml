@@ -1,6 +1,7 @@
 <!DOCTYPE codename-engine-character>
-<character sprite="santaclaus" flipX="true" camx="-200" camy="-500" gameOverChar="santa-dead" isPlayer="true" icon="santa" lossSfx="gameover/santaheartattack" color="#ffffff" holdTime="6.1">
+<character sprite="santaclaus" flipX="true" camx="-200" camy="-500" isPlayer="true" icon="santa" color="#FFFFFF" gameOverChar="santa-dead" holdTime="6.1" lossSfx="gameover/santaheartattack">
 	<anim name="idle" anim="santaidle" x="0" y="0" fps="24" loop="false"/>
+	<anim name="idle-loop" anim="santaidle" x="0" y="0" fps="24" loop="true" indices="8..13"/>
 	<anim name="singLEFT" anim="santaleft" x="82" y="30" fps="24" loop="false"/>
 	<anim name="singDOWN" anim="santadown" x="-98" y="78" fps="24" loop="false"/>
 	<anim name="singUP" anim="santaup" x="-15" y="35" fps="24" loop="false"/>

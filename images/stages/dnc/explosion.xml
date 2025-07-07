@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TextureAtlas imagePath="explosion.png">
+	<!-- Created with NotePad HAHAHA -->
+	<SubTexture name="explosion_sfx0000" x="0" y="0" width="200" height="200"/>
+	<SubTexture name="explosion_sfx0001" x="200" y="0" width="200" height="200"/>
+	<SubTexture name="explosion_sfx0002" x="400" y="0" width="200" height="200"/>
+	<SubTexture name="explosion_sfx0003" x="0" y="200" width="200" height="200"/>
+	<SubTexture name="explosion_sfx0004" x="200" y="200" width="200" height="200"/>
+	<SubTexture name="explosion_sfx0005" x="400" y="200" width="200" height="200"/>
+	<SubTexture name="explosion_sfx0006" x="0" y="400" width="200" height="200"/>
+	<SubTexture name="explosion_sfx0007" x="200" y="400" width="200" height="200"/>
+	<SubTexture name="explosion_sfx0008" x="400" y="400" width="200" height="200"/>
+	<SubTexture name="explosion_sfx0009" x="0" y="0" width="1" height="1"/>
+</TextureAtlas>
