@@ -16,10 +16,10 @@ function create()
 	{
 		var politicsTxt:FlxText = new FlxText(0, 50, FlxG.width);
 		politicsTxt.text = "WARNING\n"
-			+ "This mod doesn't encourage developer's political views, neither left nor right.\n"
-			+ "This is all satire, your favorite politican will be made fun of.\n"
+			+ "This mod DOES NOT encourage the developers' political views, neither left nor right.\n"
+			+ "Nothing is supposed to be taken serious, this is all satire. Your favorite politician WILL be made fun of.\n"
 			+ "If you get offended by this, turn back now.\n" 
-			+ "We hope you enjoy this mod!";
+			+ "We hope you enjoy the mod!";
 		politicsTxt.setFormat("fonts/impact.ttf", 45, FlxColor.WHITE, "center");
 		politicsTxt.screenCenter(FlxAxes.X);
 		add(politicsTxt);
