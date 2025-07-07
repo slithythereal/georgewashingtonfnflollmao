@@ -142,34 +142,34 @@ public var dayDial = [
 		{time: 1.544, line: "and run a red light"}
 	],
 	'teddy_12' => [
-		{time:2.208, line: "Rule number 12"},
-		{time:0.724, line: ""}, 
-		{time:3.231, line: "Click on George Washington's portrait"},
-		{time:1.909, line: "50 times."}
+		{time: 2.208, line: "Rule number 12"},
+		{time: 0.724, line: ""},
+		{time: 3.231, line: "Click on George Washington's portrait"},
+		{time: 1.909, line: "50 times."}
 	],
 	'teddy_13' => [
-		{time:2.573, line: "Rule number 13"},
-		{time:1.109, line: ""},
-		{time:2.710, line: "Price your 5 year old hardware"},
-		{time:2.765, line: "at 450 dollars"}
+		{time: 2.573, line: "Rule number 13"},
+		{time: 1.109, line: ""},
+		{time: 2.710, line: "Price your 5 year old hardware"},
+		{time: 2.765, line: "at 450 dollars"}
 	],
 	'teddy_14' => [
-		{time:2.131, line: "Rule number 14"},
-		{time:0.684, line: ""},
-		{time:2.296, line: "Listen to my favorite song"}
+		{time: 2.131, line: "Rule number 14"},
+		{time: 0.684, line: ""},
+		{time: 2.296, line: "Listen to my favorite song"}
 	],
 	'teddy_15' => [
-		{time:2.563, line: "Rule number 15"},
-		{time:0.533, line: ""},
-		{time:1.622, line: "Hit the gym"},
-		{time:2.625, line: "and get big and strong"},
-		{time:1.214, line: "like me"}
+		{time: 2.563, line: "Rule number 15"},
+		{time: 0.533, line: ""},
+		{time: 1.622, line: "Hit the gym"},
+		{time: 2.625, line: "and get big and strong"},
+		{time: 1.214, line: "like me"}
 	],
 	'teddy_16' => [
-		{time:1.846, line: "Rule number 16"},
-		{time:1.075, line: ""},
-		{time:2.465, line: "make yourself a delicious basket"},
-		{time:1.803, line: "of apple pie"}
+		{time: 1.846, line: "Rule number 16"},
+		{time: 1.075, line: ""},
+		{time: 2.465, line: "make yourself a delicious basket"},
+		{time: 1.803, line: "of apple pie"}
 	],
 	// jimmy carter
 	'carter_1' => [
