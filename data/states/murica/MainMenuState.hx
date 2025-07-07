@@ -121,6 +121,8 @@ function update(elapsed:Float) {
 			// var help = Assets.getPath(Paths.file('data/hilarious.txt'));
 			// Sys.command("start ");
 			// trace(help);
+
+			FlxG.switchState(new ModState('murica/FlappyEag'));
 		}
 		// trace(Paths.getAssetsRoot());
 		// Sys.command('start ' + Paths.getPath('data/hilarious.txt'));
