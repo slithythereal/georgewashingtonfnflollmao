@@ -107,7 +107,7 @@ function update(elapsed:Float)
     if (timer<=0)
     {
         timer = maxTimer;
-        if (maxTimer>0.75)
+        if (maxTimer>0.65)
             createPipe(FlxG.random.float(-180, 180));
         else
             createPipe(lastPipePos + FlxG.random.float(-300, 300) * maxTimer);
@@ -194,7 +194,7 @@ function passPipe(y:Float = 0)
     maxTimer -= maxTimer/100;
     trace(maxTimer);
 
-    if (points >= 50)
+    if (points >= 100)
         wall.velocity.x = -500/maxTimer;
 }
 
