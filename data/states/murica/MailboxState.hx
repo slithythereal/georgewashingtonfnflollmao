@@ -68,15 +68,18 @@ function create()
 		mail.loadGraphic(Paths.image('menus/mailbox/mailIcons/' + mailArray[i] + "_mail"));
 		mail.scale.set(1, 1);
 		mail.updateHitbox();
+		mail.centerOrigin();
 		mail.ID = i;
 		if (!mailInventory[mailArray[i]].read) // makes unread mail yellow to avoid confusion
 			mail.color = FlxColor.YELLOW;
 		mails.add(mail);
 		mail.screenCenter();
-		mail.x += (i%6 * 160) - ((mailArray.length%6 * 160)/2) - 160/2;
-		mail.y += (Math.floor(i/6) * 160) - (Math.floor(mailArray.length/6)*160/2);
+		mail.x += (i%6 * 160) - ((FlxMath.bound(mailArray.length, 0, 6)-1) * (160/2));
+		//mail.y = (FlxG.height / 2) + ((Math.floor(i/6) * 160) - (Math.floor(mailArray.length/6) * 160)/2) - 160/4;
+		mail.y += (Math.floor(i/6) * 160) - (mailArray.length > 6 ? (Math.floor(mailArray.length/6) * 160/2) : 0);
 		/*var text:FlxText = new FlxText(mail.x, mail.y, 0, mail.ID);
 		add(text);*/
+		trace((Math.floor(mailArray.length/6)));
 		HandyDandy.watch(mail);
 	}
 
