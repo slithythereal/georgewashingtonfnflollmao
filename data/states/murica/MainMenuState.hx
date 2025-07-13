@@ -122,7 +122,7 @@ function update(elapsed:Float) {
 			// Sys.command("start ");
 			// trace(help);
 
-			FlxG.switchState(new ModState('murica/FlappyEag'));
+			FlxG.switchState(new ModState('murica/minigame/FlappyEag'));
 		}
 		// trace(Paths.getAssetsRoot());
 		// Sys.command('start ' + Paths.getPath('data/hilarious.txt'));
@@ -469,5 +469,5 @@ function whiteHouseRise() {
 
 function whiteHouseStart() {
 	selectedSomethin = true;
-	FlxG.switchState(new ModState("murica/WhiteHouseWarning"));
+	FlxG.switchState(new ModState("murica/minigame/WhiteHouseWarning"));
 }
