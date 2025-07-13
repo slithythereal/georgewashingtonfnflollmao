@@ -258,7 +258,8 @@ function loadRoom(room:String) {
 			dayRooms[curRoom].openFunc();
 
 		if (inWHITEHOUSE)
-			switchBGM((dayRooms[curRoom].newBGM != null ? dayRooms[curRoom].newBGM : 'base'));
+			//switchBGM((dayRooms[curRoom].newBGM != null ? dayRooms[curRoom].newBGM : 'base'));
+			switchBGM('base');
 
 		callForEach();
 		new FlxTimer().start(roomTimeVar, function(tmr:FlxTimer) {
@@ -369,7 +370,7 @@ public function switchBGM(track:String) {
 
 public function volumeBGM(volume:Float, time:Float) {
 	desiredVolume = volume;
-	var oldVolume:Float = dayshiftBGM[curTrack].volume;
+	var oldVolume:Float = dayshiftBGM[curTrack]?.volume;
 	if (oldVolume < volume)
 		dayshiftBGM[curTrack].fadeIn(time, oldVolume, volume);
 	else if (oldVolume > volume)
@@ -548,42 +549,43 @@ function pauseMenu() {
 
 // dialogue
 var curDial:Int = 0;
-var dialLine:String = "";
-var dialTime:String = "";
-var dialColor:String = "";
 var curDialColor:String = '#ffffff';
 
-public function dialogue(dialogue:String) {
+public function startDialogue(dialogue:String) {
 	var dialReps:Int = dayDial[dialogue].length - 1;
-	dialogueRep(dialogue, dialReps);
+	curDial = 0;
+	dialogueNextLine(dialogue, dialReps);
 }
 
-function dialogueRep(dialogue:String, totalReps:Int) {
-	setDialStuff(dialogue);
+var dialogueTimer:FlxTimer = null;
+function dialogueNextLine(dialogue:String, totalReps:Int)
+{
+	if (curDial >= totalReps+1)
+	{
+		dialTxt.text = '';
+		switchBGM('base');
+		return;
+	}
 
-	new FlxTimer().start(dialTime, function(tmr:FlxTimer) {
-		if (curDial == totalReps) {
-			dialTxt.text = '';
-			curDial = 0;
-			dialColor = '#ffffff';
-		} else {
-			curDial += 1;
-			dialogueRep(dialogue, totalReps);
-		}
+	var dialLine = dayDial[dialogue][curDial].line;
+	var dialColor = dayDial[dialogue][curDial].color;
+	setDialogueText(dialLine, dialColor);
+
+	var dialTime = dayDial[dialogue][curDial].time;
+	if (dialogueTimer != null && !dialogueTimer.finished) dialogueTimer.destroy();
+	dialogueTimer = new FlxTimer().start(dialTime, function(tmr:FlxTimer) {
+		curDial++;
+		dialogueNextLine(dialogue, totalReps);
 	});
 }
 
-function setDialStuff(dialogue:String) {
-	// variables
-	dialLine = dayDial[dialogue][curDial].line;
-	dialTime = dayDial[dialogue][curDial].time;
-	dialColor = dayDial[dialogue][curDial].color;
-	// attributes
-	dialTxt.text = dialLine;
+function setDialogueText(dialogueLine:String, color:String)
+{
+	dialTxt.text = dialogueLine;
 	dialTxt.screenCenter(FlxAxes.X);
 
-	if (curDialColor != dialColor && dialColor != null) {
-		curDialColor = dialColor;
-		dialTxt.color = FlxColor.fromString(dialColor);
+	if (curDialColor != color && color != null) {
+		curDialColor = color;
+		dialTxt.color = FlxColor.fromString(curDialColor);
 	}
 }
