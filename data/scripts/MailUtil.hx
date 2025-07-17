@@ -20,15 +20,15 @@ public var allMailEver = [
 public var mailData = [
 	'brazil' => {letterID: "brazil", desc: "Letter from Brazilian government"},
 	'whitehouse' => {letterID: "whitehouse", desc: "Letter from the White House"},
-	'arcade' => {letterID: "arcade", desc: "Arcade Machine Delivery Notice"}
+	'arcade' => {letterID: "arcade", desc: "Arcade Machine Delivery Notice"},
+	'welcomeback' => {letterID: "welcomeback", desc: "WELCOME BACK OLD PLAYER!"}
 ];
 
 public var allMail:Array<String> = ['potus', 'toucan', 'brazil', 'whitehouse', 'welcomeback', 'arcade'];
 
 public var MailUtil:T = {
 	newSingleMail: function(newMail:String) {
-			HandyDandy.saveMailData(newMail, mailData[newMail].letterID, false, mailData[newMail].desc);
-		
+		HandyDandy.saveMailData(newMail, mailData[newMail].letterID, false, mailData[newMail].desc);
 	},
 	newRandomMail: function(curSong:String) {
 		trace(FlxG.save.data.mailSongs);

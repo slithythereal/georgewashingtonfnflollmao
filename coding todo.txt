@@ -3,13 +3,19 @@
 - add time up/game over for white House
 - add vhs gained tape state for when you complete white House
 - add vhs menu for playing unlocked tapes
-- Get more voice actors for Dayshift
+- Get more voice actors for Dayshift (-slithy)
 - split credits menu into two so there's main developers and special thanks
-- add boyfriend intro animation for Dementia (this will make dementia 100% as of now before song remake)
+- add boyfriend intro animation for Dementia (this will make dementia 100% as of now before song remake gets coded in)
 - Finish events for Jelly Donut
 - Finish events for Merry Christmas
 - Touch up on satire warning screen
-- Touch up on mailbox screen
+- Touch up on freeplay menu
+- Touch up on kilometer intro
+- Add in FlappyEag microgame + letter
+- ADD WEIRD ROUTE
 
 (potential)
 - Add song remakes
+
+done
+- Touch up on mailbox screen (done)
