@@ -7,6 +7,7 @@ import funkin.options.OptionsMenu;
 import flixel.effects.FlxFlicker;
 
 importScript('data/scripts/HandyDandyFunctions');
+importScript('data/scripts/Translation');
 /*
  * TODO
  * add export save data xml option
@@ -24,35 +25,48 @@ var optionStuff = [
 		func: function() {
 			FlxG.switchState(new MainMenuState());
 		},
-		desc: "Go back to main menu",
-		displayTxt: "Back"
+		desc: returnTrans('backoptdesc', curLang),
+		displayTxt: returnTrans('back', curLang)
 	},
 	"Engine Options" => {
 		func: function() {
 			FlxG.switchState(new OptionsMenu());
 		},
-		desc: 'The options for the mod engine, you can find controls, gameplay settings, and more!',
-		displayTxt: "Engine Options"
+		desc: returnTrans('engoptdesc', curLang),
+		displayTxt: returnTrans('engineoptions', curLang)
 	},
-	"Subtitles" => {
-		func: function() {
-			FlxG.save.data.subtitlesGW = !FlxG.save.data.subtitlesGW;
-			var description = 'Enable/Disable Subtitles for the mod!\nSubtitles on: ' + FlxG.save.data.subtitlesGW;
-			var display = "Subtitles: " + returnBool(FlxG.save.data.subtitlesGW);
-			toggleSetting(curOptionSelected, description, display);
-		},
-		desc: 'Enable/Disable Subtitles for the mod!\nSubtitles on: ' + FlxG.save.data.subtitlesGW,
-		displayTxt: "Subtitles: " + (FlxG.save.data.subtitlesGW ? "ON" : "OFF")
+	"Subtitles" => {func: function() {
+		FlxG.save.data.subtitlesGW = !FlxG.save.data.subtitlesGW;
+		var boolT:Bool = FlxG.save.data.subtitlesGW;
+		var description = returnTrans('subtdesc', curLang) + '\n' + returnTrans('subtitles', curLang) + ": " + returnONOFF(boolT, curLang);
+
+		var display = returnTrans('subtitles', curLang) + ": " + returnONOFF(boolT, curLang);
+		toggleSetting(curOptionSelected, description, display);
 	},
-	"Show Warning Screen" => {
-		func: function() {
-			FlxG.save.data.showGWWarning = !FlxG.save.data.showGWWarning;
-			var description = 'Enable/Disable the warning screen that pops up before you play the mod\nWarning Screen on: ' + FlxG.save.data.showGWWarning;
-			var display = "Warning Screen: " + returnBool(FlxG.save.data.showGWWarning);
-			toggleSetting(curOptionSelected, description, display);
-		},
-		desc: 'Enable/Disable the warning screen that pops up before you play the mod\nWarning Screen on: ' + FlxG.save.data.showGWWarning,
-		displayTxt: "Warning Screen: " + (FlxG.save.data.showGWWarning ? "ON" : "OFF")
+		desc: returnTrans('subtdesc', curLang)
+		+ '\n'
+		+ returnTrans('subtitles', curLang)
+		+ ": "
+		+ returnONOFF(FlxG.save.data.subtitlesGW, curLang),
+		displayTxt: returnTrans('subtitles', curLang) + ": " + returnONOFF(FlxG.save.data.subtitlesGW, curLang)
+	},
+	"Show Warning Screen" => {func: function() {
+		FlxG.save.data.showGWWarning = !FlxG.save.data.showGWWarning;
+		var description = returnTrans('warningscreendesc', curLang)
+			+ "\n"
+			+ returnTrans('warningscreen', curLang)
+			+ ": "
+			+ returnONOFF(boolT, curLang);
+
+		var display = returnTrans('warningscreen', curLang) + ": " + returnONOFF(FlxG.save.data.showGWWarning, curLang);
+		toggleSetting(curOptionSelected, description, display);
+	},
+		desc: returnTrans('warningscreendesc', curLang)
+		+ "\n"
+		+ returnTrans('warningscreen', curLang)
+		+ ": "
+		+ returnONOFF(FlxG.save.data.showGWWarning, curLang),
+		displayTxt: returnTrans('warningscreen', curLang) + ": " + returnONOFF(FlxG.save.data.showGWWarning, curLang)
 	},
 	"Reset Save Data" => {
 		func: function() {
@@ -65,8 +79,8 @@ var optionStuff = [
 				}
 			}));
 		},
-		desc: "Reset your save data!",
-		displayTxt: "RESET SAVE DATA"
+		desc: returnTrans('rsaved_l', curLang),
+		displayTxt: returnTrans('rsaved_C', curLang)
 	}
 ];
 
@@ -129,7 +143,7 @@ function create() {
 		add(flag);
 	}
 
-	var descInfo:FlxText = new FlxText(FlxG.width - 375, 22, 0, 'PRESS [TAB] TO TOGGLE DESCRIPTION');
+	var descInfo:FlxText = new FlxText(FlxG.width - 375, 22, 344, returnTrans('tabpress', curLang));
 	descInfo.setFormat(null, 15, FlxColor.WHITE, "right");
 	descInfo.setBorderStyle(FlxTextBorderStyle.OUTLINE, FlxColor.BLACK);
 	descInfo.borderSize = 2;
@@ -157,7 +171,6 @@ function create() {
 	blackBG.visible = false;
 
 	if (brazilRead) {
-		// add flag sprite here
 		for (i in ["america", "brazil"]) {
 			var spr:FlxVideoSprite = new FlxVideoSprite();
 			spr.load(Assets.getPath(Paths.video('countrytransitions/' + i)));
@@ -170,6 +183,7 @@ function create() {
 				spr.bitmap.dispose();
 				remove(spr);
 				FlxG.save.data.curCountry = otherCountry;
+				setCurLang();
 				FlxG.save.flush();
 				FlxG.switchState(new MainMenuState());
 			});
@@ -246,7 +260,7 @@ function changeDescTxt(newTxt:String) {
 	optionTxtGrp.forEach(function(i:FlxText) {
 		if (i.ID == curOptionSelected) {
 			hammer1.setPosition(i.x - 90, i.y - 25);
-			hammer2.setPosition(i.width + 25, i.y - 25);
+			hammer2.setPosition(i.width + 50, i.y - 25);
 		}
 	});
 }
@@ -269,11 +283,4 @@ function toggleSetting(id:Int, newTxt:String, displayTxt:String) {
 			FlxFlicker.flicker(i, 1, 0.06);
 		}
 	});
-}
-
-function returnBool(value:Bool):String {
-	if (value)
-		return "ON";
-	else
-		return "OFF";
 }

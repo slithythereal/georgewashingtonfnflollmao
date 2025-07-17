@@ -1,18 +1,19 @@
 import flixel.text.FlxTextBorderStyle;
 import flixel.text.FlxText;
 import flixel.FlxObject;
+
+//TODO: Add Brazil Flag
 importScript("data/scripts/HandyDandyFunctions");
 var mailArray:Array<String> = [];
-var existingMailArray:Array<String> = ['potus', 'brazil', 'toucan', 'whitehouse', 'welcomeback'];
+var existingMailArray:Array<String> = ['potus', 'brazil', 'toucan', 'whitehouse', 'welcomeback', 'arcade'];
 
 // mail data in one variable instead of making multiple variables for them
-var mailInventory:Map<String,
-	{
-		mailID:String,
-		letterID:String,
-		read:Bool,
-		displayName:String
-	}> = [];
+var mailInventory:Map<String, {
+	mailID:String,
+	letterID:String,
+	read:Bool,
+	displayName:String
+}> = [];
 
 var mails:FlxTypedGroup<FlxSprite>;
 var textbg, letter:FlxSprite;
@@ -24,8 +25,7 @@ var isDisplayVisible:Bool = false;
 // functions for when you close the letter for the 1st time
 var mailCloseFuncs:Map<String, Void->Void> = [];
 
-function loadData()
-{
+function loadData() {
 	var saveMailArray:Array<String> = [];
 	FlxG.mouse.visible = true;
 	// takes mail stuff from savedata
@@ -36,15 +36,13 @@ function loadData()
 		if (existingMailArray.contains(mail))
 			mailArray.push(mail);
 	trace(mailArray);
-	//trace(mailInventory);
+	// trace(mailInventory);
 }
 
-function create()
-{
+function create() {
 	loadData();
 	// CoolUtil.playMenuSong();
 	window.title = "WHAT'S A KILOMETER - You've Got Mail!";
-
 
 	var bg:FlxSprite = new FlxSprite(); // temp bg
 	bg.loadGraphic(Paths.image('menus/menuDesat'));
@@ -62,8 +60,7 @@ function create()
 	mailTXT.screenCenter(FlxAxes.X);
 	add(mailTXT);
 
-	for (i in 0...mailArray.length)
-	{
+	for (i in 0...mailArray.length) {
 		var mail:FlxSprite = new FlxSprite();
 		mail.loadGraphic(Paths.image('menus/mailbox/mailIcons/' + mailArray[i] + "_mail"));
 		mail.scale.set(1, 1);
@@ -74,12 +71,12 @@ function create()
 			mail.color = FlxColor.YELLOW;
 		mails.add(mail);
 		mail.screenCenter();
-		mail.x += (i%6 * 160) - ((FlxMath.bound(mailArray.length, 0, 6)-1) * (160/2));
-		//mail.y = (FlxG.height / 2) + ((Math.floor(i/6) * 160) - (Math.floor(mailArray.length/6) * 160)/2) - 160/4;
-		mail.y += (Math.floor(i/6) * 160) - (mailArray.length > 6 ? (Math.floor(mailArray.length/6) * 160/2) : 0);
+		mail.x += (i % 6 * 160) - ((FlxMath.bound(mailArray.length, 0, 6) - 1) * (160 / 2));
+		// mail.y = (FlxG.height / 2) + ((Math.floor(i/6) * 160) - (Math.floor(mailArray.length/6) * 160)/2) - 160/4;
+		mail.y += (Math.floor(i / 6) * 160) - (mailArray.length > 6 ? (Math.floor(mailArray.length / 6) * 160 / 2) : 0);
 		/*var text:FlxText = new FlxText(mail.x, mail.y, 0, mail.ID);
-		add(text);*/
-		trace((Math.floor(mailArray.length/6)));
+			add(text); */
+		trace((Math.floor(mailArray.length / 6)));
 		HandyDandy.watch(mail);
 	}
 
@@ -100,40 +97,29 @@ function create()
 	add(letter);
 }
 
-function update(elapsed:Float)
-{
-	if (!isViewingNote)
-	{
+function update(elapsed:Float) {
+	if (!isViewingNote) {
 		if (controls.BACK)
 			FlxG.switchState(new MainMenuState());
 
-		mails.forEach(function(mail:FlxSprite)
-		{
-			if (FlxG.mouse.overlaps(mail))
-			{
+		mails.forEach(function(mail:FlxSprite) {
+			if (FlxG.mouse.overlaps(mail)) {
 				toggleDisplayTxt(mail, true);
-				if (FlxG.mouse.justPressed)
-				{
+				if (FlxG.mouse.justPressed) {
 					openLetter(mailInventory[mailArray[mail.ID]].letterID, mail.ID); // opening mail function
 					displayTxt.text = '';
 					textbg.setPosition(0, FlxG.height);
 				}
-			}
-			else
+			} else
 				toggleDisplayTxt(mail, false);
 		});
-		if (!FlxG.mouse.overlaps(mails))
-		{
+		if (!FlxG.mouse.overlaps(mails)) {
 			displayTxt.text = '';
 			textbg.setPosition(0, FlxG.height);
 		}
-	}
-	else 
-	{
-		mails.forEach(function(mail:FlxSprite)
-		{
-			if (!FlxG.mouse.overlaps(mail) && FlxG.mouse.justPressed)
-			{
+	} else {
+		mails.forEach(function(mail:FlxSprite) {
+			if (!FlxG.mouse.overlaps(mail) && FlxG.mouse.justPressed) {
 				toggleDisplayTxt(mail, false);
 				closeLetter();
 				displayTxt.text = '';
@@ -146,28 +132,22 @@ function update(elapsed:Float)
 	}
 }
 
-function toggleDisplayTxt(mail:FlxSprite, isON:Bool)
-{
-	if (isON)
-	{
+function toggleDisplayTxt(mail:FlxSprite, isON:Bool) {
+	if (isON) {
 		mail.scale.set(1.15, 1.15);
 		var plswork:Int = mail.ID;
 		if (!mailInventory[mailArray[plswork]].read) // makes text yellow when not been read yet
 		{
 			displayTxt.color = FlxColor.YELLOW;
 			displayTxt.text = "(UNREAD) " + mailInventory[mailArray[plswork]].displayName;
-		}
-		else
-		{
+		} else {
 			displayTxt.text = '' + mailInventory[mailArray[plswork]].displayName;
 			displayTxt.color = FlxColor.WHITE;
 		}
 		textbg.setPosition(displayTxt.x - 10, displayTxt.y - 10);
 		textbg.setGraphicSize(Std.int(displayTxt.width + 20), Std.int(displayTxt.height + 25));
 		textbg.updateHitbox();
-	}
-	else
-	{
+	} else {
 		mail.scale.set(1, 1);
 	}
 }
@@ -175,12 +155,13 @@ function toggleDisplayTxt(mail:FlxSprite, isON:Bool)
 function openLetter(curletter:String, mailID:Int) // opens the letter
 {
 	FlxG.sound.play(Paths.sound("ui/paper"));
+
 	letter.loadGraphic(Paths.image("menus/mailbox/letters/" + curletter + "_letter"));
 	letter.visible = true;
 	letter.scale.set(0, 0);
 	letter.alpha = 0;
 	FlxTween.cancelTweensOf(letter);
-	FlxTween.tween(letter, {alpha:1, "scale.x":1, "scale.y":1}, 0.2, {ease: FlxEase.quadOut});
+	FlxTween.tween(letter, {alpha: 1, "scale.x": 1, "scale.y": 1}, 0.2, {ease: FlxEase.quadOut});
 	letter.updateHitbox();
 	letter.screenCenter();
 	isViewingNote = true;
@@ -194,7 +175,9 @@ function closeLetter() // closes the letter
 	letter.scale.set(1, 1);
 	letter.alpha = 1;
 	FlxTween.cancelTweensOf(letter);
-	FlxTween.tween(letter, {alpha:0, "scale.x":0, "scale.y":0}, 0.1, {ease: FlxEase.quadIn, onComplete:function(twn:FlxTween){letter.visible=false;}});
+	FlxTween.tween(letter, {alpha: 0, "scale.x": 0, "scale.y": 0}, 0.1, {ease: FlxEase.quadIn, onComplete: function(twn:FlxTween) {
+		letter.visible = false;
+	}});
 	letter.updateHitbox();
 	letter.screenCenter();
 	var mailid:String = mailArray[curMailID]; // makes string variable to make it easy to read
@@ -203,10 +186,8 @@ function closeLetter() // closes the letter
 	funnyRead = mailInventory[mailid].read;
 	if (!funnyRead)
 		firstTimeRead = true; // detects if read for the first time
-	mails.forEach(function(mail:FlxSprite)
-	{
-		if (mail.ID == curMailID)
-		{
+	mails.forEach(function(mail:FlxSprite) {
+		if (mail.ID == curMailID) {
 			if (!mailInventory[mailid].read) // makes mail white when read
 			{
 				mail.color = FlxColor.WHITE;

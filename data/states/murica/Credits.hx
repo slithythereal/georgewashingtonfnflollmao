@@ -2,9 +2,10 @@ importScript('data/scripts/HandyDandyFunctions');
 import flixel.text.FlxTextBorderStyle;
 
 // easier to have it in one variable than mutliple
+//TODO: Add brazil flag
 var credits:Array<{name:String, link:String, desc:String}> = [
 	{name: 'slithy', link: 'https://slithy.carrd.co', desc: 'director\ncoding\ncharting\nanimator\ndirector stuff'},
-	{name: 'mrmorian', link: 'https://mrmorian.newgrounds.com/', desc: 'codirector\nanimation\nart\ncoding assistance\ncodirector stuff'},
+	{name: 'mrmorian', link: 'https://mrmorian.newgrounds.com/', desc: 'codirector\nanimation\nart\ncoding\ncodirector stuff'},
 	{name: 'macyeah', link: 'https://www.youtube.com/@macyeahh', desc: 'codirector\nmusic guy\nMost songs\ncodirector stuff'},
 	{name: 'punmaster', link: 'https://twitter.com/PunMasterOff', desc: 'music guy\nEag man'},
 	{name: "micahstuff", link: "", desc: "music guy\nGrimace"},

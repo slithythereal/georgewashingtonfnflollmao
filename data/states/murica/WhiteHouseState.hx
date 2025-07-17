@@ -170,6 +170,10 @@ function create() {
 	FlxG.console.registerFunction('giveItem', function(item:String) {
 		itemGet(item);
 	});
+
+	FlxG.console.registerFunction('giveTape', function(tape:String, isSecret:Bool, id:Int) {
+		unlockTAPE(tape, isSecret, id);
+	});
 }
 
 function update(elapsed:Float) {
@@ -258,7 +262,7 @@ function loadRoom(room:String) {
 			dayRooms[curRoom].openFunc();
 
 		if (inWHITEHOUSE)
-			//switchBGM((dayRooms[curRoom].newBGM != null ? dayRooms[curRoom].newBGM : 'base'));
+			// switchBGM((dayRooms[curRoom].newBGM != null ? dayRooms[curRoom].newBGM : 'base'));
 			switchBGM('base');
 
 		callForEach();
@@ -558,10 +562,9 @@ public function startDialogue(dialogue:String) {
 }
 
 var dialogueTimer:FlxTimer = null;
-function dialogueNextLine(dialogue:String, totalReps:Int)
-{
-	if (curDial >= totalReps+1)
-	{
+
+function dialogueNextLine(dialogue:String, totalReps:Int) {
+	if (curDial >= totalReps + 1) {
 		dialTxt.text = '';
 		switchBGM('base');
 		return;
@@ -572,15 +575,15 @@ function dialogueNextLine(dialogue:String, totalReps:Int)
 	setDialogueText(dialLine, dialColor);
 
 	var dialTime = dayDial[dialogue][curDial].time;
-	if (dialogueTimer != null && !dialogueTimer.finished) dialogueTimer.destroy();
+	if (dialogueTimer != null && !dialogueTimer.finished)
+		dialogueTimer.destroy();
 	dialogueTimer = new FlxTimer().start(dialTime, function(tmr:FlxTimer) {
 		curDial++;
 		dialogueNextLine(dialogue, totalReps);
 	});
 }
 
-function setDialogueText(dialogueLine:String, color:String)
-{
+function setDialogueText(dialogueLine:String, color:String) {
 	dialTxt.text = dialogueLine;
 	dialTxt.screenCenter(FlxAxes.X);
 

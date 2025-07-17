@@ -60,9 +60,7 @@ function create() {
 		menuItems.add(menuItem);
 
 		var txt:FlxText = new FlxText();
-		txt.text = options[i].toUpperCase();
-		if (brazilON)
-			txt.text = returnPortugese(options[i].toUpperCase());
+		txt.text = returnTrans(options[i].toLowerCase() + "_C", curLang);
 		txt.setFormat("fonts/impact.ttf", 25, FlxColor.WHITE, "center");
 		txt.ID = i;
 		txt.setBorderStyle(FlxTextBorderStyle.OUTLINE, FlxColor.BLACK, 5, 25);
@@ -343,8 +341,13 @@ function loadData() {
 			trace('mail does not exist');
 	});
 
+	setCurLang();
+
 	FlxG.console.registerFunction('unlockallmail', function() {
 		MailUtil.unlockALLMAIL();
+	});
+	FlxG.console.registerFunction('giveMail', function(mail:String) {
+		MailUtil.newSingleMail(mail);
 	});
 }
 

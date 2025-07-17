@@ -18,7 +18,7 @@ static var redirectStatesGW:Map<FlxState, String> = [
 function preStateSwitch() 
 {
 	WindowUtils.resetTitle();
-	window.title = (FlxG.save.data.brazilMode ? "BEM-VINDO AO BRASIL!" : windowTitleCustom);
+	window.title = (FlxG.save.data.curCountry == 'brazil' ? "BEM-VINDO AO BRASIL!" : windowTitleCustom);
 
     window.setIcon(Image.fromBytes(Assets.getBytes(Paths.image('GAMEICON')))); //sets game icon
     FlxG.camera.bgColor = 0xFF000000;
