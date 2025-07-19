@@ -2,7 +2,6 @@ import flixel.util.FlxSpriteUtil;
 
 importScript('data/scripts/Flipped Healthbars');
 
-
 var jfkIntro:FunkinSprite;
 var laserPointer:FunkinSprite;
 var laserVel:Float = 100;
@@ -19,34 +18,11 @@ function create(){
     boyfriend.gameOverCharacter = 'jellydeath';
 	lossSFX = 'gameover/jellydonutdeath';
 }   
-function onSongStart(){
-    jfkIntro.animation.play('anim');
-    jfkIntro.alpha = 1;
-    dad.visible = false;
-}
-
-function beatHit(curBeat:Int){
-    switch(curBeat){
-        case 64: 
-            dad.visible = true;
-            jfkIntro.visible = false;
-        case 400:
-            stage.stageSprites["animeLines"].visible = true;
-            changeSpeed(2);
-        case 528:
-            stage.stageSprites["animeLines"].visible = false;
-            changeSpeed(1);
-            stage.stageSprites['ohno'].velocity.x = -20;
-        case 606:
-            FlxTween.tween(laserPointer, {x:880, y:400}, 1, {ease: FlxEase.quartIn});
-    }
-}
 
 function stepHit(curStep:Int){
     switch(curStep){
         case 2446: 
-            camHUD.shake();
-            FlxG.camera.visible = false;
+            funnyEvent('shot');
     }
 }
 
@@ -68,4 +44,24 @@ function makeAnim(file:String, anim:String, xml:String, ?x:Float = 0, ?y:Float =
     char.updateHitbox();
     char.alpha = 0.001;
     return char;
+}
+
+function funnyEvent(event:String){
+    var daEvent:String = event;
+    switch(daEvent){
+        case 'introstart':
+            jfkIntro.animation.play('anim');
+            jfkIntro.alpha = 1;
+            dad.visible = false;
+        case 'introoff':
+            dad.visible = true;
+            jfkIntro.visible = false;
+        case 'ohno':
+            stage.stageSprites['ohno'].velocity.x = -20;
+        case 'lazer':
+            FlxTween.tween(laserPointer, {x:880, y:400}, 1, {ease: FlxEase.quartIn});
+        case 'shot':
+            camHUD.shake();
+            FlxG.camera.visible = false;
+    }
 }

@@ -2,8 +2,9 @@ import flixel.text.FlxTextBorderStyle;
 import flixel.text.FlxText;
 import flixel.FlxObject;
 
-//TODO: Add Brazil Flag
+// TODO: Add Brazil Flag
 importScript("data/scripts/HandyDandyFunctions");
+importScript('data/scripts/Translation');
 var mailArray:Array<String> = [];
 var existingMailArray:Array<String> = ['potus', 'brazil', 'toucan', 'whitehouse', 'welcomeback', 'arcade'];
 
@@ -53,7 +54,7 @@ function create() {
 	mails = new FlxTypedGroup();
 	add(mails);
 
-	var mailTXT:FlxText = new FlxText(50, 25, 0, "Boyfriend's Mailbox", 32);
+	var mailTXT:FlxText = new FlxText(50, 25, 0, returnTrans('bfmailbox', curLang), 32);
 	mailTXT.setFormat("fonts/impact.ttf", 45, 0xFF1374CF, "center");
 	mailTXT.setBorderStyle(FlxTextBorderStyle.OUTLINE, FlxColor.BLACK, 5, 25);
 	mailTXT.borderSize = 2;
@@ -136,14 +137,8 @@ function toggleDisplayTxt(mail:FlxSprite, isON:Bool) {
 	if (isON) {
 		mail.scale.set(1.15, 1.15);
 		var plswork:Int = mail.ID;
-		if (!mailInventory[mailArray[plswork]].read) // makes text yellow when not been read yet
-		{
-			displayTxt.color = FlxColor.YELLOW;
-			displayTxt.text = "(UNREAD) " + mailInventory[mailArray[plswork]].displayName;
-		} else {
-			displayTxt.text = '' + mailInventory[mailArray[plswork]].displayName;
-			displayTxt.color = FlxColor.WHITE;
-		}
+		displayTxt.color = (!mailInventory[mailArray[plswork]].read ? FlxColor.YELLOW : FlxColor.WHITE); // makes text yellow when not been read yet
+		displayTxt.text = (!mailInventory[mailArray[plswork]].read ? "(UNREAD) " : "") + mailInventory[mailArray[plswork]].displayName;
 		textbg.setPosition(displayTxt.x - 10, displayTxt.y - 10);
 		textbg.setGraphicSize(Std.int(displayTxt.width + 20), Std.int(displayTxt.height + 25));
 		textbg.updateHitbox();
@@ -175,9 +170,12 @@ function closeLetter() // closes the letter
 	letter.scale.set(1, 1);
 	letter.alpha = 1;
 	FlxTween.cancelTweensOf(letter);
-	FlxTween.tween(letter, {alpha: 0, "scale.x": 0, "scale.y": 0}, 0.1, {ease: FlxEase.quadIn, onComplete: function(twn:FlxTween) {
-		letter.visible = false;
-	}});
+	FlxTween.tween(letter, {alpha: 0, "scale.x": 0, "scale.y": 0}, 0.1, {
+		ease: FlxEase.quadIn,
+		onComplete: function(twn:FlxTween) {
+			letter.visible = false;
+		}
+	});
 	letter.updateHitbox();
 	letter.screenCenter();
 	var mailid:String = mailArray[curMailID]; // makes string variable to make it easy to read

@@ -8,7 +8,6 @@
 - add boyfriend intro animation for Dementia (this will make dementia 100% as of now before song remake gets coded in)
 - Finish events for Jelly Donut
 - Finish events for Merry Christmas
-- Touch up on satire warning screen
 - Touch up on freeplay menu
 - Touch up on kilometer intro
 - Add in FlappyEag microgame + letter

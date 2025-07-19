@@ -52,6 +52,7 @@ var optionStuff = [
 	},
 	"Show Warning Screen" => {func: function() {
 		FlxG.save.data.showGWWarning = !FlxG.save.data.showGWWarning;
+		var boolT:Bool = FlxG.save.data.showGWWarning;
 		var description = returnTrans('warningscreendesc', curLang)
 			+ "\n"
 			+ returnTrans('warningscreen', curLang)

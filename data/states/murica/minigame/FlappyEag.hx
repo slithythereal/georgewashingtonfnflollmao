@@ -119,7 +119,10 @@ function update(elapsed:Float) {
 		die();
 
 	if (FlxG.overlap(player, wall) && !dead) {
-		NativeAPI.showMessageBox("Launch Codes", "741776", 0x00000000); // will have if statement tied to save data variable (wip)
+		if (!FlxG.save.data.weirdRouteEnabled && !FlxG.save.data.launchCodesObtained) {
+			NativeAPI.showMessageBox("Launch Codes", "741776\n921945\n9112001\n6181812\n12141799", 0x00000000);
+			FlxG.save.data.launchCodesObtained = true;
+		}
 		FlxG.sound.music.stop();
 		FlxG.sound.play(Paths.sound('minigame/flappyeag/win'));
 

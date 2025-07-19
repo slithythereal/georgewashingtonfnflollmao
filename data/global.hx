@@ -19,6 +19,7 @@ function preStateSwitch()
 {
 	WindowUtils.resetTitle();
 	window.title = (FlxG.save.data.curCountry == 'brazil' ? "BEM-VINDO AO BRASIL!" : windowTitleCustom);
+    Main.framerateSprite.codenameBuildField.text = "Vs George Washington";
 
     window.setIcon(Image.fromBytes(Assets.getBytes(Paths.image('GAMEICON')))); //sets game icon
     FlxG.camera.bgColor = 0xFF000000;
@@ -34,13 +35,15 @@ function new() //for save data
 	//settings
 	if(FlxG.save.data.subtitlesGW == null) FlxG.save.data.subtitlesGW = true; //subtitles
 	if(FlxG.save.data.showGWWarning == null) FlxG.save.data.showGWWarning = true; //warning screen
-	if(FlxG.save.data.curCountry == null) FlxG.save.data.curCountry = 'america';
+	if(FlxG.save.data.curCountry == null) FlxG.save.data.curCountry = 'america'; //current country selected
 	//saves
+	if(FlxG.save.data.weirdRouteEnabled == null) FlxG.save.data.weirdRouteEnabled = false; //WEIRD ROUTE
 	if(FlxG.save.data.freeplayUnlockedGW == null) FlxG.save.data.freeplayUnlockedGW = false; //freeplay unlocked
 	if(FlxG.save.data.songsUnlockedGW == null) FlxG.save.data.songsUnlockedGW = []; //current songs unlocked
 	if(FlxG.save.data.songsFCd == null) FlxG.save.data.songsFCd = []; //songs FC'd
 	if(FlxG.save.data.songsSFCd == null) FlxG.save.data.songsSFCd = []; //unused
 	if(FlxG.save.data.whiteHouseRisen == null) FlxG.save.data.whiteHouseRisen = false; //white house unlocked
+	if(FlxG.save.data.launchCodesObtained) FlxG.save.data.launchCodesObtained = false;
 	//mail
 	if(FlxG.save.data.mailUnlocked == null) FlxG.save.data.mailUnlocked = false; //mailbox unlocked
 	if(FlxG.save.data.mailObtained == null) FlxG.save.data.mailObtained = []; //contains each letter obtained

@@ -96,7 +96,7 @@ public var HandyDandy:T = {
 	resetSaveData: function(){
 		brazilOn = !(FlxG.save.data.mailRead.contains("brazil") && FlxG.save.data.brazilMode ? true : false);
 		//general
-		FlxG.save.data.showWarning = true;
+		FlxG.save.data.showGWWarning = true;
 		FlxG.save.data.freeplayUnlockedGW = [];
 		FlxG.save.data.songsUnlockedGW = [];
 		FlxG.save.data.songsFCd = [];
@@ -124,6 +124,10 @@ public var HandyDandy:T = {
 				HandyDandy.saveMailData('welcomeback', 'welcomeback', false, "WELCOME BACK OLD PLAYER!");
 			FlxG.save.data.curVersionGW = '1.2';
 		}
+	},
+	antiNuke: function(){
+		FlxG.save.data.weirdRouteEnabled = false;
+		FlxG.save.data.launchCodesObtained = false;
 	}
 }
 

@@ -1,8 +1,9 @@
 importScript('data/scripts/HandyDandyFunctions');
+importScript('data/scripts/Translation');
 import flixel.text.FlxTextBorderStyle;
 
 // easier to have it in one variable than mutliple
-//TODO: Add brazil flag
+// TODO: Add brazil flag
 var credits:Array<{name:String, link:String, desc:String}> = [
 	{name: 'slithy', link: 'https://slithy.carrd.co', desc: 'director\ncoding\ncharting\nanimator\ndirector stuff'},
 	{name: 'mrmorian', link: 'https://mrmorian.newgrounds.com/', desc: 'codirector\nanimation\nart\ncoding\ncodirector stuff'},
@@ -31,7 +32,8 @@ var voiceActors:Array<{name:String, link:String, desc:String}> = [
 	{name: 'ik3_', link: '', desc: 'Jimmy Carter'},
 	{name: 'Muzfrg_Kintsugi', link: '', desc: 'James Monroe'},
 ];
-//TODO: add voice actors list to credits menu
+
+// TODO: add voice actors list to credits menu
 
 var curSelected:Int = 0;
 var curTag:Int = 0;
@@ -40,6 +42,7 @@ var creditImageGrp:FlxTypedGroup<FlxSprite>;
 var georgeScroll, arrowDOWN, arrowUP, credIcon:FlxSprite;
 var credName, credDescTxt, specialTxt:FlxText;
 var dollabillz:FlxTypedGroup<FlxSprite>;
+var creditPos:Array<Array<Float>> = [[50, 100], [930, 100]/*, [976, 432]*/];
 var creditTypes:Array<String> = ['credits', 'special thanks' /*, 'voice actors'*/];
 var dollaTxt:FlxTypedGroup<FlxText>;
 var thy:Array<String> = ['Roles in thy mod', 'Contributions to thy mod', 'Characters voiced in thy mod'];
@@ -61,7 +64,7 @@ function create() {
 	add(dollaTxt);
 
 	for (i => cred in creditTypes) {
-		var dollaBill:FlxSprite = new FlxSprite(50 + (i * 880), 100);
+		var dollaBill:FlxSprite = new FlxSprite(creditPos[i][0], creditPos[i][1]);
 		dollaBill.frames = Paths.getFrames('menus/credits/dolarbill');
 		dollaBill.animation.addByPrefix("idle", "unselected", 1, false);
 		dollaBill.animation.addByPrefix("selected", "selected", 24, false);
@@ -75,7 +78,7 @@ function create() {
 		txt.setFormat("fonts/Robot Socialista.ttf", 24, FlxColor.WHITE, "center");
 		txt.setBorderStyle(FlxTextBorderStyle.OUTLINE, FlxColor.BLACK, 5, 25);
 		txt.ID = i;
-		txt.text = cred.toUpperCase();
+		txt.text = returnTrans(cred + '_C', curLang);
 		dollaTxt.add(txt);
 	}
 
@@ -104,6 +107,12 @@ function create() {
 	credDescTxt.setFormat("fonts/THE PRESIDENT.ttf", 25, FlxColor.BLACK, "center");
 	credDescTxt.borderSize = 2;
 	add(credDescTxt);
+
+	if (curLang != 'eng') {
+		var inEngTxt:FlxText = new FlxText(390, 600, 0, returnTrans('credineng', curLang));
+		inEngTxt.setFormat("fonts/THE PRESIDENT.ttf", 25, FlxColor.BLACK, "center");
+		add(inEngTxt);
+	}
 
 	arrowDOWN = new FlxSprite(570, 605);
 	arrowDOWN.loadGraphic(Paths.image('menus/arrow'));
