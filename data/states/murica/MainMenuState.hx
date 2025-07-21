@@ -120,7 +120,6 @@ function update(elapsed:Float) {
 			// Sys.command("start ");
 			// trace(help);
 
-			FlxG.switchState(new ModState('murica/minigame/FlappyEag'));
 		}
 		// trace(Paths.getAssetsRoot());
 		// Sys.command('start ' + Paths.getPath('data/hilarious.txt'));

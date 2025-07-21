@@ -143,7 +143,7 @@ function update(elapsed:Float) {
 
 	if (dead && FlxG.keys.justPressed.ESCAPE) {
 		FlxG.sound.music.stop();
-		FlxG.switchState(new MainMenuState());
+		FlxG.switchState(new FreeplayState());
 	}
 }
 

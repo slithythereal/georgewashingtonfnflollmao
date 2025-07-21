@@ -53,14 +53,14 @@
     <sprite name="firework" x="0" y="0" sprite="firework" scale="0" scrollx="0.25" scrolly="0.25"/>
     <sprite name="road" x="0" y="900" sprite="road" scale="1.65" scrollx="1.75" scrolly="0.75"/>
     <!--CARS AND CHARACTERS-->
-    <sprite name="hellcat3" x="-1500" y="300" sprite="dodge challenger" scale="0.75"/>
-    <sprite name="hellcat4" x="-1675" y="400" sprite="dodge challenger" scale="0.75"/>
-    <sprite name="hellcat1" x="-600" y="450" sprite="dodge challenger" scale="0.75"/>
+    <sprite name="hellcat3" x="-1500" y="300" sprite="dodge challenger" scale="0.75" type="loop"/>
+    <sprite name="hellcat4" x="-1675" y="400" sprite="dodge challenger" scale="0.75" type="loop"/>
+    <sprite name="hellcat1" x="-600" y="450" sprite="dodge challenger" scale="0.75" type="loop"/>
     <dad x="-150" y="150" scale="0.75"/>
-    <sprite name="hellcat2" x="1275" y="450" sprite="dodge challenger" scale="0.75"/>
+    <sprite name="hellcat2" x="1275" y="450" sprite="dodge challenger" scale="0.75" type="loop"/>
     <boyfriend x="1800" y="175" scale="0.75"/>
-    <sprite name="hellcat5" x="-1275" y="600" sprite="dodge challenger" scale="0.75"/>
-    <sprite name="hellcat6" x="-1775" y="675" sprite="dodge challenger" scale="0.75"/>
+    <sprite name="hellcat5" x="-1275" y="600" sprite="dodge challenger" scale="0.75" type="loop"/>
+    <sprite name="hellcat6" x="-1775" y="675" sprite="dodge challenger" scale="0.75" type="loop"/>
     <!--FRONT-->
     <sprite name="mountain" x="5000" y="0" scale="9" sprite="mountain" scrollx="0" scolly="0"/>
 </stage>

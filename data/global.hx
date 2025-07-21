@@ -43,6 +43,7 @@ function new() //for save data
 	if(FlxG.save.data.songsFCd == null) FlxG.save.data.songsFCd = []; //songs FC'd
 	if(FlxG.save.data.songsSFCd == null) FlxG.save.data.songsSFCd = []; //unused
 	if(FlxG.save.data.whiteHouseRisen == null) FlxG.save.data.whiteHouseRisen = false; //white house unlocked
+	if(FlxG.save.data.flappyEagDelivered == null) FlxG.save.data.flappyEagDelivered = false;
 	if(FlxG.save.data.launchCodesObtained) FlxG.save.data.launchCodesObtained = false;
 	//mail
 	if(FlxG.save.data.mailUnlocked == null) FlxG.save.data.mailUnlocked = false; //mailbox unlocked

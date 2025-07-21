@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TextureAtlas imagePath="arcademachine.png">
+	<!-- Created with Adobe Animate version 22.0.0.93 -->
+	<!-- http://www.adobe.com/products/animate.html -->
+	<SubTexture name="delivery0000" x="0" y="0" width="1316" height="694" frameX="0" frameY="-91" frameWidth="1316" frameHeight="785"/>
+	<SubTexture name="onpallet0000" x="1316" y="0" width="527" height="661" frameX="-789" frameY="-91" frameWidth="1316" frameHeight="785"/>
+	<SubTexture name="forklift0000" x="1843" y="0" width="1063" height="633" frameX="0" frameY="-152" frameWidth="1316" frameHeight="785"/>
+	<SubTexture name="machine0000" x="2906" y="0" width="278" height="575" frameX="-913" frameY="-91" frameWidth="1316" frameHeight="785"/>
+	<SubTexture name="glow0000" x="3184" y="0" width="532" height="730" frameX="-764" frameY="-8" frameWidth="1316" frameHeight="785"/>
+	<SubTexture name="glow0001" x="0" y="730" width="489" height="733" frameX="-800" frameY="-10" frameWidth="1316" frameHeight="785"/>
+	<SubTexture name="glow0002" x="489" y="730" width="463" height="749" frameX="-809" frameY="0" frameWidth="1316" frameHeight="785"/>
+</TextureAtlas>

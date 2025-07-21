@@ -42,6 +42,7 @@ var weekStuffs = [
 ];
 
 var curPageSelected:Int = 0;
+var canPress:Bool = true;
 var curSongSelected, curWeekSelected:Int = 0;
 var newPage, newWeek:Int;
 var portrait:FlxSprite;
@@ -53,6 +54,8 @@ var simpleDesc, arrowTxt:FlxText;
 var songArray:Array<String> = [];
 var backdrop:FlxBackdrop;
 var stars:FlxTypedGroup = new FlxTypedGroup();
+var arcadeLetterRead:Bool = false;
+var arcadeMachine:FlxSprite;
 
 function create() {
 	window.title = "WHAT'S A KILOMETER - Freeplay Menu";
@@ -100,6 +103,68 @@ function create() {
 	arrowTxt.setBorderStyle(FlxTextBorderStyle.OUTLINE, FlxColor.BLACK, 5, 25);
 	arrowTxt.borderSize = 4;
 	add(arrowTxt);
+	if (arcadeLetterRead) {
+		arcadeMachine = new FlxSprite(800, 515); 
+		arcadeMachine.frames = Paths.getFrames('menus/freeplaylandia/arcademachine');
+		arcadeMachine.animation.addByPrefix('delivery', 'delivery', 1, true);
+		arcadeMachine.animation.addByPrefix('pallet', 'onpallet', 1, true);
+		arcadeMachine.animation.addByPrefix('forklift', 'forklift', 1, true);
+		arcadeMachine.animation.addByPrefix('machine', 'machine', 1, true);
+		arcadeMachine.animation.addByPrefix('glow', 'glow', 16, false);
+		arcadeMachine.scale.set(0.10, 0.30);
+		arcadeMachine.updateHitbox();
+		arcadeMachine.scale.set(0.35, 0.35);
+		arcadeMachine.origin.set(445, 375);
+
+		if (!FlxG.save.data.flappyEagDelivered) {
+			var forklift:FlxSprite = new FlxSprite();
+			forklift.frames = arcadeMachine.frames;
+			forklift.animation.addByPrefix('delivery', "delivery", 1, true);
+			forklift.animation.addByPrefix('forklift', "forklift", 1, true);
+			forklift.animation.play('forklift');
+			forklift.scale.set(0.10, 0.30);
+			forklift.updateHitbox();
+			forklift.scale.set(0.35, 0.35);
+			add(forklift);
+			forklift.visible = false;
+
+			add(arcadeMachine);
+
+			canPress = false;
+			arcadeMachine.setPosition(-1000, 490);
+			arcadeMachine.animation.play('delivery');
+			FlxTween.tween(arcadeMachine, {x: 800}, 2, {
+				ease: FlxEase.cubeOut,
+				onComplete: function(twn:FlxTween) {
+					forklift.setPosition(arcadeMachine.x - 138, arcadeMachine.y - 15);
+					arcadeMachine.animation.play('pallet');
+					forklift.visible = true;
+					forklift.animation.play('forklift');
+					FlxTween.tween(forklift, {x: 575, y: 475}, 2, {
+						ease: FlxEase.cubeOut,
+						onComplete: function(twn:FlxTween) {
+							FlxTween.tween(forklift, {x: 2000}, 1.5, {
+								ease: FlxEase.cubeIn,
+								onComplete: function(twn:FlxTween) {
+									arcadeMachine.animation.play('machine');
+									FlxTween.tween(arcadeMachine, {y: 515}, 2, {
+										ease: FlxEase.cubeIn,
+										onComplete: function(twn:FlxTween) {
+											canPress = true;
+											FlxG.save.data.flappyEagDelivered = true;
+										}
+									});
+								}
+							});
+						}
+					});
+				}
+			});
+		} else {
+			add(arcadeMachine);
+			arcadeMachine.animation.play('machine');
+		}
+	}
 
 	// loadTxtGrp(pages);
 	portrait = new FlxSprite(100, 100);
@@ -143,82 +208,92 @@ function create() {
 }
 
 function update(elapsed:Float) {
-	switch (curMode) {
-		case 'SelectPage':
-			if (controls.BACK) {
-				FlxG.sound.play(Paths.sound('menu/cancel'));
-				FlxG.switchState(new MainMenuState());
-			}
-			if (controls.ACCEPT)
-				switchMode("SelectWeek");
-
-			simpleTxtGrp.forEach(function(txt:FlxText) {
-				if (FlxG.mouse.overlaps(txt)) {
-					if (newPage != txt.ID) {
-						newPage = txt.ID;
-						curPageSelected = txt.ID;
-						pageStuff();
-					}
-					if (FlxG.mouse.justPressed)
-						switchMode("SelectWeek");
+	if (canPress) {
+		if (arcadeLetterRead) {
+			if (FlxG.mouse.overlaps(arcadeMachine) && arcadeMachine.visible) {
+				arcadeMachine.animation.play('glow');
+				if (FlxG.mouse.justPressed)
+					FlxG.switchState(new ModState('murica/minigame/FlappyEag'));
+			} else
+				arcadeMachine.animation.play('machine');
+		}
+		switch (curMode) {
+			case 'SelectPage':
+				if (controls.BACK) {
+					FlxG.sound.play(Paths.sound('menu/cancel'));
+					FlxG.switchState(new MainMenuState());
 				}
-			});
-			if (controls.UP_P)
-				changePage(-1);
-			else if (controls.DOWN_P)
-				changePage(1);
-		case 'SelectWeek':
-			if (controls.BACK)
-				switchMode("SelectPage");
+				if (controls.ACCEPT)
+					switchMode("SelectWeek");
 
-			if (controls.UP_P)
-				changeWeek(-1);
-			else if (controls.DOWN_P)
-				changeWeek(1);
-			simpleTxtGrp.forEach(function(txt:FlxText) {
-				if (FlxG.mouse.overlaps(txt)) {
-					if (newWeek != txt.ID) {
-						newWeek = txt.ID;
-						curWeekSelected = txt.ID;
-						weekStuff();
-					}
-					if (FlxG.mouse.justPressed)
-						switchMode("SelectSong");
-				}
-			});
-			if (controls.ACCEPT)
-				switchMode("SelectSong");
-
-		case 'SelectSong':
-			if (songProperties[
-				weekStuffs[selectorMAP[pages[curPageSelected]][curWeekSelected]].songs[curSongSelected]
-			].didFC) {
-				for (i in stars)
-					i.update(elapsed);
-			}
-			if (controls.BACK)
-				switchMode("SelectWeek");
-
-			if (controls.LEFT_P || FlxG.mouse.overlaps(arrowLEFT) && arrowLEFT.visible && FlxG.mouse.justPressed) {
-				changeSong(-1);
-				FlxTween.tween(arrowLEFT, {"scale.x": 0.3, "scale.y": 0.3}, 0.05, {
-					ease: FlxEase.quintInOut,
-					onComplete: function(twn:FlxTween) {
-						FlxTween.tween(arrowLEFT, {"scale.x": 0.25, "scale.y": 0.15}, 0.05, {ease: FlxEase.quintInOut});
+				simpleTxtGrp.forEach(function(txt:FlxText) {
+					if (FlxG.mouse.overlaps(txt)) {
+						if (newPage != txt.ID) {
+							newPage = txt.ID;
+							curPageSelected = txt.ID;
+							pageStuff();
+						}
+						if (FlxG.mouse.justPressed)
+							switchMode("SelectWeek");
 					}
 				});
-			}
-			if (controls.RIGHT_P || FlxG.mouse.overlaps(arrowRIGHT) && arrowRIGHT.visible && FlxG.mouse.justPressed) {
-				changeSong(1);
-				FlxTween.tween(arrowRIGHT, {"scale.x": 0.3, "scale.y": 0.3}, 0.05, {
-					ease: FlxEase.quintInOut,
-					onComplete: function(twn:FlxTween) {
-						FlxTween.tween(arrowRIGHT, {"scale.x": 0.25, "scale.y": 0.15}, 0.05, {ease: FlxEase.quintInOut});
+				if (controls.UP_P)
+					changePage(-1);
+				else if (controls.DOWN_P)
+					changePage(1);
+			case 'SelectWeek':
+				if (controls.BACK)
+					switchMode("SelectPage");
+
+				if (controls.UP_P)
+					changeWeek(-1);
+				else if (controls.DOWN_P)
+					changeWeek(1);
+				simpleTxtGrp.forEach(function(txt:FlxText) {
+					if (FlxG.mouse.overlaps(txt)) {
+						if (newWeek != txt.ID) {
+							newWeek = txt.ID;
+							curWeekSelected = txt.ID;
+							weekStuff();
+						}
+						if (FlxG.mouse.justPressed)
+							switchMode("SelectSong");
 					}
 				});
-			}
-			if (controls.ACCEPT)
-				HandyDandy.loadSong(songArray[curSongSelected].toLowerCase());
+				if (controls.ACCEPT)
+					switchMode("SelectSong");
+
+			case 'SelectSong':
+				if (songProperties[
+					weekStuffs[selectorMAP[pages[curPageSelected]][curWeekSelected]].songs[curSongSelected]
+				].didFC) {
+					for (i in stars)
+						i.update(elapsed);
+				}
+				if (controls.BACK)
+					switchMode("SelectWeek");
+
+				if (controls.LEFT_P || FlxG.mouse.overlaps(arrowLEFT) && arrowLEFT.visible && FlxG.mouse.justPressed) {
+					changeSong(-1);
+					FlxTween.tween(arrowLEFT, {"scale.x": 0.3, "scale.y": 0.3}, 0.05, {
+						ease: FlxEase.quintInOut,
+						onComplete: function(twn:FlxTween) {
+							FlxTween.tween(arrowLEFT, {"scale.x": 0.25, "scale.y": 0.15}, 0.05, {ease: FlxEase.quintInOut});
+						}
+					});
+				}
+				if (controls.RIGHT_P || FlxG.mouse.overlaps(arrowRIGHT) && arrowRIGHT.visible && FlxG.mouse.justPressed) {
+					changeSong(1);
+					FlxTween.tween(arrowRIGHT, {"scale.x": 0.3, "scale.y": 0.3}, 0.05, {
+						ease: FlxEase.quintInOut,
+						onComplete: function(twn:FlxTween) {
+							FlxTween.tween(arrowRIGHT, {"scale.x": 0.25, "scale.y": 0.15}, 0.05, {ease: FlxEase.quintInOut});
+						}
+					});
+				}
+				if (controls.ACCEPT)
+					HandyDandy.loadSong(songArray[curSongSelected].toLowerCase());
+		}
 	}
 }
 
@@ -249,6 +324,8 @@ function switchMode(mode:String) {
 			loadTxtGrp(dummy);
 	}
 
+	if (arcadeLetterRead)
+		arcadeMachine.visible = (mode != 'SelectSong' ? true : false);
 	for (txt in simpleTxtGrp)
 		txt.visible = (mode == 'SelectSong' ? false : true);
 	simpleTxtBG.visible = (mode == 'SelectSong' ? false : true);
@@ -466,6 +543,7 @@ function loadData() {
 			didFC: (FlxG.save.data.songsFCd.contains(songlol)) ? true : false // detects if song is fc'd based on savedata
 		});
 	}
+	arcadeLetterRead = FlxG.save.data.mailRead.contains('arcade');
 }
 
 class Star extends FlxSprite {

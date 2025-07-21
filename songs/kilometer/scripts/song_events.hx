@@ -3,7 +3,7 @@ import funkin.game.PlayState;
 importScript('data/scripts/VideoHandler');
 importScript('data/scripts/HandyDandyFunctions');
 function create() {
-	VideoHandler.load(['kilonewtemp', 'peak'], true, function() {
+	VideoHandler.load(['kilometernew', 'peak'], true, function() {
 		FlxG.camera.flash(FlxColor.WHITE);
 	});
 	camHUD.visible = false;

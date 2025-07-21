@@ -27,7 +27,6 @@ public var HandyDandy:T = {
 	loadSong: function(song:String)
 	{
 		PlayState.loadSong(song.toLowerCase(), "normal", false, false);
-		//brazilOn = !(FlxG.save.data.mailRead.contains("brazil") && FlxG.save.data.brazilMode ? true : false);
 		FlxG.switchState(new PlayState());
 	},
 	watch: function(obj:FlxObject)
@@ -102,6 +101,8 @@ public var HandyDandy:T = {
 		FlxG.save.data.songsFCd = [];
 		FlxG.save.data.songsSFCd = [];
 		FlxG.save.data.whiteHouseRisen = false;
+		if(!FlxG.save.data.weirdRouteEnabled)
+			FlxG.save.data.flappyEagDelivered = false;
 		//mail
 		FlxG.save.data.mailUnlocked = false; 
 		FlxG.save.data.mailObtained = [];
@@ -126,6 +127,7 @@ public var HandyDandy:T = {
 		}
 	},
 	antiNuke: function(){
+		FlxG.save.data.flappyEagDelivered = false;
 		FlxG.save.data.weirdRouteEnabled = false;
 		FlxG.save.data.launchCodesObtained = false;
 	}
