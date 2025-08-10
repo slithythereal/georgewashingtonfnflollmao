@@ -114,16 +114,7 @@ function create() {
 function update(elapsed:Float) {
 	if (!selectedSomethin) {
 		if (FlxG.keys.justPressed.Q) { // TO REMOVE
-
-			// Sys.command('rename mods/' + ModsFolder.currentModFolder + ' george-washington');
-			// var help = Assets.getPath(Paths.file('data/hilarious.txt'));
-			// Sys.command("start ");
-			// trace(help);
-
 		}
-		// trace(Paths.getAssetsRoot());
-		// Sys.command('start ' + Paths.getPath('data/hilarious.txt'));
-		// FlxG.switchState(new ModState('murica/VHSState'));
 
 		if (FlxG.keys.justPressed.SEVEN) {
 			persistentUpdate = !(persistentDraw = true);

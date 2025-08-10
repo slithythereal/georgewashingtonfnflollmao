@@ -2,6 +2,10 @@ importScript('data/scripts/Flipped Healthbars');
 importScript('data/scripts/VideoHandler');
 importScript('data/scripts/Invisible HUD');
 
+import funkin.backend.utils.NativeAPI;
+import Sys;
+import funkin.backend.MusicBeatState;
+
 var ssg1:Character;
 var ssg2:Character;
 var ssg3:Character;
@@ -69,6 +73,25 @@ function create(){
     awesomeExplosivo = makeAnim('explosivo', 'explode', 'explosivo', -1250, -900, 5.65, 5.65);
     awesomeExplosivo.angle = 90;
     add(awesomeExplosivo);
+}
+
+function onGameOver(event){
+    var random:Bool = (FlxG.random.int(1, 4096) == 1 ? true : false);
+    if(random){
+        event.cancel(true);
+        window.title = 'SKIBIDI BIDEN';
+        MusicBeatState.skipTransIn = MusicBeatState.skipTransOut = true;
+        curVidData = {
+            vid: "skibidibiden",
+            daFunc: function(){
+                NativeAPI.showMessageBox("SKIBIDI BIDEN", "GET IT... IS SO FUNNY RIGHT?!?!?!?!!!?!?!?!", 0xFF000000);
+                CoolUtil.openURL("https://youtu.be/exfogQf1r-M?t=428"); 
+                Sys.exit();
+            }
+        }
+        trace(curVidData);
+        FlxG.switchState(new ModState("murica/VidState"));
+    }
 }
 
 function makeAnim(file:String, anim:String, xml:String, ?x:Float = 0, ?y:Float = 0, ?scalex:Float = 1, ?scaley:Float = 1):FunkinSprite{
@@ -139,7 +162,6 @@ function beatHit(curBeat:Int){
     switch(curBeat){
         case 212: VideoHandler.playNext();
         case 306 | 313: 
-            awesomeExplosivo.alpha = 1;
-            awesomeExplosivo.animation.play('explode');
+            funnyEvent('explosivo');
     }  
 }

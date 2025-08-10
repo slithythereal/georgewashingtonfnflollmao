@@ -54,6 +54,7 @@ public var roomSpr:FlxGroup; // sprites that are added via the different rooms
 public var subUIGRP:FlxGroup; // other UI (arrows)
 // roomspritefunctions
 public var updatePortraits:Array<Void->Float> = [];
+public var updateRSArray:Array<Void->Float> = [];
 public var updateRoomSprite:Map<String, Void->Float> = []; // updateRoomSprite.set("roomname", function(elapsed:Float))
 public var closeRoomFunc:Map<String, Void->Void> = []; // closeRoomFunc.set("roomname", function())
 public var pauseFunction:Map<String, Void->Bool> = []; // pauseFunction.set("roomname", function(isPaused:Bool))
@@ -187,6 +188,9 @@ function update(elapsed:Float) {
 		// updates the room sprites
 		if (updateRoomSprite.exists(curRoom))
 			updateRoomSprite[curRoom](elapsed);
+		if (updateRSArray != null)
+			for (update in updateRSArray)
+				update(elapsed);
 		// updates portraits
 		if (updatePortraits != null)
 			for (update in updatePortraits)
@@ -255,8 +259,13 @@ function loadRoom(room:String) {
 		upArrow.angle = (dayRooms[curRoom].upAngle != null ? dayRooms[curRoom].upAngle : 0);
 		downArrow.angle = (dayRooms[curRoom].downAngle != null ? dayRooms[curRoom].downAngle : 0);
 
+		for (i in [leftArrow, rightArrow, upArrow, downArrow])
+			HandyDandy.watch(i);
+
 		if (updatePortraits != null)
 			updatePortraits = null;
+		if (updateRSArray != null)
+			updateRSArray = null;
 
 		if (dayRooms[curRoom].openFunc != null)
 			dayRooms[curRoom].openFunc();
@@ -556,9 +565,11 @@ var curDial:Int = 0;
 var curDialColor:String = '#ffffff';
 
 public function startDialogue(dialogue:String) {
-	var dialReps:Int = dayDial[dialogue].length - 1;
-	curDial = 0;
-	dialogueNextLine(dialogue, dialReps);
+	if (FlxG.save.data.subtitlesGW) {
+		var dialReps:Int = dayDial[dialogue].length - 1;
+		curDial = 0;
+		dialogueNextLine(dialogue, dialReps);
+	}
 }
 
 var dialogueTimer:FlxTimer = null;
@@ -586,7 +597,8 @@ function dialogueNextLine(dialogue:String, totalReps:Int) {
 function setDialogueText(dialogueLine:String, color:String) {
 	dialTxt.text = dialogueLine;
 	dialTxt.screenCenter(FlxAxes.X);
-
+	dialTxt.scale.set(1.2, 1.2);
+	FlxTween.tween(dialTxt, {"scale.x": 1, "scale.y": 1}, 0.05, {ease: FlxEase.linear});
 	if (curDialColor != color && color != null) {
 		curDialColor = color;
 		dialTxt.color = FlxColor.fromString(curDialColor);

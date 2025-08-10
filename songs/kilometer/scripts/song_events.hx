@@ -1,4 +1,5 @@
 import funkin.game.PlayState;
+import flixel.sound.FlxSound;
 
 importScript('data/scripts/VideoHandler');
 importScript('data/scripts/HandyDandyFunctions');
@@ -10,6 +11,15 @@ function create() {
 	camGame.visible = false;
 	boyfriend.gameOverCharacter = 'kilodeath';
 	lossSFX = 'gameover/kilometergameover';
+}
+var ufo:FlxSprite;
+function postCreate(){
+	ufo = new FlxSprite(-5000,-120);
+	ufo.loadGraphic(Paths.image('stages/kilometer/ufo'));
+	ufo.scale.set(0.65,0.65);
+	ufo.updateHitbox();
+	ufo.angle = -25;
+	add(ufo);
 }
 
 function onSongStart() {
@@ -75,6 +85,8 @@ function funnyEvent(param1:String) {
 			stage.stageSprites['murica'].visible = true;
 		case "fallingvid":
 			VideoHandler.playNext();
+		case 'ufo':
+			FlxTween.tween(ufo, {x: 5000}, 1.75, {ease:FlxEase.linear});
 	}
 }
 
@@ -102,6 +114,10 @@ function firework() {
 	firework.color = FlxG.random.color(FlxColor.WHITE, FlxColor.BLACK, null, false);
 	insert(members.indexOf(stage.stageSprites["firework"]), firework);
 	new FlxTimer().start(FlxG.random.float(0.8, 1.2), function(tmr:FlxTimer) {
+		var fireSound:FlxSound;
+		fireSound = FlxG.sound.load(Paths.sound('firework'), 0.7);
+		fireSound.pitch = FlxG.random.float(0.75, 1.5);
+		fireSound.play(true);
 		firework.acceleration.y = 0;
 		firework.velocity.y = 200;
 		firework.scale.set(3, 3);

@@ -2,6 +2,7 @@
 <TextureAtlas imagePath="ovalguard.png">
 	<!-- Created with Adobe Animate version 22.0.0.93 -->
 	<!-- http://www.adobe.com/products/animate.html -->
+	<SubTexture name="guardsignidle0000" x="0" y="0" width="370" height="531" frameX="-1" frameY="-9" frameWidth="590" frameHeight="540"/>
 	<SubTexture name="guardsignfling0000" x="0" y="0" width="370" height="531" frameX="-1" frameY="-9" frameWidth="590" frameHeight="540"/>
 	<SubTexture name="guardsignfling0001" x="370" y="0" width="307" height="444" frameX="-3" frameY="-9" frameWidth="590" frameHeight="540"/>
 	<SubTexture name="guardsignfling0002" x="677" y="0" width="349" height="394" frameX="0" frameY="-9" frameWidth="590" frameHeight="540"/>
@@ -14,4 +15,5 @@
 	<SubTexture name="guardsignfling0009" x="1549" y="531" width="357" height="335" frameX="-97" frameY="-9" frameWidth="590" frameHeight="540"/>
 	<SubTexture name="guardsignfling0010" x="0" y="906" width="373" height="335" frameX="-97" frameY="-9" frameWidth="590" frameHeight="540"/>
 	<SubTexture name="guardsignfling0011" x="0" y="906" width="373" height="335" frameX="-97" frameY="-9" frameWidth="590" frameHeight="540"/>
+	<SubTexture name="guardsignhung0000" x="0" y="906" width="373" height="335" frameX="-97" frameY="-9" frameWidth="590" frameHeight="540"/>
 </TextureAtlas>
