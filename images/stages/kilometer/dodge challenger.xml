@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TextureAtlas imagePath="dodge challenger.png">
+	<!-- Created with Adobe Animate version 22.0.0.93 -->
+	<!-- http://www.adobe.com/products/animate.html -->
+	<SubTexture name="car0000" x="0" y="0" width="1585" height="1020"/>
+	<SubTexture name="car0001" x="1585" y="0" width="1585" height="1020"/>
+	<SubTexture name="car0002" x="0" y="1020" width="1585" height="1020"/>
+	<SubTexture name="car0003" x="1585" y="1020" width="1585" height="1020"/>
+</TextureAtlas>

@@ -6,8 +6,7 @@ var oldWall:FlxSprite;
 var sky:FlxBackdrop;
 var oldSky:FlxSprite;
 
-function create()
-{
+function create() {
 	oldWall = stage.stageSprites['wall'];
 	oldWall.alpha = 0;
 
@@ -33,18 +32,18 @@ function create()
 	animeLines.angularVelocity = 1000;
 }
 
-function update(elaped:Float)
-{
+function update(elaped:Float) {
 	motorcade.frameOffset.x = Math.sin(curBeatFloat / 4) * Math.cos(curBeatFloat / 16) * (85 / 2);
 	skateboard.frameOffset.x = Math.sin(curBeatFloat / 4) * Math.cos(curBeatFloat / 16) * (85 / 2);
 	dad.x = (motorcade.x + 400) - (Math.sin(curBeatFloat / 4) * Math.cos(curBeatFloat / 16) * (85 / 2));
 	boyfriend.x = (skateboard.x - 50) - (Math.sin(curBeatFloat / 4) * Math.cos(curBeatFloat / 16) * (85 / 2));
 }
 
-
-
-
-public function changeSpeed(?mult:Float = 1){
-    wall.velocity.x = -800 * mult;
-    sky.velocity.x = -5 * mult;
+public function changeSpeed(?davar:String = '1') {
+	var mult:Float = Std.parseFloat(davar);
+	wall.velocity.x = -800 * mult;
+	sky.velocity.x = -5 * mult;
 }
+
+function toggleAnimeLines()
+	stage.stageSprites['animeLines'].visible = !stage.stageSprites['animeLines'].visible;

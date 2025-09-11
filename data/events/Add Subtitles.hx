@@ -23,5 +23,7 @@ function onEvent(_)
 		subTitle.text = _.event.params[0];
 		subTitle.color = FlxColor.fromString(_.event.params[1]);
 		subTitle.screenCenter(FlxAxes.X);
+		subTitle.scale.set(1.2, 1.2);
+		FlxTween.tween(subTitle, {"scale.x": 1, "scale.y": 1}, 0.05, {ease:FlxEase.linear});
 	}
 }

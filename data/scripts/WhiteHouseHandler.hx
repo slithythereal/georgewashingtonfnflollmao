@@ -5,7 +5,7 @@ importScript("data/scripts/HandyDandyFunctions");
 // main data
 public var isNight:Bool = false;
 public var curRoom:String = "startroom";
-public var startRoom:String = 'startroom'; // startroom
+public var startRoom:String = 'stairsoval'; // startroom
 public var pauseFunctions:Array<Void->Bool> = [];
 public var roomTimeVar:Float = 0.25;
 public var shortStep:String = 'fnaf4runsoundshort';
@@ -27,6 +27,9 @@ function create() {
  * openFunc: function that runs when you go to a new room
  * leftAngle, rightAngle, upAngle, downAngle: changes the angle of the arrows
  * leftArrowPOS, rightArrowPOS, upArrowPOS, downArrowPOS: the position of the arrows
+ * curSection: used for the map system, shows what room you're in
+ * mapAngle: angle for the player character on the map
+ * mapPos: position for the player character on the map
  */
 // this is like the tf2 coconut, you delete this variable, you delete the minigame entirely
 public var dayRooms = [
@@ -88,7 +91,7 @@ public var dayRooms = [
 						if (roomVars['canShowWarning'] == true) {
 							trace("works"); // work on this
 						} else
-							funnyTextThing('get some tapes first...', [520, 365], 0.75, 300, 25);
+							funnyTextThing('get some tapes first...\n' + tapeCount + "/" + tapeAmt + " tapes collected", [520, 365], 0.75, 300, 25);
 					}
 				}
 			});
@@ -116,13 +119,29 @@ public var dayRooms = [
 	'stairsoval' => {
 		rightRoom: '1floorstairs',
 		downRoom: '1floor2doorsbehind',
-		leftRoom: 'redrooma'
+		leftRoom: 'redrooma',
+		openFunc: function(){
+			loadRoomSprite('guard', 'baseSpr', [430, 100], true, 'characters/ovalguard', [2.35, 2.35]);
+			var guard:FlxSprite;
+			guard = roomSprites['guard'];
+			guard.animation.addByPrefix('signdown', 'guardsignidle', 1, false);
+			guard.animation.addByPrefix('signmove', 'guardsignfling', 24, false);
+			guard.animation.addByPrefix('signup', 'guardsignhung', 1, false);
+			guard.animation.play('signdown');
+			guard.scale.set(0.75, 2.35);
+			guard.updateHitbox();
+			guard.scale.set(2.35, 2.35);
+			guard.origin.set(115, 290);
+			
+		},
 	},
 	'redrooma' => {
 		downRoom: '1floorstairs',
 		rightRoom: 'stairsoval',
 		leftRoom: '1floor2doorsbehind',
-		upRoom: 'redroomaview'
+		upRoom: 'redroomaview',
+		leftArrowPOS: [75, 570],
+		rightArrowPOS: [1100, 570]
 	},
 	'1floor2doors' => {
 		downRoom: '1floor2doorsbehind',
@@ -133,7 +152,15 @@ public var dayRooms = [
 		rightRoom: 'redroomb',
 		rightArrowPOS: [1100, 570]
 	},
-	'1floor2doorsbehind' => {downRoom: '1floor2doors', downRoomSound: shortStep, upRoom: '1floorhallwaybehind'},
+	'1floor2doorsbehind' => {
+		leftArrowPOS: [75, 570],
+		rightArrowPOS: [1100, 570],
+		downRoom: '1floor2doors',
+		downRoomSound: shortStep,
+		upRoom: '1floorhallwaybehind',
+		leftRoom: "redroomb",
+		rightRoom: "yellowroom"
+	},
 	'1floorstairs' => {
 		rightRoom: '1floor2doorsbehind',
 		rightArrowPOS: [1100, 590],
@@ -205,23 +232,9 @@ public var dayRooms = [
 		leftRoom: 'yellowroomcouch',
 		rightRoom: 'yellowroom',
 		openFunc: function() {
-			loadRoomSprite('key1', 'roomSpr', [612, 415], false, 'key', [1, 1]);
-			var key:FlxSprite;
-			key = roomSprites['key1'];
+			makeItem('key1', 'key', [612, 415], [1, 1], [1.2, 1.2], null);
+			var key:FlxSprite = roomSprites['key1'];
 			key.angle = -130;
-			if (roomVars.exists('key1get') && roomVars['key1get'] == true)
-				key.visible = false;
-			updateRoomSprite.set('yellowroompainting', function(elapsed:Float) {
-				if (FlxG.mouse.overlaps(key) && !roomVars['key1get']) {
-					FlxTween.tween(key, {"scale.x": 1.2, "scale.y": 1.2}, 0.05, {ease: FlxEase.cubeIn});
-					if (FlxG.mouse.justPressed) {
-						roomVars.set('key1get', true);
-						itemGet('key');
-						key.visible = false;
-					}
-				} else
-					FlxTween.tween(key, {"scale.x": 1, "scale.y": 1}, 0.05, {ease: FlxEase.cubeIn});
-			});
 			closeRoomFunc.set('yellowroompainting', function() {
 				key.exists = false;
 			});
@@ -238,19 +251,28 @@ public var dayRooms = [
 	'bigroomview1' => {
 		downRoom: 'bigroomview1behind',
 		leftRoom: 'mckinleyposter',
-		upRoom: 'bigroomview2',
-		rightRoom: 'hallwaydoor'
+		rightRoom: 'bigroomview2',
+		leftAngle: 17.5,
+		rightAngle: -40,
+		rightArrowPOS: [700, 570],
+		curSection: 'eastroom'
 	},
 	'bigroomview1behind' => {
 		upRoom: '2floorstairs',
 		downRoom: 'bigroomview1',
 		leftRoom: 'hallwaydoor',
-		rightRoom: 'mckinleyposter'
+		rightRoom: 'mckinleyposter',
+		rightAngle: 25,
+		rightArrowPOS: [845, 615],
+		leftAngle: -25,
+		leftArrowPOS: [325, 615],
+		curSection: 'eastroom'
 	},
 	'mckinleyposter' => {
 		downRoom: 'bigroomview1',
 		rightRoom: 'marthaposter',
 		downRoom: 'bigroomview1',
+		rightArrowPOS: [1100, 570],
 		openFunc: function() {
 			var poster:FlxSprite;
 			poster = loadPortrait('mckinleyposter', 'mckinleypainting', [510, 130], function() {
@@ -261,24 +283,30 @@ public var dayRooms = [
 			closeRoomFunc.set('mckinleyposter', function() {
 				poster.exists = false;
 			});
-		}
+		},
+		curSection: 'eastroom'
 	},
 	'marthaposter' => {
 		leftRoom: 'mckinleyposter',
 		rightRoom: 'georgeposter',
 		downRoom: 'right2doors',
+		leftArrowPOS: [75, 570],
+		rightArrowPOS: [1100, 570],
 		openFunc: function() {
 			var poster:FlxSprite;
 			poster = loadPortrait('martha', 'marthapainting', [530, -45]);
 			closeRoomFunc.set('marthaposter', function() {
 				poster.exists = false;
 			});
-		}
+		},
+		curSection: 'eastroom'
 	},
 	'georgeposter' => {
 		leftRoom: 'marthaposter',
 		rightRoom: 'teddyposter',
 		downRoom: 'left2doors',
+		leftArrowPOS: [75, 570],
+		rightArrowPOS: [1100, 570],
 		openFunc: function() {
 			if (!roomVars.exists('georgeClickCount'))
 				roomVars.set('georgeClickCount', 0);
@@ -321,11 +349,14 @@ public var dayRooms = [
 				if (roomVars['georgeGone'] == false)
 					poster.exists = false;
 			});
-		}
+		},
+		curSection: 'eastroom'
 	},
 	'teddyposter' => {
 		leftRoom: 'georgeposter',
 		downRoom: 'left2doors',
+		leftArrowPOS: [325, 615],
+		leftAngle: -25,
 		openFunc: function() {
 			var poster:FlxSprite;
 			poster = loadPortrait('teddy', 'teddypainting', [360, 45], function() {
@@ -339,13 +370,17 @@ public var dayRooms = [
 			closeRoomFunc.set('teddyposter', function() {
 				poster.exists = false;
 			});
-		}
+		},
+		curSection: 'eastroom'
 	},
 	'bigroomview2' => {
 		downRoom: 'bigroomview1behind',
 		leftRoom: 'marthaposter',
 		rightRoom: 'hallwaydoor',
-		upRoom: 'left2doors'
+		upRoom: 'left2doors',
+		leftArrowPOS: [75, 570],
+		rightArrowPOS: [1100, 570],
+		curSection: 'eastroom'
 	},
 	'left2doors' => {
 		downRoom: 'georgeposter',
@@ -353,31 +388,76 @@ public var dayRooms = [
 		rightArrowPOS: [1000, 575],
 		leftArrowPOS: [120, 575],
 		leftRoom: 'teddyposter',
-		rightAngle: -25,
+		rightAngle: -40,
 		leftAngle: -25,
-		upRoom: 'greenroomdoor'
+		upRoom: 'greenroomdoor',
+		curSection: 'eastroom'
 	},
 	'hallwaydoor' => {
 		downRoom: 'bigroomview3',
 		leftRoom: 'greenroomdoor',
 		rightRoom: 'bigroomview1behind',
-		upRoom: 'hallway'
+		upRoom: 'hallway',
+		leftArrowPOS: [75, 570],
+		rightArrowPOS: [1100, 570],
+		curSection: 'eastroom'
 	},
-	'bigroomview3' => {downRoom: 'hallwaydoor', leftRoom: 'right2doors', rightRoom: 'left2doors'},
+	'bigroomview3' => {
+		downRoom: 'hallwaydoor',
+		leftRoom: 'right2doors',
+		rightRoom: 'left2doors',
+		leftAngle: -17.5,
+		rightAngle: 17.5,
+		leftArrowPOS: [320, 575],
+		rightArrowPOS: [855, 575],
+		curSection: 'eastroom'
+	},
 	'right2doors' => {
 		leftRoom: 'hallwaydoor',
 		downRoom: 'marthaposter',
 		upRoom: 'bigroomview1behind',
-		rightRoom: 'mckinleyposter'
+		rightRoom: 'mckinleyposter',
+		leftAngle: -10,
+		leftArrowPOS: [75, 575],
+		rightAngle: -15,
+		rightArrowPOS: [1100, 565],
+		curSection: 'eastroom'
 	},
-	'greenroomdoor' => {downRoom: 'left2doors', rightRoom: 'hallwaydoor', upRoom: 'greenroom'},
+	'greenroomdoor' => {
+		downRoom: 'left2doors',
+		rightRoom: 'hallwaydoor',
+		upRoom: 'greenroom',
+		rightArrowPOS: [1100, 570],
+		curSection: 'eastroom'
+	},
 	// red room a
 	// green room
-	'greenroom' => {downRoom: 'greenroombehind', upRoom: 'greenroompainting', rightRoom: "greenroombehind2"},
+	'greenroom' => {
+		downRoom: 'greenroombehind',
+		upRoom: 'greenroompainting',
+		upAngle: 17.5,
+		downAngle: 17.5,
+		upArrowPOS: [615, 550],
+		rightRoom: "greenroombehind2",
+		rightArrowPOS: [1100, 650],
+		rightAngle: 45,
+		leftRoom: "greenroombehind3",
+		leftArrowPOS: [1100, 575],
+		leftAngle: -250
+	},
 	'greenroombehind' => {downRoom: 'greenroom', upRoom: 'left2doors'},
 	'greenroombehind2' => {downRoom: 'greenroom', upRoom: 'hallway'},
-	'greenroompainting' => {downRoom: 'greenroom', rightRoom: 'greenroombehind3'},
-	'greenroombehind3' => {downRoom: 'greenroom', leftRoom: 'greenroompainting', upRoom: 'ovalviewleft'},
+	'greenroompainting' => {
+		downRoom: 'greenroom',
+		rightRoom: 'greenroombehind3',
+		rightArrowPOS: [1100, 570]
+	},
+	'greenroombehind3' => {
+		downRoom: 'greenroom',
+		leftRoom: 'greenroompainting',
+		upRoom: 'ovalviewleft',
+		leftArrowPOS: [75, 570]
+	},
 	// oval room (FAKE OVAL OFFICE)
 	'bigbacktaft' => {
 		downRoom: 'ovalroombehind',
@@ -438,13 +518,13 @@ public var dayRooms = [
 		downRoom: 'ovalroombehind',
 		leftRoom: 'greenovalroom',
 		upRoom: 'ovalroomwindow',
-		rightRoom: 'ovalviewright'
+		rightRoom: 'ovalroom'
 	},
 	'ovalviewright' => {
 		downRoom: 'ovalroombehind',
 		rightRoom: 'redovalroom',
 		upRoom: 'ovalroomwindow',
-		leftRoom: 'ovalviewleft'
+		leftRoom: 'ovalroom'
 	},
 	// red room c
 	'redroomc' => {
@@ -797,4 +877,35 @@ public function loadPortrait(portraitSpr:String, graphic:String, pos:Array<Float
 	});
 
 	return sprite;
+}
+
+public function makeItem(item:String, sprite:String, pos:Array<Float>, scaleReg:Array<Float>, scaleOverlap:Array<Float>, pressFunc:Void->Void) {
+	loadRoomSprite(item, 'roomSpr', pos, false, sprite, scaleReg);
+	var daItem:FlxSprite;
+	daItem = roomSprites[item];
+	var getItem:String = item + '_get';
+	if (!roomVars.exists(getItem))
+		roomVars.set(getItem, false);
+
+	if (roomVars.exists(getItem) && roomVars[getItem] == true)
+		daItem.visible = false;
+
+	if (updateRSArray == null)
+		updateRSArray = [];
+
+	updateRSArray.push(function(elapsed:Float) {
+		if (roomVars[getItem] == false) {
+			if (FlxG.mouse.overlaps(daItem)) {
+				FlxTween.tween(daItem, {"scale.x": scaleOverlap[0], "scale.y": scaleOverlap[1]}, 0.05, {ease: FlxEase.cubeIn});
+				if (FlxG.mouse.justPressed) {
+					if (pressFunc != null)
+						pressFunc();
+					roomVars.set(getItem, true);
+					itemGet(sprite);
+					daItem.visible = false;
+				}
+			} else
+				FlxTween.tween(daItem, {"scale.x": scaleReg[0], "scale.y": scaleReg[1]}, 0.05, {ease: FlxEase.cubeIn});
+		}
+	});
 }

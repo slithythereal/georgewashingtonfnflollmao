@@ -1,0 +1,14 @@
+{
+    "params": [
+        {
+            "name":"Play Sound Effect",
+            "type": "String",
+            "defaultValue": ""
+        },
+        {
+            "name": "volume",
+            "type": "String",
+            "defaultValue": "1"
+        }
+    ]
+}

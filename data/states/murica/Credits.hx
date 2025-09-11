@@ -1,10 +1,12 @@
 importScript('data/scripts/HandyDandyFunctions');
+importScript('data/scripts/Translation');
 import flixel.text.FlxTextBorderStyle;
 
 // easier to have it in one variable than mutliple
+// TODO: Add brazil flag
 var credits:Array<{name:String, link:String, desc:String}> = [
 	{name: 'slithy', link: 'https://slithy.carrd.co', desc: 'director\ncoding\ncharting\nanimator\ndirector stuff'},
-	{name: 'mrmorian', link: 'https://mrmorian.newgrounds.com/', desc: 'codirector\nanimation\nart\ncoding assistance\ncodirector stuff'},
+	{name: 'mrmorian', link: 'https://mrmorian.newgrounds.com/', desc: 'codirector\nanimation\nart\ncoding\ncodirector stuff'},
 	{name: 'macyeah', link: 'https://www.youtube.com/@macyeahh', desc: 'codirector\nmusic guy\nMost songs\ncodirector stuff'},
 	{name: 'punmaster', link: 'https://twitter.com/PunMasterOff', desc: 'music guy\nEag man'},
 	{name: "micahstuff", link: "", desc: "music guy\nGrimace"},
@@ -23,14 +25,15 @@ var specialThanks:Array<{name:String, link:String, desc:String}> = [
 ];
 
 var voiceActors:Array<{name:String, link:String, desc:String}> = [
-	{name: "slithy", link: 'https://slithy.carrd.co', desc: "George, Trump, JFK, Biden, Kamala, Secret Service Guard #1, Reagan, Martha Washington"},
+	{name: "slithy", link: 'https://slithy.carrd.co', desc: "George, Trump, JFK,\nBiden, Kamala,\nSecret Service Guard #1,\nReagan, Martha Washington"},
 	{name: 'macyeah', link: 'https://www.youtube.com/@macyeahh', desc: 'Boyfriend'},
 	{name: 'capitnparrot', link: 'https://www.youtube.com/channel/UC08fJSpXa97QeISAYoYftgg', desc: 'Grimace, Secret Service Guard #2'},
-	{name: 'izzybelle', link: '', desc: 'Taft'},
-	{name: 'ik3_', link: '', desc: 'Jimmy Carter'},
-	{name: 'Muzfrg_Kintsugi', link: '', desc: 'James Monroe'},
+	{name: 'izzybelle', link: 'https://x.com/izzybelleeeee', desc: 'William Howard Taft'},
+	{name: 'ik3dadevious', link: 'https://youtube.com/@ik3devious', desc: 'Jimmy Carter'},
+	{name: 'muzfrg_kintsugi', link: 'https://muzfrgkintsugi.straw.page/', desc: 'James Monroe'},
 ];
-//TODO: add voice actors list to credits menu
+
+// TODO: add voice actors list to credits menu
 
 var curSelected:Int = 0;
 var curTag:Int = 0;
@@ -39,7 +42,8 @@ var creditImageGrp:FlxTypedGroup<FlxSprite>;
 var georgeScroll, arrowDOWN, arrowUP, credIcon:FlxSprite;
 var credName, credDescTxt, specialTxt:FlxText;
 var dollabillz:FlxTypedGroup<FlxSprite>;
-var creditTypes:Array<String> = ['credits', 'special thanks' /*, 'voice actors'*/];
+var creditPos:Array<Array<Float>> = [[50, 100], [930, 100], [976, 432]];
+var creditTypes:Array<String> = ['credits', 'special thanks' , 'voice actors'];
 var dollaTxt:FlxTypedGroup<FlxText>;
 var thy:Array<String> = ['Roles in thy mod', 'Contributions to thy mod', 'Characters voiced in thy mod'];
 
@@ -60,7 +64,7 @@ function create() {
 	add(dollaTxt);
 
 	for (i => cred in creditTypes) {
-		var dollaBill:FlxSprite = new FlxSprite(50 + (i * 880), 100);
+		var dollaBill:FlxSprite = new FlxSprite(creditPos[i][0], creditPos[i][1]);
 		dollaBill.frames = Paths.getFrames('menus/credits/dolarbill');
 		dollaBill.animation.addByPrefix("idle", "unselected", 1, false);
 		dollaBill.animation.addByPrefix("selected", "selected", 24, false);
@@ -74,7 +78,7 @@ function create() {
 		txt.setFormat("fonts/Robot Socialista.ttf", 24, FlxColor.WHITE, "center");
 		txt.setBorderStyle(FlxTextBorderStyle.OUTLINE, FlxColor.BLACK, 5, 25);
 		txt.ID = i;
-		txt.text = cred.toUpperCase();
+		txt.text = returnTrans(cred + '_C', curLang);
 		dollaTxt.add(txt);
 	}
 
@@ -103,6 +107,12 @@ function create() {
 	credDescTxt.setFormat("fonts/THE PRESIDENT.ttf", 25, FlxColor.BLACK, "center");
 	credDescTxt.borderSize = 2;
 	add(credDescTxt);
+
+	if (curLang != 'eng') {
+		var inEngTxt:FlxText = new FlxText(390, 600, 0, returnTrans('credineng', curLang));
+		inEngTxt.setFormat("fonts/THE PRESIDENT.ttf", 25, FlxColor.BLACK, "center");
+		add(inEngTxt);
+	}
 
 	arrowDOWN = new FlxSprite(570, 605);
 	arrowDOWN.loadGraphic(Paths.image('menus/arrow'));

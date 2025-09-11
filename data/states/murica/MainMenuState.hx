@@ -60,9 +60,7 @@ function create() {
 		menuItems.add(menuItem);
 
 		var txt:FlxText = new FlxText();
-		txt.text = options[i].toUpperCase();
-		if (brazilON)
-			txt.text = returnPortugese(options[i].toUpperCase());
+		txt.text = returnTrans(options[i].toLowerCase() + "_C", curLang);
 		txt.setFormat("fonts/impact.ttf", 25, FlxColor.WHITE, "center");
 		txt.ID = i;
 		txt.setBorderStyle(FlxTextBorderStyle.OUTLINE, FlxColor.BLACK, 5, 25);
@@ -116,17 +114,7 @@ function create() {
 function update(elapsed:Float) {
 	if (!selectedSomethin) {
 		if (FlxG.keys.justPressed.Q) { // TO REMOVE
-
-			// Sys.command('rename mods/' + ModsFolder.currentModFolder + ' george-washington');
-			// var help = Assets.getPath(Paths.file('data/hilarious.txt'));
-			// Sys.command("start ");
-			// trace(help);
-
-			FlxG.switchState(new ModState('murica/minigame/FlappyEag'));
 		}
-		// trace(Paths.getAssetsRoot());
-		// Sys.command('start ' + Paths.getPath('data/hilarious.txt'));
-		// FlxG.switchState(new ModState('murica/VHSState'));
 
 		if (FlxG.keys.justPressed.SEVEN) {
 			persistentUpdate = !(persistentDraw = true);
@@ -343,8 +331,13 @@ function loadData() {
 			trace('mail does not exist');
 	});
 
+	setCurLang();
+
 	FlxG.console.registerFunction('unlockallmail', function() {
 		MailUtil.unlockALLMAIL();
+	});
+	FlxG.console.registerFunction('giveMail', function(mail:String) {
+		MailUtil.newSingleMail(mail);
 	});
 }
 

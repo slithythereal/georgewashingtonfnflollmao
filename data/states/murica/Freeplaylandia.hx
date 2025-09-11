@@ -1,6 +1,7 @@
 import flixel.math.FlxMath;
 import funkin.backend.utils.CoolUtil;
 import flixel.text.FlxTextBorderStyle;
+import flixel.addons.display.FlxBackdrop;
 
 importScript("data/scripts/HandyDandyFunctions");
 var pages:Array<String> = ['WEEKS', 'ROADTRIPS', 'MINIGAMES', 'OTHER'];
@@ -32,23 +33,31 @@ var weekStuffs = [
 	'week1' => {displayName: "WEEK 1", songs: ['patriot', 'god-and-country', 'kilometer'], description: 'Fight George Washington in this epic 3-song week!'},
 	'eag' => {displayName: "EAGVENTURE\nTIME", songs: ['eag', 'behind-the-eag'], description: 'Eag time.'},
 	'brazil' => {displayName: "BRAZIL", songs: ['negotiations', 'can'], description: "funk brasilerio"},
-	'whday' => {displayName: "WHITE HOUSE\nDAY", songs: ['dementia', 'merry-christmas', 'jelly-donut', 'grimace'],
-		description: 'All the songs you unlocked from the WHITE HOUSE DAY minigame!'},
+	'whday' => {
+		displayName: "WHITE HOUSE\nDAY",
+		songs: ['dementia', 'merry-christmas', 'jelly-donut', 'grimace'],
+		description: 'All the songs you unlocked from the WHITE HOUSE DAY minigame!'
+	},
 	'fortnite' => {displayName: "FORTNITE", songs: ['eagnite'], description: 'Captain talon is NOT in the item shop :('}
 ];
 
 var curPageSelected:Int = 0;
+var canPress:Bool = true;
 var curSongSelected, curWeekSelected:Int = 0;
 var newPage, newWeek:Int;
-var portrait, arrowLEFT, arrowRIGHT, skibidistar, bg, simpleTxtBG, simpleTxtBG2:FlxSprite;
+var portrait:FlxSprite;
+var arrowLEFT, arrowRIGHT, skibidistar, bg, simpleTxtBG, simpleTxtBG2:FlxSprite;
 var songProperties:Map<String, {didFC:Bool}> = [];
 var curMode:String = 'SelectPage';
 var simpleTxtGrp:FlxTypedGroup<FlxText>;
 var simpleDesc, arrowTxt:FlxText;
 var songArray:Array<String> = [];
+var backdrop:FlxBackdrop;
+var stars:FlxTypedGroup = new FlxTypedGroup();
+var arcadeLetterRead:Bool = false;
+var arcadeMachine:FlxSprite;
 
-function create()
-{
+function create() {
 	window.title = "WHAT'S A KILOMETER - Freeplay Menu";
 	FlxG.mouse.visible = true;
 	HandyDandy.playMenuSong(FlxG.save.data.curCountry);
@@ -61,6 +70,15 @@ function create()
 	bg.updateHitbox();
 	bg.screenCenter();
 	add(bg);
+
+	backdrop = new FlxBackdrop(Paths.image('menus/freeplaylandia/freeplaylandia close up'), FlxAxes.XY, 0.2, 0.2);
+	backdrop.scale.set(0.15, 0.15);
+	backdrop.alpha = 0.25;
+	backdrop.updateHitbox();
+	backdrop.velocity.set(0, 180);
+	backdrop.screenCenter();
+	add(backdrop);
+	backdrop.visible = false;
 
 	simpleTxtBG = new FlxSprite();
 	simpleTxtBG.makeGraphic(FlxG.width / 3, FlxG.height, FlxColor.BLACK);
@@ -85,15 +103,77 @@ function create()
 	arrowTxt.setBorderStyle(FlxTextBorderStyle.OUTLINE, FlxColor.BLACK, 5, 25);
 	arrowTxt.borderSize = 4;
 	add(arrowTxt);
+	if (arcadeLetterRead) {
+		arcadeMachine = new FlxSprite(800, 515); 
+		arcadeMachine.frames = Paths.getFrames('menus/freeplaylandia/arcademachine');
+		arcadeMachine.animation.addByPrefix('delivery', 'delivery', 1, true);
+		arcadeMachine.animation.addByPrefix('pallet', 'onpallet', 1, true);
+		arcadeMachine.animation.addByPrefix('forklift', 'forklift', 1, true);
+		arcadeMachine.animation.addByPrefix('machine', 'machine', 1, true);
+		arcadeMachine.animation.addByPrefix('glow', 'glow', 16, false);
+		arcadeMachine.scale.set(0.10, 0.30);
+		arcadeMachine.updateHitbox();
+		arcadeMachine.scale.set(0.35, 0.35);
+		arcadeMachine.origin.set(445, 375);
+
+		if (!FlxG.save.data.flappyEagDelivered) {
+			var forklift:FlxSprite = new FlxSprite();
+			forklift.frames = arcadeMachine.frames;
+			forklift.animation.addByPrefix('delivery', "delivery", 1, true);
+			forklift.animation.addByPrefix('forklift', "forklift", 1, true);
+			forklift.animation.play('forklift');
+			forklift.scale.set(0.10, 0.30);
+			forklift.updateHitbox();
+			forklift.scale.set(0.35, 0.35);
+			add(forklift);
+			forklift.visible = false;
+
+			add(arcadeMachine);
+
+			canPress = false;
+			arcadeMachine.setPosition(-1000, 490);
+			arcadeMachine.animation.play('delivery');
+			FlxTween.tween(arcadeMachine, {x: 800}, 2, {
+				ease: FlxEase.cubeOut,
+				onComplete: function(twn:FlxTween) {
+					forklift.setPosition(arcadeMachine.x - 138, arcadeMachine.y - 15);
+					arcadeMachine.animation.play('pallet');
+					forklift.visible = true;
+					forklift.animation.play('forklift');
+					FlxTween.tween(forklift, {x: 575, y: 475}, 2, {
+						ease: FlxEase.cubeOut,
+						onComplete: function(twn:FlxTween) {
+							FlxTween.tween(forklift, {x: 2000}, 1.5, {
+								ease: FlxEase.cubeIn,
+								onComplete: function(twn:FlxTween) {
+									arcadeMachine.animation.play('machine');
+									FlxTween.tween(arcadeMachine, {y: 515}, 2, {
+										ease: FlxEase.cubeIn,
+										onComplete: function(twn:FlxTween) {
+											canPress = true;
+											FlxG.save.data.flappyEagDelivered = true;
+										}
+									});
+								}
+							});
+						}
+					});
+				}
+			});
+		} else {
+			add(arcadeMachine);
+			arcadeMachine.animation.play('machine');
+		}
+	}
 
 	// loadTxtGrp(pages);
-	portrait = new FlxSprite();
+	portrait = new FlxSprite(100, 100);
 	portrait.loadGraphic(Paths.image('menus/freeplaylandia/songs/temp'));
-	portrait.scale.set(0.75, 0.75);
+	portrait.scale.set(0.8, 0.675);
 	portrait.updateHitbox();
-	portrait.screenCenter();
+	portrait.scale.set(0.75, 0.75);
+	portrait.origin.set(465, 325);
 	add(portrait);
-	portrait.visible = false;
 
 	arrowLEFT = new FlxSprite(95, 325);
 	arrowLEFT.loadGraphic(Paths.image('menus/arrow'));
@@ -117,103 +197,109 @@ function create()
 	skibidistar.updateHitbox();
 	add(skibidistar);
 	skibidistar.visible = false;
+	add(stars);
+	for (i in 0...5) {
+		var star:Star = new Star();
+		stars.add(star);
+	}
 
 	switchMode("SelectPage");
 	changePage(0);
 }
 
-function update(elapsed:Float)
-{
-	switch (curMode)
-	{
-		case 'SelectPage':
-			if (controls.BACK)
-			{
-				FlxG.sound.play(Paths.sound('menu/cancel'));
-				FlxG.switchState(new MainMenuState());
-			}
-			if (controls.ACCEPT)
-				switchMode("SelectWeek");
-
-			simpleTxtGrp.forEach(function(txt:FlxText)
-			{
-				if (FlxG.mouse.overlaps(txt))
-				{
-					if (newPage != txt.ID)
-					{
-						newPage = txt.ID;
-						curPageSelected = txt.ID;
-						pageStuff();
-					}
-					if (FlxG.mouse.justPressed)
-						switchMode("SelectWeek");
+function update(elapsed:Float) {
+	if (canPress) {
+		if (arcadeLetterRead) {
+			if (FlxG.mouse.overlaps(arcadeMachine) && arcadeMachine.visible) {
+				arcadeMachine.animation.play('glow');
+				if (FlxG.mouse.justPressed)
+					FlxG.switchState(new ModState('murica/minigame/FlappyEag'));
+			} else
+				arcadeMachine.animation.play('machine');
+		}
+		switch (curMode) {
+			case 'SelectPage':
+				if (controls.BACK) {
+					FlxG.sound.play(Paths.sound('menu/cancel'));
+					FlxG.switchState(new MainMenuState());
 				}
-			});
-			if (controls.UP_P)
-				changePage(-1);
-			else if (controls.DOWN_P)
-				changePage(1);
-		case 'SelectWeek':
-			if (controls.BACK)
-				switchMode("SelectPage");
+				if (controls.ACCEPT)
+					switchMode("SelectWeek");
 
-			if (controls.UP_P)
-				changeWeek(-1);
-			else if (controls.DOWN_P)
-				changeWeek(1);
-			simpleTxtGrp.forEach(function(txt:FlxText)
-			{
-				if (FlxG.mouse.overlaps(txt))
-				{
-					if (newWeek != txt.ID)
-					{
-						newWeek = txt.ID;
-						curWeekSelected = txt.ID;
-						weekStuff();
-					}
-					if (FlxG.mouse.justPressed)
-						switchMode("SelectSong");
-				}
-			});
-			if (controls.ACCEPT)
-				switchMode("SelectSong");
-
-		case 'SelectSong':
-			if (controls.BACK)
-				switchMode("SelectWeek");
-
-			if (controls.LEFT_P || FlxG.mouse.overlaps(arrowLEFT) && arrowLEFT.visible && FlxG.mouse.justPressed)
-			{
-				changeSong(-1);
-				FlxTween.tween(arrowLEFT, {"scale.x": 0.3, "scale.y": 0.3}, 0.05, {
-					ease: FlxEase.quintInOut,
-					onComplete: function(twn:FlxTween)
-					{
-						FlxTween.tween(arrowLEFT, {"scale.x": 0.25, "scale.y": 0.15}, 0.05, {ease: FlxEase.quintInOut});
+				simpleTxtGrp.forEach(function(txt:FlxText) {
+					if (FlxG.mouse.overlaps(txt)) {
+						if (newPage != txt.ID) {
+							newPage = txt.ID;
+							curPageSelected = txt.ID;
+							pageStuff();
+						}
+						if (FlxG.mouse.justPressed)
+							switchMode("SelectWeek");
 					}
 				});
-			}
-			if (controls.RIGHT_P || FlxG.mouse.overlaps(arrowRIGHT) && arrowRIGHT.visible && FlxG.mouse.justPressed)
-			{
-				changeSong(1);
-				FlxTween.tween(arrowRIGHT, {"scale.x": 0.3, "scale.y": 0.3}, 0.05, {
-					ease: FlxEase.quintInOut,
-					onComplete: function(twn:FlxTween)
-					{
-						FlxTween.tween(arrowRIGHT, {"scale.x": 0.25, "scale.y": 0.15}, 0.05, {ease: FlxEase.quintInOut});
+				if (controls.UP_P)
+					changePage(-1);
+				else if (controls.DOWN_P)
+					changePage(1);
+			case 'SelectWeek':
+				if (controls.BACK)
+					switchMode("SelectPage");
+
+				if (controls.UP_P)
+					changeWeek(-1);
+				else if (controls.DOWN_P)
+					changeWeek(1);
+				simpleTxtGrp.forEach(function(txt:FlxText) {
+					if (FlxG.mouse.overlaps(txt)) {
+						if (newWeek != txt.ID) {
+							newWeek = txt.ID;
+							curWeekSelected = txt.ID;
+							weekStuff();
+						}
+						if (FlxG.mouse.justPressed)
+							switchMode("SelectSong");
 					}
 				});
-			}
-			if (controls.ACCEPT)
-				HandyDandy.loadSong(songArray[curSongSelected].toLowerCase());
+				if (controls.ACCEPT)
+					switchMode("SelectSong");
+
+			case 'SelectSong':
+				if (songProperties[
+					weekStuffs[selectorMAP[pages[curPageSelected]][curWeekSelected]].songs[curSongSelected]
+				].didFC) {
+					for (i in stars)
+						i.update(elapsed);
+				}
+				if (controls.BACK)
+					switchMode("SelectWeek");
+
+				if (controls.LEFT_P || FlxG.mouse.overlaps(arrowLEFT) && arrowLEFT.visible && FlxG.mouse.justPressed) {
+					changeSong(-1);
+					FlxTween.tween(arrowLEFT, {"scale.x": 0.3, "scale.y": 0.3}, 0.05, {
+						ease: FlxEase.quintInOut,
+						onComplete: function(twn:FlxTween) {
+							FlxTween.tween(arrowLEFT, {"scale.x": 0.25, "scale.y": 0.15}, 0.05, {ease: FlxEase.quintInOut});
+						}
+					});
+				}
+				if (controls.RIGHT_P || FlxG.mouse.overlaps(arrowRIGHT) && arrowRIGHT.visible && FlxG.mouse.justPressed) {
+					changeSong(1);
+					FlxTween.tween(arrowRIGHT, {"scale.x": 0.3, "scale.y": 0.3}, 0.05, {
+						ease: FlxEase.quintInOut,
+						onComplete: function(twn:FlxTween) {
+							FlxTween.tween(arrowRIGHT, {"scale.x": 0.25, "scale.y": 0.15}, 0.05, {ease: FlxEase.quintInOut});
+						}
+					});
+				}
+				if (controls.ACCEPT)
+					HandyDandy.loadSong(songArray[curSongSelected].toLowerCase());
+		}
 	}
 }
 
-function loadTxtGrp(daArray:Array<String>)
-{
+function loadTxtGrp(daArray:Array<String>) {
 	simpleTxtGrp.clear();
-	for (i => option in daArray)
-	{
+	for (i => option in daArray) {
 		var txt:FlxText = new FlxText(25, ((i * 125) + 100));
 		txt.text = daArray[i].toUpperCase();
 		txt.setFormat("fonts/impact.ttf", 65, FlxColor.WHITE, "center");
@@ -224,48 +310,44 @@ function loadTxtGrp(daArray:Array<String>)
 	}
 }
 
-function switchMode(mode:String)
-{
+function switchMode(mode:String) {
 	curMode = mode;
 
-	switch (mode)
-	{
+	switch (mode) {
 		case 'SelectPage':
 			loadTxtGrp(pages);
 		case 'SelectWeek':
 			var dummy:Array<String> = [];
-			for (i in selectorMAP[pages[curPageSelected]])
-			{
+			for (i in selectorMAP[pages[curPageSelected]]) {
 				dummy.push(weekStuffs[i].displayName);
 			}
 			loadTxtGrp(dummy);
-			// loadTxtGrp(selectorMAP[pages[curPageSelected]]);
 	}
 
+	if (arcadeLetterRead)
+		arcadeMachine.visible = (mode != 'SelectSong' ? true : false);
 	for (txt in simpleTxtGrp)
 		txt.visible = (mode == 'SelectSong' ? false : true);
 	simpleTxtBG.visible = (mode == 'SelectSong' ? false : true);
 	arrowTxt.visible = (mode == 'SelectSong' ? false : true);
 	simpleDesc.visible = (mode == 'SelectSong' ? false : true);
 	simpleTxtBG2.visible = (mode == 'SelectSong' ? false : true);
-
 	portrait.visible = (mode == 'SelectSong' ? true : false);
 	skibidistar.visible = (mode == 'SelectSong' ? true : false);
 	arrowLEFT.visible = (mode == 'SelectSong' ? true : false);
 	arrowRIGHT.visible = (mode == 'SelectSong' ? true : false);
-
 	var ssgraph:String = 'menus/freeplaylandia/backgrounds/' + selectorMAP[pages[curPageSelected]][curWeekSelected];
 	var elsegraph:String = 'menus/freeplaylandia/freeplaylandia close up';
 	bg.loadGraphic(Paths.image((mode == 'SelectSong' ? ssgraph : elsegraph)));
-
-	if (mode == 'SelectSong')
-	{
+	backdrop.visible = (mode == 'SelectSong' ? true : false);
+	if (mode == 'SelectSong') {
+		backdrop.loadGraphic(Paths.image(ssgraph));
 		songArray = weekStuffs[selectorMAP[pages[curPageSelected]][curWeekSelected]].songs;
 		curSongSelected = 0;
 	}
+	toggleStars();
 
-	switch (mode)
-	{
+	switch (mode) {
 		case 'SelectPage':
 			changePage(0);
 		case 'SelectWeek':
@@ -275,8 +357,7 @@ function switchMode(mode:String)
 	}
 }
 
-function changePage(cool:Int)
-{
+function changePage(cool:Int) {
 	curPageSelected += cool;
 	if (curPageSelected >= pages.length)
 		curPageSelected = 0;
@@ -285,22 +366,18 @@ function changePage(cool:Int)
 	pageStuff();
 }
 
-function pageStuff()
-{
+function pageStuff() {
 	simpleDesc.text = "DESCRIPTION:\n" + descriptions[pages[curPageSelected]];
 	simpleDesc.screenCenter(FlxAxes.Y);
-	simpleTxtGrp.forEach(function(txt:FlxText)
-	{
+	simpleTxtGrp.forEach(function(txt:FlxText) {
 		txt.color = (txt.ID == curPageSelected ? FlxColor.RED : FlxColor.WHITE);
 		if (txt.ID == curPageSelected)
 			arrowTxt.setPosition(txt.x + txt.width, txt.y);
 	});
 }
 
-function changeWeek(cool:Int)
-{
+function changeWeek(cool:Int) {
 	var daArray:Array<String> = selectorMAP[pages[curPageSelected]];
-	// trace(daArray);
 	curWeekSelected += cool;
 	if (curWeekSelected >= daArray.length)
 		curWeekSelected = 0;
@@ -310,44 +387,46 @@ function changeWeek(cool:Int)
 	weekStuff();
 }
 
-function weekStuff()
-{
+function weekStuff() {
 	simpleDesc.text = weekStuffs[selectorMAP[pages[curPageSelected]][curWeekSelected]].description;
-	simpleTxtGrp.forEach(function(txt:FlxText)
-	{
+	simpleTxtGrp.forEach(function(txt:FlxText) {
 		txt.color = (txt.ID == curWeekSelected ? FlxColor.RED : FlxColor.WHITE);
 		if (txt.ID == curWeekSelected)
 			arrowTxt.setPosition(txt.x + txt.width, txt.y);
 	});
 }
 
-function changeSong(cool:Int)
-{
+function toggleStars() {
+	var songArray = weekStuffs[selectorMAP[pages[curPageSelected]][curWeekSelected]].songs;
+	var boolT:Bool = (curMode == 'SelectSong' && songProperties[songArray[curSongSelected]].didFC);
+	stars.visible = boolT;
+}
+
+function changeSong(cool:Int) {
 	var cantMove:Bool = false;
 	curSongSelected += cool;
 	arrowLEFT.visible = (curSongSelected <= 0) ? false : true;
 	arrowRIGHT.visible = (curSongSelected >= songArray.length - 1) ? false : true;
-	if (curSongSelected >= songArray.length)
-	{
+	if (curSongSelected >= songArray.length) {
 		curSongSelected = songArray.length - 1;
 		cantMove = true;
-	}
-	else if (curSongSelected < 0)
-	{
+	} else if (curSongSelected < 0) {
 		curSongSelected = 0;
 		cantMove = true;
 	}
 
-	if (!cantMove)
-	{
+	if (!cantMove) {
 		curFreeplaySelected = curSongSelected;
 
 		portrait.loadGraphic(Paths.image('menus/freeplaylandia/songs/picture_' + songArray[curSongSelected].toLowerCase()));
-
+		portrait.scale.set(0.8, 0.675);
+		portrait.updateHitbox();
+		portrait.scale.set(0.75, 0.75);
+		portrait.origin.set(465, 325);
+		portrait.screenCenter();
 		FlxTween.tween(portrait, {"scale.x": 0.8, "scale.y": 0.8}, 0.05, {
 			ease: FlxEase.linear,
-			onComplete: function(twn:FlxTween)
-			{
+			onComplete: function(twn:FlxTween) {
 				FlxTween.tween(portrait, {"scale.x": 0.75, "scale.y": 0.75}, 0.05, {ease: FlxEase.linear});
 			}
 		});
@@ -355,118 +434,98 @@ function changeSong(cool:Int)
 		skibidistar.visible = songProperties[songArray[curSongSelected]].didFC; // makes star visible if fc'd the song
 		FlxTween.tween(skibidistar, {"scale.x": 0.65, "scale.y": 0.65}, 0.05, {
 			ease: FlxEase.linear,
-			onComplete: function(twn:FlxTween)
-			{
+			onComplete: function(twn:FlxTween) {
 				FlxTween.tween(skibidistar, {"scale.x": 0.6, "scale.y": 0.6}, 0.05, {ease: FlxEase.linear});
 			}
 		});
+		toggleStars();
 	}
 }
 
-function loadSongSelStuff()
-{
+function loadSongSelStuff() {
 	var pagesTEMP:Array<String> = pages;
 
 	trace("SONGS ALR UNLOCKED: " + FlxG.save.data.songsUnlockedGW);
 
-	for (week in selectorMAP['WEEKS'])
-	{
+	for (week in selectorMAP['WEEKS']) {
 		var songArray:Array<String> = weekStuffs[week].songs;
 		var pushedSongs:Array<String> = [];
-		for (song in songArray)
-		{
+		for (song in songArray) {
 			if (FlxG.save.data.songsUnlockedGW.contains(song))
 				pushedSongs.push(song);
 			else if (!FlxG.save.data.songsUnlockedGW.contains(song))
 				weekStuffs[week].songs.remove(song);
 		}
 
-		if (pushedSongs.length > 1)
-		{
+		if (pushedSongs.length > 1) {
 			trace(week + ": " + weekStuffs[week].songs);
 			weeksArray.push(week);
 			for (song in pushedSongs)
 				allSongsPushed.push(song);
-		}
-		else if (pushedSongs.length < 1)
-		{
+		} else if (pushedSongs.length < 1) {
 			selectorMAP["WEEKS"].remove(week);
 		}
 	}
 	if (weeksArray.length < 1)
 		pages.remove("WEEKS");
 
-	for (roadtrip in selectorMAP['ROADTRIPS'])
-	{
+	for (roadtrip in selectorMAP['ROADTRIPS']) {
 		var songArray:Array<String> = weekStuffs[roadtrip].songs;
 		var pushedSongs:Array<String> = [];
-		for (song in songArray)
-		{
+		for (song in songArray) {
 			if (FlxG.save.data.songsUnlockedGW.contains(song))
 				pushedSongs.push(song);
 			else if (!FlxG.save.data.songsUnlockedGW.contains(song))
 				weekStuffs[roadtrip].songs.remove(song);
 		}
-		if (pushedSongs.length > 1)
-		{
+		if (pushedSongs.length > 1) {
 			trace(roadtrip + ": " + weekStuffs[roadtrip].songs);
 			roadtripsArray.push(roadtrip);
 			for (song in pushedSongs)
 				allSongsPushed.push(song);
-		}
-		else if (pushedSongs.length < 1)
-		{
+		} else if (pushedSongs.length < 1) {
 			selectorMAP["ROADTRIPS"].remove(roadtrip);
 		}
 	}
 	if (roadtripsArray.length < 1)
 		pages.remove("ROADTRIPS");
 
-	for (minigame in selectorMAP['MINIGAMES'])
-	{
+	for (minigame in selectorMAP['MINIGAMES']) {
 		var songArray:Array<String> = weekStuffs[minigame].songs;
 		var pushedSongs:Array<String> = [];
-		for (song in songArray)
-		{
+		for (song in songArray) {
 			if (FlxG.save.data.songsUnlockedGW.contains(song))
 				pushedSongs.push(song);
 			else if (!FlxG.save.data.songsUnlockedGW.contains(song))
 				weekStuffs[minigame].songs.remove(song);
 		}
-		if (pushedSongs.length > 1)
-		{
+		if (pushedSongs.length > 1) {
 			trace(minigame + ": " + weekStuffs[minigame].songs);
 			minigamesArray.push(minigame);
 			for (song in pushedSongs)
 				allSongsPushed.push(song);
-		}
-		else if (pushedSongs.length < 1)
+		} else if (pushedSongs.length < 1)
 			selectorMAP["MINIGAMES"].remove(minigame);
 	}
 	if (minigamesArray.length < 1)
 		pages.remove("MINIGAMES");
 
-	for (others in selectorMAP['OTHER'])
-	{
+	for (others in selectorMAP['OTHER']) {
 		var songArray:Array<String> = weekStuffs[others].songs;
 		var pushedSongs:Array<String> = [];
-		for (song in songArray)
-		{
+		for (song in songArray) {
 			if (FlxG.save.data.songsUnlockedGW.contains(song))
 				pushedSongs.push(song);
 			else if (!FlxG.save.data.songsUnlockedGW.contains(song))
 				weekStuffs[others].songs.remove(song);
 		}
-		if (pushedSongs.length > 1)
-		{
+		if (pushedSongs.length > 1) {
 			trace(others + ": " + weekStuffs[others].songs);
 
 			othersArray.push(others);
 			for (song in pushedSongs)
 				allSongsPushed.push(song);
-		}
-		else if (pushedSongs.length < 1)
-		{
+		} else if (pushedSongs.length < 1) {
 			selectorMAP["OTHER"].remove(others);
 		}
 	}
@@ -474,16 +533,55 @@ function loadSongSelStuff()
 		pages.remove("OTHER");
 }
 
-function loadData()
-{
+function loadData() {
 	loadSongSelStuff();
 	var saveSongsArray:Array<String> = [];
 	// sets the song properties
-	for (song in allSongsPushed)
-	{
+	for (song in allSongsPushed) {
 		var songlol:String = song.toLowerCase();
 		songProperties.set(songlol, {
 			didFC: (FlxG.save.data.songsFCd.contains(songlol)) ? true : false // detects if song is fc'd based on savedata
+		});
+	}
+	arcadeLetterRead = FlxG.save.data.mailRead.contains('arcade');
+}
+
+class Star extends FlxSprite {
+	public var timer:Float = 1;
+
+	public var datween:FlxTween;
+
+	public function new() {
+		super(0, 0, null);
+		loadGraphic(Paths.image('menus/freeplaylandia/skibidistar'));
+		scale.set(0.25, 0.25);
+		updateHitbox();
+		antialiasing = false;
+		alpha = 0;
+		scale.set(0.75, 0.75);
+		timer = FlxG.random.float(0.05, 1.0);
+		datween = new FlxTween();
+	}
+
+	public function update(elapsed:Float) {
+		super.update(elapsed);
+		timer -= elapsed;
+		if (timer <= 0 && alpha == 0)
+			play();
+	}
+
+	public function play() {
+		timer = FlxG.random.float(1.0, 2.5);
+		alpha = 1.0;
+		x = portrait.x + FlxG.random.float(0, portrait.width - 50);
+		y = portrait.y + FlxG.random.float(0, portrait.height - 50);
+		datween.tween(this, {"scale.x": 0.25, "scale.y": 0.25}, 0.2, {
+			ease: FlxEase.linear,
+			onComplete: function(twn:FlxTween) {
+				datween.tween(this, {"scale.x": 0.15, "scale.y": 0.15, alpha: 0}, FlxG.random.float(0.2, 1), {
+					ease: FlxEase.linear
+				});
+			}
 		});
 	}
 }

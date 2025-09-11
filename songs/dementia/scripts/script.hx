@@ -2,6 +2,10 @@ importScript('data/scripts/Flipped Healthbars');
 importScript('data/scripts/VideoHandler');
 importScript('data/scripts/Invisible HUD');
 
+import funkin.backend.utils.NativeAPI;
+import Sys;
+import funkin.backend.MusicBeatState;
+
 var ssg1:Character;
 var ssg2:Character;
 var ssg3:Character;
@@ -71,7 +75,24 @@ function create(){
     add(awesomeExplosivo);
 }
 
-//function postCreate()
+function onGameOver(event){
+    var random:Bool = (FlxG.random.int(1, 4096) == 1 ? true : false);
+    if(random){
+        event.cancel(true);
+        window.title = 'SKIBIDI BIDEN';
+        MusicBeatState.skipTransIn = MusicBeatState.skipTransOut = true;
+        curVidData = {
+            vid: "skibidibiden",
+            daFunc: function(){
+                NativeAPI.showMessageBox("SKIBIDI BIDEN", "GET IT... IS SO FUNNY RIGHT?!?!?!?!!!?!?!?!", 0xFF000000);
+                CoolUtil.openURL("https://youtu.be/exfogQf1r-M?t=428"); 
+                Sys.exit();
+            }
+        }
+        trace(curVidData);
+        FlxG.switchState(new ModState("murica/VidState"));
+    }
+}
 
 function makeAnim(file:String, anim:String, xml:String, ?x:Float = 0, ?y:Float = 0, ?scalex:Float = 1, ?scaley:Float = 1):FunkinSprite{
     var char:FunkinSprite = new FunkinSprite(x, y);
@@ -83,48 +104,22 @@ function makeAnim(file:String, anim:String, xml:String, ?x:Float = 0, ?y:Float =
     return char;
 }
 
-
-function stepHit(curStep:Int){
-    switch(curStep){
-        case 714:
-            iceCreamDrop.alpha = 1;
-            iceCreamDrop.animation.play('anim');
-            for(i in [ssg1, ssg3])
-                FlxTween.tween(i, {x: 3000}, 1, {ease:FlxEase.sineInOut});
-        case 715:
-            joeDrops.animation.play('anim');
-            dad.visible = false;
-            joeDrops.alpha = 1;
-        case 721:
-            ssg2.visible = false;
-            ssgAnim.alpha = 1;
-            ssgAnim.animation.play('anim');
-        case 818:
-            joeDrops.visible = false;
-            dad.visible = true;
-    }
-}
-
-function beatHit(curBeat:Int){
-    switch(curBeat){
-        case 1:
+function funnyEvent(event:String){
+    var daEvent:String = event;
+    switch(daEvent){
+        case 'intro':
             joeIntro.animation.play('intro');
             joeIntro.alpha = 1;
             dad.visible = false;
-        case 32:
+        case 'guardsdrop':
             for(i in [ssg1, ssg2, ssg3]){
                 i.visible = true;
                 i.playAnim('fall');
             }
-            executeEvent({time: 0, name: "Tween HUD Alpha", params: [0.25, 0.001]});
-         
-        case 33:
-            executeEvent({time: 0, name: "Tween HUD Alpha", params: [0.5, 0.001]});
-        case 34:
+        case 'jojo':
             stage.stageSprites['jojo'].visible = true;
             FlxTween.tween(stage.stageSprites['jojo'], {"scale.x": 1, "scale.y": 1}, 0.1, {ease:FlxEase.linear});
-            executeEvent({time: 0, name: "Tween HUD Alpha", params: [0.75, 0.001]});
-        case 36:
+        case 'clear1':
             joeIntro.visible = false;
             dad.visible = true;
             dad.flipX = false;
@@ -132,19 +127,41 @@ function beatHit(curBeat:Int){
             for(i in [ssg1, ssg2, ssg3])
                 i.playAnim('idle');
             
-            executeEvent({time: 0, name: "Tween HUD Alpha", params: [1, 0.001]});
             remove(stage.stageSprites['jojo']);
-        case 212: VideoHandler.playNext();
-        case 304: 
+        case 'iceC1':
+            iceCreamDrop.alpha = 1;
+            iceCreamDrop.animation.play('anim');
+            for(i in [ssg1, ssg3])
+                FlxTween.tween(i, {x: 3000}, 1, {ease:FlxEase.sineInOut});
+        case 'iceC2':
+            joeDrops.animation.play('anim');
+            dad.visible = false;
+            joeDrops.alpha = 1;
+        case 'iceC3':
+            ssg2.visible = false;
+            ssgAnim.alpha = 1;
+            ssgAnim.animation.play('anim');
+        case 'iceC4':
+            joeDrops.visible = false;
+            dad.visible = true;
+        case 'joedies':
             FlxTween.tween(dad, {x: -2000, y: -2000}, 2, {ease:FlxEase.linear, onComplete:function(twn:FlxTween){
                 dad.visible = false;
             }});
-        case 311: 
+        case 'bfdies':
             FlxTween.tween(boyfriend, {x: -2000, y: -2000}, 2, {ease:FlxEase.linear, onComplete: function(twn:FlxTween){
                 boyfriend.visible = false;
             }});
-        case 306 | 313: 
+        case 'explosivo':
             awesomeExplosivo.alpha = 1;
             awesomeExplosivo.animation.play('explode');
+    }
+}
+
+function beatHit(curBeat:Int){
+    switch(curBeat){
+        case 212: VideoHandler.playNext();
+        case 306 | 313: 
+            funnyEvent('explosivo');
     }  
 }

@@ -108,8 +108,17 @@ function update(elapsed:Float) {
 		die();
 
 	if (FlxG.overlap(player, wall) && !dead) {
+<<<<<<< HEAD
 		NativeAPI.showMessageBox("Launch Codes", "741776", 0x00000000); // will have if statement tied to save data variable (wip)
 		FlxG.sound.play(Paths.sound('minigame/flappyeag/win'), 1.5);
+=======
+		if (!FlxG.save.data.weirdRouteEnabled && !FlxG.save.data.launchCodesObtained) {
+			NativeAPI.showMessageBox("Launch Codes", "741776\n921945\n9112001\n6181812\n12141799", 0x00000000);
+			FlxG.save.data.launchCodesObtained = true;
+		}
+		FlxG.sound.music.stop();
+		FlxG.sound.play(Paths.sound('minigame/flappyeag/win'));
+>>>>>>> a5c27f3f043efcffb24302aa395c1357d4300ab3
 
 		wall.velocity.x = 0;
 		die();
@@ -128,7 +137,7 @@ function update(elapsed:Float) {
 
 	if (dead && FlxG.keys.justPressed.ESCAPE) {
 		FlxG.sound.music.stop();
-		FlxG.switchState(new MainMenuState());
+		FlxG.switchState(new FreeplayState());
 	}
 }
 

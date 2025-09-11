@@ -54,6 +54,7 @@ public var roomSpr:FlxGroup; // sprites that are added via the different rooms
 public var subUIGRP:FlxGroup; // other UI (arrows)
 // roomspritefunctions
 public var updatePortraits:Array<Void->Float> = [];
+public var updateRSArray:Array<Void->Float> = [];
 public var updateRoomSprite:Map<String, Void->Float> = []; // updateRoomSprite.set("roomname", function(elapsed:Float))
 public var closeRoomFunc:Map<String, Void->Void> = []; // closeRoomFunc.set("roomname", function())
 public var pauseFunction:Map<String, Void->Bool> = []; // pauseFunction.set("roomname", function(isPaused:Bool))
@@ -170,6 +171,10 @@ function create() {
 	FlxG.console.registerFunction('giveItem', function(item:String) {
 		itemGet(item);
 	});
+
+	FlxG.console.registerFunction('giveTape', function(tape:String, isSecret:Bool, id:Int) {
+		unlockTAPE(tape, isSecret, id);
+	});
 }
 
 function update(elapsed:Float) {
@@ -183,6 +188,9 @@ function update(elapsed:Float) {
 		// updates the room sprites
 		if (updateRoomSprite.exists(curRoom))
 			updateRoomSprite[curRoom](elapsed);
+		if (updateRSArray != null)
+			for (update in updateRSArray)
+				update(elapsed);
 		// updates portraits
 		if (updatePortraits != null)
 			for (update in updatePortraits)
@@ -251,14 +259,19 @@ function loadRoom(room:String) {
 		upArrow.angle = (dayRooms[curRoom].upAngle != null ? dayRooms[curRoom].upAngle : 0);
 		downArrow.angle = (dayRooms[curRoom].downAngle != null ? dayRooms[curRoom].downAngle : 0);
 
+		for (i in [leftArrow, rightArrow, upArrow, downArrow])
+			HandyDandy.watch(i);
+
 		if (updatePortraits != null)
 			updatePortraits = null;
+		if (updateRSArray != null)
+			updateRSArray = null;
 
 		if (dayRooms[curRoom].openFunc != null)
 			dayRooms[curRoom].openFunc();
 
 		if (inWHITEHOUSE)
-			//switchBGM((dayRooms[curRoom].newBGM != null ? dayRooms[curRoom].newBGM : 'base'));
+			// switchBGM((dayRooms[curRoom].newBGM != null ? dayRooms[curRoom].newBGM : 'base'));
 			switchBGM('base');
 
 		callForEach();
@@ -552,16 +565,17 @@ var curDial:Int = 0;
 var curDialColor:String = '#ffffff';
 
 public function startDialogue(dialogue:String) {
-	var dialReps:Int = dayDial[dialogue].length - 1;
-	curDial = 0;
-	dialogueNextLine(dialogue, dialReps);
+	if (FlxG.save.data.subtitlesGW) {
+		var dialReps:Int = dayDial[dialogue].length - 1;
+		curDial = 0;
+		dialogueNextLine(dialogue, dialReps);
+	}
 }
 
 var dialogueTimer:FlxTimer = null;
-function dialogueNextLine(dialogue:String, totalReps:Int)
-{
-	if (curDial >= totalReps+1)
-	{
+
+function dialogueNextLine(dialogue:String, totalReps:Int) {
+	if (curDial >= totalReps + 1) {
 		dialTxt.text = '';
 		switchBGM('base');
 		return;
@@ -572,18 +586,19 @@ function dialogueNextLine(dialogue:String, totalReps:Int)
 	setDialogueText(dialLine, dialColor);
 
 	var dialTime = dayDial[dialogue][curDial].time;
-	if (dialogueTimer != null && !dialogueTimer.finished) dialogueTimer.destroy();
+	if (dialogueTimer != null && !dialogueTimer.finished)
+		dialogueTimer.destroy();
 	dialogueTimer = new FlxTimer().start(dialTime, function(tmr:FlxTimer) {
 		curDial++;
 		dialogueNextLine(dialogue, totalReps);
 	});
 }
 
-function setDialogueText(dialogueLine:String, color:String)
-{
+function setDialogueText(dialogueLine:String, color:String) {
 	dialTxt.text = dialogueLine;
 	dialTxt.screenCenter(FlxAxes.X);
-
+	dialTxt.scale.set(1.2, 1.2);
+	FlxTween.tween(dialTxt, {"scale.x": 1, "scale.y": 1}, 0.05, {ease: FlxEase.linear});
 	if (curDialColor != color && color != null) {
 		curDialColor = color;
 		dialTxt.color = FlxColor.fromString(curDialColor);

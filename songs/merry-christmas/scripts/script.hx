@@ -22,17 +22,16 @@ function postUpdate(elapsed:Float)
     }
 }
 
-function beatHit(curBeat:Int)
-{
-	switch (curBeat)
-	{
-		case 52:
+function funnyEvent(event:String){ //hscript call event
+	var daEvent:String = event;
+	switch(daEvent){
+		case 'nogas':
 			sleighFalling = true;
 			for (i in [boyfriend, stage.stageSprites['sleigh']])
 				i.acceleration.y = 1200 * 1.5;
 			noGas.alpha = 1;
 			FlxTween.tween(noGas, {alpha: 0}, 0.5, {ease: FlxEase.linear});
-		case 54:
+		case 'atdnc':
 			sleighFalling = false;
 			stage.stageSprites['sleigh'].visible = false;
 			for (i in [boyfriend, stage.stageSprites['sleigh']])
@@ -40,7 +39,7 @@ function beatHit(curBeat:Int)
 			boyfriend.moves = false;
 			backgroundCreate('dnc');
 			boyfriend.playAnim('fall', false);
-		case 65:
+		case 'sleighfall':
 			stage.stageSprites['sleigh'].visible = true;
 			stage.stageSprites['sleigh'].setPosition(300, -1200);
 			stage.stageSprites['sleigh'].angle = -30;

@@ -27,7 +27,6 @@ public var HandyDandy:T = {
 	loadSong: function(song:String)
 	{
 		PlayState.loadSong(song.toLowerCase(), "normal", false, false);
-		//brazilOn = !(FlxG.save.data.mailRead.contains("brazil") && FlxG.save.data.brazilMode ? true : false);
 		FlxG.switchState(new PlayState());
 	},
 	watch: function(obj:FlxObject)
@@ -96,12 +95,14 @@ public var HandyDandy:T = {
 	resetSaveData: function(){
 		brazilOn = !(FlxG.save.data.mailRead.contains("brazil") && FlxG.save.data.brazilMode ? true : false);
 		//general
-		FlxG.save.data.showWarning = true;
+		FlxG.save.data.showGWWarning = true;
 		FlxG.save.data.freeplayUnlockedGW = [];
 		FlxG.save.data.songsUnlockedGW = [];
 		FlxG.save.data.songsFCd = [];
 		FlxG.save.data.songsSFCd = [];
 		FlxG.save.data.whiteHouseRisen = false;
+		if(!FlxG.save.data.weirdRouteEnabled)
+			FlxG.save.data.flappyEagDelivered = false;
 		//mail
 		FlxG.save.data.mailUnlocked = false; 
 		FlxG.save.data.mailObtained = [];
@@ -124,6 +125,11 @@ public var HandyDandy:T = {
 				HandyDandy.saveMailData('welcomeback', 'welcomeback', false, "WELCOME BACK OLD PLAYER!");
 			FlxG.save.data.curVersionGW = '1.2';
 		}
+	},
+	antiNuke: function(){
+		FlxG.save.data.flappyEagDelivered = false;
+		FlxG.save.data.weirdRouteEnabled = false;
+		FlxG.save.data.launchCodesObtained = false;
 	}
 }
 
