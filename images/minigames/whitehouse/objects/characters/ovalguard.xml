@@ -3,17 +3,29 @@
 	<!-- Created with Adobe Animate version 22.0.0.93 -->
 	<!-- http://www.adobe.com/products/animate.html -->
 	<SubTexture name="guardsignidle0000" x="0" y="0" width="370" height="531" frameX="-1" frameY="-9" frameWidth="590" frameHeight="540"/>
-	<SubTexture name="guardsignfling0000" x="0" y="0" width="370" height="531" frameX="-1" frameY="-9" frameWidth="590" frameHeight="540"/>
-	<SubTexture name="guardsignfling0001" x="370" y="0" width="307" height="444" frameX="-3" frameY="-9" frameWidth="590" frameHeight="540"/>
-	<SubTexture name="guardsignfling0002" x="677" y="0" width="349" height="394" frameX="0" frameY="-9" frameWidth="590" frameHeight="540"/>
-	<SubTexture name="guardsignfling0003" x="1026" y="0" width="349" height="345" frameX="-58" frameY="-9" frameWidth="590" frameHeight="540"/>
-	<SubTexture name="guardsignfling0004" x="1375" y="0" width="375" height="336" frameX="-97" frameY="-9" frameWidth="590" frameHeight="540"/>
-	<SubTexture name="guardsignfling0005" x="0" y="531" width="493" height="375" frameX="-97" frameY="-9" frameWidth="590" frameHeight="540"/>
-	<SubTexture name="guardsignfling0006" x="493" y="531" width="313" height="346" frameX="-97" frameY="0" frameWidth="590" frameHeight="540"/>
-	<SubTexture name="guardsignfling0007" x="806" y="531" width="403" height="334" frameX="-97" frameY="-9" frameWidth="590" frameHeight="540"/>
-	<SubTexture name="guardsignfling0008" x="1209" y="531" width="340" height="336" frameX="-97" frameY="-9" frameWidth="590" frameHeight="540"/>
-	<SubTexture name="guardsignfling0009" x="1549" y="531" width="357" height="335" frameX="-97" frameY="-9" frameWidth="590" frameHeight="540"/>
-	<SubTexture name="guardsignfling0010" x="0" y="906" width="373" height="335" frameX="-97" frameY="-9" frameWidth="590" frameHeight="540"/>
-	<SubTexture name="guardsignfling0011" x="0" y="906" width="373" height="335" frameX="-97" frameY="-9" frameWidth="590" frameHeight="540"/>
+	<SubTexture name="guardsignfling_0000" x="0" y="0" width="370" height="531" frameX="-1" frameY="-9" frameWidth="590" frameHeight="540"/>
+	<SubTexture name="guardsignfling_0001" x="370" y="0" width="307" height="444" frameX="-3" frameY="-9" frameWidth="590" frameHeight="540"/>
+	<SubTexture name="guardsignfling_0002" x="677" y="0" width="349" height="394" frameX="0" frameY="-9" frameWidth="590" frameHeight="540"/>
+	<SubTexture name="guardsignfling_0003" x="1026" y="0" width="349" height="345" frameX="-58" frameY="-9" frameWidth="590" frameHeight="540"/>
+	<SubTexture name="guardsignfling_0004" x="1375" y="0" width="375" height="336" frameX="-97" frameY="-9" frameWidth="590" frameHeight="540"/>
+	<SubTexture name="guardsignfling_0005" x="0" y="531" width="493" height="375" frameX="-97" frameY="-9" frameWidth="590" frameHeight="540"/>
+	<SubTexture name="guardsignfling_0006" x="493" y="531" width="313" height="346" frameX="-97" frameY="0" frameWidth="590" frameHeight="540"/>
+	<SubTexture name="guardsignfling_0007" x="806" y="531" width="403" height="334" frameX="-97" frameY="-9" frameWidth="590" frameHeight="540"/>
+	<SubTexture name="guardsignfling_0008" x="1209" y="531" width="340" height="336" frameX="-97" frameY="-9" frameWidth="590" frameHeight="540"/>
+	<SubTexture name="guardsignfling_0009" x="1549" y="531" width="357" height="335" frameX="-97" frameY="-9" frameWidth="590" frameHeight="540"/>
+	<SubTexture name="guardsignfling_0010" x="0" y="906" width="373" height="335" frameX="-97" frameY="-9" frameWidth="590" frameHeight="540"/>
+	<SubTexture name="guardsignfling_0011" x="0" y="906" width="373" height="335" frameX="-97" frameY="-9" frameWidth="590" frameHeight="540"/>
+	<SubTexture name="guardsignflingbackwards0011" x="0" y="0" width="370" height="531" frameX="-1" frameY="-9" frameWidth="590" frameHeight="540"/>
+	<SubTexture name="guardsignflingbackwards0010" x="370" y="0" width="307" height="444" frameX="-3" frameY="-9" frameWidth="590" frameHeight="540"/>
+	<SubTexture name="guardsignflingbackwards0009" x="677" y="0" width="349" height="394" frameX="0" frameY="-9" frameWidth="590" frameHeight="540"/>
+	<SubTexture name="guardsignflingbackwards0008" x="1026" y="0" width="349" height="345" frameX="-58" frameY="-9" frameWidth="590" frameHeight="540"/>
+	<SubTexture name="guardsignflingbackwards0007" x="1375" y="0" width="375" height="336" frameX="-97" frameY="-9" frameWidth="590" frameHeight="540"/>
+	<SubTexture name="guardsignflingbackwards0006" x="0" y="531" width="493" height="375" frameX="-97" frameY="-9" frameWidth="590" frameHeight="540"/>
+	<SubTexture name="guardsignflingbackwards0005" x="493" y="531" width="313" height="346" frameX="-97" frameY="0" frameWidth="590" frameHeight="540"/>
+	<SubTexture name="guardsignflingbackwards0004" x="806" y="531" width="403" height="334" frameX="-97" frameY="-9" frameWidth="590" frameHeight="540"/>
+	<SubTexture name="guardsignflingbackwards0003" x="1209" y="531" width="340" height="336" frameX="-97" frameY="-9" frameWidth="590" frameHeight="540"/>
+	<SubTexture name="guardsignflingbackwards0002" x="1549" y="531" width="357" height="335" frameX="-97" frameY="-9" frameWidth="590" frameHeight="540"/>
+	<SubTexture name="guardsignflingbackwards0001" x="0" y="906" width="373" height="335" frameX="-97" frameY="-9" frameWidth="590" frameHeight="540"/>
+	<SubTexture name="guardsignflingbackwards0000" x="0" y="906" width="373" height="335" frameX="-97" frameY="-9" frameWidth="590" frameHeight="540"/>
 	<SubTexture name="guardsignhung0000" x="0" y="906" width="373" height="335" frameX="-97" frameY="-9" frameWidth="590" frameHeight="540"/>
 </TextureAtlas>

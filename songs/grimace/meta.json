@@ -1,16 +1,14 @@
 {
-	"beatsPerMeasure": 4,
 	"opponentModeAllowed": true,
-	"coopAllowed": true,
-	"stepsPerBeat": 4,
-	"bpm": 178,
 	"difficulties": [
 		"normal"
 	],
-	"needsVoices": false,
-	"parsedColor": -1,
-	"displayName": "Grimace",
 	"icon": "grimace",
-	"name": "grimace",
-	"color": "#FFFFFF"
+	"coopAllowed": true,
+	"color": "#FFFFFF",
+	"stepsPerBeat": 4,
+	"displayName": "Grimace",
+	"needsVoices": false,
+	"beatsPerMeasure": 4,
+	"bpm": 178
 }

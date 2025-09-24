@@ -91,7 +91,7 @@ function closeThis() {
 	close();
 }
 
-class Sparkle extends FlxSprite {
+class Sparkle extends FlxSprite { //TO FIX
 	public var timer:Float = 1;
 
 	public function new() {

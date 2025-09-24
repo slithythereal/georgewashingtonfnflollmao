@@ -144,6 +144,7 @@ function update(elapsed:Float) {
 				activateEagle();
 
 			if (eagleActive && FlxG.mouse.overlaps(eagle) && FlxG.mouse.justPressed) {
+				(brazilON ? toucanPressed() : eaglePressed());
 				if (brazilON)
 					toucanPressed();
 				else
