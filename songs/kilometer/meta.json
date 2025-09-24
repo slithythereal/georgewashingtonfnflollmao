@@ -4,9 +4,7 @@
 	"difficulties": [
 		"normal"
 	],
-	"parsedColor": -1,
 	"color": "#FFFFFF",
-	"name": "kilometer",
 	"coopAllowed": true,
 	"stepsPerBeat": 4,
 	"displayName": "Kilometer",

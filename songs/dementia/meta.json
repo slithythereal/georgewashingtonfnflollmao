@@ -1,16 +1,14 @@
 {
-	"beatsPerMeasure": 4,
+	"color": "#FFFFFF",
 	"opponentModeAllowed": true,
-	"coopAllowed": true,
-	"stepsPerBeat": 4,
-	"bpm": 110,
 	"difficulties": [
 		"normal"
 	],
-	"needsVoices": true,
-	"parsedColor": -1,
-	"displayName": "Dementia",
 	"icon": "Joe",
-	"name": "dementia",
-	"color": "#FFFFFF"
+	"coopAllowed": true,
+	"stepsPerBeat": 4,
+	"displayName": "Dementia",
+	"needsVoices": true,
+	"beatsPerMeasure": 4,
+	"bpm": 110
 }

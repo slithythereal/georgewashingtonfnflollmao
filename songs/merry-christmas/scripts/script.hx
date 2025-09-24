@@ -10,6 +10,7 @@ function create()
 	noGas.updateHitbox();
 	add(noGas);
 	noGas.alpha = 0.001;
+	dad.color = FlxColor.BLACK;
 }
 
 var playedSound:Bool = false;

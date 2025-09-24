@@ -78,7 +78,6 @@ function create() {
 		/*var text:FlxText = new FlxText(mail.x, mail.y, 0, mail.ID);
 			add(text); */
 		trace((Math.floor(mailArray.length / 6)));
-		HandyDandy.watch(mail);
 	}
 
 	textbg = new FlxSprite().makeGraphic(1, 1, FlxColor.BLACK);

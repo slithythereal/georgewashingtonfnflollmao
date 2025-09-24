@@ -1,16 +1,15 @@
 {
-	"beatsPerMeasure": 4,
 	"opponentModeAllowed": true,
-	"coopAllowed": true,
-	"stepsPerBeat": 4,
-	"bpm": 96,
 	"difficulties": [
 		"normal"
 	],
-	"needsVoices": true,
-	"parsedColor": -1,
-	"displayName": "Merry Christmas",
 	"icon": "kamala",
+	"coopAllowed": true,
 	"name": "merry-christmas",
-	"color": "#FFFFFF"
+	"color": -1,
+	"stepsPerBeat": 4,
+	"displayName": "Merry Christmas",
+	"needsVoices": true,
+	"beatsPerMeasure": 4,
+	"bpm": 96
 }

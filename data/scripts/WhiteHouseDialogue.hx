@@ -18,7 +18,7 @@ public var dayDial = [
 		{time: 0.4, line: "LEAVE ME ALONE!"}
 	],
 	"georgerando_2" => [
-		{time: 1.235, line: "Didn't I tell you to leave me alone?!", color: '#fac234'}
+		{time: 1.235, line: "Didn't I tell you to leave me alone?!", color: '#fac234'},
 		{time: 0.742, line: ""},
 		{time: 0.55, line: "Get outta here!"}
 	],
@@ -52,9 +52,9 @@ public var dayDial = [
 	'jfkrando_1' => [
 		{line: "Get on with it kid.", time: 1.479, color: "#d35c23"},
 		{line: "Go and get my Jelly Donut!", time: 2.120}
-	]
+	],
 	'jfkrando_2' => [{line: "Go on.", time: 1, color: "#d35c23"}],
-	'jfkrando_3' => [{line: "Just go get it already!", time: 1, color: "#d35c23"}]
+	'jfkrando_3' => [{line: "Just go get it already!", time: 1, color: "#d35c23"}],
 	'jfk_psst' => [
 		{line: "psst", time: 0.379, color: "#d35c23"},
 		{line: "", time: 0.998},
@@ -73,6 +73,30 @@ public var dayDial = [
 		{line: "the dark secrets", time: 1.277},
 		{line: "of the deep STATE", time: 2}
 	],
+	// secret service guard
+	'agent_halt' => [
+		{line: "HALT!", time: 0.460},
+		{line: "", time: 0.410},
+		{line: "You can't go to the Oval Office without an INVITE.", time: 2.578},
+		{line: "", time: 0.252},
+		{line: "buzz off kid.", time: 0.7}
+	],
+	'agentran_1' => [
+		{line: "I could KILL", time: 1.631},
+		{line: "for a bathroom break right now", time: 1.325}
+	],
+	'agentran_2' => [
+		{line: "You got an INVITE to show me or nah?", time: 1.835}
+	],
+	'agentran_3' => [
+		{line: "Oh it's a blue haired lib-", time: 2.048},
+		{line: "", time: 0.276},
+		{line: "I mean kid.", time: 0.541},
+		{line: "", time: 0.370},
+		{line: "yeah... kid...", time: 0.5}
+	],
+	'agentran_4' => [{line: "Who invited this guy?", time: 1}],
+	'agentran_5' => [{line: "Can't wait for the next paycheck!!!", time: 2}],
 	// SIDE
 	// teddy
 	'teddy_1' => [

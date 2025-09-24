@@ -1,29 +1,23 @@
 import funkin.game.PlayState;
 import flixel.sound.FlxSound;
 
-importScript('data/scripts/VideoHandler');
 importScript('data/scripts/HandyDandyFunctions');
 function create() {
-	VideoHandler.load(['kilometernew', 'peak'], true, function() {
-		FlxG.camera.flash(FlxColor.WHITE);
-	});
 	camHUD.visible = false;
 	camGame.visible = false;
 	boyfriend.gameOverCharacter = 'kilodeath';
 	lossSFX = 'gameover/kilometergameover';
 }
+
 var ufo:FlxSprite;
-function postCreate(){
-	ufo = new FlxSprite(-5000,-120);
+
+function postCreate() {
+	ufo = new FlxSprite(-5000, -120);
 	ufo.loadGraphic(Paths.image('stages/kilometer/ufo'));
-	ufo.scale.set(0.65,0.65);
+	ufo.scale.set(0.65, 0.65);
 	ufo.updateHitbox();
 	ufo.angle = -25;
 	add(ufo);
-}
-
-function onSongStart() {
-	VideoHandler.playNext();
 }
 
 function onStartCountdown(event) {
@@ -86,7 +80,7 @@ function funnyEvent(param1:String) {
 		case "fallingvid":
 			VideoHandler.playNext();
 		case 'ufo':
-			FlxTween.tween(ufo, {x: 5000}, 1.75, {ease:FlxEase.linear});
+			FlxTween.tween(ufo, {x: 5000}, 1.75, {ease: FlxEase.linear});
 	}
 }
 

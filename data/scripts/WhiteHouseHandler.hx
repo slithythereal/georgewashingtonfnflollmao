@@ -118,21 +118,80 @@ public var dayRooms = [
 	'1floorhallwaybehind' => {downRoom: '1floorhallwaystart', downRoomSound: shortStep, upRoom: 'startroom'},
 	'stairsoval' => {
 		rightRoom: '1floorstairs',
-		downRoom: '1floor2doorsbehind',
 		leftRoom: 'redrooma',
-		openFunc: function(){
+		openFunc: function() {
+			if (!roomVars.exists('guard1st'))
+				roomVars.set('guard1st', false);
+			if (!roomVars.exists('inviteAccepted'))
+				roomVars.set('inviteAccepted', false);
+
 			loadRoomSprite('guard', 'baseSpr', [430, 100], true, 'characters/ovalguard', [2.35, 2.35]);
 			var guard:FlxSprite;
 			guard = roomSprites['guard'];
 			guard.animation.addByPrefix('signdown', 'guardsignidle', 1, false);
-			guard.animation.addByPrefix('signmove', 'guardsignfling', 24, false);
+			guard.animation.addByPrefix('signmove', 'guardsignfling_', 24, false);
+			guard.animation.addByPrefix('signmoveBW', 'guardsignflingbackwards', 24, false);
 			guard.animation.addByPrefix('signup', 'guardsignhung', 1, false);
 			guard.animation.play('signdown');
 			guard.scale.set(0.75, 2.35);
 			guard.updateHitbox();
 			guard.scale.set(2.35, 2.35);
 			guard.origin.set(115, 290);
-			
+			HandyDandy.watch(guard);
+
+			new FlxTimer().start(roomTimeVar + 0.01, function(tmr:FlxTimer) {
+				// volumeBGM(0.25, 0.5);
+				if (roomVars['guard1st'] == false) {
+					canPressAnything = false;
+					playDialSound('agent_halt', false);
+					guard.animation.play('signmove');
+					startDialogue('agent_halt');
+					new FlxTimer().start(curSound.length / 1000, function(tmr:FlxTimer) {
+						roomVars.set('guard1st', true);
+					});
+				} else if (roomVars['inviteAccepted'] == true) {
+					canPressAnything = false;
+					FlxTween.tween(guard, {x: -145}, 0.45, {
+						ease: FlxEase.linear,
+						onComplete: function(twn:FlxTween) {
+							canPressAnything = true;
+						}
+					});
+				} else if (inventory.contains('invitation')) {
+					playDialSound('agent_hasinvite', false);
+					// TODO: dialogue
+				} else {
+					var rando:Int = FlxG.random.int(1, 5);
+					guard.animation.play('signmove');
+
+					playDialSound('agentran_' + rando, false);
+					startDialogue('agentran_' + rando);
+				}
+			});
+
+			updateRoomSprite.set('stairsoval', function(elapsed:Float) {
+				if (FlxG.mouse.overlaps(guard) && FlxG.mouse.justPressed && canPressAnything && roomVars['inviteAccepted'] == false) {
+					if (curItemSelected == 'invitation' && inventory.contains('invitation')) {
+						canPressAnything = false;
+						trace("WORKS");
+						guard.animation.play('signmoveBW');
+						roomVars.set('inviteAccepted', true);
+						itemLose('invitation');
+						FlxTween.tween(guard, {x: -145}, 0.45, {
+							ease: FlxEase.linear,
+							onComplete: function(twn:FlxTween) {
+								playDialSound('agent_escort', false);
+								// TODO: dialogue
+							}
+						});
+					} else
+						funnyTextThing('you need an invitation...', [520, 365], 0.75, 600, 45);
+				}
+			});
+
+			closeRoomFunc.set('stairsoval', function() {
+				guard.exists = false;
+			});
 		},
 	},
 	'redrooma' => {
@@ -276,9 +335,7 @@ public var dayRooms = [
 		openFunc: function() {
 			var poster:FlxSprite;
 			poster = loadPortrait('mckinleyposter', 'mckinleypainting', [510, 130], function() {
-				curSound.loadEmbedded(Paths.sound(soundPath + "/mckinley"));
-				curSound.play();
-				portraitTime = curSound.length / 1000;
+				playDialSound('mckinley', true);
 			}, null);
 			closeRoomFunc.set('mckinleyposter', function() {
 				poster.exists = false;
@@ -318,25 +375,21 @@ public var dayRooms = [
 				poster = loadPortrait('georgeposter', 'georgepainting', [425, -45], function() {
 					if (roomVars['georgeGone'] == false) {
 						if (!roomVars.exists('georgepressed')) {
-							curSound.loadEmbedded(Paths.sound(soundPath + "/georgepaintingv1"));
-							curSound.play();
+							playDialSound('georgepaintingv1', true);
 							startDialogue('george_intro');
 						} else if (roomVars['georgeClickCount'] >= 14) {
-							curSound.loadEmbedded(Paths.sound(soundPath + "/george50times"));
-							curSound.play();
+							playDialSound('george50times', true);
 							startDialogue('george_secret');
 							roomVars['georgeGone'] = true;
 							poster.visible = false;
-							new FlxTimer().start(11, function(tmr:FlxTimer) {
+							new FlxTimer().start(curSound.length / 1000, function(tmr:FlxTimer) {
 								unlockTAPE('eagnite', true, 5);
 							});
 						} else {
 							var rando = FlxG.random.int(1, 4);
-							curSound.loadEmbedded(Paths.sound(soundPath + "/georgepaintingv2_" + rando));
-							curSound.play();
+							playDialSound('georgepaintingv2_' + rando, true);
 							startDialogue('georgerando_' + rando);
 						}
-						portraitTime = curSound.length / 1000;
 					}
 				}, function() {
 					roomVars.set('georgepressed', true);
@@ -361,9 +414,7 @@ public var dayRooms = [
 			var poster:FlxSprite;
 			poster = loadPortrait('teddy', 'teddypainting', [360, 45], function() {
 				var rando = FlxG.random.int(1, 16);
-				curSound.loadEmbedded(Paths.sound(soundPath + "/teddy_" + rando));
-				curSound.play();
-				portraitTime = curSound.length / 1000;
+				playDialSound('teddy_' + rando, true);
 				startDialogue('teddy_' + rando);
 			}, null);
 
@@ -474,9 +525,7 @@ public var dayRooms = [
 			var poster:FlxSprite;
 			poster = loadPortrait('taft', 'taftpainting', [420, 200], function() {
 				if (roomVars['firstTimeTaft'] == true) {
-					curSound.loadEmbedded(Paths.sound(soundPath + '/taftgivemcdonald'));
-					curSound.play();
-					portraitTime = curSound.length / 1000;
+					playDialSound('taftgivemcdonald', true);
 					taftEvent.animation.play('giveMac');
 					taftEvent.animation.finishCallback = function() {
 						taftEvent.animation.play('default');
@@ -486,9 +535,8 @@ public var dayRooms = [
 						roomVars['firstTimeTaft'] = false;
 					});
 				} else {
-					curSound.loadEmbedded(Paths.sound(soundPath + '/taftrandom_' + FlxG.random.int(1, 3)));
-					curSound.play();
-					portraitTime = curSound.length / 1000;
+					var rando:Int = FlxG.random.int(1, 3);
+					playDialSound('taftrandom_' + rando, true);
 				}
 			}, null);
 			closeRoomFunc.set('bigbacktaft', function() {
@@ -554,9 +602,7 @@ public var dayRooms = [
 			var carter, johnson:FlxSprite;
 			carter = loadPortrait('carter', 'carterpainting', [-80, 175], function() {
 				var rando = FlxG.random.int(1, 7);
-				curSound.loadEmbedded(Paths.sound(soundPath + "/carterrandom_" + rando));
-				curSound.play();
-				portraitTime = curSound.length / 1000;
+				playDialSound('carterrandom_' + rando, true);
 				startDialogue('carter_' + rando);
 			}, null);
 			johnson = loadPortrait('johnson', 'johnsonpainting', [980, 110]);
@@ -591,8 +637,7 @@ public var dayRooms = [
 			if (!roomVars['jfkPSST']) {
 				new FlxTimer().start(roomTimeVar + 0.01, function(tmr:FlxTimer) {
 					canPressAnything = false;
-					curSound.loadEmbedded(Paths.sound(soundPath + "/jfkpsst"));
-					curSound.play();
+					playDialSound('jfkpsst', false);
 					startDialogue('jfk_psst');
 					volumeBGM(0.1, 0.5);
 					new FlxTimer().start(curSound.length / 1000, function(tmr:FlxTimer) {
@@ -640,8 +685,7 @@ public var dayRooms = [
 					if (curItemSelected == 'jellydonut' && inventory.contains('jellydonut')) {
 						toggleCanPress = false;
 						volumeBGM(0.25, 0.5);
-						curSound.loadEmbedded(Paths.sound(soundPath + "/jfkgetsshot"));
-						curSound.play();
+						playDialSound('jfkgetsshot', false, false);
 						startDialogue('jfk_shot');
 						portraitTime = 0.001;
 						canPressAnything = false;
@@ -656,6 +700,7 @@ public var dayRooms = [
 										jfkEvent.animation.play('shadowleave');
 										jfkEvent.animation.finishCallback = function() {
 											jfkEvent.animation.play('wound');
+											roomVars.set('jfkshot', true);
 											canPressAnything = true;
 											poster.visible = false;
 											volumeBGM(0.7, 1);
@@ -664,18 +709,13 @@ public var dayRooms = [
 								}
 							});
 						});
-						roomVars.set('jfkshot', true);
 					} else if (!roomVars['firstTimeJFK']) {
 						var rando = FlxG.random.int(1, 3);
-						curSound.loadEmbedded(Paths.sound(soundPath + "/jfkrando_" + rando));
+						playDialSound('jfkrando_' + rando, true);
 						startDialogue('jfkrando_' + rando);
-						curSound.play();
-						portraitTime = curSound.length / 1000;
 					} else {
-						curSound.loadEmbedded(Paths.sound(soundPath + "/jfkintrosegment"));
-						curSound.play();
+						playDialSound('jfkintrosegment', true);
 						startDialogue('jfk_intro');
-						portraitTime = curSound.length / 1000;
 						// new flxtimer, uses `portraitTime`, gives you note once completed (TODO)
 						new FlxTimer().start(portraitTime, function(jfk:FlxTimer) {
 							roomVars['firstTimeJFK'] = false;
@@ -794,6 +834,21 @@ public var dayRooms = [
 	'ovalofficepresidentspicture' => {downRoom: 'ovalofficeview1'},
 	'ovalofficebottomdoorclosed' => {upRoom: 'resolutedeskview'}
 ];
+
+public function playDialSound(soundFile:String, isPortrait:Bool, ?hasTimer:Null<Bool> = true) {
+	curSound.loadEmbedded(Paths.sound(soundPath + "/" + soundFile));
+	curSound.play();
+	if (isPortrait)
+		portraitTime = curSound.length / 1000;
+	if (hasTimer || hasTimer == null) {
+		canPressAnything = false;
+		volumeBGM(0.25, 0.5);
+		new FlxTimer().start(curSound.length / 1000, function(tmr:FlxTimer) {
+			canPressAnything = true;
+			volumeBGM(0.7, 1);
+		});
+	}
+}
 
 // load room objects
 public function loadRoomSprite(sprNAME:String, grp:String, pos:Array<Float>, animated:Bool, graphic:String, scale:Array<Float>) {

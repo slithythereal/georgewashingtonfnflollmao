@@ -19,7 +19,7 @@ function preStateSwitch()
 {
 	WindowUtils.resetTitle();
 	window.title = (FlxG.save.data.curCountry == 'brazil' ? "BEM-VINDO AO BRASIL!" : windowTitleCustom);
-    Main.framerateSprite.codenameBuildField.text = "Vs George Washington";
+    //Main.framerateSprite.codenameBuildField.text = "Vs George Washington 1.2";
 
     window.setIcon(Image.fromBytes(Assets.getBytes(Paths.image('GAMEICON')))); //sets game icon
     FlxG.camera.bgColor = 0xFF000000;

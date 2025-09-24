@@ -546,7 +546,7 @@ function loadData() {
 	arcadeLetterRead = FlxG.save.data.mailRead.contains('arcade');
 }
 
-class Star extends FlxSprite {
+class Star extends FlxSprite { //TO FIX
 	public var timer:Float = 1;
 
 	public var datween:FlxTween;
