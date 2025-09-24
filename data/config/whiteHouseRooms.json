@@ -1,0 +1,797 @@
+[
+    {
+        "roomName": "startroom",
+        "roomImage": "startroom",
+        "arrows": [
+            { "position": [590, 600], "direction": "down", "roomName": "startbehind", "stepSound": "shortStep" },
+            { "position": [75, 570], "direction": "left", "roomName": "1floorhallwaystart"}
+        ]
+	},
+	{
+        "roomName": "startbehind",
+        "roomImage": "startbehind",
+        "arrows": [
+            { "position": [590, 600], "direction": "down", "roomName": "startroom", "stepSound": "shortStep" },
+            { "position": [500, 575], "direction": "left", "roomName": "eastwinghallwayfront" }
+        ]
+    },
+
+	{
+        "roomName": "eastwinghallwayfront",
+        "roomImage": "eastwinghallwayfront",
+        "arrows": [
+            { "position": [590, 600], "direction": "down", "roomName": "eastwinghallwayback", "stepSound": "shortStep" },
+            { "position": [600, 550], "direction": "up", "roomName": "eastwingfarhallway" }
+        ]
+    },
+	{
+        "roomName": "eastwinghallwayback",
+        "roomImage": "eastwinghallwayback",
+        "arrows": [
+            { "position": [590, 600], "direction": "down", "roomName": "eastwinghallwayfront", "stepSound": "shortStep" },
+            { "position": [700, 575], "direction": "right", "roomName": "startroom" }
+        ]
+    },
+	{
+        "roomName":"eastwingfarhallway",
+        "roomImage": "eastwingfarhallway",
+        "arrows": [
+            { "position": [590, 600], "direction": "down", "roomName": "eastwingfarhallwayback", "stepSound": "shortStep" },
+            { "position": [700, 575], "direction": "right", "roomName": "eastwingdeadend1" }
+        ]
+    },
+	{
+        "roomName": "eastwingfarhallwayback",
+        "roomImage": "eastwingfarhallwayback",
+        "arrows": [
+            { "position": [590, 600], "direction": "down", "roomName": "eastwingfarhallway", "stepSound": "shortStep" },
+            { "position": [600, 550], "direction": "up", "roomName": "eastwinghallwayback" }
+        ]
+    },
+	{
+        "roomName": "eastwingdeadend1",
+        "roomImage": "eastwingdeadend1",
+        "arrows": [
+            { "position": [500, 575], "direction": "left", "roomName": "eastwingdeadend2", "stepSound": "shortStep" },
+            { "position": [600, 550], "direction": "up", "roomName": "eastwingfarhallwayback" }
+        ]
+    },
+	{
+        "roomName": "eastwingdeadend2",
+        "roomImage": "eastwingdeadend2",
+        "arrows": [
+            { "position": [590, 600], "direction": "down", "roomName": "eastwingdeadend1", "stepSound": "shortStep" }
+        ]
+    },
+
+	{
+        "roomName": "redroomaview",
+        "roomImage": "redroomaview",
+        "arrows": [
+            { "position": [590, 600], "direction": "down", "roomName": "redroomabehind"},
+            { "position": [500, 575], "direction": "left", "roomName": "redroomaportrait" }
+        ]
+    },
+	{
+        "roomName": "redroomabehind",
+        "roomImage": "redroomabehind",
+        "arrows": [
+            { "position": [590, 600], "direction": "down", "roomName": "redroomaview"},
+            { "position": [600, 550], "direction": "up", "roomName": "1floorstairs" }
+        ]
+    },
+	{
+        "roomName": "redroomaportrait",
+        "roomImage": "redroomaportrait",
+        "arrows": [
+            { "position": [500, 575], "direction": "left", "roomName": "redroomaview"}
+        ]
+    },
+
+	{
+        "roomName": "1floorhallwaystart",
+        "roomImage": "1floorhallwaystart",
+        "arrows": [
+            { "position": [590, 600], "direction": "down", "roomName": "1floorhallwaybehind", "stepSound": "shortStep" },
+            { "position": [600, 550], "direction": "up", "roomName": "1floor2doors" }
+        ]
+    },
+	{
+        "roomName": "1floorhallwaybehind",
+        "roomImage": "1floorhallwaybehind",
+        "arrows": [
+            { "position": [590, 600], "direction": "down", "roomName": "1floorhallwaystart", "stepSound": "shortStep" },
+            { "position": [600, 550], "direction": "up", "roomName": "startroom" }
+        ]
+    },
+	{
+        "roomName": "stairsoval",
+        "roomImage": "stairsoval",
+        "arrows": [
+            { "position": [700, 575], "direction": "right", "roomName": "1floorstairs" },
+            { "position": [590, 600], "direction": "down", "roomName": "1floor2doorsbehind" },
+            { "position": [500, 575], "direction": "left", "roomName": "redrooma" }
+        ]
+	},
+	{
+        "roomName": "redrooma" ,
+        "roomImage": "redrooma",
+        "arrows": [
+            { "position": [590, 600], "direction": "down", "roomName": "1floorstairs" },
+            { "position": [1100, 570], "direction": "right", "roomName": "stairsoval" },
+            { "position": [75, 570], "direction": "left", "roomName": "1floor2doorsbehind" },
+            { "position": [600, 550], "direction": "up", "roomName": "redroomaview" }
+        ]
+	},
+	{
+        "roomName": "1floor2doors",
+        "roomImage": "1floor2doors",
+        "arrows": [
+            { "position": [590, 600], "direction": "down", "roomName": "1floor2doorsbehind", "stepSound": "shortStep" },
+            { "position": [600, 550], "direction": "up", "roomName": "1floorstairs" },
+            { "position": [75, 570], "direction": "left", "roomName": "yellowroom" },
+            { "position": [1100, 570], "direction": "right", "roomName": "redroomb" }
+        ]
+	},
+	{
+        "roomName": "1floor2doorsbehind",
+        "roomImage": "1floor2doorsbehind",
+        "arrows": [
+            { "position": [590, 600], "direction": "down", "roomName": "1floor2doors", "stepSound": "shortStep" },
+            { "position": [600, 550], "direction": "up", "roomName": "1floorhallwaybehind" },
+            { "position": [75, 570], "direction": "left", "roomName": "redroomb" },
+            { "position": [1100, 570], "direction": "right", "roomName": "yellowroom" }
+        ]
+	},
+	{
+        "roomName": "1floorstairs",
+        "roomImage": "1floorstairs",
+        "arrows": [
+            { "position": [1100, 590], "direction": "right", "roomName": "1floor2doorsbehind" },
+            { "position": [670, 420], "direction": "up", "roomName": "2floorstairs" },
+            { "position": [75, 590], "direction": "left", "roomName": "stairsoval" },
+            { "position": [590, 600], "direction": "down", "roomName": "redrooma"}
+        ]
+	},
+
+	{
+        "roomName": "yellowroom",
+        "roomImage": "yellowroom",
+        "arrows": [
+            { "position": [855, 585], "direction": "right", "roomName": "yellowroompainting" },
+            { "position": [600, 550], "direction": "up", "roomName": "yellowroomcouch" },
+            { "position": [590, 600], "direction": "down", "roomName": "yellowroombehind", "stepSound": "shortStep" }
+        ]
+	},
+	{
+        "roomName": "yellowroomcouch",
+        "roomImage": "yellowroomcouch",
+        "arrows": [
+            { "position": [700, 575], "direction": "right", "roomName": "yellowroompainting" },
+            { "position": [590, 600], "direction": "down", "roomName": "yellowroom"}
+        ]
+    },
+	{
+        "roomName": "yellowroompainting",
+        "roomImage": "yellowroompainting",
+        "arrows": [
+            { "position": [700, 575], "direction": "right", "roomName": "yellowroom" },
+            { "position": [500, 575], "direction": "left", "roomName": "yellowroomcouch" }
+        ]
+	},
+	{
+        "roomName": "yellowroombehind",
+        "roomImage": "yellowroombehind",
+        "arrows": [
+            { "position": [600, 550], "direction": "up", "roomName": "1floor2doors" },
+            { "position": [590, 600], "direction": "down", "roomName": "yellowroom"}
+        ]
+    },
+
+	{
+        "roomName": "redroomb",
+        "roomImage": "redroomb",
+        "arrows": [
+            { "position": [700, 575], "direction": "right", "roomName": "redroomblibrary" },
+            { "position": [590, 600], "direction": "down", "roomName": "redroombbehind"}
+        ]
+    },
+	{
+        "roomName": "redroombbehind",
+        "roomImage": "redroombbehind",
+        "arrows": [
+            { "position": [600, 550], "direction": "up", "roomName": "1floor2doors" },
+            { "position": [500, 575], "direction": "left", "roomName": "redroomblibrary" },
+            { "position": [590, 600], "direction": "down", "roomName": "redroomb"}
+        ]
+    },
+	{
+        "roomName": "redroomblibrary",
+        "roomImage": "redroomblibrary",
+        "arrows": [
+            { "position": [700, 575], "direction": "right", "roomName": "redroomb" }
+        ]
+    },
+
+	{
+        "roomName": "2floorstairs",
+        "roomImage": "2floorstairs",
+        "arrows": [
+            { "position": [700, 575], "direction": "right", "roomName": "pianofromstairsview" },
+            { "position": [600, 550], "direction": "up", "roomName": "1floorstairs" },
+            { "position": [500, 575], "direction": "left", "roomName": "bigroomview1" }
+        ]
+    },
+
+	{
+        "roomName": "bigroomview1",
+        "roomImage": "bigroomview1",
+		"curSection": "eastroom",
+        "arrows": [
+            { "position": [700, 570], "direction": "right", "roomName": "bigroomview2", "angle": -40 },
+            { "position": [600, 550], "direction": "up", "roomName": "" },
+            { "position": [500, 575], "direction": "left", "roomName": "mckinleyposter", "angle": 17.5 },
+            { "position": [590, 600], "direction": "down", "roomName": "bigroomview1behind"}
+        ]
+	},
+	{
+        "roomName": "bigroomview1behind",
+        "roomImage": "bigroomview1behind",
+		"curSection": "eastroom",
+        "arrows": [
+            { "position": [845, 615], "direction": "right", "roomName": "mckinleyposter", "angle": 25 },
+            { "position": [600, 550], "direction": "up", "roomName": "2floorstairs" },
+            { "position": [325, 615], "direction": "left", "roomName": "hallwaydoor", "angle": -25 },
+            { "position": [590, 600], "direction": "down", "roomName": "bigroomview1"}
+        ]
+	},
+	{
+        "roomName": "mckinleyposter",
+        "roomImage": "mckinleyposter",
+		"curSection": "eastroom",
+        "arrows": [
+            { "position": [1100, 570], "direction": "right", "roomName": "marthaposter" },
+            { "position": [590, 600], "direction": "down", "roomName": "bigroomview1"}
+        ]
+	},
+	{
+        "roomName": "marthaposter",
+        "roomImage": "marthaposter",
+        "arrows": [
+            { "position": [1100, 570], "direction": "right", "roomName": "georgeposter" },
+            { "position": [75, 570], "direction": "left", "roomName": "mckinleyposter" },
+            { "position": [590, 600], "direction": "down", "roomName": "right2doors"}
+        ]
+	},
+	{
+        "roomName": "georgeposter",
+        "roomImage": "georgeposter",
+		"curSection": "eastroom",
+        "arrows": [
+            { "position": [1100, 570], "direction": "right", "roomName": "teddyposter" },
+            { "position": [75, 570], "direction": "left", "roomName": "marthaposter" },
+            { "position": [590, 600], "direction": "down", "roomName": "left2doors"}
+        ]
+	},
+	{
+        "roomName": "teddyposter",
+        "roomImage": "teddyposter",
+		"curSection": "eastroom",
+        "arrows": [
+            { "position": [325, 615], "direction": "left", "roomName": "georgeposter", "angle": -25},
+            { "position": [590, 600], "direction": "down", "roomName": "left2doors"}
+        ]
+	},
+	{
+        "roomName": "bigroomview2",
+        "roomImage": "bigroomview2",
+		"curSection": "eastroom",
+        "arrows": [
+            { "position": [1100, 570], "direction": "right", "roomName": "hallwaydoor" },
+            { "position": [600, 550], "direction": "up", "roomName": "left2doors" },
+            { "position": [75, 570], "direction": "left", "roomName": "marthaposter" },
+            { "position": [590, 600], "direction": "down", "roomName": "bigroomview1behind"}
+        ]
+	},
+	{
+        "roomName": "left2doors",
+        "roomImage": "left2doors",
+		"curSection": "eastroom",
+        "arrows": [
+            { "position": [1000, 575], "direction": "right", "roomName": "hallwaydoor", "angle": -40 },
+            { "position": [600, 550], "direction": "up", "roomName": "greenroomdoor" },
+            { "position": [120, 575], "direction": "left", "roomName": "teddyposter", "angle": -25 },
+            { "position": [590, 600], "direction": "down", "roomName": "georgeposter"}
+        ]
+	},
+	{
+        "roomName": "hallwaydoor",
+        "roomImage": "hallwaydoor",
+		"curSection": "eastroom",
+        "arrows": [
+            { "position": [1100, 570], "direction": "right", "roomName": "bigroomview1behind" },
+            { "position": [600, 550], "direction": "up", "roomName": "hallway" },
+            { "position": [75, 570], "direction": "left", "roomName": "greenroomdoor" },
+            { "position": [590, 600], "direction": "down", "roomName": "bigroomview3"}
+        ]
+	},
+	{
+        "roomName": "bigroomview3",
+        "roomImage": "bigroomview3",
+		"curSection": "eastroom",
+        "arrows": [
+            { "position": [320, 575], "direction": "left", "roomName": "right2doors", "angle": -17.5 },
+            { "position": [590, 600], "direction": "down", "roomName": "hallwaydoor"},
+            { "position": [700, 575], "direction": "right", "roomName": "left2doors", "angle": 17.5 }
+        ]
+	},
+	{
+        "roomName": "right2doors",
+        "roomImage": "right2doors",
+		"curSection": "eastroom",
+        "arrows": [
+            { "position": [75, 575], "direction": "left", "roomName": "hallwaydoor", "angle": -10 },
+            { "position": [590, 600], "direction": "down", "roomName": "marthaposter"},
+            { "position": [600, 550], "direction": "up", "roomName": "bigroomview1behind" },
+            { "position": [1100, 565], "direction": "right", "roomName": "mckinleyposter", "angle": -15 }
+        ]
+	},
+	{
+        "roomName": "greenroomdoor",
+        "roomImage": "greenroomdoor",
+		"curSection": "eastroom",
+        "arrows": [
+            { "position": [590, 600], "direction": "down", "roomName": "left2doors"},
+            { "position": [600, 550], "direction": "up", "roomName": "greenroom" },
+            { "position": [1100, 570], "direction": "right", "roomName": "hallwaydoor" }
+        ]
+	},
+
+	{
+        "roomName": "greenroom",
+        "roomImage": "greenroom",
+        "arrows": [
+            { "position": [1100, 575], "direction": "left", "roomName": "greenroombehind3", "angle": -250 },
+            { "position": [590, 600], "direction": "down", "roomName": "greenroombehind", "angle": 17.5},
+            { "position": [615, 550], "direction": "up", "roomName": "greenroompainting", "angle": 17.5 },
+            { "position": [1100, 650], "direction": "right", "roomName": "greenroombehind2", "angle": 45 }
+        ]
+	},
+	{
+        "roomName": "greenroombehind",
+        "roomImage": "greenroombehind",
+        "arrows": [
+            { "position": [590, 600], "direction": "down", "roomName": "greenroom"},
+            { "position": [600, 550], "direction": "up", "roomName": "left2doors" }
+        ]
+    },
+	{ 
+        "roomName": "greenroombehind2",
+        "roomImage": "greenroombehind2",
+        "arrows": [
+            { "position": [590, 600], "direction": "down", "roomName": "greenroom"},
+            { "position": [600, 550], "direction": "up", "roomName": "hallway" }
+        ]
+    },
+	{
+        "roomName": "greenroompainting",
+        "roomImage": "greenroompainting",
+        "arrows": [
+            { "position": [590, 600], "direction": "down", "roomName": "greenroom"},
+            { "position": [1100, 570], "direction": "right", "roomName": "greenroombehind3" }
+        ]
+	},
+	{
+        "roomName": "greenroombehind3",
+        "roomImage": "greenroombehind3",
+        "arrows": [
+            { "position": [75, 570], "direction": "left", "roomName": "greenroompainting" },
+            { "position": [590, 600], "direction": "down", "roomName": "greenroom"},
+            { "position": [600, 550], "direction": "up", "roomName": "ovalviewleft" }
+        ]
+	},
+
+	{
+        "roomName": "bigbacktaft",
+        "roomImage": "bigbacktaft",
+        "arrows": [
+            { "position": [590, 600], "direction": "down", "roomName": "ovalroombehind"}
+        ]
+	},
+	{
+        "roomName": "johnadams",
+        "roomImage": "johnadams",
+        "arrows": [
+            { "position": [500, 575], "direction": "left", "roomName": "ovalroomwindow" },
+            { "position": [700, 575], "direction": "right", "roomName": "redovalroom" }
+        ]
+    },
+	{
+        "roomName": "ovalroomwindow",
+        "roomImage": "ovalroomwindow",
+        "arrows": [
+            { "position": [500, 575], "direction": "left", "roomName": "greenovalroom" },
+            { "position": [590, 600], "direction": "down", "roomName": "ovalbackview"},
+            { "position": [700, 575], "direction": "right", "roomName": "johnadams" }
+        ]
+	},
+	{
+        "roomName": "ovalroombehind",
+        "roomImage": "ovalroombehind",
+        "arrows": [
+            { "position": [590, 600], "direction": "down", "roomName": "ovalroom"},
+            { "position": [600, 550], "direction": "up", "roomName": "hallwaymid" }
+        ]
+    },
+	{
+        "roomName": "redovalroom",
+        "roomImage": "redovalroom",
+        "arrows": [
+            { "position": [500, 575], "direction": "left", "roomName": "johnadams" },
+            { "position": [590, 600], "direction": "down", "roomName": "ovalviewright"},
+            { "position": [600, 550], "direction": "up", "roomName": "redroomc" }
+        ]},
+	{
+        "roomName": "ovalroom",
+        "roomImage": "ovalroom",
+        "arrows": [
+            { "position": [500, 575], "direction": "left", "roomName": "ovalviewleft" },
+            { "position": [590, 600], "direction": "down", "roomName": "ovalroombehind"},
+            { "position": [600, 550], "direction": "up", "roomName": "ovalroomwindow" },
+            { "position": [700, 575], "direction": "right", "roomName": "ovalviewright" }
+        ]
+	},
+	{
+        "roomName": "greenovalroom",
+        "roomImage": "greenovalroom",
+        "arrows": [
+            { "position": [590, 600], "direction": "down", "roomName": "ovalviewleft"},
+            { "position": [600, 550], "direction": "up", "roomName": "greenroom" },
+            { "position": [700, 575], "direction": "right", "roomName": "ovalroomwindow" }
+        ]
+    },
+	{
+        "roomName": "ovalbackview",
+        "roomImage": "ovalbackview",
+        "arrows": [
+            { "position": [590, 600], "direction": "down", "roomName": "ovalroomwindow"},
+            { "position": [600, 550], "direction": "up", "roomName": "ovalroombehind" }
+        ]},
+	{
+        "roomName": "ovalviewleft",
+        "roomImage": "ovalviewleft",
+        "arrows": [
+            { "position": [500, 575], "direction": "left", "roomName": "greenovalroom" },
+            { "position": [590, 600], "direction": "down", "roomName": "ovalroombehind"},
+            { "position": [600, 550], "direction": "up", "roomName": "ovalroomwindow" },
+            { "position": [700, 575], "direction": "right", "roomName": "ovalroom" }
+        ]
+	},
+	{
+        "roomName": "ovalviewright",
+        "roomImage": "ovalviewright",
+        "arrows": [
+            { "position": [500, 575], "direction": "left", "roomName": "ovalroom" },
+            { "position": [590, 600], "direction": "down", "roomName": "ovalroombehind"},
+            { "position": [600, 550], "direction": "up", "roomName": "ovalroomwindow" },
+            { "position": [700, 575], "direction": "right", "roomName": "redovalroom" }
+        ]
+	},
+
+	{
+        "roomName": "redroomc",
+        "roomImage": "redroomc",
+        "arrows": [
+            { "position": [590, 600], "direction": "down", "roomName": "redroomcbehind"},
+            { "position": [600, 550], "direction": "up", "roomName": "beautifulahhpainting" },
+            { "position": [1000, 575], "direction": "right", "roomName": "reddining", "angle": -25 }
+        ]
+	},
+	{
+        "roomName": "redroomcbehind",
+        "roomImage": "redroomcbehind",
+        "arrows": [
+            { "position": [590, 600], "direction": "down", "roomName": "redroomc"},
+            { "position": [600, 550], "direction": "up", "roomName": "ovalviewright" }
+        ]
+    },
+	{
+        "roomName": "beautifulahhpainting",
+        "roomImage": "beautifulahhpainting",
+        "arrows": [
+            { "position": [590, 600], "direction": "down", "roomName": "redroomc" }
+        ]
+    },
+	{
+        "roomName": "reddining",
+        "roomImage": "reddining",
+        "arrows": [
+            { "position": [590, 600], "direction": "down", "roomName": "redroomcview" },
+            { "position": [600, 550], "direction": "up", "roomName": "diningviewfront" }
+        ]
+    },
+	{
+        "roomName": "redroomcview",
+        "roomImage": "redroomcview",
+        "arrows": [
+            { "position": [590, 600], "direction": "down", "roomName": "redroomcview" },
+            { "position": [600, 550], "direction": "up", "roomName": "redroomcbehind" }
+        ]
+    },
+
+	{
+        "roomName": "ovalroomdoor",
+        "roomImage": "ovalroomdoor",
+        "arrows": [
+            { "position": [590, 600], "direction": "down", "roomName": "hallwaymid"},
+            { "position": [600, 550], "direction": "up", "roomName": "ovalroom" }
+        ]
+    },
+	{
+        "roomName": "hallway",
+        "roomImage": "hallway",
+        "arrows": [
+            { "position": [500, 575], "direction": "left", "roomName": "greenroomdoor2" },
+            { "position": [590, 600], "direction": "down", "roomName": "hallwaybehind"},
+            { "position": [600, 550], "direction": "up", "roomName": "hallwaymid" },
+            { "position": [700, 575], "direction": "right", "roomName": "carterjohnson" }
+        ]
+	},
+	{
+        "roomName": "greenroomdoor2",
+        "roomImage": "greenroomdoor2",
+        "arrows": [
+            { "position": [590, 600], "direction": "down", "roomName": "hallway"},
+            { "position": [600, 550], "direction": "up", "roomName": "greenroom" }
+        ]
+    },
+	{
+        "roomName": "hallwaybehind",
+        "roomImage": "hallwaybehind",
+        "arrows": [
+            { "position": [590, 600], "direction": "down", "roomName": "hallway" },
+            { "position": [600, 550], "direction": "up", "roomName": "bigroomview3" }
+        ]
+    },
+	{
+        "roomName": "carterjohnson",
+        "roomImage": "carterjohnson",
+        "arrows": [
+            { "position": [590, 600], "direction": "down", "roomName": "hallway"}
+        ]
+	},
+	{
+        "roomName": "hallwaymid",
+        "roomImage": "hallwaymid",
+        "arrows": [
+            { "position": [500, 575], "direction": "left", "roomName": "ovalroomdoor" },
+            { "position": [590, 600], "direction": "down", "roomName": "hallwaymidbehind"},
+            { "position": [600, 550], "direction": "up", "roomName": "hallwayend" },
+            { "position": [700, 575], "direction": "right", "roomName": "pianoarea" }
+        ]
+	},
+	{
+        "roomName": "hallwaymidbehind",
+        "roomImage": "hallwaymidbehind",
+        "arrows": [
+            { "position": [500, 575], "direction": "left", "roomName": "carterjohnson" },
+            { "position": [590, 600], "direction": "down", "roomName": "hallwaymid" },
+            { "position": [600, 550], "direction": "up", "roomName": "hallwaybehind" },
+            { "position": [700, 575], "direction": "right", "roomName": "greenroomdoor2" }
+        ]
+	},
+	{
+        "roomName": "hallwayend",
+        "roomImage": "hallwayend",
+        "arrows": [
+            { "position": [500, 575], "direction": "left", "roomName": "sentientpicofjfk" },
+            { "position": [590, 600], "direction": "down", "roomName": "hallwayendbehind"},
+            { "position": [600, 550], "direction": "up", "roomName": "diningroom" },
+            { "position": [700, 575], "direction": "right", "roomName": "ronaldreagan" }
+        ]
+	},
+	{
+        "roomName": "hallwayendbehind",
+        "roomImage": "hallwayendbehind",
+        "arrows": [
+            { "position": [500, 575], "direction": "left", "roomName": "pianoarea" },
+            { "position": [590, 600], "direction": "down", "roomName": "hallwayend"},
+            { "position": [600, 550], "direction": "up", "roomName": "hallwaymidbehind" }
+        ]
+	},
+	{
+        "roomName": "sentientpicofjfk",
+        "roomImage": "sentientpicofjfk",
+        "arrows": [
+            { "position": [590, 600], "direction": "down", "roomName": "hallwayend"}
+        ]
+	},
+	{
+        "roomName": "ronaldreagan",
+        "roomImage": "ronaldreagan",
+        "arrows": [
+            { "position": [590, 600], "direction": "down", "roomName": "hallwayend"}
+        ]
+	},
+
+	{
+        "roomName": "diningroom",
+        "roomImage": "diningroom",
+        "arrows": [
+            { "position": [500, 575], "direction": "left", "roomName": "diningviewfront" },
+            { "position": [590, 600], "direction": "down", "roomName": "diningroombehind"},
+            { "position": [600, 550], "direction": "up", "roomName": "diningviewright" }
+        ]
+    },
+	{
+        "roomName": "diningroombehind",
+        "roomImage": "diningroombehind",
+        "arrows": [
+            { "position": [500, 575], "direction": "left", "roomName": "diningviewright" },
+            { "position": [590, 600], "direction": "down", "roomName": "diningroom" },
+            { "position": [600, 550], "direction": "up", "roomName": "hallwayendbehind" },
+            { "position": [700, 575], "direction": "right", "roomName": "diningredroom" }
+        ]
+	},
+	{
+        "roomName": "diningredroom",
+        "roomImage": "diningredroom",
+        "arrows": [
+            { "position": [500, 575], "direction": "left", "roomName": "diningroombehind" },
+            { "position": [590, 600], "direction": "down", "roomName": "diningviewfront"},
+            { "position": [600, 550], "direction": "up", "roomName": "redroomcview" },
+            { "position": [700, 575], "direction": "right", "roomName": "diningviewleft" }
+        ]
+	},
+	{
+        "roomName": "diningviewfront",
+        "roomImage": "diningviewfront",
+        "arrows": [
+            { "position": [500, 575], "direction": "left", "roomName": "diningviewleft" },
+            { "position": [590, 600], "direction": "down", "roomName": "diningredroom" },
+            { "position": [700, 575], "direction": "right", "roomName": "diningroom" }
+        ]},
+	{
+        "roomName": "diningviewleft",
+        "roomImage": "diningviewleft",
+        "arrows": [
+            { "position": [250, 575], "direction": "left", "roomName": "diningviewbehind", "angle": 5 },
+            { "position": [950, 575], "direction": "right", "roomName": "diningviewfront", "angle": -5 }
+        ]
+	},
+	{
+        "roomName": "diningviewright",
+        "roomImage": "diningviewright",
+        "arrows": [
+            { "position": [250, 575], "direction": "left", "roomName": "diningroom", "angle": 5 },
+            { "position": [590, 600], "direction": "down", "roomName": "mysteryroom"},
+            { "position": [950, 575], "direction": "right", "roomName": "diningviewbehind", "angle": -5 }
+        ]
+	},
+	{
+        "roomName": "diningviewbehind",
+        "roomImage": "diningviewbehind",
+        "arrows": [
+            { "position": [500, 575], "direction": "left", "roomName": "diningviewright" },
+            { "position": [590, 600], "direction": "down", "roomName": "abelincoln"},
+            { "position": [700, 575], "direction": "right", "roomName": "diningviewleft" }
+        ]
+    },
+	{
+        "roomName": "abelincoln",
+        "roomImage": "abelincoln",
+        "arrows": [
+            { "position": [590, 600], "direction": "down", "roomName": "diningviewbehind"}
+        ]
+    },
+	{
+        "roomName": "mysteryroom",
+        "roomImage": "mysteryroom",
+        "arrows": [
+            { "position": [590, 600], "direction": "down", "roomName": "diningviewright"}
+        ]
+    },
+
+	{
+        "roomName": "pianoarea",
+        "roomImage": "pianoarea",
+        "arrows": [
+            { "position": [75, 570], "direction": "left", "roomName": "bush" },
+            { "position": [590, 600], "direction": "down", "roomName": "pianoareabehind" },
+            { "position": [600, 550], "direction": "up", "roomName": "pianoareainview" },
+            { "position": [1100, 570], "direction": "right", "roomName": "billpiano" }
+        ]
+	},
+	{
+        "roomName": "pianoareabehind",
+        "roomImage": "pianoareabehind",
+        "arrows": [
+            { "position": [75, 570], "direction": "left", "roomName": "billpiano" },
+            { "position": [590, 600], "direction": "down", "roomName": "pianoarea" },
+            { "position": [600, 550], "direction": "up", "roomName": "hallwaymid" },
+            { "position": [1100, 570], "direction": "right", "roomName": "bush" }
+        ]
+	},
+	{
+        "roomName": "pianoareainview",
+        "roomImage": "pianoareainview",
+        "arrows": [
+            { "position": [75, 570], "direction": "left", "roomName": "pianotostairs" },
+            { "position": [590, 600], "direction": "down", "roomName": "pianoareabehind" },
+            { "position": [1100, 570], "direction": "right", "roomName": "bush" }
+        ]
+	},
+	{
+        "roomName": "pianotostairs",
+        "roomImage": "pianotostairs",
+        "arrows": [
+            { "position": [590, 600], "direction": "down", "roomName": "pianofromstairsview" },
+            { "position": [600, 550], "direction": "up", "roomName": "2floorstairs" },
+            { "position": [850, 585], "direction": "right", "roomName": "billpiano", "angle": 15 }
+        ]
+	},
+	{
+        "roomName": "pianofromstairsview",
+        "roomImage": "pianofromstairsview",
+        "arrows": [
+            { "position": [175, 570], "direction": "left", "roomName": "billpiano" },
+            { "position": [590, 675], "direction": "down", "roomName": "pianotostairs" },
+            { "position": [600, 450], "direction": "up", "roomName": "pianoareabehind", "angle": -50 },
+            { "position": [1150, 570], "direction": "right", "roomName": "pianoareainview" }
+        ]
+	},
+	{
+        "roomName": "billpiano",
+        "roomImage": "billpiano",
+        "arrows": [
+            { "position": [500, 575], "direction": "left", "roomName": "pianotostairs", "angle": -25 },
+            { "position": [590, 600], "direction": "down", "roomName": "pianoarea" }
+        ]
+    },
+	{
+        "roomName": "bush",
+        "roomImage": "bush",
+        "arrows": [
+            { "position": [590, 600], "direction": "down", "roomName": "pianoarea"},
+            { "position": [850, 575], "direction": "right", "roomName": "pianoareainview", "angle": 25 }
+        ]
+	},
+
+	{
+        "roomName": "ovalofficeview1",
+        "roomImage": "ovalofficeview1",
+        "arrows": [
+            { "position": [590, 600], "direction": "down", "roomName": "ovalofficepresidentspicture"},
+            { "position": [600, 550], "direction": "up", "roomName": "resolutedeskview" }
+        ]
+    },
+	{
+        "roomName": "resolutedeskview",
+        "roomImage": "resolutedeskview",
+        "arrows": [
+            { "position": [590, 600], "direction": "down", "roomName": "ovalofficebottomdoorclosed"},
+            { "position": [600, 550], "direction": "up", "roomName": "ovalofficedesk" }
+        ]
+    },
+	{
+        "roomName": "ovalofficedesk",
+        "roomImage": "ovalofficedesk",
+        "arrows": [
+            { "position": [600, 550], "direction": "up", "roomName": "ovalofficepresidentspicture" }
+        ]
+    },
+	{
+        "roomName": "ovalofficepresidentspicture",
+        "roomImage": "ovalofficepresidentspicture",
+        "arrows": [
+            { "position": [590, 600], "direction": "down", "roomName": "ovalofficeview1"}
+        ]
+    },
+	{
+        "roomName": "ovalofficebottomdoorclosed",
+        "roomImage": "ovalofficebottomdoorclosed",
+        "arrows": [
+            { "position": [600, 550], "direction": "up", "roomName": "resolutedeskview" }
+        ]
+    }
+]

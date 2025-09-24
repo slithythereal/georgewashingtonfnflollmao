@@ -5,7 +5,7 @@ importScript("data/scripts/HandyDandyFunctions");
 // main data
 public var isNight:Bool = false;
 public var curRoom:String = "startroom";
-public var startRoom:String = 'stairsoval'; // startroom
+public var startRoom:String = 'startroom'; // startroom
 public var pauseFunctions:Array<Void->Bool> = [];
 public var roomTimeVar:Float = 0.25;
 public var shortStep:String = 'fnaf4runsoundshort';
@@ -132,7 +132,9 @@ public var dayRooms = [
 			guard.updateHitbox();
 			guard.scale.set(2.35, 2.35);
 			guard.origin.set(115, 290);
-			
+			closeRoomFunc.set('stairsoval', function() {
+				guard.exists = false;
+			});
 		},
 	},
 	'redrooma' => {
