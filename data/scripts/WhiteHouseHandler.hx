@@ -137,61 +137,6 @@ public var dayRooms = [
 			guard.updateHitbox();
 			guard.scale.set(2.35, 2.35);
 			guard.origin.set(115, 290);
-<<<<<<< HEAD
-=======
-			HandyDandy.watch(guard);
-
-			new FlxTimer().start(roomTimeVar + 0.01, function(tmr:FlxTimer) {
-				// volumeBGM(0.25, 0.5);
-				if (roomVars['guard1st'] == false) {
-					canPressAnything = false;
-					playDialSound('agent_halt', false);
-					guard.animation.play('signmove');
-					startDialogue('agent_halt');
-					new FlxTimer().start(curSound.length / 1000, function(tmr:FlxTimer) {
-						roomVars.set('guard1st', true);
-					});
-				} else if (roomVars['inviteAccepted'] == true) {
-					canPressAnything = false;
-					FlxTween.tween(guard, {x: -145}, 0.45, {
-						ease: FlxEase.linear,
-						onComplete: function(twn:FlxTween) {
-							canPressAnything = true;
-						}
-					});
-				} else if (inventory.contains('invitation')) {
-					playDialSound('agent_hasinvite', false);
-					// TODO: dialogue
-				} else {
-					var rando:Int = FlxG.random.int(1, 5);
-					guard.animation.play('signmove');
-
-					playDialSound('agentran_' + rando, false);
-					startDialogue('agentran_' + rando);
-				}
-			});
-
-			updateRoomSprite.set('stairsoval', function(elapsed:Float) {
-				if (FlxG.mouse.overlaps(guard) && FlxG.mouse.justPressed && canPressAnything && roomVars['inviteAccepted'] == false) {
-					if (curItemSelected == 'invitation' && inventory.contains('invitation')) {
-						canPressAnything = false;
-						trace("WORKS");
-						guard.animation.play('signmoveBW');
-						roomVars.set('inviteAccepted', true);
-						itemLose('invitation');
-						FlxTween.tween(guard, {x: -145}, 0.45, {
-							ease: FlxEase.linear,
-							onComplete: function(twn:FlxTween) {
-								playDialSound('agent_escort', false);
-								// TODO: dialogue
-							}
-						});
-					} else
-						funnyTextThing('you need an invitation...', [520, 365], 0.75, 600, 45);
-				}
-			});
-
->>>>>>> 8efc5f6d3d1afb7ae462da4cf843c4eed7da30df
 			closeRoomFunc.set('stairsoval', function() {
 				guard.exists = false;
 			});

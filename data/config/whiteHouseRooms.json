@@ -5,7 +5,16 @@
         "arrows": [
             { "position": [590, 600], "direction": "down", "roomName": "startbehind", "stepSound": "shortStep" },
             { "position": [75, 570], "direction": "left", "roomName": "1floorhallwaystart"}
-        ]
+        ],
+        "objs": [
+            {
+                "name": "clickableDoor", "position": [445, 230], "image": "leavedoor", "scale": 2.35, "updateHitbox": true, "animations": [
+                    { "name": "anim", "prefix":"doorstuff" },
+                    { "name": "closed", "prefix":"doorclosed", "forced": true }
+                ]
+            }
+        ],
+        "customData": { "initialized": false }
 	},
 	{
         "roomName": "startbehind",
@@ -148,10 +157,20 @@
         "roomImage": "1floorstairs",
         "arrows": [
             { "position": [1100, 590], "direction": "right", "roomName": "1floor2doorsbehind" },
-            { "position": [670, 420], "direction": "up", "roomName": "2floorstairs" },
+            { "position": [670, 420], "direction": "up", "roomName": "2floorstairs", "id": "gate" },
             { "position": [75, 590], "direction": "left", "roomName": "stairsoval" },
             { "position": [590, 600], "direction": "down", "roomName": "redrooma"}
-        ]
+        ],
+        "objs": [
+            {
+                "name": "gate", "position": [120, 183], "image": "bottomgatedoor", "scale": 2.35, "updateHitbox": true, "animations": [
+                    { "name": "doorup", "prefix":"doorup" },
+                    { "name": "doorlift", "prefix":"doorlift" },
+                    { "name": "doordown", "prefix":"doordown", "forced": true }
+                ]
+            }
+        ],
+        "customData": { "openedGate": false }
 	},
 
 	{
