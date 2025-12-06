@@ -9,7 +9,7 @@ var credits:Array<{name:String, link:String, desc:String}> = [
 	{name: 'mrmorian', link: 'https://mrmorian.newgrounds.com/', desc: 'codirector\nanimation\nart\ncoding\ncodirector stuff'},
 	{name: 'macyeah', link: 'https://www.youtube.com/@macyeahh', desc: 'codirector\nmusic guy\nMost songs\ncodirector stuff'},
 	{name: 'punmaster', link: 'https://twitter.com/PunMasterOff', desc: 'music guy\nEag man'},
-	{name: "micahstuff", link: "", desc: "music guy\nGrimace"},
+	{name: "micahstuff", link: "https://www.youtube.com/@MichDumpster", desc: "music guy\nGrimace"},
 	{name: "kaeganreal", link: "https://www.youtube.com/@kk-gaming-gaming-forever", desc: "music guy\nDementia"},
 	{name: 'capitnparrot', link: 'https://www.youtube.com/channel/UC08fJSpXa97QeISAYoYftgg', desc: 'moral support\njust the GOAT all around'},
 ];

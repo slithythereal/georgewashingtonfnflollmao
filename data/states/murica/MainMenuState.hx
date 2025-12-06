@@ -38,7 +38,7 @@ function create() {
 	add(bg);
 
 	playIcon = new FlxSprite();
-	playIcon.loadGraphic(Paths.image('menus/mainmenu/playicons/icon_' + options[curSelected]));
+	playIcon.loadGraphic(Paths.image('menus/mainmenu/playIcons/icon_' + options[curSelected]));
 	add(playIcon);
 	playIcon.visible = false;
 
@@ -133,10 +133,6 @@ function update(elapsed:Float) {
 
 		if (controls.ACCEPT)
 			transitionState(options[curSelected]);
-
-		// TO REMOVE
-		if (FlxG.keys.justPressed.NINE)
-			FlxG.switchState(new ModState("murica/DebugSongSelectorState"));
 
 		// eagle
 		if (eagleON) {
@@ -341,6 +337,12 @@ function loadData() {
 	FlxG.console.registerFunction('giveMail', function(mail:String) {
 		MailUtil.newSingleMail(mail);
 	});
+
+	for (i => mail in allMail) { // FOR CANCELLED BUILD
+		if (!FlxG.save.data.mailRead.contains(mail)) {
+			HandyDandy.saveMailData(mail, allMailEver[mail].letterID, false, allMailEver[mail].desc);
+		}
+	}
 }
 
 // eagle

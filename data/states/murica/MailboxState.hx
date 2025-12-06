@@ -37,7 +37,6 @@ function loadData() {
 		if (existingMailArray.contains(mail))
 			mailArray.push(mail);
 	trace(mailArray);
-	// trace(mailInventory);
 }
 
 function create() {

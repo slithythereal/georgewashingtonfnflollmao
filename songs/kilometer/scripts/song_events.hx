@@ -93,6 +93,17 @@ function onSongEnd() {
 			FlxG.save.data.mailUnlocked = true;
 		FlxG.save.flush();
 		HandyDandy.saveMailData("potus", "eag", false, "Letter from George Washington");
+
+		//ADDS SONGS (CANCEL BUILD)
+		for(i => song in ['dementia', 'merry-christmas', 'grimace', 'jelly-donut', 'eagnite'])
+		{
+			if(!FlxG.save.data.songsUnlockedGW.contains(song))
+			{
+				FlxG.save.data.songsUnlockedGW.push(song);
+				FlxG.save.flush();
+				trace(FlxG.save.data.songsUnlockedGW);
+			}
+		}
 	}
 }
 

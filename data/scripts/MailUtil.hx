@@ -13,7 +13,8 @@ public var allMailEver = [
 	'toucan' => {mailID: "toucan", letterID: "toucan", desc: "Another Letter from the Brazilian government"},
 	'brazil' => {mailID: "brazil", letterID: "brazil", desc: "Letter from Brazilian government"},
 	'whitehouse' => {mailID: "whitehouse", letterID: "whitehouse", desc: "Letter from the White House"},
-	'welcomeback' => {mailID: "welcomeback", letterID: "welcomeback", desc: "WELCOME BACK OLD PLAYER!"}
+	'welcomeback' => {mailID: "welcomeback", letterID: "welcomeback", desc: "WELCOME BACK OLD PLAYER!"},
+	'arcade' => {mailID: "arcade", letterID: "arcade", desc: "Arcade Machine Delivery Notice"}
 ];
 
 // used for random mail

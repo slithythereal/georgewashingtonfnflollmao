@@ -104,7 +104,7 @@ function create() {
 	arrowTxt.borderSize = 4;
 	add(arrowTxt);
 	if (arcadeLetterRead) {
-		arcadeMachine = new FlxSprite(800, 515); 
+		arcadeMachine = new FlxSprite(800, 515);
 		arcadeMachine.frames = Paths.getFrames('menus/freeplaylandia/arcademachine');
 		arcadeMachine.animation.addByPrefix('delivery', 'delivery', 1, true);
 		arcadeMachine.animation.addByPrefix('pallet', 'onpallet', 1, true);
@@ -197,11 +197,11 @@ function create() {
 	skibidistar.updateHitbox();
 	add(skibidistar);
 	skibidistar.visible = false;
-	add(stars);
-	for (i in 0...5) {
-		var star:Star = new Star();
-		stars.add(star);
-	}
+	/*add(stars);
+		for (i in 0...5) {
+			var star:Star = new Star();
+			stars.add(star);
+	}*/
 
 	switchMode("SelectPage");
 	changePage(0);
@@ -267,8 +267,8 @@ function update(elapsed:Float) {
 				if (songProperties[
 					weekStuffs[selectorMAP[pages[curPageSelected]][curWeekSelected]].songs[curSongSelected]
 				].didFC) {
-					for (i in stars)
-						i.update(elapsed);
+					// for (i in stars)
+					// i.update(elapsed);
 				}
 				if (controls.BACK)
 					switchMode("SelectWeek");
@@ -399,7 +399,7 @@ function weekStuff() {
 function toggleStars() {
 	var songArray = weekStuffs[selectorMAP[pages[curPageSelected]][curWeekSelected]].songs;
 	var boolT:Bool = (curMode == 'SelectSong' && songProperties[songArray[curSongSelected]].didFC);
-	stars.visible = boolT;
+	// stars.visible = boolT;
 }
 
 function changeSong(cool:Int) {
@@ -445,6 +445,8 @@ function changeSong(cool:Int) {
 function loadSongSelStuff() {
 	var pagesTEMP:Array<String> = pages;
 
+	var toRemove:Array<String> = [];
+
 	trace("SONGS ALR UNLOCKED: " + FlxG.save.data.songsUnlockedGW);
 
 	for (week in selectorMAP['WEEKS']) {
@@ -457,7 +459,7 @@ function loadSongSelStuff() {
 				weekStuffs[week].songs.remove(song);
 		}
 
-		if (pushedSongs.length > 1) {
+		if (pushedSongs.length >= 1) {
 			trace(week + ": " + weekStuffs[week].songs);
 			weeksArray.push(week);
 			for (song in pushedSongs)
@@ -466,8 +468,6 @@ function loadSongSelStuff() {
 			selectorMAP["WEEKS"].remove(week);
 		}
 	}
-	if (weeksArray.length < 1)
-		pages.remove("WEEKS");
 
 	for (roadtrip in selectorMAP['ROADTRIPS']) {
 		var songArray:Array<String> = weekStuffs[roadtrip].songs;
@@ -478,7 +478,7 @@ function loadSongSelStuff() {
 			else if (!FlxG.save.data.songsUnlockedGW.contains(song))
 				weekStuffs[roadtrip].songs.remove(song);
 		}
-		if (pushedSongs.length > 1) {
+		if (pushedSongs.length >= 1) {
 			trace(roadtrip + ": " + weekStuffs[roadtrip].songs);
 			roadtripsArray.push(roadtrip);
 			for (song in pushedSongs)
@@ -487,8 +487,6 @@ function loadSongSelStuff() {
 			selectorMAP["ROADTRIPS"].remove(roadtrip);
 		}
 	}
-	if (roadtripsArray.length < 1)
-		pages.remove("ROADTRIPS");
 
 	for (minigame in selectorMAP['MINIGAMES']) {
 		var songArray:Array<String> = weekStuffs[minigame].songs;
@@ -499,7 +497,7 @@ function loadSongSelStuff() {
 			else if (!FlxG.save.data.songsUnlockedGW.contains(song))
 				weekStuffs[minigame].songs.remove(song);
 		}
-		if (pushedSongs.length > 1) {
+		if (pushedSongs.length >= 1) {
 			trace(minigame + ": " + weekStuffs[minigame].songs);
 			minigamesArray.push(minigame);
 			for (song in pushedSongs)
@@ -507,8 +505,6 @@ function loadSongSelStuff() {
 		} else if (pushedSongs.length < 1)
 			selectorMAP["MINIGAMES"].remove(minigame);
 	}
-	if (minigamesArray.length < 1)
-		pages.remove("MINIGAMES");
 
 	for (others in selectorMAP['OTHER']) {
 		var songArray:Array<String> = weekStuffs[others].songs;
@@ -519,16 +515,35 @@ function loadSongSelStuff() {
 			else if (!FlxG.save.data.songsUnlockedGW.contains(song))
 				weekStuffs[others].songs.remove(song);
 		}
-		if (pushedSongs.length > 1) {
+		if (pushedSongs.length >= 1) {
 			trace(others + ": " + weekStuffs[others].songs);
 
 			othersArray.push(others);
 			for (song in pushedSongs)
 				allSongsPushed.push(song);
 		} else if (pushedSongs.length < 1) {
-			selectorMAP["OTHER"].remove(others);
+			toRemove.push(others);
 		}
 	}
+
+	// wrote this in like 2 minutes for release (forgive me please) -slithy
+	for (i in toRemove) {
+		if (selectorMAP['WEEKS'].contains(i))
+			selectorMAP['WEEKS'].remove(i);
+		else if (selectorMAP['ROADTRIPS'].contains(i))
+			selectorMAP['ROADTRIPS'].remove(i);
+		else if (selectorMAP['MINIGAMES'].contains(i))
+			selectorMAP['MINIGAMES'].remove(i);
+		else if (selectorMAP['OTHER'].contains(i))
+			selectorMAP["OTHER"].remove(i);
+	}
+
+	if (weeksArray.length < 1)
+		pages.remove("WEEKS");
+	if (roadtripsArray.length < 1)
+		pages.remove("ROADTRIPS");
+	if (minigamesArray.length < 1)
+		pages.remove("MINIGAMES");
 	if (othersArray.length < 1)
 		pages.remove("OTHER");
 }
@@ -545,8 +560,7 @@ function loadData() {
 	}
 	arcadeLetterRead = FlxG.save.data.mailRead.contains('arcade');
 }
-
-class Star extends FlxSprite { //TO FIX
+/*class Star extends FlxSprite { //TO FIX
 	public var timer:Float = 1;
 
 	public var datween:FlxTween;
@@ -584,4 +598,4 @@ class Star extends FlxSprite { //TO FIX
 			}
 		});
 	}
-}
+}*/
