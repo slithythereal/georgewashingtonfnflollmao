@@ -112,11 +112,6 @@ function create() {
 }
 
 function update(elapsed:Float) {
-	if (!selectedSomethin) {
-		if (FlxG.keys.justPressed.Q) { // TO REMOVE
-			FlxG.switchState(new ModState("murica/NewWhiteHouse"));
-		}
-
 		if (FlxG.keys.justPressed.SEVEN) {
 			persistentUpdate = !(persistentDraw = true);
 			openSubState(new EditorPicker());
