@@ -112,84 +112,83 @@ function create() {
 }
 
 function update(elapsed:Float) {
-		if (FlxG.keys.justPressed.SEVEN) {
-			persistentUpdate = !(persistentDraw = true);
-			openSubState(new EditorPicker());
+	if (FlxG.keys.justPressed.SEVEN) {
+		persistentUpdate = !(persistentDraw = true);
+		openSubState(new EditorPicker());
+	}
+	if (controls.SWITCHMOD) {
+		openSubState(new ModSwitchMenu());
+		persistentUpdate = !(persistentDraw = true);
+	}
+
+	if (controls.UP_P)
+		changeOption(-1);
+	if (controls.DOWN_P)
+		changeOption(1);
+
+	if (controls.ACCEPT)
+		transitionState(options[curSelected]);
+
+	// eagle
+	if (eagleON) {
+		if (FlxG.random.int(1, 750) == 1 && !eagleActive)
+			activateEagle();
+
+		if (eagleActive && FlxG.mouse.overlaps(eagle) && FlxG.mouse.justPressed) {
+			(brazilON ? toucanPressed() : eaglePressed());
+			if (brazilON)
+				toucanPressed();
+			else
+				eaglePressed();
 		}
-		if (controls.SWITCHMOD) {
-			openSubState(new ModSwitchMenu());
-			persistentUpdate = !(persistentDraw = true);
+	}
+
+	textGrp.forEach(function(txt:FlxText) {
+		if (FlxG.mouse.overlaps(txt)) {
+			if (newOption != txt.ID) {
+				newOption = txt.ID;
+				curSelected = txt.ID;
+				changeOptionEtc();
+			}
+			if (FlxG.mouse.justPressed && !FlxG.mouse.overlaps(eagle))
+				transitionState(options[curSelected]);
 		}
+	});
 
-		if (controls.UP_P)
-			changeOption(-1);
-		if (controls.DOWN_P)
-			changeOption(1);
-
-		if (controls.ACCEPT)
-			transitionState(options[curSelected]);
-
-		// eagle
-		if (eagleON) {
-			if (FlxG.random.int(1, 750) == 1 && !eagleActive)
-				activateEagle();
-
-			if (eagleActive && FlxG.mouse.overlaps(eagle) && FlxG.mouse.justPressed) {
-				(brazilON ? toucanPressed() : eaglePressed());
-				if (brazilON)
-					toucanPressed();
-				else
-					eaglePressed();
+	// mail
+	if (mailUnlocked) {
+		if (FlxG.mouse.overlaps(mailbox)) {
+			if (!isMailHovered) {
+				isMailHovered = true;
+				mailbox.playAnim("open");
+				FlxG.sound.play(Paths.sound("ui/mailboxopen"));
+			}
+			if (FlxG.mouse.justPressed && !FlxG.mouse.overlaps(eagle)) {
+				selectedSomethin = true;
+				FlxG.switchState(new ModState("murica/MailboxState"));
+			}
+		} else {
+			if (isMailHovered) {
+				isMailHovered = false;
+				mailbox.playAnim("close");
+				FlxG.sound.play(Paths.sound("ui/mailboxclose"));
 			}
 		}
+	}
 
-		textGrp.forEach(function(txt:FlxText) {
-			if (FlxG.mouse.overlaps(txt)) {
-				if (newOption != txt.ID) {
-					newOption = txt.ID;
-					curSelected = txt.ID;
-					changeOptionEtc();
-				}
-				if (FlxG.mouse.justPressed && !FlxG.mouse.overlaps(eagle))
-					transitionState(options[curSelected]);
+	// white house
+	if (whiteHouseUnlocked && !brazilON) {
+		if (FlxG.mouse.overlaps(whiteHouseIcon)) {
+			if (!isWHHovered) {
+				isWHHovered = true;
+				whiteHouseIcon.playAnim("hover-day"); // will change depending on day/night
 			}
-		});
-
-		// mail
-		if (mailUnlocked) {
-			if (FlxG.mouse.overlaps(mailbox)) {
-				if (!isMailHovered) {
-					isMailHovered = true;
-					mailbox.playAnim("open");
-					FlxG.sound.play(Paths.sound("ui/mailboxopen"));
-				}
-				if (FlxG.mouse.justPressed && !FlxG.mouse.overlaps(eagle)) {
-					selectedSomethin = true;
-					FlxG.switchState(new ModState("murica/MailboxState"));
-				}
-			} else {
-				if (isMailHovered) {
-					isMailHovered = false;
-					mailbox.playAnim("close");
-					FlxG.sound.play(Paths.sound("ui/mailboxclose"));
-				}
-			}
-		}
-
-		// white house
-		if (whiteHouseUnlocked && !brazilON) {
-			if (FlxG.mouse.overlaps(whiteHouseIcon)) {
-				if (!isWHHovered) {
-					isWHHovered = true;
-					whiteHouseIcon.playAnim("hover-day"); // will change depending on day/night
-				}
-				if (FlxG.mouse.justPressed && !FlxG.mouse.overlaps(eagle))
-					whiteHouseStart();
-			} else {
-				if (isWHHovered) {
-					isWHHovered = false;
-					whiteHouseIcon.playAnim("idle-day");
-				}
+			if (FlxG.mouse.justPressed && !FlxG.mouse.overlaps(eagle))
+				whiteHouseStart();
+		} else {
+			if (isWHHovered) {
+				isWHHovered = false;
+				whiteHouseIcon.playAnim("idle-day");
 			}
 		}
 	}
